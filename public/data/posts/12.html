@@ -1,0 +1,124 @@
+
+
+地球人己阻止不了程序猿们学习cocos2d-x了是一个很不错的系列教程（其实我还没看完= =），但是我基础不好，作者基础太雄厚，他很多觉得简单的东西都没有解释，所以我看了又忘，忘了就...又看。<br />
+<br />
+于是我还是决定要记录下来，方便忘记的时候查看。<br />
+<br />
+<strong><span style="font-size:16pt">地球人己阻止不了程序猿们学习</span><span style="font-size:16pt">cocos2d-x</span><span style="font-size:16pt">了</span><span style="font-size:16pt"> (</span><span style="font-size:16pt">第一篇</span><span style="font-size:16pt">)</span><br />
+<span style="font-size:16pt">——木头学习笔记</span><br />
+<br />
+<span style="font-size:14pt">1.&nbsp; &nbsp;&nbsp;&nbsp;</span><span style="font-size:14pt">关于单例类</span></strong><br />
+Cocos2d-x（以后简称cs-x）有不少单例类，比如获取导演类：<br />
+<table class="t_table " cellspacing="0">
+<tbody>
+<tr>
+<td width="568">
+<p align="left"><span style="color:#666666"><span style="font-size:9pt">CCSize size = CCDirector::sharedDirector()-&gt;getWinSize();</span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+上面的语句是获取屏幕大小的对象，因为屏幕是受导演控制的，所以通过导演来获取屏幕大小。而获取导演的方式是sharedDirector，在cs-x中，通常都是通过shared***方法来获取某个类的单例。<br />
+<br />
+<strong><span style="font-size:14pt">2.&nbsp; &nbsp;&nbsp;&nbsp;</span><span style="font-size:14pt">创建最简单的精灵</span></strong><br />
+cs-x中要创建一个精灵，很简单（别人帮你封装好了，你当然简单，噗~）<br />
+<table class="t_table " cellspacing="0">
+<tbody>
+<tr>
+<td width="568"><span style="color:#666666"><span style="font-size:9pt">CCSprite* pSprite = CCSprite::spriteWithFile(&quot;Background.png&quot;);</span></span></td>
+</tr>
+</tbody>
+</table>
+<br />
+顺便一提，<span style="color:#666666"><span style="font-size:9pt">spriteWithFile</span></span>是静态方法。<br />
+<span style="color:#666666"><span style="font-size:9pt">spriteWithFile</span></span>，顾名思义，就是直接通过一张图片来创建一个精灵。<br />
+噗，再顺便一提，这个精灵不会动（只有一张图片，于是当然不会动= =）<br />
+<br />
+<strong><span style="font-size:14pt">3.&nbsp; &nbsp;&nbsp;&nbsp;</span><span style="font-size:14pt">使用</span><span style="font-size:14pt">TexturePacker</span><span style="font-size:14pt">组合图片，节省空间和内存</span></strong><br />
+TexturePacker可以为cs-x生成两个文件：*.plist和*.png，cs-x已经写了专门的类去处理了。<br />
+看看下面的代码：<br />
+<table class="t_table " cellspacing="0">
+<tbody>
+<tr>
+<td width="568">
+<p align="left"><span style="color:#666666"><span style="font-size:9pt">CCSpriteFrameCache *cache = CCSpriteFrameCache::sharedSpriteFrameCache();</span></span></p>
+<p align="left"><span style="color:#666666"><span style="font-size:9pt">cache-&gt;addSpriteFramesWithFile(&quot;images.plist&quot;, &quot;images.png&quot;);</span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+看看，shared*函数又出现了，证明了<span style="color:#666666"><span style="font-size:9pt">CCSpriteFrameCache</span></span>是一个单例类，就我现在所知，它是<span style="color:#666666"><span style="font-size:9pt">CCSpriteFrame</span></span>缓存池，至于<span style="color:#666666"><span style="font-size:9pt">CCSpriteFrame</span></span>是什么，我现在还不太清楚。<br />
+然后用<span style="color:#666666"><span style="font-size:9pt">addSpriteFramesWithFile</span></span>方法把images.png图片里的所有小图片生成对应的<br />
+<span style="color:#666666"><span style="font-size:9pt">CCSpriteFrame</span></span>对象，存放到缓存池里。<br />
+<br />
+<strong><span style="font-size:14pt">4.&nbsp; &nbsp;&nbsp;&nbsp;</span><span style="font-size:14pt">从</span><span style="font-size:14pt">CCSpriteFrameCache</span><span style="font-size:14pt">缓存池里取得</span><span style="font-size:14pt">CCSpriteFrame</span><span style="font-size:14pt">创建精灵对象</span></strong><br />
+<table class="t_table " cellspacing="0">
+<tbody>
+<tr>
+<td width="568">
+<p align="left"><span style="color:#666666"><span style="font-size:9pt">CCSprite* pSprite = CCSprite::spriteWithSpriteFrameName(&quot;Background.png&quot;);</span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+之前的<span style="color:#666666"><span style="font-size:9pt">spriteWithFile</span></span>改成了<span style="color:#666666"><span style="font-size:9pt">spriteWithSpriteFrameName</span></span>，顾名思义，这次是通过CCSpriteFrame对象来创建一个CCSprite精灵对象。<br />
+通过小图片的名称在CCSpriteFrameCache缓存池里取得CCSpriteFrame对象，再把这个CCSpriteFrame对象赋给CCSprite。<br />
+<br />
+<strong><span style="font-size:14pt">5.&nbsp; &nbsp;&nbsp;&nbsp;</span><span style="font-size:14pt">CCSpriteBatchNode</span><span style="font-size:14pt">，减少</span><span style="font-size:14pt">glDrawArray</span><span style="font-size:14pt">的次数（批次渲染）</span></strong><br />
+文中说，“<span style="color:#9933ff"><span style="font-size:9pt">我们已经逹到了<strong>节省内存</strong>和<strong>减少纹理切换</strong></span></span><span style="color:#9933ff"><span style="font-size:9pt">,
+</span></span><span style="color:#9933ff"><span style="font-size:9pt">最後一个我们想做的优化是<strong>减少</strong></span></span><strong><span style="color:#9933ff"><span style="font-size:9pt"> glDrawArray
+</span></span><span style="color:#9933ff"><span style="font-size:9pt">的次数</span></span></strong><span style="color:#9933ff"><span style="font-size:9pt">,
+</span></span><span style="color:#9933ff"><span style="font-size:9pt">而我们所运用的技巧</span></span><span style="color:#9933ff"><span style="font-size:9pt">,
+</span></span><span style="color:#9933ff"><span style="font-size:9pt">就是<strong>批次渲染</strong></span></span><strong><span style="color:#9933ff"><span style="font-size:9pt">(Batch Rendering)</span></span></strong><span style="color:#9933ff"><span style="font-size:9pt">,
+ cocos2d </span></span><span style="color:#9933ff"><span style="font-size:9pt">提供了</span></span><strong><span style="color:#9933ff"><span style="font-size:9pt">CCSpriteBatchNode</span></span></strong><span style="color:#9933ff"><span style="font-size:9pt">
+</span></span><span style="color:#9933ff"><span style="font-size:9pt">来方便大家做有关的处理</span></span><span style="color:#9933ff"><span style="font-size:9pt">, CCSpriteBatchNode
+</span></span><span style="color:#9933ff"><span style="font-size:9pt">里的</span></span><span style="color:#9933ff"><span style="font-size:9pt">CCSprite
+</span></span><span style="color:#9933ff"><span style="font-size:9pt">都是要用同一个纹理的</span></span><span style="color:#9933ff"><span style="font-size:9pt">,
+</span></span><span style="color:#9933ff"><span style="font-size:9pt">所以我们在建立一个</span></span><span style="color:#9933ff"><span style="font-size:9pt"> CCSpriteBatchNode
+</span></span><span style="color:#9933ff"><span style="font-size:9pt">是要给它一个纹理</span></span><span style="color:#9933ff"><span style="font-size:9pt">,
+</span></span><span style="color:#9933ff"><span style="font-size:9pt">再把它加到</span></span><span style="color:#9933ff"><span style="font-size:9pt"> Layer
+</span></span><span style="color:#9933ff"><span style="font-size:9pt">里</span></span><span style="font-size:9pt">”。</span><br />
+<br />
+批次渲染是什么东西？好像是3D里面的知识，百度了一会，我现在还无法理解。<br />
+<br />
+使用批次渲染很简单，先利用组合的图片去生成一个CCTexture2D对象，再利用这个<br />
+Texture2D对象生成CCSpriteBatchNode对象：<br />
+<table class="t_table " cellspacing="0">
+<tbody>
+<tr>
+<td width="568">
+<p align="left"><span style="color:#666666"><span style="font-size:9pt">CCTexture2D *texture = CCTextureCache::sharedTextureCache()-&gt;textureForKey(&quot;images.png&quot;);</span></span></p>
+<p align="left"><span style="color:#666666"><span style="font-size:9pt">CCSpriteBatchNode *spriteBatch = CCSpriteBatchNode::batchNodeWithTexture(texture);</span></span></p>
+<p align="left"><span style="color:#666666"><span style="font-size:9pt">addChild(spriteBatch);</span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+然后还是用spriteWithSpriteFrameName方法生成CCSprite对象，但是，要注意，<br />
+CCSpriteBatchNode对象已经添加到场景中了，所以对使用同一个纹理（我也不知道什么<br />
+是使用同一个纹理，总之，在同一张大图里的小图片就是同一个纹理了）的精灵对象，直接添加到CCSpriteBatchNode对象中，而不是添加到场景中。<br />
+更完整的流程：<br />
+<table class="t_table " cellspacing="0">
+<tbody>
+<tr>
+<td width="568">
+<p align="left"><span style="color:#666666"><span style="font-size:9pt">CCTexture2D *texture = CCTextureCache::sharedTextureCache()-&gt;textureForKey(&quot;images.png&quot;);</span></span></p>
+<p align="left"><span style="color:#666666"><span style="font-size:9pt">CCSpriteBatchNode *spriteBatch = CCSpriteBatchNode::batchNodeWithTexture(texture);</span></span></p>
+<p align="left"><span style="color:#666666"><span style="font-size:9pt">addChild(spriteBatch);</span></span></p>
+<p align="left"><span style="color:#666666"><span style="font-size:9pt">CCSprite* pSprite = CCSprite::spriteWithSpriteFrameName(&quot;Background.png&quot;);</span></span></p>
+<p align="left"><span style="color:#666666"><span style="font-size:9pt">spriteBatch-&gt;addChild(pSprite, 0);</span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+<br />
+OK，第一篇的主要学习内容就是这样了，真心感谢原文的作者，作者太强了，我的基础不够，所以很多地方看不懂，只好看一点记录一点，哪天忘了，也好回忆起来。<br />
+<br />
+原文详细教程地址：<br />
+<a href="http://cn.cocos2d-x.org/bbs/forum.php?mod=viewthread&amp;tid=775&amp;fromuid=5297" target="_blank">http://cn.cocos2d-x.org/bbs/forum.php?mod=viewthread&amp;tid=775&amp;fromuid=5297</a><br />
+<br />

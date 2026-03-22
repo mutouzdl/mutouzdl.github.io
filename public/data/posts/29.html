@@ -1,0 +1,371 @@
+<p align="center"><strong><span style="font-size: 24px;"><span style="font-family: Calibri;">Cocos2d-x</span>游戏实例<span style="font-family: Calibri;">-</span>《跑跑跑》制作教程（第三篇）——让主角跑</span></strong></p>
+<span style="font-family: Calibri; font-size: 14px;"> </span>
+
+<span style="font-family: Calibri;"><strong><span style="color: royalblue;">笨木头花心贡献，啥？花心？不呢，是用心~
+</span>
+</strong><span style="font-size: 18px; color: red;">转载请注明，原文地址</span></span><span style="font-size: 18px; color: #ff0000;">：<a href="http://www.benmutou.com/archives/29 " target="_blank">http://www.benmutou.com/archives/29</a> </span>
+
+<strong><span style="font-size: 24px; background-color: #cccccc;">正文：</span></strong>
+
+&nbsp;
+
+<span style="color: #cc0000;">注：本文使用到的资源请到这里下载：</span><a href="http://download.csdn.net/detail/musicvs/4769412">http://download.csdn.net/detail/musicvs/4769412</a>
+
+<span style="font-size: 14px;">终于进入我们的游戏的主题了——跑！</span>
+
+<span style="font-size: 14px;">来，我们开始让主角跑起来<span style="font-family: Calibri;">~</span></span>
+
+<span style="font-family: Calibri; font-size: 14px;"> </span>
+
+<strong><span style="font-size: 24px;"><span style="font-family: Calibri;">1.</span> <span style="background: #d9d9d9;">修改一下糟糕的代码</span></span></strong>
+
+<span style="font-size: 14px;">我们要给主角加一个动画，不断地播放跑步动作。我们来打开熟悉的<span style="font-family: Calibri;">TollgateScene.cpp</span>文件，糟糕，我发现这个文件的<span style="font-family: Calibri;">init</span>函数有点庞大了。</span>
+
+<span style="font-size: 14px;">于是，我做了一个艰难的决定，把创建玩家精灵的工作移到<span style="font-family: Calibri;">Player</span>类的<span style="font-family: Calibri;">init</span>函数里：</span>
+
+[cce_cpp]//Player.h文件
+
+#ifndef __PLAYER_H__
+#define __PLAYER_H__
+
+#include &quot;Entity.h&quot;
+
+class Player : public Entity {
+public:
+    bool initWithTiledMap(CCTMXTiledMap* map);
+
+    static Player* createWithTiledMap(CCTMXTiledMap* map);
+};
+
+#endif
+[/cce_cpp]
+<pre class="cpp"></pre>
+<span style="font-size: 14px;">
+</span>
+
+[cce_cpp]//Player.cpp文件
+
+#include &quot;Player.h&quot;
+
+Player* Player::createWithTiledMap( CCTMXTiledMap* map )
+{
+    Player* mPlayer = new Player();
+
+    if(mPlayer &amp;&amp; mPlayer-&gt;initWithTiledMap(map)) {
+    }
+    else {
+        CC_SAFE_DELETE(mPlayer);
+    }
+
+    return mPlayer;
+}
+
+bool Player::initWithTiledMap( CCTMXTiledMap* map )
+{
+    /* 加载对象层 */
+    CCTMXObjectGroup* objGroup = map-&gt;objectGroupNamed(&quot;objects&quot;);
+
+    /* 加载玩家坐标对象 */
+    CCDictionary* playerPointDic = objGroup-&gt;objectNamed(&quot;PlayerPoint&quot;);
+    float playerX = playerPointDic-&gt;valueForKey(&quot;x&quot;)-&gt;floatValue();
+    float playerY = playerPointDic-&gt;valueForKey(&quot;y&quot;)-&gt;floatValue();
+
+    /* -------------- 加载玩家 --------------- */
+    CCSize visibleSize = CCDirector::sharedDirector()-&gt;getVisibleSize();
+    CCSprite* playerSprite = CCSprite::create(&quot;sprite/player1.png&quot;);
+    playerSprite-&gt;setPosition(ccp(playerX, playerY));
+
+    /* 精灵添加到地图 */
+    map-&gt;addChild(playerSprite);
+
+    /* 绑定精灵对象 */
+    setSprite(playerSprite);
+    return true;
+}
+[/cce_cpp]
+<pre class="cpp"></pre>
+<span style="font-size: 14px;"><span style="font-family: Calibri;">Player</span>类改得有点多，把创建和初始化的函数加了一个参数：地图对象。这样我们就可以直接在<span style="font-family: Calibri;">player</span>的<span style="font-family: Calibri;">init</span>函数中帮精灵对象添加到地图了。</span>
+
+<span style="font-size: 14px;">然后现在<span style="font-family: Calibri;">TollgateScene.cpp</span>的<span style="font-family: Calibri;">init</span>函数就好看多了：</span>
+
+[cce_cpp]bool TollgateScene::init()
+{
+    /* 加载地图 */
+    CCTMXTiledMap* map = CCTMXTiledMap::create(&quot;map/level01.tmx&quot;);
+    this-&gt;addChild(map); 
+
+    /* 创建玩家 */
+    Player* mPlayer = Player::createWithTiledMap(map);
+
+    return true;
+}
+[/cce_cpp]
+<pre class="cpp"></pre>
+&nbsp;
+
+<strong><span style="font-size: 24px;"><span style="font-family: Calibri;">2.</span><span style="background: #d9d9d9;">主角跑动动画</span></span></strong>
+
+<span style="font-size: 14px;">现在开始真正给主角加一个动画了，我们先给<span style="font-family: Calibri;">Player</span>类新增一个函数：</span>
+
+[cce_cpp]void Player::run()
+{
+    CCArray* framesList = CCArray::create();
+
+    framesList-&gt;addObject(CCSpriteFrame::create(&quot;sprite/player1.png&quot;, CCRectMake(0, 0, 77, 134)));
+    framesList-&gt;addObject(CCSpriteFrame::create(&quot;sprite/player2.png&quot;, CCRectMake(0, 0, 66, 129)));
+    framesList-&gt;addObject(CCSpriteFrame::create(&quot;sprite/player3.png&quot;, CCRectMake(0, 0, 99, 132)));
+    framesList-&gt;addObject(CCSpriteFrame::create(&quot;sprite/player4.png&quot;, CCRectMake(0, 0, 111, 135)));
+    framesList-&gt;addObject(CCSpriteFrame::create(&quot;sprite/player5.png&quot;, CCRectMake(0, 0, 94, 132)));
+    framesList-&gt;addObject(CCSpriteFrame::create(&quot;sprite/player6.png&quot;, CCRectMake(0, 0, 64, 128)));
+    framesList-&gt;addObject(CCSpriteFrame::create(&quot;sprite/player7.png&quot;, CCRectMake(0, 0, 96, 133)));
+    framesList-&gt;addObject(CCSpriteFrame::create(&quot;sprite/player8.png&quot;, CCRectMake(0, 0, 103, 138)));
+
+    CCAnimation* animation = CCAnimation::createWithSpriteFrames(framesList, 0.2f);
+    animation-&gt;setLoops(-1);
+
+    mSprite-&gt;runAction(CCAnimate::create(animation));
+}
+[/cce_cpp]
+
+<span style="font-size: 14px;">我为了尽量减少教程里出现的代码量，以及尽量让素材简单，我采用最直接的方式来创建<span style="font-family: Calibri;">CCSpriteFrame</span>对象，如果大家不喜欢的话，可以用<span style="font-family: Calibri;">CCSpriteFrameCache</span>的方式来创建，这里就不多说了。创建动画的方式也不说了，我默认大家有了解过。</span>
+
+<span style="font-size: 14px;"><span style="font-family: Calibri;">  </span>好吧，还是简单说一下，先创建一组<span style="font-family: Calibri;">CCSpriteFrame</span>对象，然后用这组对象创建一个<span style="font-family: Calibri;">CCAnimation</span>对象，这个对象还不能用来形成动画，还必须创建一个<span style="font-family: Calibri;">CCAnimate</span>对象，然后精灵类通过<span style="font-family: Calibri;">runAction</span>方法来执行动画。<span style="font-family: Calibri;">setLoops(-1)</span>是为了循环播放动画。</span>
+
+<span style="font-size: 14px;"><span style="font-family: Calibri;">  </span>然后，继续打开我们熟悉的<span style="font-family: Calibri;">TollgateScene.cpp</span>的<span style="font-family: Calibri;">init</span>函数，加上一句代码：</span>
+
+<span style="font-size: 14px;"><span style="font-family: Calibri;">  OK</span>，编译运行，精灵已经在跑动了！当然，只是原地跑。</span>
+
+[cce_cpp]/* 创建玩家 */
+    Player* mPlayer = Player::createWithTiledMap(map);
+
+    /* 让玩家跑起来 */
+    mPlayer-&gt;run();
+[/cce_cpp]
+
+<span style="font-family: Calibri; font-size: 14px;"> </span>
+
+<span style="font-size: 14px;">接下来要新增的代码有点多，慢慢来。</span>
+
+<strong><span style="font-size: 24px;"><span style="font-family: Calibri;">3.</span> <span style="background: #d9d9d9;">控制器</span></span></strong>
+
+<span style="font-size: 14px;">让主角向前跑，我想采用组合来实现，把向前跑作为一个功能单独写成一个类，主角只要增加一个成员变量（向前跑的类），就能实现向前跑的动作。而这个类，就是控制器。</span>
+
+<span style="font-size: 14px;">因为考虑到不止一个控制器，我们来稍微写多几行代码，以便以后扩展。先来实现控制器的父类<span style="font-family: Calibri;">(</span>在实体文件夹新建<span style="font-family: Calibri;">Controller.h</span>和<span style="font-family: Calibri;">Controller.cpp</span>文件<span style="font-family: Calibri;">)</span>：</span>
+
+[cce_cpp]//Controller.h文件
+
+#ifndef __CONTROLLER_H__
+#define __CONTROLLER_H__
+
+#include &quot;cocos2d.h&quot;
+#include &quot;ControllerListener.h&quot;
+
+using namespace cocos2d;
+
+class Controller : public CCNode {
+public:
+    /* 设置监听对象 */
+    void setControllerListener(ControllerListener* mControllerListener);
+
+protected:
+    ControllerListener* mControllerListener;
+};
+
+#endif
+[/cce_cpp]
+<pre class="cpp"></pre>
+<span style="font-size: 14px;">
+</span>
+
+[cce_cpp]//Controller.cpp文件
+
+#include &quot;Controller.h&quot;
+
+void Controller::setControllerListener( ControllerListener* mControllerListener )
+{
+    this-&gt;mControllerListener = mControllerListener;
+}
+[/cce_cpp]
+<pre class="cpp"></pre>
+<span style="font-size: 14px;">很简单的一个类，只有一个变量和一个方法，我们来看看<span style="font-family: Calibri;">ControllerListener</span>是做什么用的。<span style="font-family: Calibri;">ControllerListener</span>就是将要被控制的对象，比如我们主角，只要继承了<span style="font-family: Calibri;">ControllerListener</span>接口，就能够被控制器控制。很方便吧<span style="font-family: Calibri;">~</span>针对接口编程，使得代码稍微没有那么糟糕。</span>
+
+<span style="font-size: 14px;">看看<span style="font-family: Calibri;">ControllerListener</span>的代码：</span>
+
+[cce_cpp]//ControllerListener.h文件
+
+#ifndef __CONTROLLER_LISTENER_H__
+#define __CONTROLLER_LISTENER_H__
+
+#include &quot;cocos2d.h&quot;
+
+using namespace cocos2d;
+
+class ControllerListener {
+public:
+    virtual void setSimplePosition(int x, int y) = 0;
+    virtual CCPoint getCurPosition() = 0;
+};
+
+#endif
+[/cce_cpp]
+<pre class="cpp"></pre>
+<span style="font-size: 14px;"> 也很简单，只有头文件，定义了两个虚函数，用来设置和获取被控制对象的坐标。我不太喜欢<span style="font-family: Calibri;">C++</span>的编码，有点繁琐，我对<span style="font-family: Calibri;">Java</span>中毒很深，嘻嘻，<span style="font-family: Calibri;">Java</span>要定义一个接口的话就简单多了，啊喂，跑题了<span style="font-family: Calibri;">~</span></span>
+
+<strong><span style="font-size: 24px;"><span style="font-family: Calibri;">4.</span> <span style="background: #d9d9d9;">简单移动控制器</span></span></strong>
+
+<span style="font-size: 14px;">我们来实现我们的第一个控制器，控制物体只往前移动的控制器，看代码：</span>
+
+[cce_cpp]//SimpleMoveController.h文件
+
+#ifndef __SIMPLE_MOVE_CONTROLL_H__
+#define __SIMPLE_MOVE_CONTROLL_H__
+
+#include &quot;cocos2d.h&quot;
+#include &quot;Controller.h&quot;
+
+using namespace cocos2d;
+
+class SimpleMoveControll : public Controller {
+public:
+    CREATE_FUNC(SimpleMoveControll);
+    virtual bool init();
+    virtual void update(float dt);
+
+    /* 设置移动速度 */
+    void setiSpeed(int iSpeed);
+
+private:
+    int iSpeed;
+};
+
+#endif&lt;/pre&gt;
+&lt;pre class=&quot;cpp&quot;&gt;// SimpleMoveControll.cpp文件
+
+#include &quot;SimpleMoveControll.h&quot;
+
+bool SimpleMoveControll::init()
+{
+    this-&gt;iSpeed = 0;
+
+    /* 每一帧都要调用update函数，所以要这样设置 */
+    this-&gt;scheduleUpdate();
+
+    return true;
+}
+
+void SimpleMoveControll::update( float dt )
+{
+    if(mControllerListener == NULL) {
+        return;
+    }
+    CCPoint pos = mControllerListener-&gt;getCurPosition();
+    pos.x += iSpeed;
+    mControllerListener-&gt;setSimplePosition(pos.x, pos.y);
+}
+
+void SimpleMoveControll::setiSpeed( int iSpeed )
+{
+    this-&gt;iSpeed = iSpeed;
+}
+[/cce_cpp]
+
+<span style="font-size: 14px;"><span style="font-family: Calibri;">SimplerMoveController</span>继承了<span style="font-family: Calibri;">Controller</span>类，也很简单，拥有一个成员变量<span style="font-family: Calibri;">iSpeed</span>，用来设置移动速度。</span>
+
+<span style="font-size: 14px;"><span style="font-family: Calibri;">  </span>这里简单介绍一下<span style="font-family: Calibri;">update(float dt)</span>函数，<span style="font-family: Calibri;">update</span>函数是<span style="font-family: Calibri;">CCNode</span>节点的函数，有什么用呢？很强大的。我们都知道，游戏的画面是一帧帧的绘制，从而形成丰富多彩的世界。而程序只需要在每一帧里执行操作，绘制图形。</span>
+
+<span style="font-size: 14px;"><span style="font-family: Calibri;">  Update</span>函数提供了一个入口，让我们可以在游戏的每一帧里执行我们自己想要做的事情。是的，就算你只是在里面放一个屁都是允许的（你不会当真了吧？<span style="font-family: Calibri;">= =</span>）。</span>
+
+<span style="font-size: 14px;"><span style="font-family: Calibri;">  </span>但是咯，不可能每个<span style="font-family: Calibri;">CCNode</span>对象都执行一次<span style="font-family: Calibri;">update</span>函数吧？（不是每个人都需要<span style="font-family: Calibri;">update</span>不是么？），所以，默认情况下<span style="font-family: Calibri;">update</span>函数是不会被调用的，需要对象通过<span style="font-family: Calibri;">scheduleUpdate</span>方法来注册被调用的权限。</span>
+
+<span style="font-size: 14px;">然后<span style="font-family: Calibri;">float dt</span>参数是什么呢？我们都知道<span style="font-family: Calibri;">CPU</span>是一个很忙的孩子（虽然它很聪明），<span style="font-family: Calibri;">CPU</span>不可能让所有<span style="font-family: Calibri;">update</span>函数同时进行的，只能是一个个执行，所以总有人先调用有人后调用，<span style="font-family: Calibri;">float
+dt</span>参数就记录了某个<span style="font-family: Calibri;">update</span>函数从最后一次被调用到本次调用时经过了多少毫秒。那这又有什么用呢？很有用，但是我们先不管<span style="font-family: Calibri;">~</span></span>
+
+<span style="font-size: 14px;">然后，<span style="font-family: Calibri;">SimpleMoveController</span>在<span style="font-family: Calibri;">update</span>函数里做了一件很伟大的事情，那就是改变被控制者的<span style="font-family: Calibri;">X</span>坐标，使得被控制者往前移动了一段距离。</span>
+
+<span style="font-family: Calibri; font-size: 14px;"> </span>
+
+<strong><span style="font-size: 24px;"><span style="font-family: Calibri;">5.</span> <span style="background: #d9d9d9;">给主角绑定一个控制器吧</span></span></strong>
+
+<span style="font-size: 14px;">整了这么多代码，主角都还没有跑起来，太累了，我不写了！啊，才怪呢，现在写，现在写<span style="font-family: Calibri;">~</span></span>
+
+<span style="font-size: 14px;">有个不幸的消息，我们需要稍微改改<span style="font-family: Calibri;">Entity</span>类（好吧，不要恨我，代码总是逐步优化的嘛<span style="font-family: Calibri;">T^T</span>）<span style="font-family: Calibri;">:</span></span>
+
+[cce_cpp]//Entity.h文件
+#ifndef __ENTITY_H__
+#define __ENTITY_H__
+
+#include &quot;cocos2d.h&quot;
+#include &quot;Controller.h&quot;
+#include &quot;ControllerListener.h&quot;
+
+using namespace cocos2d;
+
+class Entity : public CCNode, public ControllerListener {
+public:
+    void setSprite(CCSprite* mSprite);
+    void setController(Controller* controller);
+
+    /* 实现SimpleMoveListener接口的方法 */
+    virtual void setSimplePosition(int x, int y);
+    virtual CCPoint getCurPosition();
+protected:
+    CCSprite* mSprite;
+    Controller* mController;
+};
+
+#endif&lt;/pre&gt;
+&lt;span style=&quot;font-size: 14px;&quot;&gt;我们给&lt;span style=&quot;font-family: Calibri;&quot;&gt;Entity&lt;/span&gt;加了一个父类，那就是&lt;span style=&quot;font-family: Calibri;&quot;&gt;ControllerListener&lt;/span&gt;，大家都知道为什么了，因为我们的角色需要被当做一个被控制器控制的对象。继承了&lt;span style=&quot;font-family: Calibri;&quot;&gt;ControllerListener&lt;/span&gt;之后，当然就要实现它的方法了。&lt;/span&gt;
+
+&lt;span style=&quot;font-size: 14px;&quot;&gt;另外，我还为&lt;span style=&quot;font-family: Calibri;&quot;&gt;Entity&lt;/span&gt;新增了一个方法，那就是&lt;span style=&quot;font-family: Calibri;&quot;&gt;setController&lt;/span&gt;，当然了，因为我们需要绑定一个控制器。&lt;/span&gt;
+
+&lt;span style=&quot;font-size: 14px;&quot;&gt;三个方法的实现如下：&lt;/span&gt;
+
+&lt;span style=&quot;font-family: Calibri; font-size: 14px;&quot;&gt; &lt;/span&gt;
+&lt;pre class=&quot;cpp&quot;&gt;[cce_cpp]//Entity.cpp的部分代码
+
+void Entity::setController( Controller* controller )
+{
+    this-&gt;mController = controller;
+    controller-&gt;setControllerListener(this);
+}
+
+void Entity::setSimplePosition( int x, int y )
+{
+    if(mSprite) {
+        mSprite-&gt;setPosition(ccp(x, y));
+    }
+}
+
+cocos2d::CCPoint Entity::getCurPosition()
+{
+    if(mSprite) {
+        return mSprite-&gt;getPosition();
+    }
+
+    return CCPoint::CCPoint(0, 0);
+}
+[/cce_cpp]
+
+<span style="font-size: 14px;">好了，好了，最后了，大家坚持住，我们打开<span style="font-family: Calibri;">TollgateScene.cpp</span>的<span style="font-family: Calibri;">init</span>函数吧，我们要开始跑喇<span style="font-family: Calibri;">~</span>在<span style="font-family: Calibri;">init</span>函数最后加上：</span>
+
+[cce_cpp]/* ------------ 创建玩家简单移动控制器 -------------- */
+    SimpleMoveControll* mSMoveControll = SimpleMoveControll::create();
+    mSMoveControll-&gt;setiSpeed(1);
+
+    /* 控制器要添加到场景中才能获得update事件 */
+    this-&gt;addChild(mSMoveControll);
+
+    mPlayer-&gt;setController(mSMoveControll);
+[/cce_cpp]
+
+<span style="font-size: 14px;">简单说明一下哈，创建一个移动控制器，设置移动速度为<span style="font-family: Calibri;">1</span>，然后把控制器添加到场景中（这样它才能获得<span style="font-family: Calibri;">update</span>函数的调用），最后把控制器添加到主角身上。</span>
+
+<span style="font-size: 14px;">来，编译运行，看主角疯狂地跑动吧！</span>
+
+<span style="font-size: 14px;">太帅了，简直就是一个流氓冲着良民狂奔啊喂<span style="font-family: Calibri;">~= =</span></span>
+
+<img alt="" src="/images/uploads/csdn_musicvs/other_site/img_my_1353028901_9509.webp" />
+
+<span style="font-family: Calibri; font-size: 14px;"> </span>
+
+<span style="font-size: 14px;"><strong><span style="color: #6633ff;">下一篇我们将会让地图也动起来，我们的地图可是很长的不是么，不能浪费啊喂<span style="font-family: Calibri;">~</span></span></strong></span>

@@ -1,0 +1,105 @@
+
+<p align="center"><strong><span style="font-size:16pt">Win7 64位搭建cocos2d-x环境并创建Android项目</span></strong></p>
+<br />
+<strong><span style="font-size:16pt">虽</span></strong>说在win7 32位和64位的环境搭建没有很大的区别，但是，在64位下还是会遇到一些小麻烦的。<br />
+<br />
+<br />
+<strong><span style="color:#9933ff">先解决第一个疑问：软件、工具都要下载哪个版本？</span></strong><br />
+1.&nbsp;&nbsp;eclipse下载64位的（官网有）<br />
+2.&nbsp;&nbsp;Java下载64位的（官网）<br />
+3.&nbsp;&nbsp;Android SDK直接用32位的（没有区分32还是64）<br />
+4.&nbsp;&nbsp;Android NDK 直接用32位的（没有区分32还是64）<br />
+5. CygWin，这个我懒得去官网下载安装，直接用了一个百度一下找的（Cygwin Easy 2007.03.21 (ISO)），解压后，直接把cygwin目录剪切到C盘根目录了，这个大家可以不理我，自己搞定CygWin的安装<br />
+6. Cocos2d-x也是没有区分32位还是64位的，直接去官网下吧。<br />
+<br />
+OK，把以上的东西都准备好，该安装的安装好~<br />
+<br />
+<strong><span style="color:#9933ff">最后，来安装</span><span style="color:#9933ff">cocos2d-x</span><span style="color:#9933ff">。</span></strong><br />
+1. 解压到任意目录<br />
+2. 运行cocos2d-x根目录下的build-win32.bat文件<br />
+3. 如果运行build-win32.bat报错，说找不到什么Release.win32/images/close.png文件什么的，那你随便弄一张图片放到这个目录下就好了。<br />
+4. 运行install-templates-msvc.bat<br />
+5. 打开cocos2d-win32.vc2008.sln（根据你的VS版本，我是VS2008），然后生成解决方案<br />
+6. 然后随便运行一个项目看看吧（运行HelloWorld比较好）<br />
+7. 理论上是成功了。<br />
+<br />
+<span style="color:maroon"><strong><span style="font-size:24px">到</span></strong>此为止除了软件版本之外，所有步骤都是和</span><span style="color:maroon">32</span><span style="color:maroon">位下一样的，唯一会遇到麻烦的是，创建</span><span style="color:maroon">Android</span><span style="color:maroon">项目。</span><br />
+<br />
+<strong><span style="color:#9933ff">步骤如下：</span></strong><br />
+1. 打开create-android-project.bat文件<br />
+<table class="t_table   " cellspacing="0">
+<tbody>
+<tr>
+<td width="568">:: modify it to work under your environment&nbsp; &nbsp;&nbsp; &nbsp; <br />
+set _CYGBIN=<span style="color:red">c:cygwinbin<br />
+</span>if not exist &quot;%_CYGBIN%&quot; echo Couldn't find Cygwin at &quot;%_CYGBIN%&quot; &amp; pause &amp; exit 4<br />
+<br />
+:: modify it to work under your environment<br />
+set _ANDROIDTOOLS=<span style="color:red">d:androidandroid-sdk-windowstools<br />
+</span>if not exist &quot;%_ANDROIDTOOLS%&quot; echo Couldn't find android sdk tools at &quot;%_ANDROIDTOOLS%&quot; &amp; pause &amp; exit 5<br />
+<br />
+:: modify it to work under your environment<br />
+set _NDKROOT=<span style="color:red">d:androidandroid-ndk-r8b<br />
+</span>if not exist &quot;%_NDKROOT%&quot; echo Couldn't find ndk at &quot;%_NDKROOT%&quot; &amp; pause &amp; exit 6</td>
+</tr>
+</tbody>
+</table>
+<br />
+2. 修改里面的三个路径：SDK、NDK和CygWin的路径。<br />
+<br />
+3. 然后运行create-android-project.bat，按正常流程输入包名、项目名、版本等级<br />
+<br />
+4. 然后发现问题，它说什么C:/windows/system32/java.exe有问题，我猜是因为Java换成64位的版本，所以有问题了<br />
+<br />
+5. 没事，打开android-sdk-windowstoolslib目录，找到find_java.bat文件，打开它，<br />
+<br />
+<table class="t_table   " cellspacing="0">
+<tbody>
+<tr>
+<td width="568"><span style="color:#3366ff">rem Check we have a valid Java.exe in the path. The return code will<br />
+rem be 0 if the command worked or 1 if the exec failed (program not found).<br />
+for /f %%a in <strong><span style="color:#ff0000">('%~dps0find_java.exe –s') </span>
+</strong>do set java_exe=%%a<br />
+if not defined java_exe goto :CheckFailed<br />
+<br />
+:SearchJavaW<br />
+rem Check if we can find a javaw.exe at the same location than java.exe.<br />
+rem If that doesn't work, just fall back on the java.exe we just found.<br />
+for /f %%a in <strong>('%~dps0find_java.exe –s -w')</strong> do set javaw_exe=%%a<br />
+if not exist %javaw_exe% set javaw_exe=%java_exe%<br />
+goto :EOF<br />
+</span></td>
+</tr>
+</tbody>
+</table>
+<br />
+<br />
+找到红色加粗的两句话，把它们的 –s 都去掉，变成：<br />
+<table class="t_table   " cellspacing="0">
+<tbody>
+<tr>
+<td width="568"><span style="color:#3366ff">rem Check we have a valid Java.exe in the path. The return code will<br />
+rem be 0 if the command worked or 1 if the exec failed (program not found).<br />
+for /f %%a in<span style="color:#ff0000"> <strong>('%~dps0find_java.exe') </strong>
+</span>do set java_exe=%%a<br />
+if not defined java_exe goto :CheckFailed<br />
+<br />
+:SearchJavaW<br />
+rem Check if we can find a javaw.exe at the same location than java.exe.<br />
+rem If that doesn't work, just fall back on the java.exe we just found.<br />
+for /f %%a in <strong>('%~dps0find_java.exe -w')</strong> do set javaw_exe=%%a<br />
+if not exist %javaw_exe% set javaw_exe=%java_exe%<br />
+goto :EOF<br />
+</span></td>
+</tr>
+</tbody>
+</table>
+<br />
+6. OK，保存，再次运行create-android-project.bat，继续正常流程<br />
+<br />
+7. 发现好像没有什么问题，但是请注意，有可能有人会报一个问题，说什么找不到expr命令，找不到sh命令什么的。<br />
+<br />
+8. 没关系，这是CygWin没有配置好的原因，把CygWin的bin目录路径加入到环境变量的Path里就行了<br />
+<br />
+<strong><span style="font-size:24px">好</span></strong>了，一切都搞定了，这样就能正确生成Android项目了，剩下的移植编译什么的，就不在这里啰嗦了。<br />
+<br />

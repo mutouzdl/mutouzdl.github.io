@@ -1,0 +1,204 @@
+<p align="center"><strong><span style="font-size: 32px;">在<span style="font-family: Calibri;">Lua</span>中使用自定义类——<span style="font-family: Calibri;">tolua++</span>工具使用（上集）</span></strong></p>
+<span style="font-family: Calibri;"><strong><span style="color: royalblue;">笨木头花心贡献，啥？花心？不呢，是用心~
+</span>
+</strong><span style="font-size: 18px; color: red;">转载请注明，原文地址</span></span><span style="font-size: 18px;"><span style="color: #ff0000;">：</span></span><a href="http://www.benmutou.com/archives/25" target="_blank"><span style="font-size: 14px;"> http://www.benmutou.com/archives/25</span></a><strong></strong>
+
+<strong><span style="font-size: 24px; background-color: #cccccc;">正文：</span></strong>
+
+<span style="font-size: 14px;">最近看了一下<span style="font-family: Calibri;">TestLua</span>的例子，挺有意思的，使用<span style="font-family: Calibri;">Lua</span>对网游开发来说，很实用。我目前这个项目没有使用<span style="font-family: Calibri;">Lua</span>等脚本，已经吃尽苦头了，每次客户端更新就流失好多玩家。虽然我的项目没有用<span style="font-family: Calibri;">cocos2d-x</span>开发，但是因为最近在研究它，所以就好奇一下<span style="font-family: Calibri;">lua</span>和<span style="font-family: Calibri;">cocos2d-x</span>的整合。</span>
+
+<span style="font-size: 14px;">百度没有多少资料，最实在的一篇教程应该就是<span style="font-family: Calibri;">Himi</span>那篇了（高手一只，不解释）。所以只能靠自己了。</span>
+
+<span style="font-size: 14px;">怎么运行<span style="font-family: Calibri;">Lua</span>例子，以及在<span style="font-family: Calibri;">cocos2d-x</span>里使用<span style="font-family: Calibri;">Lua</span>的简单规则，请看之前我写的那篇教程，以及更加详细的<span style="font-family: Calibri;">Himi</span>的教程（<a href="http://www.himigame.com/iphone-cocos2dx/681.html"><span style="font-family: Calibri; color: #954f72;">http://www.himigame.com/iphone-cocos2dx/681.html</span></a>）。</span>
+
+<span style="font-size: 14px;">这里我主要是想分享一下如何在<span style="font-family: Calibri;">lua</span>中使用自己的类，其实<span style="font-family: Calibri;">cocos2d-x</span>已经提供工具，并且封装好了<span style="font-family: Calibri;">c++</span>整合<span style="font-family: Calibri;">lua</span>。</span>
+
+<span style="font-size: 14px;">好，废话说多了，开始<span style="font-family: Calibri;">~</span>！</span>
+
+<span style="font-family: Calibri; font-size: 14px;"> </span>
+
+<strong><span style="font-size: 24px;"><span style="font-family: Calibri;">1.</span>   <span style="background: #d9d9d9;">只关注</span><span style="background: #d9d9d9;"><span style="font-family: Calibri;">LuaCocos2d.cpp</span></span><span style="background: #d9d9d9;">文件</span></span></strong>
+
+<span style="font-size: 14px;">假设看这篇文章的朋友已经了解了<span style="font-family: Calibri;">LuaCocos2d.cpp</span>的大概作用（不了解的，可以看看上面推荐的那篇<span style="font-family: Calibri;">Himi</span>的文章），我们知道，要在<span style="font-family: Calibri;">lua</span>使用<span style="font-family: Calibri;">cocos2d-x</span>里的类，就首先要在<span style="font-family: Calibri;">LuaCocos2d.cpp</span>里<span style="font-family: Calibri;">“</span>声明<span style="font-family: Calibri;">”</span>，此声明非彼声明哈，但是比较贴切。反正就是要在这个<span style="font-family: Calibri;">LuaCocos2d.cpp</span>里做文章就是了。虽然这个<span style="font-family: Calibri;">cpp</span>文件很庞大，但是都是一些重复的东西，形如：</span>
+
+[cce_cpp]tolua_cclass(tolua_S,&quot;CCActionEase&quot;,&quot;CCActionEase&quot;,&quot;CCActionInterval&quot;,NULL);
+  tolua_beginmodule(tolua_S,&quot;CCActionEase&quot;);
+   tolua_function(tolua_S,&quot;copyWithZone&quot;,tolua_Cocos2d_CCActionEase_copyWithZone00);
+   tolua_function(tolua_S,&quot;reverse&quot;,tolua_Cocos2d_CCActionEase_reverse00);
+   tolua_function(tolua_S,&quot;create&quot;,tolua_Cocos2d_CCActionEase_create00);
+  tolua_endmodule(tolua_S);[/cce_cpp]
+<pre class="cpp"><span style="font-size: 14px;">这些操作就像是在向程序注册我们的类，让这些类可以在<span style="font-family: Calibri;">lua</span>中使用。</span> <span style="font-family: Calibri; font-size: 14px;"> 
+
+</span> <strong><span style="font-size: 24px;"><span style="font-family: Calibri;">2.</span><span style="background: #d9d9d9;">真正想知道的事情是，除了</span><span style="background: #d9d9d9;"><span style="font-family: Calibri;">cocos2d-x</span></span><span style="background: #d9d9d9;">的类，我们可以在</span><span style="background: #d9d9d9;"><span style="font-family: Calibri;">lua</span></span><span style="background: #d9d9d9;">中
+使用自己的类吗？
+
+</span></span></strong> <span style="font-size: 14px;">当然可以了，就算不是在<span style="font-family: Calibri;">cocos2d-x</span>引擎里，本身<span style="font-family: Calibri;">lua</span>就可以在<span style="font-family: Calibri;">c++</span>中互相调用的（当然，<span style="font-family: Calibri;">Java</span>也可以）。只是，既然<span style="font-family: Calibri;">cocos2d-x</span>帮我们封装好了，我们就用它提供的方法来使用<span style="font-family: Calibri;">lua</span>吧。</span> <span style="font-size: 14px;">首先，我第一时间会想到，在<span style="font-family: Calibri;">LuaCocos2d.cpp</span>中依葫芦画瓢，把自己的类加进去就好了。当然，我也是这么想的，但是在添加的过程中碰了钉子，很多规则不太清楚，总是有些错误。后来。。。</span> <span style="font-family: Calibri; font-size: 14px;"> </span> 
+
+<strong><span style="font-size: 24px;"><span style="font-family: Calibri;">3.</span><span style="background: #d9d9d9;"><span style="font-family: Calibri;">tolua++.exe</span></span><span style="background: #d9d9d9;">工具</span></span></strong> 
+
+<span style="font-size: 14px;">后来我发现了<span style="font-family: Calibri;">cocos2d-x</span>竟然提供了这个工具，这是十分难发现的，隐藏得很深的，没有任何提示的，我竟然能发现它，噗。</span> <span style="font-size: 14px;">（<span style="color: #cc0000;">我才不会告诉你们<span style="font-family: Calibri;">LuaCocos2d.cpp</span>文件的顶部有注释，并且注释已经告诉我们有这个工具的</span>）</span></pre>
+<pre class="cpp">/*
+** Lua binding: Cocos2d
+** Generated automatically by tolua++-1.0.92 on 08/30/12 12:11:53.
+*/</pre>
+<span style="font-size: 14px;">工具在这个路径下：<span style="font-family: Calibri;">cocos2d-2.0-x-2.0.2toolstolua++</span>，有<span style="font-family: Calibri;">windows</span>版本的，和<span style="font-family: Calibri;">mac</span>版本的。</span>
+
+<img alt="" src="/images/uploads/csdn_musicvs/other_site/img_my_1352445069_6888.webp" />
+
+<span style="font-size: 14px;">这个工具可以帮我们生成自定义类的<span style="font-family: Calibri;">“</span>声明<span style="font-family: Calibri;">”</span>代码。怎么使用？该目录下有个<span style="font-family: Calibri;">README</span>文件，我用我那蹩脚的英语水平看懂了<span style="font-family: Calibri;">80%</span>，并且加上了蹩脚的中文注释，希望不要介意：</span>
+
+<strong><span style="color: #2e74b5; background: #d9d9d9;"><span style="font-family: Calibri; font-size: 14px;">1.Generating the lua&lt;--&gt;C bindings with tolua++</span></span></strong>
+
+<span style="font-size: 14px;"><span style="color: #2e74b5;"><span style="font-family: Calibri;">//</span></span><span style="color: #2e74b5;">使用此命令生成</span><span style="color: #2e74b5;"><span style="font-family: Calibri;">LuaCocos2d.cpp</span></span><span style="color: #2e74b5;">文件</span></span>
+
+<span style="color: #2e74b5;"><span style="font-family: Calibri; font-size: 14px;">tolua++.exe -tCocos2d -o LuaCocos2d.cpp Cocos2d.pkg                 </span></span>
+
+<span style="color: #2e74b5;"><span style="font-family: Calibri; font-size: 14px;">   </span></span>An ant script has been provided to generate the relevant files, to do this after
+
+<span style="color: #2e74b5;"><span style="font-family: Calibri; font-size: 14px;">   </span></span>modifying the .pkg files you should use the following command in this directory:
+
+<span style="color: #2e74b5;"><span style="font-family: Calibri; font-size: 14px;">   </span></span>ant
+
+<span style="color: #2e74b5;"><span style="font-family: Calibri; font-size: 14px;">   </span></span>This will generate the bindings file, patch it to compile successfully and move it
+
+<span style="color: #2e74b5;"><span style="font-family: Calibri; font-size: 14px;">   </span></span>to the standard destination.
+
+<span style="color: #2e74b5;"><span style="font-family: Calibri; font-size: 14px;"> </span></span>
+
+<span style="font-size: 14px;"><strong><span style="color: #2e74b5; background: #d9d9d9;"><span style="font-family: Calibri;">2. Writing .pkg files                 </span></span>//</strong></span><span style="color: #2e74b5; background: #d9d9d9;">为要在</span><span style="color: #2e74b5; background: #d9d9d9;"><span style="font-family: Calibri;">lua</span></span><span style="color: #2e74b5; background: #d9d9d9;">使用的类编写</span><span style="color: #2e74b5; background: #d9d9d9;"><span style="font-family: Calibri;">pkg</span></span><span style="color: #2e74b5; background: #d9d9d9;">文件</span>
+
+<span style="font-size: 14px;"><span style="color: #2e74b5;"><span style="font-family: Calibri;">   </span></span>1) enum keeps the same     //</span><span style="color: #2e74b5;">枚举类型保留不变</span>
+
+<span style="font-size: 14px;"><span style="color: #2e74b5;"><span style="font-family: Calibri;">   </span></span>2) remove CC_DLL for the class defines, pay attention to multi inherites      //</span><span style="color: #2e74b5;">不要使用</span><span style="color: #2e74b5;"><span style="font-family: Calibri;">CC_DLL</span></span><span style="color: #2e74b5;">，改用多继承</span>
+
+<span style="font-size: 14px;"><span style="color: #2e74b5;"><span style="font-family: Calibri;">   </span></span>3) remove inline keyword for declaration and implementation                //</span><span style="color: #2e74b5;">删除内置变量？</span>
+
+<span style="font-size: 14px;"><span style="color: #2e74b5;"><span style="font-family: Calibri;">   </span></span>4) remove public protect and private     //</span><span style="color: #2e74b5;">不要用访问限定词</span>
+
+<span style="font-size: 14px;"><span style="color: #2e74b5;"><span style="font-family: Calibri;">   </span></span>5) remove the decalration of class member variable               //</span><span style="color: #2e74b5;">不要成员变量</span>
+
+<span style="font-size: 14px;"><span style="color: #2e74b5;"><span style="font-family: Calibri;">   </span></span>6) keep static keyword         //</span><span style="color: #2e74b5;">保留静态关键词</span>
+
+<span style="font-size: 14px;"><span style="color: #2e74b5;"><span style="font-family: Calibri;">   </span></span>7) remove memeber functions that declared as private or protected //</span><span style="color: #2e74b5;">非</span><span style="color: #2e74b5;"><span style="font-family: Calibri;">public</span></span><span style="color: #2e74b5;">的函数都删除</span>
+
+<span style="font-family: Calibri; font-size: 14px;"> </span>
+
+<span style="font-size: 14px;"><strong>也许有点混乱，来看看该目录下的这个文件：<span style="font-family: Calibri;">Cocos2d.pkg</span></strong></span>
+<table width="200" border="1" cellspacing="1" cellpadding="1">
+<tbody>
+<tr>
+<td>
+<p class="MsoListParagraph" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-size: 14px;"><span style="font-family: Calibri;">$#include "LuaCocos2d.h"</span></span></span></p>
+<p class="MsoListParagraph" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-family: Calibri; font-size: 14px;"> </span></span></p>
+<p class="MsoListParagraph" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-size: 14px;"><span style="font-family: Calibri;">$pfile "CCAction.pkg"</span></span></span></p>
+<p class="MsoListParagraph" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-size: 14px;"><span style="font-family: Calibri;">$pfile "CCActionCamera.pkg"</span></span></span></p>
+<p class="MsoListParagraph" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-size: 14px;"><span style="font-family: Calibri;">$pfile "CCActionCatmullRom.pkg"</span></span></span></p>
+<p class="MsoListParagraph" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-size: 14px;"><span style="font-family: Calibri;">$pfile "CCActionEase.pkg"</span></span></span></p>
+<p class="MsoListParagraph" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-size: 14px;"><span style="font-family: Calibri;">$pfile "CCActionGrid.pkg"</span></span></span></p>
+<p class="MsoListParagraph" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-size: 14px;"><span style="font-family: Calibri;">$pfile "CCActionGrid3D.pkg"</span></span></span></p>
+<p class="MsoListParagraph" style="margin: 0cm 0cm 0pt;"><span lang="EN-US"><span style="font-size: 14px;"><span style="font-family: Calibri;">$pfile "CCActionManager.pkg"</span></span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<span style="font-size: 14px;">其实这些就是<span style="font-family: Calibri;">cocos2d-x</span>的一些，这些类放在这里，是为了自动生成<span style="font-family: Calibri;">LuaCocos2d.cpp</span>文件，这样，在<span style="font-family: Calibri;">lua</span>中就可以使用这些类了。</span>
+
+<span style="font-size: 14px;">那么，我们同样可以把自定义的类放到这里来。</span>
+
+<span style="font-size: 14px;">当然，必须按照规则来编写<span style="font-family: Calibri;">pkg</span>文件。</span>
+
+<span style="font-size: 14px;">别着急，一步步来<span style="font-family: Calibri;">…</span></span>
+
+<span style="font-family: Calibri; font-size: 14px;"> </span>
+
+<strong><span style="font-size: 24px;"><span style="font-family: Calibri;">4.</span>   <span style="background: #d9d9d9;">编写</span><span style="background: #d9d9d9;"><span style="font-family: Calibri;">pkg</span></span><span style="background: #d9d9d9;">文件</span></span></strong>
+
+<span style="font-family: Calibri; font-size: 14px;">a.</span>       <span style="font-size: 14px;">
+首先我写了一个自定义的类，这个类很简单，用来生成精灵的工厂类：</span>
+
+[cce_cpp]/************************************************************************/
+/* 精灵工厂                                   */
+/* 使用了简单工厂，但，不是工厂模式           */
+/************************************************************************/
+#ifndef __SPRITE_FACTORY_H__
+#define __SPRITE_FACTORY_H__
+
+#include &quot;cocos2d.h&quot;
+
+using namespace cocos2d;
+
+class SpriteFactory
+{
+public:
+    enum SpriteType
+    {
+        en_close,
+        en_grossini,
+        en_grossinis_sister,
+        en_grossinis_sister2,
+    };
+
+    static SpriteFactory* sharedSpriteFactory();
+
+    CCSprite* createSprite(CCLayer* mLayer, SpriteType enSpriteType);
+private:
+    static SpriteFactory* mFactory;
+};
+
+#endif
+[/cce_cpp]
+
+<span style="font-family: Calibri; font-size: 14px;">b.</span>       <span style="font-size: 14px;">
+然后，开始编写<span style="font-family: Calibri;">pkg</span>文件，还记得<span style="font-family: Calibri;">README</span>里的规则吗？再看一次：</span>
+
+<span style="font-size: 14px;"><span style="color: #2e74b5;"><span style="font-family: Calibri;">   <span style="color: #000000;">1) enum keeps the same</span></span></span>    //</span><span style="color: #2e74b5;">枚举类型保留不变</span>
+
+<span style="font-size: 14px;"><span style="color: #2e74b5;"><span style="font-family: Calibri;">   </span></span>2) remove CC_DLL for the class defines, pay attention to multi inherites      //</span><span style="color: #2e74b5;">不要使用</span><span style="color: #2e74b5;"><span style="font-family: Calibri;">CC_DLL</span></span><span style="color: #2e74b5;">，改用多继承</span>
+
+<span style="font-size: 14px;"><span style="color: #2e74b5;"><span style="font-family: Calibri;">   </span></span>3) remove inline keyword for declaration and implementation                //</span><span style="color: #2e74b5;">删除内置变量？</span>
+
+<span style="font-size: 14px;"><span style="color: #2e74b5;"><span style="font-family: Calibri;">   </span></span>4) remove public protect and private     //</span><span style="color: #2e74b5;">不要用访问限定词</span>
+
+<span style="font-size: 14px;"><span style="color: #2e74b5;"><span style="font-family: Calibri;">   </span></span>5) remove the decalration of class member variable               //</span><span style="color: #2e74b5;">不要成员变量</span>
+
+<span style="font-size: 14px;"><span style="color: #2e74b5;"><span style="font-family: Calibri;">   </span></span>6) keep static keyword         //</span><span style="color: #2e74b5;">保留静态关键词</span>
+
+<span style="font-size: 14px;"><span style="color: #2e74b5;"><span style="font-family: Calibri;">   <span style="color: #000000;">7) remove memeber functions that declared as private or protected</span> //</span></span><span style="color: #2e74b5;">非</span><span style="color: #2e74b5;"><span style="font-family: Calibri;">public</span></span><span style="color: #2e74b5;">的函数</span></span>
+
+<span style="font-family: Calibri; font-size: 14px;">        </span>
+
+根据这个规则，我要把<span style="font-family: Calibri;">public</span>和<span style="font-family: Calibri;">private</span>关键字去掉，还要把所有成员变量去掉，当然，多余的什么<span style="font-family: Calibri;">include</span>、<span style="font-family: Calibri;">using namespace</span>都不要了，对了，枚举类型要保留。
+
+于是，最后的<span style="font-family: Calibri;">pkg</span>文件如下：
+
+[cce_cpp]class SpriteFactory
+{
+
+    enum SpriteType
+    {
+        en_close,
+        en_grossini,
+        en_grossinis_sister,
+        en_grossinis_sister2,
+    };
+
+    static SpriteFactory* sharedSpriteFactory();
+
+    CCSprite* createSprite(CCLayer* mLayer, SpriteType enSpriteType);
+};[/cce_cpp]
+
+<span style="font-size: 14px;">好简洁，我喜欢。</span>
+
+<span style="font-family: Calibri; font-size: 14px;">         OK</span>，现在来试试生成<span style="font-family: Calibri;">LuaCocos2d.cpp</span>文件吧，打开<span style="font-family: Calibri;">cmd</span>，进入<span style="font-family: Calibri;">tolua++.exe</span>工具的目录，把我们的<span style="font-family: Calibri;">SpriteFactory.pkg</span>文件也拷到这个目录，啊<span style="font-family: Calibri;">~</span>！对了！要在<span style="font-family: Calibri;">Cocos2d.pkg</span>里加上<span style="font-family: Calibri;">SpriteFactory.pkg</span>文件：
+
+<span style="font-family: Calibri; font-size: 14px;">        <span style="color: #cc0000;"><strong> $pfile " SpriteFactory.pkg"</strong></span></span>
+
+<span style="font-family: Calibri; font-size: 14px;">         </span>然后，在<span style="font-family: Calibri;">cmd</span>里输入命令，开始生成<span style="font-family: Calibri;">LuaCocos2d.cpp</span>文件<span style="font-family: Calibri;">~</span>
+
+<img alt="" src="/images/uploads/csdn_musicvs/other_site/img_my_1352445204_8104.webp" />
+
+<span style="font-family: Calibri; font-size: 14px;">OK</span>，没有意外的话，<span style="font-family: Calibri;">LuaCocos2d.cpp</span>已经在当前目录下了，把它拷到你的<span style="font-family: Calibri;">lua</span>工程里，替换掉原来的<span style="font-family: Calibri;">LuaCocos2d.cpp</span>文件，然后，编译<span style="font-family: Calibri;">~</span>！
+
+大功告成<span style="font-family: Calibri;">……</span><span style="font-size: 48px;"><strong><span style="font-size: 32px;">啊</span>才怪啊<span style="font-family: Calibri;">~</span>！</strong></span>
+
+<strong><span style="color: #33ccff;">接下来发生什么事？请不要转台，关注下集最新情况~</span></strong>

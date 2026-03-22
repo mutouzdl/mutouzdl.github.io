@@ -1,0 +1,3746 @@
+[
+  {
+    "id": 2926,
+    "title": "[BlazorGameWithoutCanvas]0.前言：基于Blazor开发游戏，并且不使用Canvas",
+    "date": "2021-12-28 08:58:29",
+    "categories": [],
+    "excerpt": "我这个系列的文章会有点奇怪，因为这是一个特别小众的需求&mdash;&mdash;基于Blazor、但不使用Canvas来开发游戏。 1. 废话环节（可以不看） 其实我们公司不是游戏游戏，但确实有一块功能需要用类似游戏的表现形式，但都是一些比较简单的游戏，类似黑魂、血源、只狼啊什么的，不是！其实就是...",
+    "commentCount": 0,
+    "isTop": true,
+    "format": "md",
+    "postName": "[BlazorGameWithoutCanvas]0.前言：基于Blazor开发游戏，并且不使用Canvas"
+  },
+  {
+    "id": 1856,
+    "title": "《Cocos2d-x3.x游戏开发之旅》已出版~！(附源码下载地址)",
+    "date": "2014-10-08 18:29:07",
+    "categories": [
+      "Cocos2d-x"
+    ],
+    "excerpt": "其实书早就印好了，只是因为遇上国庆，物流不发图书，只能等国庆之后才能陆续上架各大网店了~预计下周就能看到了。 由于之前2.0版本一书的光盘损坏的概率不够小，所以这次就不提供随书光盘了，而是采取官网下载的方式。 书里可能提示得不够清楚，这里给各位读者提示一下，源码下载地址：http://www.phe...",
+    "commentCount": 191,
+    "isTop": true,
+    "format": "md",
+    "postName": "%e3%80%8acocos2d-x3-x%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91%e4%b9%8b%e6%97%85%e3%80%8b%e5%b7%b2%e5%87%ba%e7%89%88%ef%bc%81%e9%99%84%e6%ba%90%e7%a0%81%e4%b8%8b%e8%bd%bd%e5%9c%b0%e5%9d%80"
+  },
+  {
+    "id": 2933,
+    "title": "[笨木头“创2”路]No.10 没有奇迹，仍抱希望",
+    "date": "2023-07-08 18:56:35",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "又快过去1年了，没想到吧，公司还没倒闭，哈哈哈。 1.依旧不急不慢 其实，这公司能坚持这么多年，也全靠老板的耐心，他是一直认为公司有希望发展起来的。 反正最近也和之前一样，偶尔有个项目，公司勉强还活着。老板其实也有压力，有时候长时间没项目，财务吃紧的时候（我们没有财务人员，发工资得我来操作，所以状况...",
+    "commentCount": 20,
+    "isTop": false,
+    "format": "md",
+    "postName": "[笨木头“创2”路]No.10 没有奇迹，仍抱希望"
+  },
+  {
+    "id": 2932,
+    "title": "[笨木头“创2”路]No.9 会哭的孩子有奶喝？",
+    "date": "2022-09-02 17:23:23",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "好久没更新这个系列了，我们公司还活着呢，是不是很神奇，我们办公室的房东都以为我们是什么政府部门了，因为疫情期间我们都是远程办公，房租缺没断过，一直养着办公室。 公司要说有没有好转，确实有，但也不是什么大转变。不过，在这个疫情时代，其实也不奢望有什么大发展了。 1.我摊牌了 我太累了，我要干的事情太多...",
+    "commentCount": 9,
+    "isTop": false,
+    "format": "md",
+    "postName": "[笨木头“创2”路]No.9 会哭的孩子有奶喝？"
+  },
+  {
+    "id": 2931,
+    "title": "[BlazorGameWithoutCanvas]3. 解决坐标系的问题",
+    "date": "2021-12-28 09:11:51",
+    "categories": [],
+    "excerpt": "还有一个比较重要的问题没有解决，那就是，渲染的时候，坐标怎么办？如何去更新GameObject的坐标，毕竟渲染都靠Html元素，Html元素可没有什么现成的坐标系可以用。 1.Relative和Absolute组合 类似游戏里的坐标系，我们要怎么实现？毕竟html元素基本上是靠margin、floa...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "[BlazorGameWithoutCanvas]3. 解决坐标系的问题"
+  },
+  {
+    "id": 2930,
+    "title": "[BlazorGameWithoutCanvas]2.游戏对象和组件渲染",
+    "date": "2021-12-28 09:07:55",
+    "categories": [],
+    "excerpt": "其实最关键的就是游戏的逻辑变化怎么样反映到组件上，毕竟我们现在要靠组件来渲染游戏对象。 比如渲染一个精灵，那实际上就是用一个img元素来实现，然后通过变换坐标来移动。 我们要解决的就是，怎么样可以让组件只负责渲染，而坐标之类的数据独立运作。 1.游戏对象 所有与Blazor组件无关的代码，我都放在A...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "[BlazorGameWithoutCanvas]2.游戏对象和组件渲染"
+  },
+  {
+    "id": 2927,
+    "title": "[BlazorGameWithoutCanvas]1. 游戏循环",
+    "date": "2021-12-28 09:03:00",
+    "categories": [],
+    "excerpt": "为了实现游戏对象的各种变换逻辑，我们需要一个循环，然后在每一次循环里改变游戏对象的属性，以此来产生变化。 这个功能其实很简单，直接看一下代码： public class GameLoop { private bool _isRunning = false; public event Action L...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "[BlazorGameWithoutCanvas]1. 游戏循环"
+  },
+  {
+    "id": 2925,
+    "title": "[笨木头“创2”路]No.9 当爱扯皮的人遇上我",
+    "date": "2021-07-14 19:43:47",
+    "categories": [],
+    "excerpt": "又好久没更新这个系列了，说实话，公司跟上次发文章比起来，没有什么变化。 这次我就是太爽了，忍不住要来得瑟一下。 这次是遇上爱扯皮的客户了，一个简单的会员管理系统+动态官网，做了1年了，还没结束。 故事有点长，我慢慢解释。 1.前提 客户A的领导是很好沟通的，但这个客户A不好沟通，就是什么都说【我不懂...",
+    "commentCount": 10,
+    "isTop": false,
+    "format": "md",
+    "postName": "[笨木头“创2”路]No.9 当爱扯皮的人遇上我"
+  },
+  {
+    "id": 2923,
+    "title": "博客正式改用Blazor开发",
+    "date": "2021-04-24 16:17:03",
+    "categories": [],
+    "excerpt": "Blazor 最近我都在关注微软的新前端框架Blazor，不了解的朋友没关系，总结一句话就是，它能用C#做Web开发（不限于Web）。 而我早就因为自己的前端水平太差，受不了目前的前端开发体验。 所以，当Blazor出来的时候，我就很希望，未来公司里的前端这块，可以改成用Blazor开发。 当然，因...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "博客正式改用Blazor开发"
+  },
+  {
+    "id": 2910,
+    "title": "[笨木头“创2”路]No.8 心如死灰",
+    "date": "2021-03-01 08:07:55",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "距离上一篇记录，已经两年多了，不知道的人还以为我们公司倒闭了，可惜还没有。 我到希望是真的倒了，因为我的心太累了。 1.没有起色的起色 公司有些小项目已经谈成，也是勉强活着那种。最近都是很多项目在谈，看似都很有希望，但就是下不来那种。 经过这么多年，我的内心也是变得越来越平静，已经没有什么期待了。 ...",
+    "commentCount": 46,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4%e5%88%9b2%e8%b7%afno-8-%e5%bf%83%e5%a6%82%e6%ad%bb%e7%81%b0"
+  },
+  {
+    "id": 2885,
+    "title": "【守护裙子01】 16岁少女变成男孩后被暴揍一顿",
+    "date": "2020-08-29 15:31:30",
+    "categories": [
+      "自制视频-守护裙子"
+    ],
+    "excerpt": "https://www.bilibili.com/video/BV1Di4y1M7HL/ 事情是这样的，随着年龄的增长，我的精力是越来越不够了，加上女儿2岁多了，经常会缠着我，要我跟她玩。 大家是知道的，我扛不住美人计，于是我就乖乖地陪女儿玩去了。 然而，我始终不想放弃我的独立游戏梦（其实只是想写写...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e5%ae%88%e6%8a%a4%e8%a3%99%e5%ad%9001%e3%80%91-16%e5%b2%81%e5%b0%91%e5%a5%b3%e5%8f%98%e6%88%90%e7%94%b7%e5%ad%a9%e5%90%8e%e8%a2%ab%e6%9a%b4%e6%8f%8d%e4%b8%80%e9%a1%bf"
+  },
+  {
+    "id": 2843,
+    "title": "[Unity ECS入门]13.结束",
+    "date": "2019-12-05 14:33:53",
+    "categories": [
+      "ECS入门"
+    ],
+    "excerpt": "关于Unity的ECS，可能大家还有很多疑惑，是的，我也是。 但是，通过这12篇教程，大家多多少少对ECS是有了解的，在这个基础上，大家再去看官方手册，就会轻松很多。 当然，就这12篇教程所学到的东西，是完完全全不能用于实战的。 但是，没办法，我必须停止更新教程，因为，我自己还没有真正用ECS实战过...",
+    "commentCount": 20,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity-ecs%e5%85%a5%e9%97%a813-%e7%bb%93%e6%9d%9f"
+  },
+  {
+    "id": 2837,
+    "title": "[Unity ECS入门]12.EntityQuery",
+    "date": "2019-12-05 14:32:22",
+    "categories": [
+      "ECS入门"
+    ],
+    "excerpt": "在ECS中，查询实体数据是非常重要的，也是我们不断在做的事情，之前有简单地提到了EntityQuery，这次我们来详细地解释。 首先，EntityQuery相当于是保存筛选条件的对象，然后从所有的实体中筛选满足条件的数据。EntityQuery提供了多种筛选数据的方式，接下来，先回忆之前提到过的最简...",
+    "commentCount": 4,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity-ecs%e5%85%a5%e9%97%a812-entityquery"
+  },
+  {
+    "id": 2840,
+    "title": "[Unity ECS 入门]11.更多组件类型",
+    "date": "2019-12-05 14:31:44",
+    "categories": [
+      "ECS入门"
+    ],
+    "excerpt": "我们已经知道，继承了IComponentData的结构体是组件，而实际上，为了解决特定问题，ECS还提供了更多不同类型的组件。 我会简单地给大家介绍其他类型的组件，但是不做深入的讲解，因为在实际开发中可能需要根据不同的情况考虑使用哪种组件，而我还没实际使用ECS开发过，所以不想做过多的介绍，怕误导大...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity-ecs-%e5%85%a5%e9%97%a811-%e6%9b%b4%e5%a4%9a%e7%bb%84%e4%bb%b6%e7%b1%bb%e5%9e%8b"
+  },
+  {
+    "id": 2834,
+    "title": "[Unity ECS入门]10.筛选实体数据的方式5——IJobForEachWithEntity",
+    "date": "2019-12-05 14:30:12",
+    "categories": [
+      "ECS入门"
+    ],
+    "excerpt": "经过前面九篇教程，想必大家对ECS已经有了初步的了解，也已经能够用ECS这种模式写点简单的游戏了。 比如，做一个不断旋转的物体。 又比如，做两个不断旋转的物体。 又再比如，做1000个不断旋转的物体。 按照这种思路，我们已经会做无数个游戏了。（旁白：像开水一样，滚！） 你看，旁白又激动了，我不过是开...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity-ecs%e5%85%a5%e9%97%a810-%e7%ad%9b%e9%80%89%e5%ae%9e%e4%bd%93%e6%95%b0%e6%8d%ae%e7%9a%84%e6%96%b9%e5%bc%8f5-ijobforeachwithentity"
+  },
+  {
+    "id": 2829,
+    "title": "[Unity ECS入门]9.如何回到主线程搞事情——EntityCommandBufferSystem",
+    "date": "2019-12-05 14:29:34",
+    "categories": [
+      "ECS入门"
+    ],
+    "excerpt": "接下来，我要给大家介绍一个很重要的东西——EntityCommandBufferSystem。 1.不能在Job中执行的操作 我们已经知道，JobComponentSystem配合各种Job（IJobForEach、IJobChunk等），可以方便地实现并行（多线程、多核）执行逻辑。 既然涉及到多线...",
+    "commentCount": 13,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity-ecs%e5%85%a5%e9%97%a89-%e5%a6%82%e4%bd%95%e5%9b%9e%e5%88%b0%e4%b8%bb%e7%ba%bf%e7%a8%8b%e6%90%9e%e4%ba%8b%e6%83%85-entitycommandbuffersystem"
+  },
+  {
+    "id": 2823,
+    "title": "[Unity ECS入门]8.System执行顺序",
+    "date": "2019-12-05 14:28:10",
+    "categories": [
+      "ECS入门"
+    ],
+    "excerpt": "------------ 以下是废话 唔，可能我这个教程的目录看起来有点糟糕，偶尔讲一下筛选数据，偶尔又讲一下概念，偶尔又讲一下创建实体的方式。 这不，现在突然又跳到什么System执行顺序了。 其实是这样的，我在写这些教程之前，对ECS也是一窍不通的。 我更多的是按照官方示例走下去，在走的过程中，...",
+    "commentCount": 4,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity-ecs%e5%85%a5%e9%97%a88-system%e6%89%a7%e8%a1%8c%e9%a1%ba%e5%ba%8f"
+  },
+  {
+    "id": 2815,
+    "title": "[Unity ECS 入门]7.创建实体的方式——通过Prefab",
+    "date": "2019-12-05 14:27:19",
+    "categories": [
+      "ECS入门"
+    ],
+    "excerpt": "大家会不会很疑惑，创建实体都需要将场景里的GameObject进行转换，太麻烦了吧？ 正常情况下我们都是从prefab（预制体）实例化游戏对象的，这种在场景里转换实体的方式总感觉哪里不对，是这样吗？ 没错，其实还有更方便的转换实体方式，一起来看看吧。 1.世界（World） 新的转换实体的代码其实很...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity-ecs-%e5%85%a5%e9%97%a87-%e5%88%9b%e5%bb%ba%e5%ae%9e%e4%bd%93%e7%9a%84%e6%96%b9%e5%bc%8f-%e9%80%9a%e8%bf%87prefab"
+  },
+  {
+    "id": 2812,
+    "title": "[Unity ECS 入门]6.筛选实体数据的方式4——IJobChunk",
+    "date": "2019-12-05 14:26:51",
+    "categories": [
+      "ECS入门"
+    ],
+    "excerpt": "经过前面的介绍，我们已经知道了JobComponentSystem和IJobForEach，也了解了C# Job System可以并行执行Job来提升性能。 我们知道，IJobForEach这种Job，只能一个个实体进行处理，这次要介绍的IJobChunk，是可以对某个块（Chunk）里的所有实体进...",
+    "commentCount": 1,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity-ecs-%e5%85%a5%e9%97%a86-%e7%ad%9b%e9%80%89%e5%ae%9e%e4%bd%93%e6%95%b0%e6%8d%ae%e7%9a%84%e6%96%b9%e5%bc%8f4-ijobchunk"
+  },
+  {
+    "id": 2805,
+    "title": "[Unity ECS 入门]5.块（Chunk）和原型（Archetype）",
+    "date": "2019-12-05 14:25:35",
+    "categories": [
+      "ECS入门"
+    ],
+    "excerpt": "1.块（Chunk） 什么是块（Chunk），这是一个很重要的概念。 先来看看一张官方的图： 我们有三个实体： EntityA：包含了Translation、Rotation、LocalToWorld、Render四个组件。 EntityB：包含了Translation、Rotation、Local...",
+    "commentCount": 1,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity-ecs-%e5%85%a5%e9%97%a85-%e5%9d%97%ef%bc%88chunk%ef%bc%89%e5%92%8c%e5%8e%9f%e5%9e%8b%ef%bc%88archetype%ef%bc%89"
+  },
+  {
+    "id": 2801,
+    "title": "[Unity ECS 入门]4.筛选实体数据的方式3——IJobForEach（已废弃）",
+    "date": "2019-12-05 14:24:18",
+    "categories": [
+      "ECS入门"
+    ],
+    "excerpt": "来自2020.04.28的说明： 网友提示，0.9.1版本下的Entities已经放弃使用 IJobForEach，木头本人当时学习的是0.3版本，所以，理论上来说，本文已作废。 上一篇我们介绍了JobComponentSystem的基础用法，其实还有更多的用法，这次来介绍一下IJobForEach...",
+    "commentCount": 8,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity-ecs-%e5%85%a5%e9%97%a84-%e7%ad%9b%e9%80%89%e5%ae%9e%e4%bd%93%e6%95%b0%e6%8d%ae%e7%9a%84%e6%96%b9%e5%bc%8f3-ijobforeach"
+  },
+  {
+    "id": 2791,
+    "title": "[Unity ECS 入门]3.筛选实体数据的方式2——JobComponentSystem和ForEach",
+    "date": "2019-12-05 14:23:01",
+    "categories": [
+      "ECS入门"
+    ],
+    "excerpt": "上一篇我们解释了最简单的ECS示例，写ECS的基本思路就是创建组件、创建实体、编写系统处理逻辑。 我们已经知道，系统是继承了ComponentSystem的类，这是最简单的系统类。 实际上，ComponentSystem有很多的缺点，在实际开发过程中，我们一般会优先使用JobComponentSys...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity-ecs-%e5%85%a5%e9%97%a83-%e7%ad%9b%e9%80%89%e5%ae%9e%e4%bd%93%e6%95%b0%e6%8d%ae%e7%9a%84%e6%96%b9%e5%bc%8f2-jobcomponentsystem%e5%92%8cforeach"
+  },
+  {
+    "id": 2786,
+    "title": "[Unity ECS 入门]2.筛选实体数据的方式1——ComponentSystem和ForEach",
+    "date": "2019-12-05 14:12:01",
+    "categories": [
+      "ECS入门"
+    ],
+    "excerpt": "上一篇我们迅速地编写了一个超厉害的HelloWorld，然后大家什么都没学到。 对，我要的就是这个效果… 因为…这样很酷（旁白：GUN！） 这次，我们还是用上一篇的代码，然后给大家介绍最简单的概念。 1.组件（Component） 在介绍实体之前，我想先介绍组件。 我们对组件肯定不陌生，Transf...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity-ecs-%e5%85%a5%e9%97%a82-%e7%ad%9b%e9%80%89%e5%ae%9e%e4%bd%93%e6%95%b0%e6%8d%ae%e7%9a%84%e6%96%b9%e5%bc%8f1-componentsystem%e5%92%8cforeach"
+  },
+  {
+    "id": 2783,
+    "title": "[Unity ECS 入门]1.最简单的ECS程序",
+    "date": "2019-12-05 14:11:15",
+    "categories": [
+      "ECS入门"
+    ],
+    "excerpt": "官方的第一个Demo是ForEach，演示了最基础的ECS游戏（旁白：等等，你管这叫做游戏？） 这一篇，我们抛开所有的理论知识，先让大家把一个最简单的ECS游戏&hellip;唔，程序，跑起来。 1.安装Entities包 首先，我们要安装Entities包和Hybrid Renderer包，这样才...",
+    "commentCount": 31,
+    "isTop": false,
+    "format": "md",
+    "postName": "[Unity ECS 入门]1.最简单的ECS程序"
+  },
+  {
+    "id": 2772,
+    "title": "[Unity ECS 入门]0.前言-想不想学ECS？",
+    "date": "2019-12-05 14:10:26",
+    "categories": [
+      "ECS入门"
+    ],
+    "excerpt": "教程目录： [Unity ECS 入门]0.前言-想不想学ECS？ [Unity ECS 入门]1.最简单的ECS程序 [Unity ECS 入门]2.筛选实体数据的方式1——ComponentSystem和ForEach [Unity ECS 入门]3.筛选实体数据的方式2——JobCompone...",
+    "commentCount": 5,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity-ecs-%e5%85%a5%e9%97%a80-%e5%89%8d%e8%a8%80-%e6%83%b3%e4%b8%8d%e6%83%b3%e5%ad%a6ecs%ef%bc%9f"
+  },
+  {
+    "id": 2708,
+    "title": "《炼裙者2第九感》测试版发布",
+    "date": "2019-01-17 08:19:45",
+    "categories": [
+      "推广",
+      "Game Framework"
+    ],
+    "excerpt": "游戏使用了GameFramework框架开发，感觉用得挺顺手的，只遇到了大约380个坑（才怪啊，没有的事）。 不过，在此严重声明，游戏里的所有卡顿、效率低、内存泄漏，都与GameFramework框架无关，全都是木头本人的锅，请不要认为框架不好。（那个，E大，钱打我支付宝就好） 由于我没有申请版号，...",
+    "commentCount": 10,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%8a%e7%82%bc%e8%a3%99%e8%80%852%e7%ac%ac%e4%b9%9d%e6%84%9f%e3%80%8b%e6%b5%8b%e8%af%95%e7%89%88%e5%8f%91%e5%b8%83"
+  },
+  {
+    "id": 2683,
+    "title": "[笨木头“创2”路]No.7 软弱的管理者",
+    "date": "2018-08-14 13:19:19",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "又好久没有更新这个系列的文章，因为确实不知道写什么，我们公司也不像手游公司那样，什么事情都是风风火火，半年变一个样。相反，我们公司反而是那种比较悠然的，真正谈下来的项目也不多，但，就一句话吧，还活着。 这次我并不是想说公司的发展情况，而是，我今天对公司的财务做了有史以来最重的惩罚。 话虽这么说，可我...",
+    "commentCount": 20,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4%e5%88%9b2%e8%b7%afno-7-%e8%bd%af%e5%bc%b1%e7%9a%84%e7%ae%a1%e7%90%86%e8%80%85"
+  },
+  {
+    "id": 2674,
+    "title": "GF_JustOneLevel更新，V1.0.2发布说明",
+    "date": "2018-07-20 07:33:26",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "excerpt": "GF_JustOneLevel为笨木头开源的基于GameFramework框架的小游戏 GitHub地址：https://github.com/mutouzdl/GF_JustOneLevel V1.0.2发布说明 #修复Bug： #12 武斗家的攻击动作还没出现就造成了伤害 #11 偶然出现：所有...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "gf_justonelevel%e6%9b%b4%e6%96%b0%ef%bc%8cv1-0-2%e5%8f%91%e5%b8%83%e8%af%b4%e6%98%8e"
+  },
+  {
+    "id": 2671,
+    "title": "GF_JustOneLevel更新，V1.0.1版本发布说明",
+    "date": "2018-07-16 08:06:15",
+    "categories": [
+      "Game Framework"
+    ],
+    "excerpt": "GF_JustOneLevel为笨木头开源的基于GameFramework框架的小游戏 GitHub地址：https://github.com/mutouzdl/GF_JustOneLevel V1.0.1版本发布说明： 新增 增加英雄商店UI 增加神射手和武斗家两个英雄 增加白猫怪物、老虎怪物 激...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "gf_justonelevel%e6%9b%b4%e6%96%b0%ef%bc%8cv1-0-1%e7%89%88%e6%9c%ac%e5%8f%91%e5%b8%83%e8%af%b4%e6%98%8e"
+  },
+  {
+    "id": 2667,
+    "title": "[GameFramework]杂记001-关于protected internal visual void OnInit()函数",
+    "date": "2018-06-28 17:07:02",
+    "categories": [
+      "Game Framework"
+    ],
+    "excerpt": "更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archives/2667 文章来源：笨木头与游戏开发 在GameFramework中，大家可能经常遇到一个...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "gameframework%e6%9d%82%e8%ae%b0001-%e5%85%b3%e4%ba%8eprotected-internal-visual-void-oninit%e5%87%bd%e6%95%b0"
+  },
+  {
+    "id": 2662,
+    "title": "GF_JustOneLevel食用指南002：主要功能",
+    "date": "2018-06-27 17:09:35",
+    "categories": [
+      "Game Framework"
+    ],
+    "excerpt": "虽然这是一个很简单的游戏，但，功能还是不少的，起码是一个能正常玩的游戏了。 本游戏包含以下功能： 1.场景切换 带Loading功能，目前Loading只是加载了一个LoadingUI，大家可以自行修改这个UI，不过，目前不支持进度条； 2.从配置文件读取并加载实体 GF自带，没什么好说的 3.状态...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "gf_justonelevel%e9%a3%9f%e7%94%a8%e6%8c%87%e5%8d%97002%ef%bc%9a%e4%b8%bb%e8%a6%81%e5%8a%9f%e8%83%bd"
+  },
+  {
+    "id": 2660,
+    "title": "GF_JustOneLevel食用指南001：下载、运行",
+    "date": "2018-06-27 17:08:40",
+    "categories": [
+      "Game Framework"
+    ],
+    "excerpt": "1. 下载运行 本项目使用的是Unity3D 2018.1版本，所以大家最好也使用2018及以上版本，当然，2017也是支持的，至于5.x及以下版本，是不兼容的。 从github（https://github.com/mutouzdl/GF_JustOneLevel）克隆项目后，直接用Unity3D...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "gf_justonelevel%e9%a3%9f%e7%94%a8%e6%8c%87%e5%8d%97001%ef%bc%9a%e4%b8%8b%e8%bd%bd%e3%80%81%e8%bf%90%e8%a1%8c"
+  },
+  {
+    "id": 2655,
+    "title": "开源基于GameFramework的小游戏",
+    "date": "2018-06-27 07:40:15",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "excerpt": "GF_JustOneLevel（只有一关） 基于Game Framework框架的小游戏——《只有一关》 没错，内容只有一关，游戏名字也叫做只有一关。 其实这是我学习Unity3D后做的第一个游戏，现在用GameFramework重制一次。不过，由于时间关系，元素少了一些（比如没有了宠物和商店功能）...",
+    "commentCount": 15,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e5%bc%80%e6%ba%90%e5%9f%ba%e4%ba%8egameframework%e7%9a%84%e5%b0%8f%e6%b8%b8%e6%88%8f"
+  },
+  {
+    "id": 2643,
+    "title": "[GameFramework]Demo10-有限状态机的使用",
+    "date": "2018-04-27 21:36:27",
+    "categories": [
+      "Game Framework"
+    ],
+    "excerpt": "本文 Game Framework 版本：3.1.1 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archiv...",
+    "commentCount": 15,
+    "isTop": false,
+    "format": "md",
+    "postName": "gameframeworkdemo10-%e6%9c%89%e9%99%90%e7%8a%b6%e6%80%81%e6%9c%ba%e7%9a%84%e4%bd%bf%e7%94%a8"
+  },
+  {
+    "id": 2630,
+    "title": "[GameFramework]Demo8-NetWork网络连接、发送、接收数据",
+    "date": "2018-04-18 17:36:30",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "excerpt": "本文 Game Framework 版本：3.1.1 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archiv...",
+    "commentCount": 16,
+    "isTop": false,
+    "format": "md",
+    "postName": "demo8-network%e7%bd%91%e7%bb%9c%e8%bf%9e%e6%8e%a5%e3%80%81%e5%8f%91%e9%80%81%e3%80%81%e6%8e%a5%e6%94%b6%e6%95%b0%e6%8d%ae"
+  },
+  {
+    "id": 2615,
+    "title": "[GameFramework]Demo9-AssetBundle打包的一些坑",
+    "date": "2018-04-06 21:35:17",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "excerpt": "本文 Game Framework 版本：3.1.1 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archiv...",
+    "commentCount": 44,
+    "isTop": false,
+    "format": "md",
+    "postName": "gameframeworkdemo9-assetbundle%e6%89%93%e5%8c%85%e7%9a%84%e4%b8%80%e4%ba%9b%e5%9d%91"
+  },
+  {
+    "id": 2603,
+    "title": "[GameFramework]Demo7-发起Web请求",
+    "date": "2018-03-27 07:57:03",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "excerpt": "本文 Game Framework 版本：3.1.1 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archiv...",
+    "commentCount": 10,
+    "isTop": false,
+    "format": "md",
+    "postName": "gameframeworkdemo7-%e5%8f%91%e8%b5%b7web%e8%af%b7%e6%b1%82"
+  },
+  {
+    "id": 2597,
+    "title": "[GameFramework]Demo-StarForce无封装简陋不完全版",
+    "date": "2018-03-26 17:11:37",
+    "categories": [
+      "其它",
+      "Unity3D",
+      "Game Framework"
+    ],
+    "excerpt": "本文 Game Framework 版本：3.1.1 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archiv...",
+    "commentCount": 14,
+    "isTop": false,
+    "format": "md",
+    "postName": "gameframeworkdemo-starforce%e6%97%a0%e5%b0%81%e8%a3%85%e7%ae%80%e9%99%8b%e4%b8%8d%e5%ae%8c%e5%85%a8%e7%89%88"
+  },
+  {
+    "id": 2592,
+    "title": "《炼裙者》、《进化》临时下载地址",
+    "date": "2018-03-18 12:06:20",
+    "categories": [
+      "推广"
+    ],
+    "excerpt": "各位《炼裙者》和《进化》的玩家，由于TapTap整改，暂时无法在TapTap直接下载游戏，大家可以通过以下任意一个地址下载： 炼裙者-百度网盘：https://pan.baidu.com/s/1OEho4AjVjQ9WfW2S2y-XRQ 炼裙者-腾讯微云：https://share.weiyun....",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%8a%e7%82%bc%e8%a3%99%e8%80%85%e3%80%8b%e4%b8%b4%e6%97%b6%e4%b8%8b%e8%bd%bd%e5%9c%b0%e5%9d%80"
+  },
+  {
+    "id": 2587,
+    "title": "[GameFramework]Demo6-创建实体",
+    "date": "2018-03-16 17:20:28",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "excerpt": "本文 Game Framework 版本：3.1.1 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archiv...",
+    "commentCount": 14,
+    "isTop": false,
+    "format": "md",
+    "postName": "gameframeworkdemo6-%e5%88%9b%e5%bb%ba%e5%ae%9e%e4%bd%93"
+  },
+  {
+    "id": 2579,
+    "title": "[GameFramework]Demo5-加载配置文件",
+    "date": "2018-03-15 17:10:55",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "excerpt": "本文 Game Framework 版本：3.1.1 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archiv...",
+    "commentCount": 22,
+    "isTop": false,
+    "format": "md",
+    "postName": "gameframeworkdemo5-%e5%8a%a0%e8%bd%bd%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6"
+  },
+  {
+    "id": 2571,
+    "title": "[GameFramework]Demo4-内置事件订阅",
+    "date": "2018-03-09 17:44:56",
+    "categories": [
+      "Game Framework",
+      "Unity3D"
+    ],
+    "excerpt": "本文 Game Framework 版本：3.0.9 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archiv...",
+    "commentCount": 27,
+    "isTop": false,
+    "format": "md",
+    "postName": "demo4-%e5%86%85%e7%bd%ae%e4%ba%8b%e4%bb%b6%e8%ae%a2%e9%98%85"
+  },
+  {
+    "id": 2564,
+    "title": "[GameFramework]Demo3-加载UI",
+    "date": "2018-03-07 17:17:30",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "excerpt": "本文 Game Framework 版本：3.0.9 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archiv...",
+    "commentCount": 37,
+    "isTop": false,
+    "format": "md",
+    "postName": "demo3-%e5%8a%a0%e8%bd%bdui"
+  },
+  {
+    "id": 2548,
+    "title": "[GameFramework]Demo2-切换流程和场景",
+    "date": "2018-03-06 07:48:29",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "excerpt": "本文 Game Framework 版本：3.0.9 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archiv...",
+    "commentCount": 40,
+    "isTop": false,
+    "format": "md",
+    "postName": "gameframeworkdemo2-%e5%88%87%e6%8d%a2%e6%b5%81%e7%a8%8b%e5%92%8c%e5%9c%ba%e6%99%af"
+  },
+  {
+    "id": 2535,
+    "title": "[GameFramework]Demo1-如何创建一个GameFramework项目",
+    "date": "2018-03-02 17:45:53",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "excerpt": "本文 Game Framework 版本：3.0.9 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archiv...",
+    "commentCount": 17,
+    "isTop": false,
+    "format": "md",
+    "postName": "gameframeworkdemo1-%e5%a6%82%e4%bd%95%e5%88%9b%e5%bb%ba%e4%b8%80%e4%b8%aagameframework%e9%a1%b9%e7%9b%ae"
+  },
+  {
+    "id": 2521,
+    "title": "[Game Framework之StarForce解读]05.玩家飞机逻辑处理类",
+    "date": "2018-02-27 17:15:57",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "excerpt": "本文 Game Framework 版本：3.1.0 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archiv...",
+    "commentCount": 15,
+    "isTop": false,
+    "format": "md",
+    "postName": "game-framework%e4%b9%8bstarforce%e8%a7%a3%e8%af%bb05-%e7%8e%a9%e5%ae%b6%e9%a3%9e%e6%9c%ba%e9%80%bb%e8%be%91%e5%a4%84%e7%90%86%e7%b1%bb"
+  },
+  {
+    "id": 2507,
+    "title": "[Game Framework之StarForce解读]04.游戏场景",
+    "date": "2018-02-27 07:42:27",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "excerpt": "本文 Game Framework 版本：3.1.0 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archiv...",
+    "commentCount": 21,
+    "isTop": false,
+    "format": "md",
+    "postName": "game-framework%e4%b9%8bstarforce%e8%a7%a3%e8%af%bb04-%e6%b8%b8%e6%88%8f%e5%9c%ba%e6%99%af"
+  },
+  {
+    "id": 2495,
+    "title": "[Game Framework之StarForce解读]03.流程示例——ProcedureMenu",
+    "date": "2018-02-07 17:10:36",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "excerpt": "本文 Game Framework 版本：3.1.0 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archiv...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "3-%e6%b5%81%e7%a8%8b%e7%a4%ba%e4%be%8b-proceduremenu"
+  },
+  {
+    "id": 2486,
+    "title": "[Game Framework之StarForce解读]02.游戏入口",
+    "date": "2018-02-06 17:07:24",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "excerpt": "本文 Game Framework 版本：3.1.0 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archiv...",
+    "commentCount": 11,
+    "isTop": false,
+    "format": "md",
+    "postName": "starforce%e8%a7%a3%e8%af%bb02-%e6%b8%b8%e6%88%8f%e5%85%a5%e5%8f%a3"
+  },
+  {
+    "id": 2473,
+    "title": "[Game Framework之StarForce解读]01.StarForce下载运行",
+    "date": "2018-02-06 07:32:45",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "excerpt": "本文 Game Framework 版本：3.1.0 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archiv...",
+    "commentCount": 18,
+    "isTop": false,
+    "format": "md",
+    "postName": "1-starforce%e4%b8%8b%e8%bd%bd%e8%bf%90%e8%a1%8c"
+  },
+  {
+    "id": 2443,
+    "title": "Unity3D Entitas 入门篇03 总结",
+    "date": "2017-09-02 12:06:37",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "转载请注明，原文地址：http://www.benmutou.com/archives/2443 文章来源：笨木头与游戏开发 如果大家看完HelloWorld之后，还是一脸懵逼，那也算正常。 1. Entitas的主要思路 如果你熟悉ECS的话，可以很容易就理解这个框架，不熟悉也没关系，我们一起来熟...",
+    "commentCount": 3,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity3d-entitas-%e5%85%a5%e9%97%a8%e7%af%8703-%e6%80%bb%e7%bb%93"
+  },
+  {
+    "id": 2431,
+    "title": "Unity3D Entitas 入门篇02 当然是HelloWorld",
+    "date": "2017-09-01 20:54:45",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "转载请注明，原文地址：http://www.benmutou.com/archives/2431 文章来源：笨木头与游戏开发 要说学习新的东西，有什么能比得上一个HelloWorld呢？ 一个HelloWorld还学不会，那就来两个。 1. Entity（实体）、Component（组件）、Syst...",
+    "commentCount": 7,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity3d-entitas-%e5%85%a5%e9%97%a8%e7%af%8702-%e5%bd%93%e7%84%b6%e6%98%afhelloworld"
+  },
+  {
+    "id": 2421,
+    "title": "Unity3D Entitas 入门篇01 介绍和安装",
+    "date": "2017-09-01 20:28:40",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "转载请注明，原文地址：http://www.benmutou.com/archives/2421 文章来源：笨木头与游戏开发 大家都知道，木头一直都没有在大的游戏公司待过，没见识也没经历过优秀的项目。最近想研究一些开源的Unity3D框架，开拓一下自己的思维。 优先入坑的是Entitas框架，本系列...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity3d-entitas-%e5%85%a5%e9%97%a8%e7%af%8701-%e4%bb%8b%e7%bb%8d%e5%92%8c%e5%ae%89%e8%a3%85"
+  },
+  {
+    "id": 2410,
+    "title": "iTween和DOTween的选择",
+    "date": "2017-08-05 11:03:43",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "转载请注明，原文地址：http://www.benmutou.com/archives/2410 文章来源：笨木头与游戏开发 在游戏开发里，补间动画是不可少的，像简单的向前移动、上下重复飘动、按照预设路径移动等。这些功能要是都自己写的话，游戏得开发到何年何月，所以我们必须要用现成的工具。 1.iTw...",
+    "commentCount": 8,
+    "isTop": false,
+    "format": "md",
+    "postName": "itween%e5%92%8cdotween%e7%9a%84%e9%80%89%e6%8b%a9"
+  },
+  {
+    "id": 2407,
+    "title": "Unity3D第二款游戏《进化》低调发布",
+    "date": "2017-08-04 07:43:31",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "1. 初衷 《进化》这款游戏，实际上是一年多以前开始做的，那时候只是突然有个想法——一个飞行射击游戏，吃了道具会进化，吃错了就进化成恶心的路线。 后来因为公司的事多，虽然不用加班，但也没精力做这个游戏，一直搁置了。 2.有始有终 在Unity3D上，我烂尾的游戏也不是没有，在进化之前还有一款放置类的...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity3d%e7%ac%ac%e4%ba%8c%e6%ac%be%e6%b8%b8%e6%88%8f%e3%80%8a%e8%bf%9b%e5%8c%96%e3%80%8b%e4%bd%8e%e8%b0%83%e5%8f%91%e5%b8%83"
+  },
+  {
+    "id": 2403,
+    "title": "同时提高工作效率与缓解颈椎的良方",
+    "date": "2017-07-28 20:43:33",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "作为一名天天对着电脑写代码的开发者，脖子酸只是小事，颈椎难受才是大事。 很不幸，木头的颈椎也不怎么好（对，就是很多年前被某个CEO逼的连续7天超负荷工作后留下的病），只要在电脑面前坐着超过1小时就会不舒服，要是一整天都坐着，那完了，颈椎会很不舒服，就连肚子都会晕。最严重那段日子，是天天都不舒服，必须...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e5%90%8c%e6%97%b6%e6%8f%90%e9%ab%98%e5%b7%a5%e4%bd%9c%e6%95%88%e7%8e%87%e4%b8%8e%e7%bc%93%e8%a7%a3%e9%a2%88%e6%a4%8e%e7%9a%84%e8%89%af%e6%96%b9"
+  },
+  {
+    "id": 2394,
+    "title": "《守护裙子》小说化",
+    "date": "2017-07-03 19:43:37",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "游戏小说化 大家经常听到的是小说被做成游戏，我这正好相反，我把自己游戏的剧情写成小说了。 如果大家对我比较熟悉的话，应该也知道，我比较善于写剧情+战斗类型的游戏，这是因为我喜欢写剧情。 曾经的想法终于行动了 至于小说，几年前就想写了，但是没有勇气，这一直是我的一个遗憾。 我很想体验一下写小说的感觉，...",
+    "commentCount": 3,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%8a%e5%ae%88%e6%8a%a4%e8%a3%99%e5%ad%90%e3%80%8b%e5%b0%8f%e8%af%b4%e5%8c%96"
+  },
+  {
+    "id": 2388,
+    "title": "一位Cocos2d-x和Unity3D双修者谈谈它们的区别",
+    "date": "2017-06-21 18:55:29",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "木头玩了几年的Cocos2d-x，从2.0beta版本直到3.2，后来便转去玩Unity3D了，断断续续玩了2年多。 有不少朋友问过我，Cocos2d-x和Unity3D怎么选？有什么区别？ 今天我就来吹吹这方面的水吧。 1. 哪个容易入门？ 要说入门，大部分人会觉得Unity3D简单很多，其实不是...",
+    "commentCount": 16,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e4%b8%80%e4%bd%8dcocos2d-x%e5%92%8cunity3d%e5%8f%8c%e4%bf%ae%e8%80%85%e8%b0%88%e8%b0%88%e5%ae%83%e4%bb%ac%e7%9a%84%e5%8c%ba%e5%88%ab"
+  },
+  {
+    "id": 2367,
+    "title": "[Unity3D·CSV篇]目录",
+    "date": "2017-06-11 12:42:29",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "木头之前分享了一份缓存、读取CSV文件的代码（http://www.benmutou.com/archives/2300），一直想顺便写个教程。 但是最近太忙了，我好久好久之前就一直在写的一个Unity3D游戏也一直没写完，终于在这周末写完了。 于是我就一鼓作气，把这CSV的教程也写了。 教程目录：...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity3d%c2%b7csv%e7%af%87%e7%9b%ae%e5%bd%95"
+  },
+  {
+    "id": 2361,
+    "title": "[Unity3D·CSV篇]04.CSV高级缓存",
+    "date": "2017-06-11 12:29:33",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "转载请注明，原文地址：http://www.benmutou.com/archives/2361文章来源：笨木头与游戏开发 1. 存放所有缓存的字典对象 新的缓存方式也不复杂，也是新建一个缓存类： [cce_cs] public class CsvDataCached_Higher { /// <s...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity3d%c2%b7csv%e7%af%8704-csv%e9%ab%98%e7%ba%a7%e7%bc%93%e5%ad%98"
+  },
+  {
+    "id": 2352,
+    "title": "[Unity3D·CSV篇]03.CSV初级缓存",
+    "date": "2017-06-11 12:26:12",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "转载请注明，原文地址：http://www.benmutou.com/archives/2352 文章来源：笨木头与游戏开发 既然数据对象都有了，要缓存起来，真是太简单了，新建一个专门缓存CSV文件对象的类： [cce_cs] public class CsvDataCached_Newer { /...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity3d%c2%b7csv%e7%af%8703-csv%e5%88%9d%e7%ba%a7%e7%bc%93%e5%ad%98"
+  },
+  {
+    "id": 2346,
+    "title": "[Unity3D·CSV篇]02.CSV高手级读取",
+    "date": "2017-06-11 11:20:10",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "转载请注明，原文地址：http://www.benmutou.com/archives/2346文章来源：笨木头与游戏开发 在上一篇中，保存CSV文件每一行的数据为CSVDemo对象时，总是要用if条件判断当前是哪个字段，然后再给对象赋值。 这样太烦人了，要是在开发的过程中不断地有新的想法，不断地新...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity3d%c2%b7csv%e7%af%8702-csv%e9%ab%98%e7%ba%a7%e7%ba%a7%e8%af%bb%e5%8f%96"
+  },
+  {
+    "id": 2337,
+    "title": "[Unity3D·CSV篇]01.CSV新手级读取",
+    "date": "2017-06-11 11:08:59",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "转载请注明，原文地址：http://www.benmutou.com/archives/2337文章来源：笨木头与游戏开发 CSV文件的读取是非常简单的，本篇木头就给CSV新手简单又详细地吹吹水，阿不是，详细地聊聊如何读取CSV文件。 1. 创建CSV文件 首先，用Ron's Editor创建一个新...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity3d%c2%b7csv%e7%af%8701-csv%e6%96%b0%e6%89%8b%e7%ba%a7%e8%af%bb%e5%8f%96"
+  },
+  {
+    "id": 2325,
+    "title": "[Unity3D·CSV篇]00.CSV是什么？",
+    "date": "2017-06-11 11:03:08",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "转载请注明，原文地址：http://www.benmutou.com/archives/2325 文章来源：笨木头与游戏开发 如果你们有看过木头的其他教程的话，应该会发现，木头大部分时间都在用CSV格式的文件作为游戏的配置文件（旁白：是不是太久没写教程了，连语句都这么不通顺）。 1. CSV是什么？...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "unity3d%c2%b7csv%e7%af%8700-csv%e6%98%af%e4%bb%80%e4%b9%88%ef%bc%9f"
+  },
+  {
+    "id": 2313,
+    "title": "关于《守护裙子OL》近期无法连接服务器的说明",
+    "date": "2017-05-07 16:09:24",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "1.失去连接的几周 各位守护裙子OL的玩家，最近几周如果你们还在关注这款游戏的话，可能已经发现，游戏再也登不上了。 这是因为服务器硬件升级了，导致IP也发生变化。曾经太年轻的我以为IP写死没关系，于是，我就没法随时改变IP，导致大家都连不上游戏。 2.无能为力 听不懂没关系，总之就是，之前游戏连不上...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e5%85%b3%e4%ba%8e%e3%80%8a%e5%ae%88%e6%8a%a4%e8%a3%99%e5%ad%90ol%e3%80%8b%e8%bf%91%e6%9c%9f%e6%97%a0%e6%b3%95%e8%bf%9e%e6%8e%a5%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%9a%84%e8%af%b4%e6%98%8e"
+  },
+  {
+    "id": 2300,
+    "title": "用于Unity上的CSV文件读取工具，一句代码缓存、提取",
+    "date": "2017-05-03 20:14:11",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "用于Unity上的CSV文件读取工具，兼具缓存、提取功能。 ♦功能说明 1.支持读取并缓存CSV文件，支持PC端和Android端，不支持iOS 2.只需创建与CSV文件结构对应的类即可，细节无需关心，工具类会自动帮你读取并缓存数据 3.随时读取已缓存的CSV文件对象，也可单独读取CSV文件的某一I...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%94%a8%e4%ba%8eunity%e4%b8%8a%e7%9a%84csv%e6%96%87%e4%bb%b6%e8%af%bb%e5%8f%96%e5%b7%a5%e5%85%b7%ef%bc%8c%e4%b8%80%e5%8f%a5%e4%bb%a3%e7%a0%81%e7%bc%93%e5%ad%98%e3%80%81%e6%8f%90%e5%8f%96"
+  },
+  {
+    "id": 2295,
+    "title": "[笨木头“创2”路]No.6 接近分裂的全栈技术\"总监\"",
+    "date": "2017-04-26 20:06:12",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "又好久没更新这个系列的文章了，最近特别特别多事情，以至于，我似乎快要崩溃了。 创业公司一人身兼多职是家常便饭，然而我似乎已经到了疯狂的地步了，这次我就来吹吹水吧，聊聊我这个弱不禁风的伪技术总监的全栈之路，噢不，是“全栈之路”（必须加双引号）。 1. 技术“总监”？ 大家别误会，我才不是什么技术总监，...",
+    "commentCount": 20,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4%e5%88%9b2%e8%b7%afno-6-%e6%8e%a5%e8%bf%91%e5%88%86%e8%a3%82%e7%9a%84%e5%85%a8%e6%a0%88%e6%8a%80%e6%9c%af%e6%80%bb%e7%9b%91"
+  },
+  {
+    "id": 2291,
+    "title": "提高开发者战斗力的护眼模式",
+    "date": "2017-04-22 12:49:16",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "木头是一个高度近视眼，同时还有一点点干眼症状，电脑屏幕必须调很暗，否则根本没法工作。 不过，这些都已成为过去了，因为我有了无所不在的护眼模式。 1.Windows10的新功能——夜灯 只要进入windows设置，然后进入系统设置，找到显示设置（特么的，还挺啰嗦的），里面就有一个夜灯功能。 点击夜灯设...",
+    "commentCount": 1,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e6%8f%90%e9%ab%98%e5%bc%80%e5%8f%91%e8%80%85%e6%88%98%e6%96%97%e5%8a%9b%e7%9a%84%e6%8a%a4%e7%9c%bc%e6%a8%a1%e5%bc%8f"
+  },
+  {
+    "id": 2281,
+    "title": "博客服务器将于2017-04-01 16:37:21进行升级迁移",
+    "date": "2017-03-30 13:49:25",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "木头的博客会在【2017-04-01 16:37:21】开始进行升级迁移咯，到时候会暂时无法访问。 服务器商预计需要15分钟，但是我需要重新做一些配置，估计1至2天内无法访问，十分抱歉。",
+    "commentCount": 1,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e5%8d%9a%e5%ae%a2%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%b0%86%e4%ba%8e2017-04-01-163721%e8%bf%9b%e8%a1%8c%e5%8d%87%e7%ba%a7%e8%bf%81%e7%a7%bb"
+  },
+  {
+    "id": 2244,
+    "title": "【Unity3D杂记】关于iTween的oncomplete函数无法执行的问题",
+    "date": "2016-12-15 08:31:08",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "笨木头花心贡献，啥？花心？不，是用心。 转载请注明，原文地址：http://www.benmutou.com/archives/2244 文章来源：笨木头与游戏开发 1. 问题 iTween是很方便的一个动画工具，用起来也非常顺手，最近偶然遇到一个问题——oncomplete指定的函数没有被执行。 ...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90unity3d%e6%9d%82%e8%ae%b0%e3%80%91%e5%85%b3%e4%ba%8eitween%e7%9a%84oncomplete%e5%87%bd%e6%95%b0%e6%97%a0%e6%b3%95%e6%89%a7%e8%a1%8c%e7%9a%84%e9%97%ae%e9%a2%98"
+  },
+  {
+    "id": 2241,
+    "title": "【Unity3D杂记】发布到WebGL中使用WWW读取csv文件总是失败",
+    "date": "2016-12-08 08:32:49",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "废话： 最近老板要我做一个培训游戏，由于我们公司主要是做网站的，自然是要做网页版的游戏了。 如果让我用网页端的技术来开发游戏，实在是有心无力，于是我提议用我最熟悉的技术来做，毫无疑问，只能选择Unity3D了。 在Unity3D的新版本中（我使用的是5.4.2），已经不支持生成WebPlayer了，...",
+    "commentCount": 5,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90unity3d%e6%9d%82%e8%ae%b0%e3%80%91%e5%8f%91%e5%b8%83%e5%88%b0webgl%e4%b8%ad%e4%bd%bf%e7%94%a8www%e8%af%bb%e5%8f%96csv%e6%96%87%e4%bb%b6%e6%80%bb%e6%98%af%e5%a4%b1%e8%b4%a5"
+  },
+  {
+    "id": 2239,
+    "title": "木头要开公众号了！",
+    "date": "2016-12-06 09:26:31",
+    "categories": [
+      "推广"
+    ],
+    "excerpt": "我很久很久没写教程了，虽然有很多借口，但是，最终的原因还是懒。 于是，我想，要不开个公众号吧，激励一下自己，希望能坚持写教程。 不定期更新咯，目前只更新了2篇，希望能继续坚持，也希望能找回以前写教程的感觉。",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e6%9c%a8%e5%a4%b4%e8%a6%81%e5%bc%80%e5%85%ac%e4%bc%97%e5%8f%b7%e4%ba%86%ef%bc%81"
+  },
+  {
+    "id": 2235,
+    "title": "一个坎：算法",
+    "date": "2016-10-12 15:08:03",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "一直以来最纠结的就是我算法的能力，实在是不敢说出口。 最近竟然想补补数学，然后补补算法。 我竟然，我竟然从初中数学开始补起。 还别说，好多名词都忘了。。。 所以，祝我好运。",
+    "commentCount": 7,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e4%b8%80%e4%b8%aa%e5%9d%8e%ef%bc%9a%e7%ae%97%e6%b3%95"
+  },
+  {
+    "id": 2210,
+    "title": "[笨木头“创2”路]No.5 起色",
+    "date": "2016-02-25 21:40:36",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "好久好久好久没有写文章了，之前住的地方没有弄上网，主要是想专心做事情。 毕竟有得上网就特别容易走神。 但最近晚上也没做什么事情了，身体不好了，一身酸，所以晚上都是做做热身运动。 而且天气冷，早早就钻被窝里了，哈哈哈。 有朋友发邮件问我为什么不更新这个系列的文章了，以上就是原因了。 年纪大了，写篇文章...",
+    "commentCount": 7,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4%e5%88%9b2%e8%b7%afno-5-%e8%b5%b7%e8%89%b2"
+  },
+  {
+    "id": 2196,
+    "title": "【笨木头Unity】入门之旅010（完结）：Demo之四处找死（五）_UI",
+    "date": "2015-11-15 11:17:16",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "UI是游戏里必不可少的元素，在Unity里添加UI是比较轻松的事情，但要玩好它，可就不那么轻松了。 没关系，先入门。 笨木头花心贡献，啥？花心？不，是用心。 转载请注明，原文地址：http://www.benmutou.com/archives/2196 文章来源：笨木头与游戏开发 1.创建UI 很...",
+    "commentCount": 18,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4unity%e3%80%91%e5%85%a5%e9%97%a8%e4%b9%8b%e6%97%85010%ef%bc%88%e5%ae%8c%e7%bb%93%ef%bc%89%ef%bc%9ademo%e4%b9%8b%e5%9b%9b%e5%a4%84%e6%89%be%e6%ad%bb%ef%bc%88"
+  },
+  {
+    "id": 2176,
+    "title": "【笨木头Unity】入门之旅009：Demo之四处找死（四）_在代码里操作物体",
+    "date": "2015-11-15 11:04:29",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "有没有发现越往后写，旁白出现的次数越少？ 是的，最近公司出了点小问题，思绪就变得沉重了一些，思绪一沉重，我的精神分裂就很难发作。 不唠叨了，这次我们来试试在代码里操作物体吧，很简单很简单的。 笨木头花心贡献，啥？花心？不，是用心。 转载请注明，原文地址：http://www.benmutou.com...",
+    "commentCount": 5,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4unity%e3%80%91%e5%85%a5%e9%97%a8%e4%b9%8b%e6%97%85009%ef%bc%9ademo%e4%b9%8b%e5%9b%9b%e5%a4%84%e6%89%be%e6%ad%bb%ef%bc%88%e5%9b%9b%ef%bc%89_%e5%9c%a8%e4%bb%a3"
+  },
+  {
+    "id": 2157,
+    "title": "【笨木头Unity】入门之旅008：Demo之四处找死（三）_触发器",
+    "date": "2015-11-12 08:18:44",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "好了，游戏开始进入奇怪的阶段了，接下来我们要在场景里放上地雷，终结这个帅气的BugPlayer吧。 笨木头花心贡献，啥？花心？不，是用心。 转载请注明，原文地址：http://www.benmutou.com/archives/2157 文章来源：笨木头与游戏开发 1.Sphere物体 除了Cube...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4unity%e3%80%91%e5%85%a5%e9%97%a8%e4%b9%8b%e6%97%85008%ef%bc%9ademo%e4%b9%8b%e5%9b%9b%e5%a4%84%e6%89%be%e6%ad%bb%ef%bc%88%e4%b8%89%ef%bc%89_%e8%a7%a6%e5%8f%91"
+  },
+  {
+    "id": 2131,
+    "title": "【笨木头Unity】入门之旅007：Demo之四处找死（二）_主角移动和旋转",
+    "date": "2015-11-07 11:02:27",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "上一篇我们仅仅是创建了场景和主角，暂时不具备任何玩法。 这次，我们来看看怎么让主角移动起来。 笨木头花心贡献，啥？花心？不，是用心。 转载请注明，原文地址：http://www.benmutou.com/archives/2131 文章来源：笨木头与游戏开发 1.Update，又是Update 似乎...",
+    "commentCount": 3,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4unity%e3%80%91%e5%85%a5%e9%97%a8%e4%b9%8b%e6%97%85007%ef%bc%9ademo%e4%b9%8b%e5%9b%9b%e5%a4%84%e6%89%be%e6%ad%bb%ef%bc%88%e4%ba%8c%ef%bc%89_%e4%b8%bb%e8%a7%92"
+  },
+  {
+    "id": 2110,
+    "title": "【笨木头Unity】入门之旅006：Demo之四处找死（一）_场景和主角",
+    "date": "2015-11-05 12:52:15",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "终于把一些基本的东西介绍完了，我不想再介绍无聊的菜单和快捷键了，这些东西大家自己在折腾的过程中慢慢熟悉就好。 有什么不懂的就问度娘，不喜欢度娘的，可以找谷歌。 这次，我们来开始一个很简单的Demo，我突然想到一个游戏，又或者只能叫做Demo。 一个人物，可以四处走动，地图上有很多暗雷，踩到之后会随机...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4unity%e3%80%91%e5%85%a5%e9%97%a8%e4%b9%8b%e6%97%85006%ef%bc%9ademo%e4%b9%8b%e5%9b%9b%e5%a4%84%e6%89%be%e6%ad%bb%ef%bc%88%e4%b8%80%ef%bc%89"
+  },
+  {
+    "id": 2094,
+    "title": "[笨木头Unity3D]杂记003·Unity在Android中读取文件",
+    "date": "2015-11-02 07:48:34",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "这周被一个问题给折腾了几个晚上，那就是在Android中读取文件，这本是一件很简单的事情，可想象总是美好的。 笨木头花心贡献，啥？花心？不，是用心。 转载请注明，原文地址：http://www.benmutou.com/archives/2094 文章来源：笨木头与游戏开发 1.在电脑上读取文件 首...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4unity3d%e6%9d%82%e8%ae%b0003%c2%b7unity%e5%9c%a8android%e4%b8%ad%e8%af%bb%e5%8f%96%e6%96%87%e4%bb%b6"
+  },
+  {
+    "id": 2089,
+    "title": "【笨木头Unity】入门之旅005:正常人都要掌握的操作",
+    "date": "2015-10-28 07:39:43",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "各位，对不起，我一直都很想快点进入代码的教程，但是不知道为什么，老是在编辑器这边徘徊。 这不，本篇又要介绍编辑器了，唉。（小若：好可怜...个屁吖，还不是你自己要介绍的！） 笨木头花心贡献，啥？花心？不，是用心。 转载请注明，原文地址：http://www.benmutou.com/archives...",
+    "commentCount": 10,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4unity%e3%80%91%e5%85%a5%e9%97%a8%e4%b9%8b%e6%97%85005%e6%ad%a3%e5%b8%b8%e4%ba%ba%e9%83%bd%e8%a6%81%e6%8e%8c%e6%8f%a1%e7%9a%84%e6%93%8d%e4%bd%9c"
+  },
+  {
+    "id": 2063,
+    "title": "【笨木头Unity】入门之旅004：地形初初初级介绍",
+    "date": "2015-10-23 22:26:59",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "我突然有点不知所措，Unity的教程果然很难写，我有点不知道该从哪个话题开始写起。 我想，从地形开始写起？这个用的比较多，嗯，就它吧。（小若：不知道为什么，我总感觉好像很随便的样子） 笨木头花心贡献，啥？花心？不，是用心。 转载请注明，原文地址：http://www.benmutou.com/arc...",
+    "commentCount": 4,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4unity%e3%80%91%e5%85%a5%e9%97%a8%e4%b9%8b%e6%97%85004%ef%bc%9a%e5%9c%b0%e5%bd%a2%e5%88%9d%e5%88%9d%e5%88%9d%e7%ba%a7%e4%bb%8b%e7%bb%8d"
+  },
+  {
+    "id": 2057,
+    "title": "【笨木头Unity】入门之旅003：HelloWorld",
+    "date": "2015-10-21 07:44:46",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "有人跟我说：你特么的都写了3篇了，什么实际的东西都没有。（小若：特么的根本就没人评论你的教程！） 这么说就不对了，教程只是配菜，吐槽才是主菜，你们觉得呢。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/2057 文章...",
+    "commentCount": 7,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4unity%e3%80%91%e5%85%a5%e9%97%a8%e4%b9%8b%e6%97%85003%ef%bc%9ahelloworld"
+  },
+  {
+    "id": 2044,
+    "title": "【笨木头Unity】入门之旅002：不谈对象，咱们谈组件",
+    "date": "2015-10-21 07:40:04",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "今天有人问了一个一直以来都让我很纠结的问题：木头为什么长得这么帅？（小若：不就是一个瞎子随便问了个问题嘛，至于吗？） 这，大家以后别问我这个问题了，我真的不知道怎么回答，我尝试过很多变丑的方法，但是都失败了。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.be...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4unity%e3%80%91%e5%85%a5%e9%97%a8%e4%b9%8b%e6%97%85002%ef%bc%9a%e4%b8%8d%e8%b0%88%e5%af%b9%e8%b1%a1%ef%bc%8c%e5%92%b1%e4%bb%ac%e8%b0%88%e7%bb%84%e4%bb%b6"
+  },
+  {
+    "id": 2035,
+    "title": "【笨木头Unity】入门之旅001：学游泳的第一步是下水",
+    "date": "2015-10-17 23:19:27",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "这次的教程更像是我个人的学习记录，所以不一定是从零开始，更多的是，从另一个引擎转战到Unity的教程。 学游泳的第一步，不用说了，必定要下水。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/2035 文章来源：笨木头...",
+    "commentCount": 4,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4unity%e3%80%91%e5%85%a5%e9%97%a8%e4%b9%8b%e6%97%85001%ef%bc%9a%e5%ad%a6%e6%b8%b8%e6%b3%b3%e7%9a%84%e7%ac%ac%e4%b8%80%e6%ad%a5%e6%98%af%e4%b8%8b%e6%b0%b4"
+  },
+  {
+    "id": 2032,
+    "title": "【笨木头Unity】入门之旅000：前言（含教程目录导航）",
+    "date": "2015-10-17 22:44:04",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "木头我最近心血来潮，想重拾当年写教程的热血状态，包括旁白小若也一并复活。 1.木头正式宣布转战Unity3D 其实研究Unity3D有一段时间了，只是业余研究，断断续续的，所以基础还是很弱的。 为什么这里要说正式宣布转战Unity3D呢？ 因为Cocos引擎让我彻底失望了，仅仅是因为一件事情——Co...",
+    "commentCount": 18,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4unity%e3%80%91%e5%85%a5%e9%97%a8%e4%b9%8b%e6%97%85000%ef%bc%9a%e5%89%8d%e8%a8%80"
+  },
+  {
+    "id": 2029,
+    "title": "[笨木头“创2”路]No.4 即将度过的磨合期",
+    "date": "2015-10-17 18:13:53",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "又很久没写文字了，既然这个系列的文章还能继续更新，就代表公司还活着，直到，停止更新的那一天。 公司发展方面我就不多说了，这个系列仅仅是作为我个人的吐槽。 1.我成功改变一个人了 说实话，这个小标题让我感慨万千，那位【流氓股】终于有一些发自内心的改变了。 我曾经教过他很多很多，关于代码风格、代码设计、...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4%e5%88%9b2%e8%b7%afno-4-%e5%8d%b3%e5%b0%86%e5%ba%a6%e8%bf%87%e7%9a%84%e7%a3%a8%e5%90%88%e6%9c%9f"
+  },
+  {
+    "id": 2017,
+    "title": "[笨木头“创2”路]No.3 风波与潜力挖掘",
+    "date": "2015-08-27 20:07:56",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "从这篇文章开始，这个系列的标题由[笨木头管理者之路]改为[笨木头“创2”路]。 这是因为我觉得之前的标题有点哗众取宠的感觉，“创2”意思是“创业路2”，因为这是我第二次加入到创业公司。 1.稳中求胜 我们公司的业务决定了我们无法像游戏开发那样很快就能看到结果。 我们必须耐得住性子，一步步前行。 也许...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4%e5%88%9b2%e8%b7%afno-3-%e9%a3%8e%e6%b3%a2%e4%b8%8e%e6%bd%9c%e5%8a%9b%e6%8c%96%e6%8e%98"
+  },
+  {
+    "id": 1997,
+    "title": "[笨木头“创2”路]No.2 我的强迫症",
+    "date": "2015-06-18 21:33:14",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "不知不觉，我在老师的公司里也待了有半年了，说实话，我吓了一跳，时间过得真的好快。 而这半年来，我唯一感到彷徨的就是——我的游戏开发技术毫无进展，甚至在倒退。 1.守护爱好的结果 因为刚毕业就在游戏创业公司待了2年，受尽折磨、尝尽冷暖，同时因为真的爱上创作的滋味，我已对所有游戏公司失去了期待。 但不代...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4%e5%88%9b2%e8%b7%afno-2-%e6%88%91%e7%9a%84%e5%bc%ba%e8%bf%ab%e7%97%87"
+  },
+  {
+    "id": 1985,
+    "title": "[笨木头Unity3D]杂记002·为什么有时候播放音乐(音效)会没有声音？",
+    "date": "2015-06-03 07:41:24",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "1.问题描述 昨晚，我遇到的情况如下： 1.MainCamera里有Audio Source，并且在循环播放音乐 2.在其他的GameObject中也新增一个Audio Source，在某个时机播放音效 3.GameObject中播放音效没有反应（没声音） 笨木头花心贡献，啥？花心？不呢，是用心~ ...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4unity3d%e6%9d%82%e8%ae%b0002%c2%b7%e4%b8%ba%e4%bb%80%e4%b9%88%e6%9c%89%e6%97%b6%e5%80%99%e6%92%ad%e6%94%be%e9%9f%b3%e4%b9%90%e9%9f%b3%e6%95%88%e4%bc%9a%e6%b2%a1%e6%9c%89"
+  },
+  {
+    "id": 1983,
+    "title": "[笨木头Unity3D]杂记001·打包的APK 安装后无法切换场景的解决方案",
+    "date": "2015-06-03 07:35:48",
+    "categories": [
+      "Unity3D"
+    ],
+    "excerpt": "从Unity中打包生成APK，自己把APK拷到手机进行安装，或者双击apk进行安装，运行游戏，发现无法切换场景。 而直接在Unity中Build And Run却没有这个问题。（场景都勾选了） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.c...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4unity3d%e6%9d%82%e8%ae%b0001%c2%b7%e6%89%93%e5%8c%85%e7%9a%84apk-%e5%ae%89%e8%a3%85%e5%90%8e%e6%97%a0%e6%b3%95%e5%88%87%e6%8d%a2%e5%9c%ba%e6%99%af%e7%9a%84%e8%a7%a3"
+  },
+  {
+    "id": 1967,
+    "title": "木头的第一款Unity3D手游《只有一关》低调发布",
+    "date": "2015-05-20 20:14:33",
+    "categories": [
+      "推广"
+    ],
+    "excerpt": "（多图，手机流量党慎入） 1.开场白 额，没错，我一不小心就放弃了cocos，并不是因为它不好，只是我比较喜欢创作，而不是技术本身。 Unity3D的编辑器比较符合我的需求，所以我就转战U3D了，唉，反正我都成了业余独立游戏开发了，无所谓了... 2.开发周期及盈利？ 这款手游写了蛮久的，都是业余写...",
+    "commentCount": 34,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e6%9c%a8%e5%a4%b4%e7%9a%84%e7%ac%ac%e4%b8%80%e6%ac%beunity3d%e6%89%8b%e6%b8%b8%e3%80%8a%e5%8f%aa%e6%9c%89%e4%b8%80%e5%85%b3%e3%80%8b%e4%bd%8e%e8%b0%83%e5%8f%91%e5%b8%83"
+  },
+  {
+    "id": 1963,
+    "title": "[笨木头“创2”路]No.1 人才难求，只怪自己不是好伯乐。",
+    "date": "2015-05-01 18:27:57",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "是的，我又陪创业去了，不过这回不是游戏公司，而且也不是出于我的本意。 世事难料，但我依旧很感恩，感谢上天给了那么多的好机遇给我，我很满足。 1.木头，你的独立游戏开发者之旅呢？ 我做了一年多的全职独立游戏开发者，最好的成绩是一天收入5、6百，最差的是一天收入40、50。 这一路走来各种坎坷，被坑过、...",
+    "commentCount": 34,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4%e5%88%9b2%e8%b7%afno-1-%e4%ba%ba%e6%89%8d%e9%9a%be%e6%b1%82%ef%bc%8c%e5%8f%aa%e6%80%aa%e8%87%aa%e5%b7%b1%e4%b8%8d%e6%98%af%e5%a5%bd%e4%bc%af"
+  },
+  {
+    "id": 1959,
+    "title": "【1元开源计划】——Cocos2d-x3.2+Lua《三色地狱》源码",
+    "date": "2015-04-14 20:04:06",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "之前做过一次【1元开源计划】，参与的朋友很多。 这次木头再拿一份游戏源码出来做【1元开源计划】，注意，这不是做慈善，是有目的的。 目的就是宣传我的淘宝店，所以，各取所需，我就不说一大堆冠冕堂皇的话了。 出售的游戏源码为Cocos2d-x3.2+lua编写的ARPG游戏——《三色地狱》，比之前的跑酷源...",
+    "commentCount": 9,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%901%e5%85%83%e5%bc%80%e6%ba%90%e8%ae%a1%e5%88%92%e3%80%91-cocos2d-x3-2lua%e3%80%8a%e4%b8%89%e8%89%b2%e5%9c%b0%e7%8b%b1%e3%80%8b%e6%ba%90%e7%a0%81"
+  },
+  {
+    "id": 1952,
+    "title": "本周淘宝源码出售暂停（实属意外）",
+    "date": "2015-04-01 20:57:17",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "虽然最近没有发布新的源码商品，但一直都有朋友跟我买源码。 近日我的淘宝店因为放错类目而被下架，好像是淘宝最近在做清退行动吧，重新上架遇到系统问题，现在需要等待反馈。 本周只好暂停出售源码了，各位（有意买源码的朋友）抱歉。 AD：木头淘宝店 benmutou.taobao.com （因为下架了，现在是...",
+    "commentCount": 3,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e6%9c%ac%e5%91%a8%e6%b7%98%e5%ae%9d%e6%ba%90%e7%a0%81%e5%87%ba%e5%94%ae%e6%9a%82%e5%81%9c%ef%bc%88%e5%ae%9e%e5%b1%9e%e6%84%8f%e5%a4%96%ef%bc%89"
+  },
+  {
+    "id": 1948,
+    "title": "我是如何成为“大神”的",
+    "date": "2015-03-14 23:18:38",
+    "categories": [
+      "调皮一下"
+    ],
+    "excerpt": "好久没写教程了，确实是懒了，但也真的很忙碌。 最重要的是，写教程的牛人越来越多，我似乎也没什么能写的了，让年轻人去写吧。（小若：你老人家几岁？） 1.木头大神？ 这篇文章的标题很自大，其实相反，我是来澄清的。 我一开始写教程的时候，是什么都不懂的，是个超级菜鸟（可以翻翻我在CSDN前面的那些文章）。...",
+    "commentCount": 38,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e6%88%91%e6%98%af%e5%a6%82%e4%bd%95%e6%88%90%e4%b8%ba%e5%a4%a7%e7%a5%9e%e7%9a%84"
+  },
+  {
+    "id": 1941,
+    "title": "【笨木头C++】基与基础12：函数模板（下）",
+    "date": "2015-01-07 21:16:14",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "最近突然想研究研究Unity3D了，于是我就开始去研究了，希望坑别太大，比Cocos2d-x少就好。 我也很久没有出新游戏了，因为我最近在写一个网站，有个点子，一直没敢跨出第一步，现在总算跨出了。 为什么用网站来实现？不知道，可能好玩吧... 咳咳，跑题了，上一篇简单介绍了C++的函数模板，说实话，...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4c%e3%80%91%e5%9f%ba%e4%b8%8e%e5%9f%ba%e7%a1%8012%ef%bc%9a%e5%87%bd%e6%95%b0%e6%a8%a1%e6%9d%bf%ef%bc%88%e4%b8%8b%ef%bc%89"
+  },
+  {
+    "id": 1938,
+    "title": "【笨木头C++】基与基础11：函数模板（上）",
+    "date": "2015-01-04 20:56:52",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "距离上一篇已经过去1个多月了，感觉断更太久不是好事，所以我在百忙之中抽时间更一下（小若：说得好像我们在等着你写教程似的~！） 因为最近事多，还没脱离繁忙时期，所以就.. 内容少一些好了~ 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4c%e3%80%91%e5%9f%ba%e4%b8%8e%e5%9f%ba%e7%a1%8011%ef%bc%9a%e5%87%bd%e6%95%b0%e6%a8%a1%e6%9d%bf%ef%bc%88%e4%b8%8a%ef%bc%89"
+  },
+  {
+    "id": 1928,
+    "title": "【笨木头C++】基与基础10：又是函数之引用",
+    "date": "2014-11-18 21:10:53",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "还记得之前说过，函数的参数用指针，可以避免拷贝产生额外的开销吗？ 这次要来介绍一个类似的参数，那就是引用参数。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1928 文章来源：笨木头与游戏开发 1.什么是引用？ 对...",
+    "commentCount": 14,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4c%e3%80%91%e5%9f%ba%e4%b8%8e%e5%9f%ba%e7%a1%8010%ef%bc%9a%e5%8f%88%e6%98%af%e5%87%bd%e6%95%b0%e4%b9%8b%e5%bc%95%e7%94%a8"
+  },
+  {
+    "id": 1923,
+    "title": "【笨木头C++】基与基础09：回调之函数指针",
+    "date": "2014-11-12 20:40:16",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "在Java，要实现某个时间调用某段代码，是很简单的事情，那就是使用接口。 而在C++里，有一个比较高深的方式，那就是使用函数指针。 比如Cocos2d-x的定时器（schedule）、消息订阅（NotificationCenter）都使用了函数指针来完成回调的功能。 这也是为什么我们总是能把某个函数...",
+    "commentCount": 3,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4c%e3%80%91%e5%9f%ba%e4%b8%8e%e5%9f%ba%e7%a1%8009%ef%bc%9a%e5%9b%9e%e8%b0%83%e4%b9%8b%e5%87%bd%e6%95%b0%e6%8c%87%e9%92%88"
+  },
+  {
+    "id": 1921,
+    "title": "【笨木头C++】基与基础08：用函数玩玩指针",
+    "date": "2014-11-11 11:22:52",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "最近事情比较多，其实并不忙，就是事情比较影响思绪，所以都没心思写文章了。 今天主要说说函数的一些基本情况吧，同时也解释一下新手最容易迷糊的——什么时候要用指针参数？ 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/19...",
+    "commentCount": 5,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4c%e3%80%91%e5%9f%ba%e4%b8%8e%e5%9f%ba%e7%a1%8008%ef%bc%9a%e7%94%a8%e5%87%bd%e6%95%b0%e7%8e%a9%e7%8e%a9%e6%8c%87%e9%92%88"
+  },
+  {
+    "id": 1915,
+    "title": "【笨木头C++】基与基础07：基础语法小结",
+    "date": "2014-11-06 21:21:35",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "这次又到了比较简单的内容了，介绍了一些基本的循环控制、关系表达式、逻辑控制等。 这里就简单抽一些稍微比较特别的内容来吹吹水，不，是来总结一下吧~ 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1915 文章来源：笨木...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4c%e3%80%91%e5%9f%ba%e4%b8%8e%e5%9f%ba%e7%a1%8007%ef%bc%9a%e5%9f%ba%e7%a1%80%e8%af%ad%e6%b3%95%e5%b0%8f%e7%bb%93"
+  },
+  {
+    "id": 1913,
+    "title": "【笨木头C++】基与基础06：为什么创建类的时候要用new？",
+    "date": "2014-11-05 21:50:55",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "今天是关于指针初步介绍的最后一篇，也是能让初学者明白为什么类是new出来的、为什么某些变量会莫名被释放，以及为什么木头会这么聪明。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1913 文章来源：笨木头与游戏开发 ...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4c%e3%80%91%e5%9f%ba%e4%b8%8e%e5%9f%ba%e7%a1%8006%ef%bc%9a%e4%b8%ba%e4%bb%80%e4%b9%88%e5%88%9b%e5%bb%ba%e7%b1%bb%e7%9a%84%e6%97%b6%e5%80%99%e8%a6%81%e7%94%a8new"
+  },
+  {
+    "id": 1909,
+    "title": "【笨木头C++】基与基础05：new和delete",
+    "date": "2014-11-03 21:40:03",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "对于以前没有接触过C++，然后初次接触Cocos2d-x的朋友来说，可能对于内存管理方面会比较生疏。 也经常会因为内存问题导致各种小Bug，我也曾经写过一篇retain和release倒底怎么玩？，用来驾驭Cocos2d-x的对象引用和释放也算是足够了。 但，难道大家就不想知道retain和rele...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4c%e3%80%91%e5%9f%ba%e4%b8%8e%e5%9f%ba%e7%a1%8005%ef%bc%9anew%e5%92%8cdelete"
+  },
+  {
+    "id": 1907,
+    "title": "【笨木头C++】基与基础04：你好，指针",
+    "date": "2014-10-31 21:20:05",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "我已经把《C++ Primer》一书准备好了，如果这本《C++ Primer Plus》继续这么瞎闹的话，我就换主角~！ 没错，这书连if while都还没介绍呢，就开始把指针搬出来了，虽然只是简单介绍.. 这目录编排我也是醒了。 那么，按照书上的进度，今天来初步说说指针。 但，今天周五，你懂的，就...",
+    "commentCount": 4,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4c%e3%80%91%e5%9f%ba%e4%b8%8e%e5%9f%ba%e7%a1%8004%ef%bc%9a%e4%bd%a0%e5%a5%bd%ef%bc%8c%e6%8c%87%e9%92%88"
+  },
+  {
+    "id": 1903,
+    "title": "【笨木头C++】基与基础03：数组与字符串..以及结构体..还有共用体",
+    "date": "2014-10-29 21:50:53",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "今天的标题取得..好严肃的感觉。（小若：咳噗） 这章的内容虽然还是很详(lao)细(dao)，但已经开始有很多值得记录的内容了~ 那么，今天就来初次介绍数组与字符串...以及结构体..还有共用体..吧。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benm...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4c%e3%80%91%e5%9f%ba%e4%b8%8e%e5%9f%ba%e7%a1%8003%ef%bc%9a%e6%95%b0%e7%bb%84%e4%b8%8e%e5%ad%97%e7%ac%a6%e4%b8%b2-%e4%bb%a5%e5%8f%8a%e7%bb%93%e6%9e%84%e4%bd%93"
+  },
+  {
+    "id": 1900,
+    "title": "【笨木头C++】基与基础02：数据",
+    "date": "2014-10-28 21:10:16",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "哎，木了个头的，这书太详细了~看得累人 前面部分太过基础了，很多语法方法的东西我也不重复记录了~ 今天才看看C++涉及到数据的一些基础点吧，我把书中稍微比较有营养的部分抽离出来 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/arch...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4c%e3%80%91%e5%9f%ba%e4%b8%8e%e5%9f%ba%e7%a1%8002%ef%bc%9a%e6%95%b0%e6%8d%ae"
+  },
+  {
+    "id": 1897,
+    "title": "【笨木头C++】基与基础01：预览大杂烩",
+    "date": "2014-10-24 22:11:49",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "我很郁闷，这本书果然讲得很详细，我在看第二章，看完要深呼吸，实在太详(lao)细(dao)了。 不过这很好，后面难一些的内容应该会不错~ 那么，这章只是作为预览的章节，我抽出一些稍微比较有营养的内容记录一下吧~ 注意：本系列教程不适合无任何编程语言基础的朋友，只是作为C++基础的一种补充。 教程内容...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4c%e3%80%91%e5%9f%ba%e4%b8%8e%e5%9f%ba%e7%a1%8001%ef%bc%9a%e9%a2%84%e8%a7%88%e5%a4%a7%e6%9d%82%e7%83%a9"
+  },
+  {
+    "id": 1892,
+    "title": "【笨木头C++】基与基础00：开篇",
+    "date": "2014-10-23 20:53:20",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "1. Lua系列教程暂时告一段落 首先来解释一下，没错，木头的Lua基础补充教程已经结束喇。 全靠木头的偷懒，才能提前结束Lua基础系列教程。 Lua基础教程一共写了22篇，其实后面还有一些重要知识点，但是，写教程实在是太累了。 写复杂的教程，更累，所以我没有鼓起勇气去写后面的部分，只是自己草草看了...",
+    "commentCount": 9,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4c%e3%80%91%e5%9f%ba%e4%b8%8e%e5%9f%ba%e7%a1%8001%ef%bc%9a%e5%bc%80%e7%af%87"
+  },
+  {
+    "id": 1872,
+    "title": "Cocos Code IDE 生成runtime时报错(没有对应版本的VS)",
+    "date": "2014-10-09 20:06:02",
+    "categories": [
+      "Cocos Code IDE"
+    ],
+    "excerpt": "笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1872 文章来源：笨木头与游戏开发 1.生成runtime报错 目前Cocos Code IDE（Rc2版本）的runtime默认是VS2012版本，很不幸，我的电脑...",
+    "commentCount": 7,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos-code-ide-%e7%94%9f%e6%88%90runtime%e6%97%b6%e6%8a%a5%e9%94%99%e6%b2%a1%e6%9c%89%e5%af%b9%e4%ba%8e%e7%89%88%e6%9c%ac%e7%9a%84vs"
+  },
+  {
+    "id": 1859,
+    "title": "【1元开源计划】Cocos2d-x3.2+Lua 游戏源码公开（已结束）",
+    "date": "2014-10-09 15:41:41",
+    "categories": [
+      "Cocos2d-x Lua",
+      "Cocos Code IDE"
+    ],
+    "excerpt": "1元开源计划（1￥ Open Source Plan） 来自未来的PS： 本次活动正式结束，大家不要继续下单了，截止目前为止已有接近100位朋友来获取源码，感谢大家的支持~！ ——2015.01.03 1.开场废话 没错，这就是我这次要“开源”的游戏，像我这种这么喜欢写教程、热爱分享的人，开源代码实...",
+    "commentCount": 30,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%901%e5%85%83%e5%bc%80%e6%ba%90%e8%ae%a1%e5%88%92%e3%80%91cocos2d-x3-2lua-%e6%b8%b8%e6%88%8f%e6%ba%90%e7%a0%81%e5%85%ac%e5%bc%80"
+  },
+  {
+    "id": 1844,
+    "title": "【Cocos2d-x Lua】出乎意料的性能短板——那个getPosition的binding(原来是bug！)",
+    "date": "2014-09-25 21:46:19",
+    "categories": [
+      "Cocos Code IDE"
+    ],
+    "excerpt": "这次要来说一个吹水的话题，关于性能方面，最近在用Cocos2d-x + Lua写一个小游戏，因为实在太简单，就完全没想过会有什么掉帧的情况。 结果一到手机上运行，在关卡场景里的帧率立刻降低了，大概只有16到30帧，这个帧率对这个游戏来说，实在是有点可怕。 找了一下原因，凶手是某个update函数，因...",
+    "commentCount": 12,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90cocos2d-x-lua%e3%80%91%e5%87%ba%e4%b9%8e%e6%84%8f%e6%96%99%e7%9a%84%e6%80%a7%e8%83%bd%e7%9f%ad%e6%9d%bf-%e9%82%a3%e4%b8%aagetposition%e7%9a%84binding"
+  },
+  {
+    "id": 1808,
+    "title": "【笨木头Lua专栏】基础补充22：弱引用table",
+    "date": "2014-09-15 21:05:27",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "这次要介绍的内容比较少，就一个——弱引用table 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1808 文章来源：笨木头与游戏开发 1.无法超越人类智慧的智能——自动内存管理的缺陷 我们都知道，Lua是具备自动内存...",
+    "commentCount": 15,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8522%ef%bc%9a%e5%bc%b1%e5%bc%95%e7%94%a8table"
+  },
+  {
+    "id": 1800,
+    "title": "【笨木头Lua专栏】基础补充21：面向对象——多重继承、私密性",
+    "date": "2014-09-11 20:57:34",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "在Lua中的多重继承和私密性可能用得比较少，也可能只是我个人用得比较少。 本来想偷懒不写这文章的，因为我今天刚买了个漂移板，连起步都还没学会啊，想多学一会。 咳咳，本着坚持不懈、负责到底的态度，我还是决定随便写几句~（小若：随便写几句是几吨意思啊？！） 笨木头花心贡献，哈？花心？不，是用心~ 转载请...",
+    "commentCount": 4,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8521%ef%bc%9a%e9%9d%a2%e5%90%91%e5%af%b9%e8%b1%a1-%e5%a4%9a%e9%87%8d%e7%bb%a7"
+  },
+  {
+    "id": 1791,
+    "title": "【笨木头Lua专栏】基础补充20：面向对象——类和继承",
+    "date": "2014-09-10 21:52:30",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "终于来了，在Lua中的面向对象编程，相信目前学习Lua的大部分人都是为了开发手机网游吧。 而且基本都是奔着脚本语言的热更新特性去的，所以全脚本开发变得十分流行。 对于普及不太广的Lua（相对于C++、Java等主流语言），需要短时间上手开发游戏，对新手而言不算简单。 所以大家才更习惯于继续用面向对象...",
+    "commentCount": 15,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8520%ef%bc%9a%e9%9d%a2%e5%90%91%e5%af%b9%e8%b1%a1-%e7%b1%bb%e5%92%8c%e7%bb%a7"
+  },
+  {
+    "id": 1789,
+    "title": "【笨木头Lua专栏】基础补充19：调用函数时用点号还是用冒号",
+    "date": "2014-09-10 20:53:15",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "本文是面向对象预热篇，讲解函数两种调用方式的区别，初学者比较容易被坑。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1789 文章来源：笨木头与游戏开发 1.初学者最易混乱Top1——调用函数时用点号还是用冒号？ 我...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8519%ef%bc%9a%e8%b0%83%e7%94%a8%e5%87%bd%e6%95%b0%e6%97%b6%e7%94%a8%e7%82%b9%e5%8f%b7%e8%bf%98"
+  },
+  {
+    "id": 1786,
+    "title": "【笨木头Lua专栏】基础补充18：Lua的模块编写与module函数",
+    "date": "2014-09-09 21:16:49",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "很快就要开始介绍Lua里的“面向对象”了，在此之前，我们先来了解一下Lua的模块。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1786 文章来源：笨木头与游戏开发 1.编写一个简单的模块 Lua的模块是什么东西呢？...",
+    "commentCount": 8,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8518%ef%bc%9alua%e7%9a%84%e6%a8%a1%e5%9d%97%e7%bc%96%e5%86%99%e4%b8%8emodule%e5%87%bd%e6%95%b0"
+  },
+  {
+    "id": 1781,
+    "title": "【笨木头Lua专栏】基础补充17：全局变量与非全局环境",
+    "date": "2014-09-04 20:53:34",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "今天来聊两个话题——全局变量和非全局环境。 正如大家目前心里所感受到的，全局变量的内容很简单，而非全局环境的内容就稍微要锻炼一下脑细胞了。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1781 文章来源：笨木头与游戏...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8517%ef%bc%9a%e5%85%a8%e5%b1%80%e5%8f%98%e9%87%8f%e4%b8%8e%e9%9d%9e%e5%85%a8%e5%b1%80%e7%8e%af"
+  },
+  {
+    "id": 1779,
+    "title": "【笨木头Lua专栏】基础补充16：__index和__newindex的沉默与合作",
+    "date": "2014-09-03 21:20:43",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "因为不想在一篇文章里挤太多知识点，所以，有些小知识点就集合到这样的文章里吧~ 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1779 文章来源：笨木头与游戏开发 1.沉默技能——拒绝__index和__newindex...",
+    "commentCount": 3,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8516%ef%bc%9a__index%e5%92%8c__newindex%e7%9a%84%e6%b2%89%e9%bb%98%e4%b8%8e%e5%90%88%e4%bd%9c"
+  },
+  {
+    "id": 1777,
+    "title": "【笨木头Lua专栏】基础补充15：也许很强大的__newindex元方法",
+    "date": "2014-09-03 20:41:39",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "好吧，我写文章的进度已经赶不上看书的进度了，简单的几段文字就够我唠叨一篇文章了。 今天继续来说说元方法，与__index有点相似的__newindex元方法。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1777 文...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8515%ef%bc%9a%e4%b9%9f%e8%ae%b8%e5%be%88%e5%bc%ba%e5%a4%a7%e7%9a%84__newindex%e5%85%83%e6%96%b9"
+  },
+  {
+    "id": 1766,
+    "title": "【笨木头Lua专栏】基础补充14：强大的__index元方法",
+    "date": "2014-09-02 21:03:47",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "今天要来介绍比较好玩的内容——__index元方法 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1766 文章来源：笨木头与游戏开发 1.我是备胎，记得回头看看 咳咳，相信每一位女生都拥有或者不知不觉中拥有了一些备胎...",
+    "commentCount": 9,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8514%ef%bc%9a%e5%bc%ba%e5%a4%a7%e7%9a%84__index%e5%85%83%e6%96%b9%e6%b3%95"
+  },
+  {
+    "id": 1763,
+    "title": "《Cocos2d-x3.x游戏开发之旅》即将出版~！",
+    "date": "2014-09-02 20:17:40",
+    "categories": [
+      "Cocos2d-x"
+    ],
+    "excerpt": "咳咳，我的新书《Cocos2d-x3.x游戏开发之旅》快要出版了，预计是9月中旬。 预计这种事，可不能保证啊，说不定9月1号就出版了呢？（小若：啊我呸，今天都9月2号了！） （于2014.09.05补充说明：更准确的出版日期确定了，下周开始印刷流程，预计9月底能出现在各大网店。除非出现意外情况。） ...",
+    "commentCount": 94,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%8acocos2d-x3-x%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91%e4%b9%8b%e6%97%85%e3%80%8b%e5%8d%b3%e5%b0%86%e5%87%ba%e7%89%88%ef%bc%81"
+  },
+  {
+    "id": 1760,
+    "title": "【笨木头Lua专栏】基础补充13：元方法的一些零散知识点",
+    "date": "2014-09-01 21:06:56",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "本篇要介绍的东西比较零散，都是一些小知识点，所以就放在一起了。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1760 文章来源：笨木头与游戏开发 1.两个具有不同元表的值进行算术操作（比如加法） 之前举例的时候，两个...",
+    "commentCount": 10,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8513%ef%bc%9a%e5%85%83%e6%96%b9%e6%b3%95%e7%9a%84%e4%b8%80%e4%ba%9b%e9%9b%b6%e6%95%a3%e7%9f%a5"
+  },
+  {
+    "id": 1758,
+    "title": "【笨木头Lua专栏】基础补充12：元表（metatable）小例子之算术类元方法",
+    "date": "2014-09-01 19:44:24",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "上一节对元表和元方法有了一个初步的认识，这篇就来举个最简单的例子吧，加深一下印象，也为后续内容做准备。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1758 文章来源：笨木头与游戏开发 1.元方法名 Lua其实已经规...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8512%ef%bc%9a%e5%85%83%e8%a1%a8%ef%bc%88metatable%ef%bc%89%e5%b0%8f%e4%be%8b%e5%ad%90%e4%b9%8b"
+  },
+  {
+    "id": 1755,
+    "title": "【笨木头Lua专栏】基础补充11：元表(metatable)与元方法(metamethod)初探",
+    "date": "2014-08-28 21:50:15",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "终于到了在实际中经常要用到的内容了——元表与元方法。 在第一次看见这两样东西的时候，可能会觉得它很深奥，但其实很好理解，虽然实际上它可能真的很深奥。（小若：停！滚粗。） 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8511%ef%bc%9a%e5%85%83%e8%a1%a8metatable%e4%b8%8e%e5%85%83%e6%96%b9%e6%b3%95metamethod%e5%88%9d"
+  },
+  {
+    "id": 1753,
+    "title": "【笨木头Lua专栏】基础补充10：loadfile、dofile、require初探",
+    "date": "2014-08-28 20:56:21",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "本来今天不应该讨论这几个函数的，不过，为了凑字数..不，为了方便以后的文章，还是要谈谈这几个基础函数的~ 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1753 文章来源：笨木头与游戏开发 1.loadfile——只...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8510%ef%bc%9aloadfile%e3%80%81dofile%e3%80%81require%e5%88%9d%e6%8e%a2"
+  },
+  {
+    "id": 1744,
+    "title": "【笨木头Lua专栏】基础补充09：使用table.concat连接大量字符串",
+    "date": "2014-08-27 21:21:08",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "最近2天都没有写新的文章了，主要是最近的内容没有特别有意思的。 之前的协同程序也暂时没有感觉到特别适用的地方，今天在看数据结构的部分，也是没多大意思（不代表没用）。 但是突然发现了一个有意思的地方，那就是——连接大量字符串的时候，如何解决效率问题。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明...",
+    "commentCount": 10,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8509%ef%bc%9a%e4%bd%bf%e7%94%a8table-concat%e8%bf%9e%e6%8e%a5%e5%a4%a7%e9%87%8f%e5%ad%97%e7%ac%a6"
+  },
+  {
+    "id": 1736,
+    "title": "【笨木头Lua专栏】基础补充08：协同程序之resume-yield间的数据返回",
+    "date": "2014-08-22 21:05:47",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "这次要介绍几个其实很简单，但是一定要小心的返回值规则。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1736 文章来源：笨木头与游戏开发 1.resume的参数 resume函数除了第一个参数是协同程序外，还能继续...",
+    "commentCount": 3,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8508%ef%bc%9a%e5%8d%8f%e5%90%8c%e7%a8%8b%e5%ba%8f%e4%b9%8bresume-yield%e9%97%b4%e7%9a%84%e6%95%b0"
+  },
+  {
+    "id": 1733,
+    "title": "【笨木头Lua专栏】基础补充07：协同程序初探",
+    "date": "2014-08-22 20:36:14",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "哎，周五晚上我都还这么努力看书，真是好孩子。（小若：不想吐槽了） 其实我都准备玩游戏看电影去的了，但是这书就摆在桌子上，而且正对着我，就想着，扫两眼吧。 结果一扫就不对劲了，因为这内容有点绕，有点小混乱，如果我现在不记录下来的话，下周一可能又要重新看一次了。 好吧，今天我们来聊聊协同程序。 笨木头花...",
+    "commentCount": 19,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8507%ef%bc%9a%e5%8d%8f%e5%90%8c%e7%a8%8b%e5%ba%8f%e5%88%9d%e6%8e%a2"
+  },
+  {
+    "id": 1728,
+    "title": "【笨木头Lua专栏】基础补充06：简单的错误处理",
+    "date": "2014-08-21 20:48:35",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "昨天遇到另外一位独立游戏开发者，所以多聊了一会，然后...然后就没有看书了。（小若：借口！借口！） 今天来聊聊错误处理吧，不过毕竟这只是前面的章节，书上的内容似乎有点一笔带过的味道。 没关系，简单更好~ 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址： http://www.benmu...",
+    "commentCount": 1,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8506%ef%bc%9a%e7%ae%80%e5%8d%95%e7%9a%84%e9%94%99%e8%af%af%e5%a4%84%e7%90%86"
+  },
+  {
+    "id": 1721,
+    "title": "【笨木头Lua专栏】基础补充05：迭代器番外篇",
+    "date": "2014-08-19 20:57:40",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "关于迭代器的内容， 还有一点点，不过已经无关紧要了，应该算是一种扩展吧，就一起来开开眼界好了~ 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1721 文章来源：笨木头与游戏开发 1.避免创建闭合函数 我们之前一直在...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8505%ef%bc%9a%e8%bf%ad%e4%bb%a3%e5%99%a8%e7%95%aa%e5%a4%96%e7%af%87"
+  },
+  {
+    "id": 1717,
+    "title": "【笨木头Lua专栏】基础补充04：for循环与迭代器的秘密",
+    "date": "2014-08-18 22:01:25",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "上一篇我们介绍了，可以使用for循环来完成迭代器的调用，十分简洁。 那么，具体这for循环做了什么呢？我当然没有去看源码，我只是看书而已。 资料来源于《Lua程序设计》第二版，如果这本书的内容没有错的话，那么，本篇文章理论上也不会有错~ 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：...",
+    "commentCount": 7,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8504%ef%bc%9afor%e5%be%aa%e7%8e%af%e4%b8%8e%e8%bf%ad%e4%bb%a3%e5%99%a8%e7%9a%84%e7%a7%98%e5%af%86"
+  },
+  {
+    "id": 1714,
+    "title": "【笨木头Lua专栏】基础补充04：迭代器初探",
+    "date": "2014-08-18 21:18:51",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "今天学习的内容还蛮有意思的，让我兴奋了一下~ 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1714 文章来源：笨木头与游戏开发 1.迭代器 什么是迭代器？别傻了，我最讨厌的就是名词解释了，反正就是用来遍历集合的一种...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8504%ef%bc%9a%e8%bf%ad%e4%bb%a3%e5%99%a8%e5%88%9d%e6%8e%a2"
+  },
+  {
+    "id": 1710,
+    "title": "【笨木头Lua专栏】基础补充03：闭合函数、非全局函数与函数的尾调用",
+    "date": "2014-08-15 21:26:02",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "上一篇我们简单地介绍了Lua的函数，这次，我们来点特别的，来介绍一下Lua的函数（小若：等等，我是不是错过了什么？） 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1710 文章来源：笨木头与游戏开发 1.闭合函数（c...",
+    "commentCount": 9,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8503%ef%bc%9a%e9%97%ad%e5%90%88%e5%87%bd%e6%95%b0%e3%80%81%e9%9d%9e%e5%85%a8%e5%b1%80%e5%87%bd"
+  },
+  {
+    "id": 1702,
+    "title": "【笨木头Lua专栏】基础补充02：函数的几个特别之处",
+    "date": "2014-08-14 21:45:36",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "没想到距离上一篇基础补充已经过了1年多了，最近准备捡回Lua，把基础都补补，今天来聊聊Lua的函数吧~ 0.环境 我突然对Lua又大感兴趣的最主要原因是，Cocos Code IDE开始浮出水面了，它是Cocos2d-x官方出的一款专门针对Cocos2d-x+Lua或JS的IDE，试着用了，虽然不能...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8502%ef%bc%9a%e5%87%bd%e6%95%b0%e7%9a%84%e5%87%a0%e4%b8%aa%e7%89%b9%e5%88%ab%e4%b9%8b%e5%a4%84"
+  },
+  {
+    "id": 1687,
+    "title": "流量提前用完了，博客被停了一天，抱歉",
+    "date": "2014-08-13 09:56:26",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "这个月的网站流量暴涨，要么是被人盯上了，要么是被不知名爬虫爬走了我的流量~ 不管如何，我是不知道怎么应付了，反正空间是月付的，也快到期了。 于是我又买了一个月的新空间，搬过来了。 最近博客似乎总是出问题，真倒霉~",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e6%b5%81%e9%87%8f%e6%8f%90%e5%89%8d%e7%94%a8%e5%ae%8c%e4%ba%86%ef%bc%8c%e5%8d%9a%e5%ae%a2%e8%a2%ab%e5%81%9c%e4%ba%86%e4%b8%80%e5%a4%a9%ef%bc%8c%e6%8a%b1%e6%ad%89"
+  },
+  {
+    "id": 1634,
+    "title": "Cocos2d-x Lua 读取Csv文件，更方便的使用数据",
+    "date": "2014-07-31 22:00:03",
+    "categories": [
+      "Cocos2d-x Lua",
+      "Cocos Code IDE"
+    ],
+    "excerpt": "我的书上或者是我曾经出售的源码里，都有Csv文件的影子。 也许是先入为主吧，我工作那会用的最久的配置文件就是Csv，所以我在很多游戏里都会情不自禁地优先选择它。 Csv文件，格式很简单，就是一行一条数据，字段之间用逗号分隔，策划也可以方便地使用Excel进行编辑。 Csv格式的文件，解析起来也很简单...",
+    "commentCount": 15,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x-lua-%e8%af%bb%e5%8f%96csv%e6%96%87%e4%bb%b6%ef%bc%8c%e6%9b%b4%e6%96%b9%e4%be%bf%e7%9a%84%e4%bd%bf%e7%94%a8%e6%95%b0%e6%8d%ae"
+  },
+  {
+    "id": 1629,
+    "title": "Cocos Code IDE + Lua初次使用FastTiledMap的坑",
+    "date": "2014-07-29 21:24:23",
+    "categories": [
+      "Cocos2d-x Lua",
+      "Cocos Code IDE"
+    ],
+    "excerpt": "最近想玩玩Lua，又想玩玩Cocos Code IDE，更加想写一个即时战斗的、防守的、会动的、有迷雾的、要探索的（旁白：给我停！）跑地图游戏。 于是我就用Cocos Code IDE来写游戏了，挑战还真不少，不过，我喜欢~ 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http:/...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos-code-ide-lua%e5%88%9d%e6%ac%a1%e4%bd%bf%e7%94%a8fasttiledmap%e7%9a%84%e5%9d%91"
+  },
+  {
+    "id": 1624,
+    "title": "加载Cocostudio的UI之后，下方按钮无法点击的解决方法",
+    "date": "2014-07-29 20:55:51",
+    "categories": [
+      "Cocos2d-x3.0"
+    ],
+    "excerpt": "我印象中是写过这篇文章的，可能我记忆错乱了吧，今天刚好论坛有人提出来，就顺便做一下记录~ 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1624 文章来源：笨木头与游戏开发 Cocostudio的UI从某个版本开始，默...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e5%8a%a0%e8%bd%bdcocostudio%e7%9a%84ui%e4%b9%8b%e5%90%8e%ef%bc%8c%e4%b8%8b%e6%96%b9%e6%8c%89%e9%92%ae%e6%97%a0%e6%b3%95%e7%82%b9%e5%87%bb%e7%9a%84%e8%a7%a3%e5%86%b3%e6%96%b9%e6%b3%95"
+  },
+  {
+    "id": 1233,
+    "title": "这几天的留言暂时无法回复",
+    "date": "2014-07-13 18:30:26",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "我的眼睛罢工了，这几天要闭幕休息，不能用电脑了，所以博客、qq和邮件都暂时无法回复。 PS：本编文章也是叫朋友代写的~",
+    "commentCount": 8,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e8%bf%99%e5%87%a0%e5%a4%a9%e7%9a%84%e7%95%99%e8%a8%80%e6%9a%82%e6%97%b6%e6%97%a0%e6%b3%95%e5%9b%9e%e5%a4%8d"
+  },
+  {
+    "id": 1220,
+    "title": "免费可商用的图片资源推荐",
+    "date": "2014-07-05 18:28:42",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "如果你是一个游戏开发者，并且只是觉得好玩而写游戏，不是为了迎合大众玩家而去写游戏的话，这篇文章介绍的一些网站会比较适合你。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1220 文章来源：笨木头与游戏开发 1. o...",
+    "commentCount": 4,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e5%85%8d%e8%b4%b9%e5%8f%af%e5%95%86%e7%94%a8%e7%9a%84%e5%9b%be%e7%89%87%e8%b5%84%e6%ba%90%e6%8e%a8%e8%8d%90"
+  },
+  {
+    "id": 1217,
+    "title": "今天说什么路由器问题，再次挂了半天",
+    "date": "2014-07-04 20:07:34",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "我这是走的什么运...我等着明天继续有新的问题（才怪啊！再挂我就怒了啊~）",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e4%bb%8a%e5%a4%a9%e8%af%b4%e4%bb%80%e4%b9%88%e8%b7%af%e7%94%b1%e5%99%a8%e9%97%ae%e9%a2%98%ef%bc%8c%e5%86%8d%e6%ac%a1%e6%8c%82%e4%ba%86%e5%8d%8a%e5%a4%a9"
+  },
+  {
+    "id": 1215,
+    "title": "昨天博客空间进行机柜迁移，所以“挂”了半天。",
+    "date": "2014-07-04 08:00:10",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "昨天博客空间进行机柜迁移，所以“挂”了半天。 现在恢复了~",
+    "commentCount": 3,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e6%98%a8%e5%a4%a9%e5%8d%9a%e5%ae%a2%e7%a9%ba%e9%97%b4%e8%bf%9b%e8%a1%8c%e6%9c%ba%e6%9f%9c%e8%bf%81%e7%a7%bb%ef%bc%8c%e6%89%80%e4%bb%a5%e6%8c%82%e4%ba%86%e5%8d%8a%e5%a4%a9%e3%80%82"
+  },
+  {
+    "id": 1212,
+    "title": "提供给移动MM商城的版权验证《魔鬼数字》",
+    "date": "2014-07-03 09:09:29",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "写了个小游戏，各种发布，今天收到MM商城的拒绝通知，原因是，我在游戏里写上了我的网名和博客地址（网名：笨木头），和我在MM商城的实名不一致，被认为是无版权~ 在这里声明一下，《魔鬼数字》是本人（笨木头）开发的，实名是钟迪龙。 哎呀，顺便宣传一下好了，我的新游戏，《魔鬼数字》，大部分主要的市场都上线了...",
+    "commentCount": 8,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e6%8f%90%e4%be%9b%e7%bb%99%e7%a7%bb%e5%8a%a8mm%e5%95%86%e5%9f%8e%e7%9a%84%e7%89%88%e6%9d%83%e9%aa%8c%e8%af%81%e3%80%8a%e9%ad%94%e9%ac%bc%e6%95%b0%e5%ad%97%e3%80%8b"
+  },
+  {
+    "id": 1206,
+    "title": "被自己气死的低级错误，关于屏幕适配",
+    "date": "2014-06-23 15:08:41",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "excerpt": "这又是一篇很水的文章~ 不过太坑自己了，不得不记录一下。 说起屏幕适配，很简单，就只是用默认提供的方案（Cocos2d-x3.0release版本）： [cce_cpp] bool AppDelegate::applicationDidFinishLaunching() { auto directo...",
+    "commentCount": 12,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e8%a2%ab%e8%87%aa%e5%b7%b1%e6%b0%94%e6%ad%bb%e7%9a%84%e4%bd%8e%e7%ba%a7%e9%94%99%e8%af%af%ef%bc%8c%e5%85%b3%e4%ba%8e%e5%b1%8f%e5%b9%95%e9%80%82%e9%85%8d"
+  },
+  {
+    "id": 1202,
+    "title": "Cocos2d-x 游戏发布攻防篇01:防止打包党的小技巧",
+    "date": "2014-06-21 15:43:19",
+    "categories": [
+      "Cocos2d-x"
+    ],
+    "excerpt": "今天论坛里有朋友说让我写写关于游戏防止被反编译重新打包的心得，刚好今天我没有安排任务，就来吹吹水吧~ 其实这方面的心得我倒是没有多少，也没什么高深的心得，只不过我曾经有4、5个游戏被打包过而已（小若：赤裸裸地炫耀你的失败）。 虽然我这文章标题写着“攻防篇01”，但不代表就一定有“攻防篇02”，只是，...",
+    "commentCount": 1,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x-%e6%b8%b8%e6%88%8f%e5%8f%91%e5%b8%83%e6%94%bb%e9%98%b2%e7%af%8701%e9%98%b2%e6%ad%a2%e6%89%93%e5%8c%85%e5%85%9a%e7%9a%84%e5%b0%8f%e6%8a%80%e5%b7%a7"
+  },
+  {
+    "id": 1200,
+    "title": "MySql使用字符串Select或Update无法区分大小写的解决方法",
+    "date": "2014-06-21 14:11:59",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "今天守护裙子OL的玩家又找我说游戏数据被重置了（“又”？） 好吧，怎么老是这玩家的数据被重置呢？一看数据库，原来他的账户名有很多重复的： account actorID kirito 24935 Kirito 24936 KIRITO 24937 好吧，我错了，我以account作为主键了，而MyS...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "mysql_string_for_select_update"
+  },
+  {
+    "id": 1087,
+    "title": "博客空间折腾完毕",
+    "date": "2014-06-14 09:22:16",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "最近一周断断续续地抽空在换博客空间。 之前的空间是**的空间（不透露名字啦，免得砸人招牌），价格还算公道，一直也算比较稳定（一年挂掉了5次左右吧）。 结果今年续费不到2个月，挂掉了3次，而且最后一次挂了3个小时以上（我睡醒才发现的，不知道醒之前挂了多久）。 挂了这么久的原因是，找不到客服，网站也没有...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "test-2"
+  },
+  {
+    "id": 1036,
+    "title": "T_T无法忍受了，博客准备换空间商，近期可能会出现无法访问的情况",
+    "date": "2014-06-07 10:48:09",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "无法忍受了，博客空间才刚续费了一年，结果就这2个月就频繁出故障，没法继续待了。 找客服吧，结果今天他们有一个客服有事休假，然后我发现这空间商特么就这一个客服啊，今天早上博客挂了快3个小时了。 果断闪人了，换空间商。 所以，在这里特别提醒一下，最近博客可能会出现无法访问的情况，那是木头我在折腾博客搬家...",
+    "commentCount": 3,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e6%97%a0%e6%b3%95%e5%bf%8d%e5%8f%97%e4%ba%86%ef%bc%8c%e5%8d%9a%e5%ae%a2%e5%87%86%e5%a4%87%e6%8d%a2%e7%a9%ba%e9%97%b4%e5%95%86%ef%bc%8c%e8%bf%91%e6%9c%9f%e5%8f%af%e8%83%bd%e4%bc%9a%e5%87%ba%e7%8e%b0"
+  },
+  {
+    "id": 1027,
+    "title": "Cocos2d-x3.0 加载Cocostudio的UI后，按钮无法点击的解决方法",
+    "date": "2014-06-03 20:46:54",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "excerpt": "最近发现不少朋友都遇到这个问题，用Cocostudio的UI编辑器创建好UI后，在代码中加载UI，然后给按钮（Button）添加点击监听事件，发现无论如何都点击不了按钮，没有任何反应。 或者，往按钮的下面一些位置点击，却发现按钮被点击了，点击坐标的位置明显和按钮的位置有偏差。 笨木头花心贡献，啥？花...",
+    "commentCount": 3,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x3-0-%e5%8a%a0%e8%bd%bdcocostudio%e7%9a%84ui%e5%90%8e%ef%bc%8c%e6%8c%89%e9%92%ae%e6%97%a0%e6%b3%95%e7%82%b9%e5%87%bb%e7%9a%84%e8%a7%a3%e5%86%b3%e6%96%b9%e6%b3%95"
+  },
+  {
+    "id": 1006,
+    "title": "Cocos2d-x Auto-batching 浅浅的\"深入分析\"",
+    "date": "2014-05-31 08:53:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "excerpt": "近两天都在折腾Auto-batching这东西，比较曲折，总结一句话就是：爱折(腾)才会赢。 看了很久的文档，以及跟踪了很久的源码，对于Auto-batching这实现的流程总算是有点眉目了。 =========== 以下是回忆，是我对Auto-batching产生疑惑的过程，可以忽略不看=====...",
+    "commentCount": 13,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x-auto-batching-%e6%b5%85%e6%b5%85%e7%9a%84%e6%b7%b1%e5%85%a5%e5%88%86%e6%9e%90"
+  },
+  {
+    "id": 995,
+    "title": "Ron's Editor（CSV编辑器）列ID自增的功能",
+    "date": "2014-05-19 16:04:35",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "Ron's Editor是一款CSV格式文本编辑器，挺好用的（可惜还是没有Excel好用），由于Excel无法直接用Utf-8格式，每次保存都要转换格式，很麻烦。 在Cocos2d-x里使用中文又必须要Utf-8，不然会乱码，所以我选择了使用Ron's Editor。 笨木头花心贡献，啥？花心？不呢...",
+    "commentCount": 8,
+    "isTop": false,
+    "format": "md",
+    "postName": "rons-editor%ef%bc%88csv%e7%bc%96%e8%be%91%e5%99%a8%ef%bc%89%e5%88%97id%e8%87%aa%e5%a2%9e%e7%9a%84%e5%8a%9f%e8%83%bd"
+  },
+  {
+    "id": 971,
+    "title": "Cocos2d-x3.0游戏实例《别救我》目录",
+    "date": "2014-05-02 21:51:31",
+    "categories": [
+      "Cocos2d-x",
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x3.0"
+    ],
+    "excerpt": "这个5.1假期还真不错，有个小惊喜，那就是，我某个游戏今天的下载量爆表了，突破历史最高点~！ 于是，我决定写一个新的游戏实例教程，以示庆祝~ 啊才怪啊~！这教程5.1之前就在写了，我还因此暂停了差不多一周的开发工作。我也不想的，因为我太久没写教程了，大大地低估了我的唠叨程度，越写越多，又不想半途而废...",
+    "commentCount": 43,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x3-0%e6%b8%b8%e6%88%8f%e5%ae%9e%e4%be%8b%e3%80%8a%e5%88%ab%e6%95%91%e6%88%91%e3%80%8b%e7%9b%ae%e5%bd%95"
+  },
+  {
+    "id": 949,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第十篇——用Json配置各类型怪物数据",
+    "date": "2014-05-02 21:09:28",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "excerpt": "现在我们有2种类型的怪物，而且创建的时候是写死在代码里的，这是要作死的节奏~ 所以，必须可配置，不然会累死人的。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/949 文章来源：笨木头与游戏开发 Json文件 什么...",
+    "commentCount": 51,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x3-0%e6%b8%b8%e6%88%8f%e5%ae%9e%e4%be%8b%e4%b9%8b%e3%80%8a%e5%88%ab%e6%95%91%e6%88%91%e3%80%8b%e7%ac%ac%e5%8d%81%e7%af%87-%e7%94%a8json%e9%85%8d%e7%bd%ae%e5%90%84%e7%b1%bb"
+  },
+  {
+    "id": 944,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第九篇——从tmx文件中加载关卡怪物",
+    "date": "2014-05-02 21:05:45",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "excerpt": "上一篇我们已经制作好tg1.tmx文件了，现在就要使用它了。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/944 文章来源：笨木头与游戏开发 很抱歉，我们又要新建2个类了，我已经尽力少新建类了，毕竟是教程，类越多...",
+    "commentCount": 72,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x3-0%e6%b8%b8%e6%88%8f%e5%ae%9e%e4%be%8b%e4%b9%8b%e3%80%8a%e5%88%ab%e6%95%91%e6%88%91%e3%80%8b%e7%ac%ac%e4%b9%9d%e7%af%87-%e4%bb%8etmx%e6%96%87%e4%bb%b6%e4%b8%ad%e5%8a%a0"
+  },
+  {
+    "id": 926,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第八篇——TiledMap实现关卡编辑器",
+    "date": "2014-05-02 21:03:21",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "excerpt": "好吧，我真心完全搞不懂，我现在只不过是写了3个类而已，怎么就已经到第八篇了？我感觉我说话已经够简单明了毫不唠叨了，真是奇怪。（小若：我噗，噗噗！） 好吧，既然现在主角已经能出现并且进行操作了，那，也是时候让怪物出场了。 让怪物出现太简单了，不就是写一个Monster类，然后创建刚体，让它可以和主角碰...",
+    "commentCount": 55,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x3-0%e6%b8%b8%e6%88%8f%e5%ae%9e%e4%be%8b%e4%b9%8b%e3%80%8a%e5%88%ab%e6%95%91%e6%88%91%e3%80%8b%e7%ac%ac%e5%85%ab%e7%af%87-tiledmap%e5%ae%9e%e7%8e%b0%e5%85%b3%e5%8d%a1%e7%bc%96"
+  },
+  {
+    "id": 920,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第七篇——物理世界的碰撞检测",
+    "date": "2014-05-02 20:51:17",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "excerpt": "其实我也很惊讶...竟然写到第七篇了，我预计也就是四篇的内容，感觉很神奇，我也不会很唠叨什么吖（小若：32个喷！），怎么都到第七篇了。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/920 文章来源：笨木头与游戏开...",
+    "commentCount": 24,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x3-0%e6%b8%b8%e6%88%8f%e5%ae%9e%e4%be%8b%e4%b9%8b%e3%80%8a%e5%88%ab%e6%95%91%e6%88%91%e3%80%8b%e7%ac%ac%e4%b8%83%e7%af%87-%e7%89%a9%e7%90%86%e4%b8%96%e7%95%8c%e7%9a%84"
+  },
+  {
+    "id": 918,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第六篇——从代码中获取UI控件",
+    "date": "2014-05-02 20:48:02",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "excerpt": "这篇的内容很简单，获取UI控件，然后使用它。 还记得我们在UI编辑器中给三个按钮分别命名了吧？ 现在要用上了。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/918 文章来源：笨木头与游戏开发 根据名字查找控件 首...",
+    "commentCount": 72,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x3-0%e6%b8%b8%e6%88%8f%e5%ae%9e%e4%be%8b%e4%b9%8b%e3%80%8a%e5%88%ab%e6%95%91%e6%88%91%e3%80%8b%e7%ac%ac%e5%85%ad%e7%af%87-%e4%bb%8e%e4%bb%a3%e7%a0%81%e4%b8%ad%e8%8e%b7"
+  },
+  {
+    "id": 892,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第五篇——使用Cocostudio UI编辑器创建操作界面",
+    "date": "2014-05-02 20:39:23",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "excerpt": "这一篇内容其实很简单，已经对Cocostudio比较熟悉的朋友就可以随便扫一下了~（小若：熟悉Cocostudio的人谁还有空看你的基础教程呢） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/892 文章来源：笨木头...",
+    "commentCount": 39,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x3-0%e6%b8%b8%e6%88%8f%e5%ae%9e%e4%be%8b%e4%b9%8b%e3%80%8a%e5%88%ab%e6%95%91%e6%88%91%e3%80%8b%e7%ac%ac%e4%ba%94%e7%af%87-%e4%bd%bf%e7%94%a8cocostudio-ui%e7%bc%96%e8%be%91"
+  },
+  {
+    "id": 872,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第四篇——乱入的主角",
+    "date": "2014-05-02 20:26:18",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "excerpt": "好了，前面说了那么多废话，终于要进入正题了（等等，敢情前面你都是在耍我们么？） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/872 文章来源：笨木头与游戏开发 添加主角实在是太简单了，这个主角要拥有以下一些超能力...",
+    "commentCount": 26,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x3-0%e6%b8%b8%e6%88%8f%e5%ae%9e%e4%be%8b%e4%b9%8b%e3%80%8a%e5%88%ab%e6%95%91%e6%88%91%e3%80%8b%e7%ac%ac%e5%9b%9b%e7%af%87-%e4%b9%b1%e5%85%a5%e7%9a%84%e4%b8%bb%e8%a7%92"
+  },
+  {
+    "id": 823,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第三篇——循环滚动背景",
+    "date": "2014-05-02 20:14:34",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "excerpt": "好，这篇我们来讲解无限循环滚动背景，这个知识已经被讲到烂了，我以前的文章也介绍过，所以就不那么详细地说明了。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/823 文章来源：笨木头与游戏开发 为什么是循环滚动背景？ ...",
+    "commentCount": 45,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x3-0%e6%b8%b8%e6%88%8f%e5%ae%9e%e4%be%8b%e4%b9%8b%e3%80%8a%e5%88%ab%e6%95%91%e6%88%91%e3%80%8b%e7%ac%ac%e4%b8%89%e7%af%87-%e5%be%aa%e7%8e%af%e6%bb%9a%e5%8a%a8%e8%83%8c"
+  },
+  {
+    "id": 804,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第二篇——创建物理世界",
+    "date": "2014-05-02 20:08:14",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "excerpt": "这篇我要给大家介绍两个知识点： 1. 创建游戏物理世界 2. 没了（小若：我噗） 害怕了？不用担心，这太简单了~！ 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/804 文章来源：笨木头与游戏开发 3.0新亮点，史上...",
+    "commentCount": 23,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x3-0%e6%b8%b8%e6%88%8f%e5%ae%9e%e4%be%8b%e4%b9%8b%e3%80%8a%e5%88%ab%e6%95%91%e6%88%91%e3%80%8b%e7%ac%ac%e4%ba%8c%e7%af%87-%e5%88%9b%e5%bb%ba%e7%89%a9%e7%90%86%e4%b8%96"
+  },
+  {
+    "id": 797,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第一篇——前言",
+    "date": "2014-04-29 20:31:32",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "excerpt": "我们能学到什么？ 这是一个很简单的游戏，但是用到的东西比较多（对新手而言），起码，对于一个实例来说，它涉及的确实有点多。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/797 文章来源：笨木头与游戏开发 通过这个游戏...",
+    "commentCount": 17,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x3-0%e6%b8%b8%e6%88%8f%e5%ae%9e%e4%be%8b%e4%b9%8b%e3%80%8a%e5%88%ab%e6%95%91%e6%88%91%e3%80%8b%e7%ac%ac%e4%b8%80%e7%af%87-%e5%89%8d%e8%a8%80"
+  },
+  {
+    "id": 784,
+    "title": "[笨木头“创业”路]No.12 独立游戏开发者！",
+    "date": "2014-03-24 22:16:07",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "本文来自笨木头与游戏开发博客，原文地址：http://www.benmutou.com/archives/784 又好久没有写“创业”路的故事了，这段时间都比较忙，连教程都没写了，这次，就继续把“创业”路给写完吧。 以下内容，都是过去式。 就这样，我在这家公司工作了20天左右，因为当时开发的是手机卡...",
+    "commentCount": 66,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4%e5%88%9b%e4%b8%9a%e8%b7%afno-12-%e7%8b%ac%e7%ab%8b%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91%e8%80%85%ef%bc%81"
+  },
+  {
+    "id": 782,
+    "title": "[笨木头“创业”路]No.11 新旅程？",
+    "date": "2014-03-24 22:11:22",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "本文来自笨木头与游戏开发博客，原文地址：http://www.benmutou.com/archives/782 又好久没有写“创业”路的故事了，这段时间都比较忙，连教程都没写了，这次，就继续把“创业”路给写完吧。 以下内容，都是过去式。 说起来，这家新公司和我之间算是一种缘分吧。 那时候离开了那个...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4%e5%88%9b%e4%b8%9a%e8%b7%afno-11-%e6%96%b0%e6%97%85%e7%a8%8b%ef%bc%9f"
+  },
+  {
+    "id": 774,
+    "title": "《武魂王-轮回篇》总算是发布了~！",
+    "date": "2014-02-24 20:15:03",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "这款游戏，我已经记不清是什么时候开始开发了，只是知道大概有3、4个月，过年期间暂停了10几天。 这款游戏，依旧是走《守护裙子OL》的路线（剧情为主的RPG网游），不过，做了很多改进，当然功能也多了很多。 剧情就更多了，预计是100章的剧情（守护裙子OL只有9章剧情）。 这也算是我的一次突破吧，虽说《...",
+    "commentCount": 37,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%8a%e6%ad%a6%e9%ad%82%e7%8e%8b-%e8%bd%ae%e5%9b%9e%e7%af%87%e3%80%8b%e6%80%bb%e7%ae%97%e6%98%af%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81"
+  },
+  {
+    "id": 771,
+    "title": "认领 安智市场 的游戏",
+    "date": "2013-12-06 17:30:54",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "经过一些波折，终于搞定安智市场的开发者审核了，但是提交不了我的游戏，貌似有人上传了。 想认领一下，不知道在这里发表一下声明有没有作用，总之，试试吧 游戏开始画面都有写着我的博客地址（www.benmutou.com），这个应该能做为证明吧，嘿嘿。",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e8%ae%a4%e9%a2%86-%e5%ae%89%e6%99%ba%e5%b8%82%e5%9c%ba-%e7%9a%84%e6%b8%b8%e6%88%8f"
+  },
+  {
+    "id": 757,
+    "title": "[笨木头 自由开发路]No.1 移动广告平台小点评",
+    "date": "2013-11-27 21:18:06",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "我一个突然的决定，就走上了自由开发者的光明道路了。 算了算，也有5个月了，期间也不能说有各种心酸，各种折腾倒是有的。 在这里就不说其他的了，就想说说我用过的各个广告平台（移动，游戏，Android），分享一下使用心得，供后来者参考。 仅供参考，参考，知道吗，说错不能怪我~（各种预先推卸责任） 以下所...",
+    "commentCount": 75,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4-%e8%87%aa%e7%94%b1%e5%bc%80%e5%8f%91%e8%b7%afno-1-%e7%a7%bb%e5%8a%a8%e5%b9%bf%e5%91%8a%e5%b9%b3%e5%8f%b0%e5%b0%8f%e7%82%b9%e8%af%84"
+  },
+  {
+    "id": 751,
+    "title": "发现的一款比较好用的CSV编辑器：Ron's Editor",
+    "date": "2013-11-25 15:56:24",
+    "categories": [
+      "Cocos2d-x"
+    ],
+    "excerpt": "一直开发手游用的最多的配置文件还是CSV，主要是用习惯了，也就懒得换了。 而且这种逗号分隔符的形式，应该是最简洁的格式了吧（好吧，之一）。 编辑CSV文件最方便的其实还是Excel，一直用金山的Office来编辑，但是有个缺点，这样编辑完之后的CSV文件格式不是utf-8的。 我也不知道office...",
+    "commentCount": 11,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e5%8f%91%e7%8e%b0%e7%9a%84%e4%b8%80%e6%ac%be%e6%af%94%e8%be%83%e5%a5%bd%e7%94%a8%e7%9a%84csv%e7%bc%96%e8%be%91%e5%99%a8%ef%bc%9arons-editor"
+  },
+  {
+    "id": 746,
+    "title": "[笨木头Cocos2dx045]让输入框在Android上全屏显示",
+    "date": "2013-11-19 08:40:51",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/746 正文： 1. 问题 关于Cocos2d-x在Android上的输入框，我忍了好久了，一直没去折腾它，觉得无关紧要。（小若：等等，你倒底想说什么？） 我想说的是，默...",
+    "commentCount": 29,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4cocos2dx045%e8%ae%a9%e8%be%93%e5%85%a5%e6%a1%86%e5%9c%a8android%e4%b8%8a%e5%85%a8%e5%b1%8f%e6%98%be%e7%a4%ba"
+  },
+  {
+    "id": 742,
+    "title": "[笨木头Cocos2dx044]3.0alpha0版本移植Android后运行黑屏的解决方法",
+    "date": "2013-11-14 10:54:28",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "最近在研究Cocos2d-x3.0alpha0版本，虽然还不是正式版，不过倒是蛮想玩一玩的。 试写了一些代码，感觉还可以，就是类名字什么的改动太大，要想复用以前的代码还真是有点纠结（好吧，也许可以批量改）。 OK，这次就不唠叨了，相信不少人都会遇到在Android上跑的时候会黑屏。 笨木头花心贡献，...",
+    "commentCount": 8,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4cocos2dx0443-0alpha0%e7%89%88%e6%9c%ac%e7%a7%bb%e6%a4%8dandroid%e5%90%8e%e8%bf%90%e8%a1%8c%e9%bb%91%e5%b1%8f%e7%9a%84%e8%a7%a3%e5%86%b3%e6%96%b9%e6%b3%95"
+  },
+  {
+    "id": 739,
+    "title": "[笨木头“创业”路]No.10 结局和启程",
+    "date": "2013-11-14 09:00:25",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "本文来自笨木头与游戏开发博客，原文地址：http://www.benmutou.com/archives/739 好久好久没有写关于这次“创业”经历的事情了，我之前说过，我有预感公司会在三个月内灭亡。没错了，事实确实如此，在我写完上一篇创业路的文章2个月后，公司正式解散了。 这是必然的，很早就能看出...",
+    "commentCount": 27,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4%e5%88%9b%e4%b8%9a%e8%b7%afno-10-%e7%bb%93%e5%b1%80%e5%92%8c%e5%90%af%e7%a8%8b"
+  },
+  {
+    "id": 735,
+    "title": "[笨木头FireFly 03]完整的服务端和客户端通信",
+    "date": "2013-11-07 16:01:56",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "#PS： 其实这篇文件是2013.10.12写完的，一直没发布，因为从那天起，我又跑回去折腾客户端的东西了（打算用Cocos2d-x3.0做下一个游戏），以及我的老游戏的维护和更新。总之各种借口（小若：不要这么直白好吧！你好歹也要说是‘原因’啊什么的，直接就说是‘借口’，是闹哪样！）。 然后现在客户...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4firefly-03%e5%ae%8c%e6%95%b4%e7%9a%84%e6%9c%8d%e5%8a%a1%e7%ab%af%e5%92%8c%e5%ae%a2%e6%88%b7%e7%ab%af%e9%80%9a%e4%bf%a1"
+  },
+  {
+    "id": 727,
+    "title": "[笨木头FireFly 02]入门篇_客户端发送请求，服务器处理请求",
+    "date": "2013-10-08 23:18:07",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "好，经过上一篇不权威的讲解，大家已经能轻易地让客户端和服务端连接起来了。 但是，仅仅是连接了，可它们俩不说话不交流，那游戏就玩不起来了，玩不起来那我就赚不到钱..啊不是，玩不起来那玩家就不能开心了，钱是...啊不！玩家是最重要的嘛~不能让玩家不开心（小若：好好好，看出来了，钱是最重要的是吧） 好~！...",
+    "commentCount": 5,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4firefly-02%e5%85%a5%e9%97%a8%e7%af%87_%e5%ae%a2%e6%88%b7%e7%ab%af%e5%8f%91%e9%80%81%e8%af%b7%e6%b1%82%ef%bc%8c%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%a4%84%e7%90%86%e8%af%b7"
+  },
+  {
+    "id": 718,
+    "title": "[笨木头FireFly01]入门篇1·最简单的服务端和客户端连接",
+    "date": "2013-10-08 11:46:31",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "最近一直在写游戏，几乎没有来写教程了，打算放慢一下脚步，学学新东西。 那为嘛我要学FireFly呢？ 之前我自己写了一个网络游戏，服务端和客户端都自己写，虽然运行起来没什么大碍，但毕竟我对服务端没什么经验，自己写的服务端安全性和扩展性不太行，稳定性自然也不靠谱(即使它还没有出现问题)。 正好，最近F...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4firefly01%e5%85%a5%e9%97%a8%e7%af%871%c2%b7%e6%9c%80%e7%ae%80%e5%8d%95%e7%9a%84%e6%9c%8d%e5%8a%a1%e7%ab%af%e5%92%8c%e5%ae%a2%e6%88%b7%e7%ab%af%e8%bf%9e%e6%8e%a5"
+  },
+  {
+    "id": 710,
+    "title": "《萌·守护裙子2》吐槽第2季，噗",
+    "date": "2013-08-19 20:02:59",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "本来《萌·守护裙子》是花了一周时间的小游戏，不打算更新啥的。 没想到，最近有不少朋友说期待续集，于是乎，我满足大家的要求，出了续集，嘿嘿。 下载地址1（木蚂蚁）：http://www.mumayi.com/android-384657.html 下载地址2（GooglePlay）：https://p...",
+    "commentCount": 9,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%8a%e8%90%8c%c2%b7%e5%ae%88%e6%8a%a4%e8%a3%99%e5%ad%902%e3%80%8b%e5%90%90%e6%a7%bd%e7%ac%ac2%e5%ad%a3%ef%bc%8c%e5%99%97"
+  },
+  {
+    "id": 700,
+    "title": "《守护裙子OL》上线，\"神级\"吐槽RPG网游，哈哈",
+    "date": "2013-08-19 19:53:31",
+    "categories": [
+      "Cocos2d-x"
+    ],
+    "excerpt": "这是我第一次自己动手写完整个手机网游，包括客户端、服务端代码编写，还有UI设计、剧情编写、关卡配置，以及云服务器租用和配置。虽然，素材不是我的。 各种心酸，不过没有一天感觉到累，这才是做游戏的感觉，把自己喜欢的东西写出来。 至于源码，先让游戏运行一段时间，再考虑出售吧，嘿嘿。 下载地址1（木蚂蚁）：...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%8a%e5%ae%88%e6%8a%a4%e8%a3%99%e5%ad%90ol%e3%80%8b%e4%b8%8a%e7%ba%bf%ef%bc%8c%e7%a5%9e%e7%ba%a7%e5%90%90%e6%a7%bdrpg%e7%bd%91%e6%b8%b8%ef%bc%8c%e5%93%88%e5%93%88"
+  },
+  {
+    "id": 692,
+    "title": "[笨木头Cocos2dx043]小玩半透明遮罩第01篇:添加半透明遮罩，屏蔽下层点击事件",
+    "date": "2013-08-14 21:26:41",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "[笨木头Cocos2dx043]小玩半透明遮罩第01篇:添加半透明遮罩，屏蔽下层点击事件 呼呼，我现在是各种兴奋紧张恨，好久没有写教程了，不知道功力下降没（小若：不会的，不会下降的~已经最低了）。 今天我个人网游处女作内测了，欢迎关注：http://bbs.benmutou.com/forum.ph...",
+    "commentCount": 18,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e5%b0%8f%e7%8e%a9%e5%8d%8a%e9%80%8f%e6%98%8e%e9%81%ae%e7%bd%a9%e7%ac%ac01%e7%af%87%e6%b7%bb%e5%8a%a0%e5%8d%8a%e9%80%8f%e6%98%8e%e9%81%ae%e7%bd%a9%ef%bc%8c%e5%b1%8f%e8%94%bd%e4%b8%8b%e5%b1%82"
+  },
+  {
+    "id": 673,
+    "title": "《萌·守护裙子》配套教程-3-场景管理器(收费)",
+    "date": "2013-07-04 09:04:12",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "《萌·守护裙子》配套教程-3-场景管理器(收费) 版权信息： 《萌·守护裙子》代码和教程为笨木头原创作品，代码和教程都不免费提供，请勿转载。 尊重版权，等于尊重你自己，尊重劳动成果，拒绝当码农，从自身做起，嗷。 这次我们要来讲解一个既简单又使用的技巧——场景管理。 场景切换很简单，直接调用CCDir...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%8a%e8%90%8c%c2%b7%e5%ae%88%e6%8a%a4%e8%a3%99%e5%ad%90%e3%80%8b%e9%85%8d%e5%a5%97%e6%95%99%e7%a8%8b-3-%e5%9c%ba%e6%99%af%e7%ae%a1%e7%90%86%e5%99%a8%e6%94%b6%e8%b4%b9"
+  },
+  {
+    "id": 669,
+    "title": "《萌·守护裙子》配套教程-2-全局参数简析(收费)",
+    "date": "2013-07-04 09:02:52",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "《萌·守护裙子》配套教程-2-全局参数简析(收费) 版权信息： 《萌·守护裙子》代码和教程为笨木头原创作品，代码和教程都不免费提供，请勿转载。 尊重版权，等于尊重你自己，尊重劳动成果，拒绝当码农，从自身做起，嗷。 本节对各个模块做一个简单的解析，好让大家对代码结构有个初步了解。 全局参数里包含了游戏...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%8a%e8%90%8c%c2%b7%e5%ae%88%e6%8a%a4%e8%a3%99%e5%ad%90%e3%80%8b%e9%85%8d%e5%a5%97%e6%95%99%e7%a8%8b-2-%e5%85%a8%e5%b1%80%e5%8f%82%e6%95%b0%e7%ae%80%e6%9e%90%e6%94%b6%e8%b4%b9"
+  },
+  {
+    "id": 667,
+    "title": "《萌·守护裙子》配套教程-1-程序结构简析(收费)",
+    "date": "2013-07-04 09:00:59",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "《萌·守护裙子》配套教程-1-程序结构简析(收费) 版权信息： 《萌·守护裙子》代码和教程为笨木头原创作品，代码和教程都不免费提供，请勿转载。 尊重版权，等于尊重你自己，尊重劳动成果，拒绝当码农，从自身做起，嗷。 1. 前言 好了，这是木头的收费教程系列开篇之作，本系列教程默认读者已经有了Cocos...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%8a%e8%90%8c%c2%b7%e5%ae%88%e6%8a%a4%e8%a3%99%e5%ad%90%e3%80%8b%e9%85%8d%e5%a5%97%e6%95%99%e7%a8%8b-1-%e7%a8%8b%e5%ba%8f%e7%bb%93%e6%9e%84%e7%ae%80%e6%9e%90%e6%94%b6%e8%b4%b9"
+  },
+  {
+    "id": 657,
+    "title": "《萌·守护裙子》详细开发教程-前言",
+    "date": "2013-07-01 09:39:50",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "《萌·守护裙子》详细开发教程-前言 嗷，木头的Cocos2d-x个人作品《萌·守护裙子》源码出售也差不多有一个月了，本来只是抱着玩玩的心态把源码放到淘宝去卖，所以随便定了个便宜的价格。没想到一个月的商品浏览量虽然只有300多（小若：噗，还不如你的一篇文章阅读量多），但是购买量却有8个，虽然很少，但是...",
+    "commentCount": 29,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%8a%e8%90%8c%c2%b7%e5%ae%88%e6%8a%a4%e8%a3%99%e5%ad%90%e3%80%8b%e8%af%a6%e7%bb%86%e5%bc%80%e5%8f%91%e6%95%99%e7%a8%8b-%e5%89%8d%e8%a8%80"
+  },
+  {
+    "id": 633,
+    "title": "Cocos2d-x小游戏《萌·守护裙子》完成第一版",
+    "date": "2013-06-05 21:05:15",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "这游戏本来打算写完，然后拿着去面试的，结果提前找到工作了，所以部分设想的功能都没有做。 用Cocos2d-x做的，纯C++，比较初级，素材是扒的，嘿嘿。 名称：萌·守护裙子 类型：角色扮演+防守 上线平台：豌豆荚 下载地址（豌豆荚）：http://www.wandoujia.com/apps/mut...",
+    "commentCount": 28,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x%e5%b0%8f%e6%b8%b8%e6%88%8f%e3%80%8a%e8%90%8c%c2%b7%e5%ae%88%e6%8a%a4%e8%a3%99%e5%ad%90%e3%80%8b%e5%ae%8c%e6%88%90%e7%ac%ac%e4%b8%80%e7%89%88"
+  },
+  {
+    "id": 627,
+    "title": "【笨木头Lua专栏】基础补充01：巧说table的几种构造方式",
+    "date": "2013-06-04 23:04:55",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "之前对于Lua的研究都是纸上谈兵，没有真正的项目练手，现在公司的项目基本上都是用Lua开发，是时候补充一下我那蹩脚的Lua知识了。 基础数据类型、表达式、循环结构什么的我就不说了，这么简单的东西说了也要被大家喷。 今天我想说说table的几种构造方式。 本文来自[笨木头与游戏开发]，笨木头花心奉献，...",
+    "commentCount": 13,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4lua%e4%b8%93%e6%a0%8f%e3%80%91%e5%9f%ba%e7%a1%80%e8%a1%a5%e5%85%8501%ef%bc%9a%e5%b7%a7%e8%af%b4table%e7%9a%84%e5%87%a0%e7%a7%8d%e6%9e%84%e9%80%a0%e6%96%b9%e5%bc%8f"
+  },
+  {
+    "id": 596,
+    "title": "【笨木头Cocos2d-x 042】一个函供应多个菜单回调——UserObject自定义数据",
+    "date": "2013-05-27 19:19:33",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/596 正文： 1.Java的菜单点击事件实现方式 我是个Java中毒比较深的人，所以，一般菜单或按钮的点击事件我都是传一个匿名内部类进去，而且还能支持参数，类似这样： ...",
+    "commentCount": 11,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e3%80%90%e7%ac%a8%e6%9c%a8%e5%a4%b4cocos2d-x-042%e3%80%91%e4%b8%80%e4%b8%aa%e5%87%bd%e4%be%9b%e5%ba%94%e5%a4%9a%e4%b8%aa%e8%8f%9c%e5%8d%95%e5%9b%9e%e8%b0%83-userobject%e8%87%aa"
+  },
+  {
+    "id": 573,
+    "title": "创业，你真的明白“优化”和“赶时间”的真正概念吗？",
+    "date": "2013-05-15 10:10:37",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "本文来自笨木头与游戏开发博客，原文地址：http://www.benmutou.com/archives/573 在两年的创建经历中，我对“优化”和“赶时间”这两个词教训特别深刻。 1.赶时间，还是被时间赶？ 赶时间是指在正确的目标指引下，整个团队辛苦奋斗，把预定的工作任务尽快完成，这样才能不被快速...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e5%88%9b%e4%b8%9a%ef%bc%8c%e4%bd%a0%e7%9c%9f%e7%9a%84%e6%98%8e%e7%99%bd%e4%bc%98%e5%8c%96%e5%92%8c%e8%b5%b6%e6%97%b6%e9%97%b4%e7%9a%84%e7%9c%9f%e6%ad%a3%e6%a6%82"
+  },
+  {
+    "id": 568,
+    "title": "博客推广之游戏推荐：《神女控》V1.4.1",
+    "date": "2013-05-09 17:19:22",
+    "categories": [
+      "推广"
+    ],
+    "excerpt": "一款和《我叫MT》很像的游戏：《神女控》。 我是先玩的这款然后再玩《我叫MT》，发现玩不下去，看来这类游戏只能玩一次？ 这款游戏其实还不错，能让我坚持玩一周，这已经很久了，我通常一个游戏玩超过2天就算是比较吸引我的游戏了。 啊，话说，大掌门让我玩了2周~ 下载地址：http://www.bego.c...",
+    "commentCount": 1,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e5%8d%9a%e5%ae%a2%e6%8e%a8%e5%b9%bf%e4%b9%8b%e6%b8%b8%e6%88%8f%e6%8e%a8%e8%8d%90%ef%bc%9a%e3%80%8a%e7%a5%9e%e5%a5%b3%e6%8e%a7%e3%80%8bv1-4-1"
+  },
+  {
+    "id": 551,
+    "title": "[笨木头“创业”路]No.9 分裂状态",
+    "date": "2013-04-26 22:18:36",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "本文来自笨木头与游戏开发博客，原文地址：http://www.benmutou.com/archives/551 最近不少人问我想不想合作（让我跳槽），其中有不少猎头，也有不少因为写教程而认识的朋友、前辈。 我全都婉拒了，不是不会心动，只是，我说过，我是一个不轻言放弃的人，即使，这个团队快要垮了，我...",
+    "commentCount": 16,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4%e5%88%9b%e4%b8%9a%e8%b7%afno-9-%e5%88%86%e8%a3%82%e7%8a%b6%e6%80%81"
+  },
+  {
+    "id": 537,
+    "title": "博客推广之Cocos2d-x战争迷雾效果源码",
+    "date": "2013-04-16 12:43:58",
+    "categories": [
+      "推广"
+    ],
+    "excerpt": "Cocos2d-x战争迷雾效果源码 教程地址： 战争迷雾效果 第1章_要探索，不要地图全开！ 战争迷雾效果 第2章_先把地图加进来 战争迷雾效果 第3章_准确地获取屏幕上的瓦片位置 战争迷雾效果 第4章_真正的迷雾来了！ 效果预览： 下载地址：http://download.csdn.net/det...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e5%8d%9a%e5%ae%a2%e6%8e%a8%e5%b9%bf%e4%b9%8bcocos2d-x%e6%88%98%e4%ba%89%e8%bf%b7%e9%9b%be%e6%95%88%e6%9e%9c%e6%ba%90%e7%a0%81"
+  },
+  {
+    "id": 502,
+    "title": "战争迷雾效果 第05章 项目源码下载",
+    "date": "2013-04-08 09:43:53",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/502 正文： 关于战争迷雾效果的项目源码一直没有放出来，原因是...我找不到了~！ 我以为在我的笔记本电脑里，结果一看，是旧的代码，于是我以为在我公司电脑里... 结果...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e6%88%98%e4%ba%89%e8%bf%b7%e9%9b%be%e6%95%88%e6%9e%9c-%e7%ac%ac05%e7%ab%a0-%e9%a1%b9%e7%9b%ae%e6%ba%90%e7%a0%81%e4%b8%8b%e8%bd%bd"
+  },
+  {
+    "id": 485,
+    "title": "【笨木头Cocos2dx 041】战争迷雾效果 第4章_真正的迷雾来了！",
+    "date": "2013-04-03 22:22:27",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "错过了前面章节？ 没关系，传送门在这： 战争迷雾效果 第1章_要探索，不要地图全开！ 战争迷雾效果 第2章_先把地图加进来 战争迷雾效果 第3章_准确地获取屏幕上的瓦片位置 经过这么多铺垫，我们要来正式编写实现迷雾效果的代码了。 （小若：快点开始写，别唠叨了！） 笨木头花心贡献，啥？花心？不呢，是用...",
+    "commentCount": 18,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e6%88%98%e4%ba%89%e8%bf%b7%e9%9b%be%e6%95%88%e6%9e%9c-%e7%ac%ac4%e7%ab%a0_%e7%9c%9f%e6%ad%a3%e7%9a%84%e8%bf%b7%e9%9b%be%e6%9d%a5%e4%ba%86%ef%bc%81"
+  },
+  {
+    "id": 482,
+    "title": "【笨木头Cocos2dx 040】战争迷雾效果 第3章_准确地获取屏幕上的瓦片位置",
+    "date": "2013-04-03 21:58:12",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "错过了前面章节？ 没关系，传送门在这： 战争迷雾效果 第1章_要探索，不要地图全开！ 战争迷雾效果 第2章_先把地图加进来 本节我们还是要做一些铺垫，不过这很有意思，我们来试试点击屏幕，获取所点击的瓦片格子的位置。 （小若：听不懂啊！） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址...",
+    "commentCount": 13,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e6%88%98%e4%ba%89%e8%bf%b7%e9%9b%be%e6%95%88%e6%9e%9c-%e7%ac%ac3%e7%ab%a0_%e5%87%86%e7%a1%ae%e5%9c%b0%e8%8e%b7%e5%8f%96%e5%b1%8f%e5%b9%95%e4%b8%8a%e7%9a%84%e7%93%a6%e7%89%87%e4%bd%8d%e7%bd%ae"
+  },
+  {
+    "id": 468,
+    "title": "【笨木头Cocos2dx 039】战争迷雾效果 第2章_先把地图加进来",
+    "date": "2013-04-03 09:01:22",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "错过了前面章节？ 没关系，传送门在这： 战争迷雾效果 第1章_要探索，不要地图全开！ 正文： 现在我们要加载一张TMX地图，这张地图有点复杂，大家打起精神。 （小若：吼！） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archiv...",
+    "commentCount": 22,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e6%88%98%e4%ba%89%e8%bf%b7%e9%9b%be%e6%95%88%e6%9e%9c-%e7%ac%ac2%e7%ab%a0_%e5%85%88%e6%8a%8a%e5%9c%b0%e5%9b%be%e5%8a%a0%e8%bf%9b%e6%9d%a5"
+  },
+  {
+    "id": 455,
+    "title": "【笨木头Cocos2dx 038】战争迷雾效果 第1章_要探索，不要地图全开！",
+    "date": "2013-04-02 22:14:45",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "这次我要介绍一个很好玩的东西——战争迷路。 （小若：喂！迷路？） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/455 其实这么解释不太好解释，我们举个例子。魔兽争霸相信大家都玩过，游戏开始时，地图上到处都是黑蒙蒙...",
+    "commentCount": 26,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e6%88%98%e4%ba%89%e8%bf%b7%e9%9b%be%e6%95%88%e6%9e%9c-%e7%ac%ac1%e7%ab%a0_%e8%a6%81%e6%8e%a2%e7%b4%a2%ef%bc%8c%e4%b8%8d%e8%a6%81%e5%9c%b0%e5%9b%be%e5%85%a8%e5%bc%80%ef%bc%81"
+  },
+  {
+    "id": 380,
+    "title": "Cocos2d-x官方Demo中英文对照——TransitionsTest",
+    "date": "2013-04-01 14:12:28",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "之前对官方Demo的例子有点混乱，实在是太多了，每次想看看Cocos2d-x是否支持某个功能，都要点一遍官方例子的程序。所以我就把目录索引出来，并加上中文翻译了。 当然了，这是蛮久之前整的，有些例子自己也还没有跑过，也许有翻译得不对的地方，仅供参考，以实际效果为准。 笨木头花心贡献，啥？花心？不呢，...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x%e5%ae%98%e6%96%b9demo%e4%b8%ad%e8%8b%b1%e6%96%87%e5%af%b9%e7%85%a7transitionstest"
+  },
+  {
+    "id": 377,
+    "title": "Cocos2d-x官方Demo中英文对照——ActionsTest",
+    "date": "2013-04-01 14:01:52",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "之前对官方Demo的例子有点混乱，实在是太多了，每次想看看Cocos2d-x是否支持某个功能，都要点一遍官方例子的程序。所以我就把目录索引出来，并加上中文翻译了。 当然了，这是蛮久之前整的，有些例子自己也还没有跑过，也许有翻译得不对的地方，仅供参考，以实际效果为准。 笨木头花心贡献，啥？花心？不呢，...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x%e5%ae%98%e6%96%b9demo%e4%b8%ad%e8%8b%b1%e6%96%87%e5%af%b9%e7%85%a7actionstest"
+  },
+  {
+    "id": 190,
+    "title": "我从CSDN搬到这里了，这是木头的个人博客~",
+    "date": "2013-03-30 11:01:52",
+    "categories": [
+      "调皮一下"
+    ],
+    "excerpt": "经历一番折腾，总算把空间买回来，并且备案通过了，以后我就在这里安家了~希望大家继续支持，我依旧会努力写教程的~",
+    "commentCount": 4,
+    "isTop": false,
+    "format": "md",
+    "postName": "%e6%88%91%e4%bb%8ecsdn%e6%90%ac%e5%88%b0%e8%bf%99%e9%87%8c%e4%ba%86%ef%bc%8c%e8%bf%99%e6%98%af%e6%9c%a8%e5%a4%b4%e7%9a%84%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2"
+  },
+  {
+    "id": 61,
+    "title": "【木头Cocos2d-x 037】retain和release倒底怎么玩？",
+    "date": "2013-03-18 22:15:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "retain和release倒底怎么玩？ 呼呼，好久没有发布教程了（小若：难得清静了，你为毛又出来吓人= =），其实最近木头我在准备出版书籍的事情。但是貌似不太顺利，果然我还是积累不够，写书的过程压力好大，感觉写不出有趣的文字出来（小若：嗷、、、）。果然还是在博客写自由一些？嘿嘿~ 最近以及最不是很...",
+    "commentCount": 29,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_037_retain_and_release_waitin_on_how_to_play"
+  },
+  {
+    "id": 60,
+    "title": "你是否有游戏开发经验，学习Cocos2d-x多久？",
+    "date": "2013-02-08 12:21:00",
+    "categories": [
+      "调皮一下"
+    ],
+    "excerpt": "最近Cocos2d-x越来越活了，突发奇想，想做一个小调查，看看目前学习Cocos2d-x的人群分布情况。希望各位同行多多支持~！选择最符合你的选项即可，不必完全符合。 参与投票 ：http://vote.weibo.com/vid=2240358",
+    "commentCount": 1,
+    "isTop": false,
+    "format": "md",
+    "postName": "do_you_have_experience_in_game_development_learning_cocos2d-x_how_long"
+  },
+  {
+    "id": 59,
+    "title": "【木头Cocos2d-x 036】我不需要知道你有多少帧之动画创建辅助类",
+    "date": "2013-02-03 17:51:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "我不需要知道你有多少帧之动画创建辅助类 今天心情不好，所以我可能会比平时唠叨。 （小若：你心情不好，那为毛要连累我们！） OK，今天不是写教程，只是想给大家分享一下简单的心得。想必大家都觉得Cocos2d-x要创建一个CCAnimation还是有点繁琐的，是的，通常我们都会创建一个辅助类，这样就可以...",
+    "commentCount": 10,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_036_i_do_not_need_to_know_that_you_have_the_number_of_frames_of_animation_to_create_a_secondary_class"
+  },
+  {
+    "id": 58,
+    "title": "【木头Cocos2d-x 035】我是定时器(第04章)—停止update和触发器",
+    "date": "2013-01-29 12:36:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "我是定时器(第04章)—停止update和触发器 有时候我们并不想不断地执行一个函数，我们只希望在20秒后执行一个函数，然后就不执行了。比如，我们用微波炉烤西红柿，3分钟之后要叮地响一下，但是只要响一下就好了，不要每隔3分钟都响，那太烦人了！ （小若：西红柿？！为毛是西红柿？微波炉啊，烤西红柿？！=...",
+    "commentCount": 16,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_035_i_timer_chapter_04_-_to_stop_the_update_and_trigger"
+  },
+  {
+    "id": 57,
+    "title": "【木头Cocos2d-x 034】我是定时器(第03章)—真正的定时器之schedule",
+    "date": "2013-01-29 08:03:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "我是定时器第03章—真正的定时器之schedule 上一节介绍的”定时器”实在是有点不定时，这次我给大家介绍一个很定时的定时器。 （小若：= =总觉得逻辑不对） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/57 ...",
+    "commentCount": 13,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_034_i_timer_03_chapters_-_timer_schedule"
+  },
+  {
+    "id": 56,
+    "title": "【木头Cocos2d-x 033】我是定时器第02章—HelloWorld之scheduleUpdate",
+    "date": "2013-01-28 21:46:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "我是定时器第02章—HelloWorld之scheduleUpdate Cocos2d-x提供了不少定时功能，这次我们先来最简单的。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/56 正文： 1. schedule...",
+    "commentCount": 13,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_033_i_is_the_first_02-helloworld_timer_scheduleupdate"
+  },
+  {
+    "id": 55,
+    "title": "【木头Cocos2d-x 032】我是定时器(第01章)—我爱单线程之schedule介绍",
+    "date": "2013-01-28 21:43:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "我是定时器第01章—我爱单线程之schedule介绍 本来今天我应该要做其它事情的，但是和一位网友提起了schedule，我无法按捺心中对写教程的热血和冲动，所以我就决定要写关于schedule的使用心得了。 （小若：我噗，永远都是那么唠叨= =） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注...",
+    "commentCount": 10,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_032_i_timer_chapter_01_-_i_love_the_single-threaded_introduction_of_schedule"
+  },
+  {
+    "id": 54,
+    "title": "【木头Cocos2d-x 031】Lua篇（第06章）：Lua调用C++的函数",
+    "date": "2013-01-01 10:01:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0",
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "【木头Cocos2d-x 031】Lua篇（第06章）：Lua调用C++的函数 到这为止，大家对Lua和C++之间的通信应该有些熟悉了，今天我们来介绍最后一个操作。 （旁白：什么？最后一个？要结束了么？太好了~！） 上一章传送门：http://blog.csdn.net/musicvs/articl...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "the_wood_cocos2d-x_031_lua_chapter_chapter_06_lua_call_c___functions"
+  },
+  {
+    "id": 53,
+    "title": "【木头Cocos2d-x 030】Lua篇（第05章）：C++调用Lua的函数",
+    "date": "2012-12-31 13:17:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0",
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "【木头Cocos2d-x 030】Lua篇（第05章）：C++调用Lua的函数 唉，今天心情有点糟糕，我就少说一些啰嗦的话了。 （旁白：太好了...） 上一章传送门：http://blog.csdn.net/musicvs/article/details/8445079 笨木头花心贡献，啥？花心？不...",
+    "commentCount": 7,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_030_lua_chapter_chapter_05_c___function_call_of_lua"
+  },
+  {
+    "id": 52,
+    "title": "【木头Cocos2d-x 029】Lua篇（第04章）：来点高难度的，获取Lua表结构数据",
+    "date": "2012-12-30 09:09:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0",
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "【木头Cocos2d-x 029】Lua篇（第04章）：来点高难度的，获取Lua表结构数据 只是获取一个全局变量什么的太没意思了，今天我们来玩个高难度的——获取Lua表结构的数据。 （旁白：O O！我是不是该说点什么？） 上一章传送门：http://blog.csdn.net/musicvs/art...",
+    "commentCount": 7,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_029_lua_chapter_chapter_04_a_little_difficult_to_obtain_the_the_lua_table_structure_data"
+  },
+  {
+    "id": 51,
+    "title": "【木头Cocos2d-x 028】Lua篇（第03章）：简单解析Lua的堆栈",
+    "date": "2012-12-29 08:39:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0",
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "【木头Cocos2d-x】Lua篇（第03章）：简单解析Lua的堆栈 上一章传送门：http://blog.csdn.net/musicvs/article/details/8440919 经过上一章的讲解，相信大家也看到了，Lua的堆栈是很重要不可或缺的，就像我的旁白一样（旁白：他竟然赞我了。。。...",
+    "commentCount": 3,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_028_lua_articles_the_first_03_chapters_simple_parsing_lua_stack"
+  },
+  {
+    "id": 50,
+    "title": "【木头Cocos2d-x 027】Lua篇（第02章）：Demo讲解之Lua和C++牵手",
+    "date": "2012-12-27 19:20:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0",
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "【木头Cocos2d-x 027】Lua篇（第02章）：Demo讲解之Lua和C++牵手 上一章传送门：http://blog.csdn.net/musicvs/article/details/8440707 本章我们来学习一个小Demo，也就是上一章中的场景：C++从Lua中获取一个全局变量的字符...",
+    "commentCount": 20,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_027_lua_articles_02_chapters_demo_instructional_lua_and_c___in_hand"
+  },
+  {
+    "id": 49,
+    "title": "【木头Cocos2d-x 026】Lua篇（第01章）：让Lua和C++牵手",
+    "date": "2012-12-27 10:29:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0",
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "【木头Cocos2d-x 026】Lua篇（第01章）：让Lua和C++牵手 网上关于Lua的教程似乎还没有泛滥，最近刚好学习在Cocos2d-x使用Lua，当然了，我是写教程狂，我会分享我的学习心得的~ （旁白：我噗~！每次你写东西我就要吐槽，你不累么= =） 这是第一课，先来让Lua和C++认识...",
+    "commentCount": 21,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_026_lua_chapter_page_01_lua_and_c___in_hand"
+  },
+  {
+    "id": 48,
+    "title": "【从创业中谈团队效率之道】第02章-你定的规则,你要永远遵守(谈以身作则)",
+    "date": "2012-12-25 19:52:00",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "【从创业中谈团队效率之道】第02章-你定的规则,你要永远遵守 ——谈以身作则 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8392878 正文： 1. 无规矩不成方圆 也许有人认为，创业团...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "from_the_start_to_talk_about_the_team_efficiency_road_02_-_you_set_the_rules_you_should_always_comply_with_talk_about_leading_by_example"
+  },
+  {
+    "id": 47,
+    "title": "【从创业中谈团队效率之道】第01章-放开你的手，团队会自己跑(谈权力集中的后果)",
+    "date": "2012-12-24 08:10:00",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "【从创业中谈团队效率之道】第01章-放开你的手，团队会自己跑 ——谈权力集中的后果 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8392878 正文： 1. 聊聊权力 虽然我没有做过项目经...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "from_entrepreneurs_talk_about_the_the_teams_efficiency_of_road_chapter_01_-_let_go_of_your_hand_the_team_will_be_running_their_own_to_talk_about_the_consequences_of_the_concentration_of_power"
+  },
+  {
+    "id": 46,
+    "title": "【从创业中谈团队效率之道】第00章-前言",
+    "date": "2012-12-24 08:09:00",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "【从创业中谈团队效率之道】第00章-前言 首先，这个标题起得有点大，我也知道，不过，我思考过了，这是最符合我这系列文章的标题。 其次，我不是大牛，我只工作了1年半，不过有一点我不谦虚，那就是，我的内心很成熟。 最后，虽然我工作经验不足，但我曾经在中型公司（1000人左右）实习过一年，非常规范的管理制...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "from_the_start_to_talk_about_the_team_efficiency_road_chapter_00_-_introduction"
+  },
+  {
+    "id": 45,
+    "title": "老大让我加班, 我断然拒绝。",
+    "date": "2012-12-21 08:43:00",
+    "categories": [
+      "其它"
+    ],
+    "excerpt": "我曾经是一个很听话的员工，老大让我干什么，我就干什么。1年多了，我渐渐地发现，顺从的人，只会被当做工具。 我不知道老大的朋友什么的会不会看到这篇文章，不过没关系，就算亲口对他说，我也能说出来，但不到迫不得已，我会沉默。 昨天，他跟我说：周末可能要加加班 我说：为什么？ 他：怕进度赶不上，你没有什么事...",
+    "commentCount": 32,
+    "isTop": false,
+    "format": "md",
+    "postName": "boss_to_let_me_work_overtime_i_flatly_refused"
+  },
+  {
+    "id": 41,
+    "title": "【木头Cocos2d-x 023】状态机篇(第02章) --状态模式之我很胖但我很强!",
+    "date": "2012-12-20 12:57:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "【Cocos2d-x 状态机篇】第02章--状态模式之我很胖但我很强! 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8348323 正文： 状态机的应用当然就少不了状态模式了，因为它们都有...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_023_state_machine_chapter_chapter_02_-_the_state_model_i39m_fat_but_i_am_strong"
+  },
+  {
+    "id": 42,
+    "title": "【木头Cocos2d-x 024】状态机篇(第03章) --真正的状态机来了~!",
+    "date": "2012-12-20 12:57:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "【Cocos2d-x 状态机篇】第03章--真正的状态机来了~! 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/8348353 正文： 前面两章介绍了一大堆东西，但似乎一直没有看到状态机这个东...",
+    "commentCount": 10,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_024_state_machine_chapter_03_chapters_-_come_true_state_machine_to"
+  },
+  {
+    "id": 43,
+    "title": "【木头Cocos2d-x 025】状态机篇(第04章) --事件驱动,你想象不到的强大",
+    "date": "2012-12-20 12:57:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "【Cocos2d-x 状态机篇】第04章--事件驱动,你想象不到的强大 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8349314 正文： 到现在为止，我们已经有能力实现简单的有限状态机了...",
+    "commentCount": 22,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_025_state_machine_chapter_chapter_04_-_event-driven_you_imagine_less_than_powerful"
+  },
+  {
+    "id": 44,
+    "title": "【Cocos2d-x 状态机篇】第0章--木头学状态,一副自恋的姿态~",
+    "date": "2012-12-20 12:57:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "【Cocos2d-x 状态机篇】第0章--木头学状态,一副自恋的姿态~ 最近在写一个小游戏，写着写着发现有很多游戏开发的知识我并不太了解，于是游戏写到10%就跑题了，然后现在正在跑题跑到有限状态机。 我喜欢分享，所以我就现学现卖了，分享一下我学习状态机的心得。 笨木头花心贡献，啥？花心？不呢，是用心...",
+    "commentCount": 4,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x_state_machine_chapter_chapter_0_-_wood_school_status_a_narcissistic_attitude_to"
+  },
+  {
+    "id": 40,
+    "title": "【木头Cocos2d-x 022】状态机篇(第01章) --花5分钟告诉你什么是有限状态机",
+    "date": "2012-12-20 12:56:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "【Cocos2d-x 状态机篇】第01章--花5分钟告诉你什么是有限状态机 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8348308 正文： 1. 简单认识 在游戏开发中，状态机几乎是必...",
+    "commentCount": 9,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_022_state_machine_chapter_chapter_01_-_take_five_minutes_to_tell_you_what_is_a_finite_state_machine"
+  },
+  {
+    "id": 39,
+    "title": "【木头Cocos2d-x 021】一个堆和栈引起的分手事件",
+    "date": "2012-12-06 22:03:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "【木头 cocos2d-x】一个堆和栈引起的分手事件 ——内存总是欺负我，于是我移情别恋爱上CCString了 我又来了，这次这篇文章依旧是献给和我一样被Java惯坏了，对C++还不太熟悉的朋友~ 所以，熟悉C++的朋友，请忽略我~ 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： ...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_021_a_heap_and_stack_induced_break-up_event"
+  },
+  {
+    "id": 38,
+    "title": "【木头Cocos2d-x 020】在调试项目时，跟踪并进入Cocos2d-x的源码",
+    "date": "2012-12-06 21:32:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "【木头 cocos2d-x】在调试项目时，跟踪并进入Cocos2d-x的源码 其实这没有神奇的喇，但是对我来说好神奇，因为我对C++开发十分不熟悉~ 所以，熟悉C++的朋友可以忽略我~ 今天在调试我的小项目，想跟踪到源码去看看情况~结果我不知道怎么做~ 幸好，有个C++大神同事在，原来好简单的~ 1...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_020_in_the_commissioning_of_the_project_the_track_and_into_the_source_cocos2d-x"
+  },
+  {
+    "id": 37,
+    "title": "【木头Cocos2d-x 019】控件篇(第03章)我要战斗之血量条",
+    "date": "2012-12-05 17:39:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "【Cocos2d-x 控件篇003】我要战斗之血量条 这次我们再来介绍一个音量控制按钮~ （旁白：等，等等~你标题不是写着血量条吗？） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8261...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "the_wood_cocos2d-x_019_control_articles_03_chapters_i_will_fight_blood_strips"
+  },
+  {
+    "id": 36,
+    "title": "【木头Cocos2d-x 018】面向接口编程01: 向她表白之实现函数回调",
+    "date": "2012-12-05 17:27:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "【在Cocos2d-x中面向接口编程01】向她表白之实现函数回调 首先，我要郑重地声明一件事情：我现在很尿急，但是厕所有人~！ 嗯，然后，我本来是一名Java程序员，由于Cocos2d-x太吸引人，我就硬着头皮学，可是C++和Java那看似差不多，实际又确实差很多的纠结，让我变得...很尿急~！ （...",
+    "commentCount": 10,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_018_oriented_programming_interface_01_confession_to_her_function_callback"
+  },
+  {
+    "id": 35,
+    "title": "【木头Cocos2d-x 017】控件篇(第02章)我不是DJ之圆形音量按钮",
+    "date": "2012-12-02 21:59:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "【Cocos2d-x 控件篇002】我不是DJ之圆形音量按钮 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8249627 正文： 注：本文使用的Cocos2d-x基于2.0.4版本。 啰嗦...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_017_controls_chapter_page_02_circular_volume_buttons_i_am_not_a_dj"
+  },
+  {
+    "id": 34,
+    "title": "【木头Cocos2d-x 016】控件篇(第01章)  我最爱的九妹和按钮事件",
+    "date": "2012-11-30 12:37:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "【Cocos2d-x 控件篇001】我最爱的九妹和按钮事件 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8242963 正文： 最近在尝试写一个小游戏，噢？你刚刚说什么？你说你想看看我的小...",
+    "commentCount": 47,
+    "isTop": false,
+    "format": "md",
+    "postName": "the_wood_cocos2d-x_016_articles_of_control_01_favorite_jiumei_and_button_events"
+  },
+  {
+    "id": 33,
+    "title": "【木头Cocos2d-x 015】游戏实例-《跑跑跑》制作教程（第七篇）——添加能吃的物品以及胜利条件",
+    "date": "2012-11-20 12:45:00",
+    "categories": [
+      "2.0游戏实例《跑跑跑》",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "Cocos2d-x游戏实例-《跑跑跑》制作教程（第七篇）——添加能吃的物品以及胜利条件 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/33 正文： 注：本文使用到的资源请到这里下载：http://download.c...",
+    "commentCount": 10,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_015_instance_of_the_game_-_quotpaopao_pao_making_tutorial_vii_-_add_eat_items_and_victory_conditions"
+  },
+  {
+    "id": 32,
+    "title": "【木头Cocos2d-x 014】游戏实例-《跑跑跑》制作教程（第六篇）——添加障碍物",
+    "date": "2012-11-18 21:31:00",
+    "categories": [
+      "2.0游戏实例《跑跑跑》",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "Cocos2d-x游戏实例-《跑跑跑》制作教程（第六篇）——添加障碍物 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/32 正文： 注：本文使用到的资源请到这里下载：http://download.csdn.net/...",
+    "commentCount": 24,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_014_the_game_instance_-_paopao_pao_quotmaking_tutorial_vi_-_add_obstacles"
+  },
+  {
+    "id": 31,
+    "title": "【木头Cocos2d-x 013】游戏实例-《跑跑跑》制作教程（第五篇）——主角上下移动",
+    "date": "2012-11-16 20:30:00",
+    "categories": [
+      "2.0游戏实例《跑跑跑》",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "Cocos2d-x游戏实例-《跑跑跑》制作教程（第五篇）——主角上下移动 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/31 正文： 注：本文使用到的资源请到这里下载：http://download.csdn.net...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_013_instance_of_the_game_-_quotpaopao_pao_making_tutorial_v_-_protagonist_moves_up_and_down"
+  },
+  {
+    "id": 30,
+    "title": "【木头Cocos2d-x 012】游戏实例-《跑跑跑》制作教程（第四篇）——地图卷动",
+    "date": "2012-11-16 12:57:00",
+    "categories": [
+      "2.0游戏实例《跑跑跑》",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "Cocos2d-x游戏实例-《跑跑跑》制作教程（第四篇）——地图卷动 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/30 正文： 注：本文使用到的资源请到这里下载：http://download.csdn.net/...",
+    "commentCount": 14,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_012_instance_of_the_game_-_quotpaopao_pao_making_tutorial_part_iv_-_map_scroll"
+  },
+  {
+    "id": 29,
+    "title": "【木头Cocos2d-x 011】游戏实例-《跑跑跑》制作教程（第三篇）——让主角跑",
+    "date": "2012-11-16 09:19:00",
+    "categories": [
+      "2.0游戏实例《跑跑跑》",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "Cocos2d-x游戏实例-《跑跑跑》制作教程（第三篇）——让主角跑 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/29 正文： 注：本文使用到的资源请到这里下载：http://download.csdn.net/d...",
+    "commentCount": 16,
+    "isTop": false,
+    "format": "html",
+    "postName": "wood_cocos2d-x_011_instance_of_the_game_-_quotpaopao_pao_making_tutorial_part_iii_-_protagonist_running"
+  },
+  {
+    "id": 28,
+    "title": "【木头Cocos2d-x 010】游戏实例-《跑跑跑》制作教程（第二篇）——加入主角",
+    "date": "2012-11-15 20:58:00",
+    "categories": [
+      "2.0游戏实例《跑跑跑》",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "Cocos2d-x游戏实例-《跑跑跑》制作教程（第二篇）——加入主角 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/28 正文： 注：本文使用到的资源请到这里下载：http://download.csdn.net/...",
+    "commentCount": 16,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_010_instance_of_the_game_-_quotpaopao_pao_making_tutorial_second_-_joined_the_protagonist"
+  },
+  {
+    "id": 27,
+    "title": "【木头Cocos2d-x 009】游戏实例-《跑跑跑》制作教程(第一篇)——加载地图",
+    "date": "2012-11-15 12:50:00",
+    "categories": [
+      "2.0游戏实例《跑跑跑》",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "Cocos2d-x游戏实例-《跑跑跑》制作教程 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/27 正文： 首先，我是拜读了以下四篇文章之后，想练练手而萌发了要写这个系列的教程，大家如果不喜欢我的教程，可以看看以下四...",
+    "commentCount": 26,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_009_game_making_tutorial_instance_-_paopao_pao_quotfirst_-_to_load_the_map"
+  },
+  {
+    "id": 26,
+    "title": "【木头Cocos2d-x 008】在Lua中使用自定义类——tolua++工具使用（下集）",
+    "date": "2012-11-09 15:25:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0",
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "在Lua中使用自定义类——tolua++工具使用（下集） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8166655 正文： 上回说到，把LuaCocos2d.cpp文件拷到我们的lua工...",
+    "commentCount": 24,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_008_in_lua_using_custom_class_-_tolua___tools_the_set"
+  },
+  {
+    "id": 25,
+    "title": "【木头Cocos2d-x 007】在Lua中使用自定义类——tolua++工具使用（上集）",
+    "date": "2012-11-09 15:14:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0",
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "在Lua中使用自定义类——tolua++工具使用（上集） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/25 正文： 最近看了一下TestLua的例子，挺有意思的，使用Lua对网游开发来说，很实用。我目前这个项目没...",
+    "commentCount": 10,
+    "isTop": false,
+    "format": "html",
+    "postName": "wood_cocos2d-x_007_use_custom_classes_in_lua_-_tolua___tools_part_one"
+  },
+  {
+    "id": 24,
+    "title": "【木头Cocos2d-x 006】HelloLua简单分析",
+    "date": "2012-11-09 07:53:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0",
+      "Cocos2d-x Lua"
+    ],
+    "excerpt": "HelloLua简单分析 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/24 正文： Lua脚本，以前我不知道它有多强大，但是当我做了1年的手机网游之后，起码我发现了，更新客户端是一件很恐怖的事情（会导致大量玩家的流...",
+    "commentCount": 3,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_006_hellolua_simple_analysis"
+  },
+  {
+    "id": 23,
+    "title": "[笨木头“创业”路]No.8 成熟？",
+    "date": "2012-11-08 08:36:00",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "经过一年的磨练，我似乎改变了很多，遇到一些事，遇到一些人。 我变得暴躁，变得不那么容易被人欺负、占便宜。 后来，我似乎又渐渐地体会到，保护自己，也许还要掌握好一个度。 过度地保护自己，结果就是什么都学不到。 有时候，坏事情降临到自己身上，未免不是一件好事，那是磨练自己的好机会。 慢慢地，我似乎懂得了...",
+    "commentCount": 4,
+    "isTop": false,
+    "format": "md",
+    "postName": "the_the_stupid_wood_quotventurequot_road_no8_mature"
+  },
+  {
+    "id": 22,
+    "title": "[笨木头“创业”路]No.7 接近毁灭的状态",
+    "date": "2012-11-06 09:38:00",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "原本我以为，没落，这个词已经够残忍了， 没有想到，我们的状况会继续恶化。 经过这么一年时间的阅历，我终于知道。 技术、金钱、市场，很重要。 但是，还有一个决定性的因素，少了它，创业必败！ 那就是，好的伙伴。 是的，我们必须拥有不离不弃的伙伴，这样才能面对无数的困难。 也许有人说，钱才是最重要的，我想...",
+    "commentCount": 16,
+    "isTop": false,
+    "format": "md",
+    "postName": "the_stupid_wood_quotventurequot_road_no7_close_to_a_state_of_destruction"
+  },
+  {
+    "id": 21,
+    "title": "[笨木头“创业”路]No.6 没落",
+    "date": "2012-11-06 09:25:00",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "我是一个很专情的人。 大四我在同一个公司实习了一年，一年时间里，我们的项目组走的走，换的换。 最终，第一批人员，就剩下我一个。 好吧，难道我是项目组的克星？ 虽然最终我也走了。 而到了这个创业公司，从一开始的5、6个人，到后来的高峰期是10个人左右。 很热闹，但，似乎我们团队并没有这个能力去消化这份...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "the_stupid_wood_quotventurequot_road_no6_decline"
+  },
+  {
+    "id": 20,
+    "title": "[笨木头“创业”路]No.5 凶残",
+    "date": "2012-11-06 08:51:00",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "我曾经是一个只懂微笑，几乎没有脾气的人。 我对我们的项目充满希望，每天，闹钟响了，我很困，好想继续睡。 但是，突然想到，起来了可以写代码，我们的项目就可以更快出来，然后，我就很精神地爬起来了。 虽然我喜欢别人赞我聪明，也常常要我的朋友们赞我聪明。 但是我知道，我只是一个普通人，我很努力地写代码，因为...",
+    "commentCount": 8,
+    "isTop": false,
+    "format": "md",
+    "postName": "the_stupid_wood_quotventurequot_road_no5_cruelty"
+  },
+  {
+    "id": 19,
+    "title": "地球人己阻止不了程序猿们学习cocos2d-x了-学习笔记04",
+    "date": "2012-11-01 10:49:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "地球人己阻止不了程序猿们学习cocos2d-x了-学习笔记04 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8135705 正文： 教程地址：http://cn.cocos2d-x.org...",
+    "commentCount": 3,
+    "isTop": false,
+    "format": "md",
+    "postName": "people_on_earth_has_been_able_to_stop_the_program_apes_are_learning_cocos2d-x_-_study_notes_04"
+  },
+  {
+    "id": 18,
+    "title": "地球人己阻止不了程序猿们学习cocos2d-x了-学习笔记03",
+    "date": "2012-10-29 14:38:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "地球人己阻止不了程序猿们学习cocos2d-x了-学习笔记02 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8124244 正文： 原教程地址：http://cn.cocos2d-x.or...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "people_on_earth_has_been_able_to_stop_the_program_apes_are_learning_cocos2d-x_-_learning_notes_03"
+  },
+  {
+    "id": 17,
+    "title": "地球人己阻止不了程序猿们学习cocos2d-x了-学习笔记02",
+    "date": "2012-10-26 14:28:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "地球人己阻止不了程序猿们学习cocos2d-x了-学习笔记02 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/8105611 正文： 第二篇的重点是：(内容重点: 动画, CCAnimatio...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "people_on_earth_has_been_able_to_stop_the_program_apes_are_learning_cocos2d-x_-_study_notes_02"
+  },
+  {
+    "id": 16,
+    "title": "【木头Cocos2d-x 005】穷鬼之mac cocos2d-x环境搭建-成功！（VMWare + mac lion+xcode）",
+    "date": "2012-10-24 10:18:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "穷鬼之mac cocos2d-x环境搭建-成功！（VMWare + mac lion） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/8105611 正文： 学Cocos2D-X也有一小段时间...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "wood_cocos2d-x_005_environment_to_build_beast_of_mac_cocos2d-x_-_success_"
+  },
+  {
+    "id": 15,
+    "title": "【地球人..学习cocos2d-x】学习实践之逐步变强的HelloWorld(下集)",
+    "date": "2012-10-19 11:43:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "【地球人..学习cocos2d-x】学习实践之逐步变强的HelloWorld(下集) 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/8089125 正文： 上集传送门：http://blog....",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "html",
+    "postName": "earth_people__learn_cocos2d-x_study_and_practice_gradually_become_strong_helloworld_set"
+  },
+  {
+    "id": 14,
+    "title": "【地球人..学习cocos2d-x】学习实践之逐步变强的HelloWorld(上集)",
+    "date": "2012-10-18 18:29:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "1. 在HelloWorld之前 因为我准备按照第一篇教程里教我的东西，一步步从简单到难写成多个Demo，于是我又不想新建那么多项目，所以，是的~我们需要一个菜单界面。 要创建很难，很多步，别激动，慢慢来，噗： 首先我们需要一个CCMenu对象，它是一个菜单对象，当然菜单是可以包含子菜单的。 然后我...",
+    "commentCount": 5,
+    "isTop": false,
+    "format": "html",
+    "postName": "earth_people__learn_cocos2d-x_study_and_practice_gradually_become_strong_the_helloworld_part_one"
+  },
+  {
+    "id": 13,
+    "title": "【木头Cocos2d-x 004】HelloWorld倒底怎么玩？",
+    "date": "2012-10-15 09:58:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "Cocos2D-x之HelloWorld倒底怎么玩？ 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/8071832 正文： 看了教程，还是要自己写写HelloWorld才能记住，于是在写Hel...",
+    "commentCount": 4,
+    "isTop": false,
+    "format": "html",
+    "postName": "the_wood_cocos2d-x_004_helloworld_waitin_how_to_play"
+  },
+  {
+    "id": 12,
+    "title": "地球人己阻止不了程序猿们学习cocos2d-x了-学习笔记01",
+    "date": "2012-10-10 09:14:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "地球人己阻止不了程序猿们学习cocos2d-x了是一个很不错的系列教程（其实我还没看完= =），但是我基础不好，作者基础太雄厚，他很多觉得简单的东西都没有解释，所以我看了又忘，忘了就...又看。 于是我还是决定要记录下来，方便忘记的时候查看。 地球人己阻止不了程序猿们学习cocos2d-x了 (第一...",
+    "commentCount": 4,
+    "isTop": false,
+    "format": "html",
+    "postName": "people_on_earth_has_been_able_to_stop_the_program_apes_are_learning_cocos2d-x_-_study_notes_01"
+  },
+  {
+    "id": 11,
+    "title": "游戏新版本上线，自己整了一组宣传图，抢美工饭碗了有没有~哈哈",
+    "date": "2012-09-29 18:38:00",
+    "categories": [
+      "Android"
+    ],
+    "excerpt": "游戏新版本十一假日之前终于赶上脚步，上线了~ 好感动~ 上图~ 《群侠三国》战争策略类三国题材手机游戏，该游戏颠覆了手机游戏的模式，以三国题材为背景的大型横版RPG手机游戏，游戏采用了多种时下最先进的技术，极大的丰富游戏画面的表现力。游戏中带甲、百家、策士、方士四大职业，各具特色。同时拥有丰富的武将...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "new_version_of_the_game_on_the_line_his_entire_set_of_promotional_plans_looting_art_rice_bowl_there__haha"
+  },
+  {
+    "id": 6,
+    "title": "【木头Cocos2d-x 003】Win7 64位系统搭建cocos2d-x环境并创建Android项目",
+    "date": "2012-09-07 17:14:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "Win7 64位搭建cocos2d-x环境并创建Android项目 虽说在win7 32位和64位的环境搭建没有很大的区别，但是，在64位下还是会遇到一些小麻烦的。 先解决第一个疑问：软件、工具都要下载哪个版本？ 1. eclipse下载64位的（官网有） 2. Java下载64位的（官网） 3. ...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "html",
+    "postName": "wood_cocos2d-x_003_win7_64-bit_system_to_build_cocos2d-x_environment_and_create_the_android_project"
+  },
+  {
+    "id": 5,
+    "title": "代码混淆与反射的冲突(小小解决方案)~！",
+    "date": "2012-09-05 23:10:00",
+    "categories": [
+      "Android"
+    ],
+    "excerpt": "代码混淆与反射的冲突 反编译Android的代码，大部分人都知道了，防反编译的方法也大部分都知道了（尽管它不一定一直有效，但起码像我这种水平的人，没办法看到混淆之后的Java代码， 最可恶的是没有注释= =）。 最近才发现，我的代码在很久之后设置了混淆，也在很久之前不知道什么时候不小心把代码混淆给弄...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "html",
+    "postName": "code_to_be_confused_with_the_reflection_of_the_conflict_little_solutions_"
+  },
+  {
+    "id": 4,
+    "title": "【木头Cocos2d-x 002】win32项目移植到Android，终于成功~",
+    "date": "2012-08-16 21:12:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "win32项目移植到Android的教程百度一下不少，或者看看这篇文章：http://blog.csdn.net/xiawei32/article/details/7526262 我只记录我遇到的阻碍，还有简单的步骤： 1.编写好cocos2d-x的win32项目 2.运行cocos2d-x安装目录...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "cocos2d-x_002_for_wood_win32_project_ported_to_android_finally_succeeded_to"
+  },
+  {
+    "id": 10,
+    "title": "我的处女作：Android网游 战四方新版本终于出来了~~",
+    "date": "2012-08-16 16:39:00",
+    "categories": [
+      "Android"
+    ],
+    "excerpt": "哎吖吖~又是一个漫长的开发过程~ 还好还好，都熬过去了，我们的新版本终于出来了~ 嘻嘻，在自己的博客做个广告，不会被人骂吧？~ 经过前期公测阶段的反馈，游戏已进行重大改版，更新内容如下： 1.新增黑市商人，可获得各种马匹和披风。 2.新增武魂系统，武魂可用于购买稀有武将。 3.优化酒馆功能，新增部分...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "my_debut_the_new_version_of_the_android_online_games_war_quartet_finally_out__"
+  },
+  {
+    "id": 9,
+    "title": "【木头Cocos2d-x 001】又是一个HelloWorld",
+    "date": "2012-08-15 20:24:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "嘿嘿，时间关系，这次我就不啰嗦了~毕竟环境搭建的教程到处都是，我就不添乱，整理一下步骤，方便以后记忆。 测试Ndk是否安装成功，运行第一个jni例子： 1.新建项目，建立一个jni目录 2.建一个NdkClient类，用来声明C函数，并且通过该类调用C函数 3.用javah生成NdkClient类对...",
+    "commentCount": 8,
+    "isTop": false,
+    "format": "md",
+    "postName": "the_wood_cocos2d-x_001_is_a_helloworld"
+  },
+  {
+    "id": 8,
+    "title": "几经挣扎，选择了Cocos2D-x",
+    "date": "2012-08-15 19:53:00",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "excerpt": "我嘛，开发Android游戏一年了，一直没有用引擎，曾经很幼稚地以为，积累多了，自己写的东西也能变成引擎。 好吧，我慢慢地知道，原来游戏引擎是很深奥的东西~ 曾经挣扎过，毕竟我是学Java的，不想现在就开始横向发展去学C++，所以一直没敢学cocos2d-x。 后来，经朋友点化，还是决定学。 毕竟，...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "after_several_struggling_selected_the_cocos2d-x"
+  },
+  {
+    "id": 236,
+    "title": "我的处女作：Android网游 战四方，嘻嘻~",
+    "date": "2012-06-28 09:06:00",
+    "categories": [
+      "Android"
+    ],
+    "excerpt": "历经千辛万苦，我们的游戏终于出来了，虽然不能称得上是什么好作品，但是，能看着自己的游戏有人在玩，那种感觉真的很好。 是一款策略+RPG的手机网游，是我从完全不懂Android就开始着手开发的第一款游戏，希望大家能给些意见。 我很独单，身边没有Android游戏开发的人能够讨论，只有在网上才能找到这些...",
+    "commentCount": 37,
+    "isTop": false,
+    "format": "md",
+    "postName": "my_debut_android_online_games_war_quartet_hee_hee_"
+  },
+  {
+    "id": 235,
+    "title": "【LGame入门学堂016.结束入门】进阶仪式之onTouchEvent触发流程",
+    "date": "2012-05-18 12:24:00",
+    "categories": [
+      "LGame"
+    ],
+    "excerpt": "【LGame016.结束入门】进阶仪式之onTouchEvent触发流程 关键字：LGame 入门 控件onTouchEvent 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7579718 ...",
+    "commentCount": 18,
+    "isTop": false,
+    "format": "md",
+    "postName": "the_end_of_the_lgame_entry-school_016_the_entry_advanced_ceremony_ontouchevent_triggered_process"
+  },
+  {
+    "id": 234,
+    "title": "【LGame入门学堂015.控件篇】简单控件之《小人跑跑》游戏实例",
+    "date": "2012-05-16 08:49:00",
+    "categories": [
+      "LGame"
+    ],
+    "excerpt": "【LG015.控件篇】简单控件之《小人跑跑》游戏实例 关键字：LGame 入门 控件游戏实例 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7571069 - Hello~最近工作遇到一些麻烦...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "lgame_entry-school_015_controls_articles_simple_controls_quotvillain_that_running_game_instance"
+  },
+  {
+    "id": 233,
+    "title": "【LGame入门学堂014.控件篇】简单控件之LPanel VS LPaper？",
+    "date": "2012-05-15 21:59:00",
+    "categories": [
+      "LGame"
+    ],
+    "excerpt": "【LG014.控件篇】简单控件之LPanelVS LPaper？ 关键字：LGame 入门 控件 LPanel LPaper 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7570539 有点...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "school_014_of_lgame_entry_controls_papers_simple_controls_lpanel_vs_lpaper"
+  },
+  {
+    "id": 232,
+    "title": "【LGame入门学堂013.控件篇】简单控件之LMessage",
+    "date": "2012-05-12 08:56:00",
+    "categories": [
+      "LGame"
+    ],
+    "excerpt": "【LGame学堂013.控件篇】简单控件之LMessage 关键字：LGame 入门 控件 LMessage 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7559567 LMessage本来...",
+    "commentCount": 3,
+    "isTop": false,
+    "format": "md",
+    "postName": "lgame_entry-school_013_controls_the_articles_simple_controls_lmessage"
+  },
+  {
+    "id": 231,
+    "title": "【LGame入门学堂012.控件篇】简单控件之形同虚设却无比强大的LPaper",
+    "date": "2012-05-10 08:57:00",
+    "categories": [
+      "LGame"
+    ],
+    "excerpt": "【LG012.控件篇】简单控件之形同虚设却无比强大的LPaper 关键字：LGame 入门 控件 LPaper 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7552524 LPaper的使用...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "lgame_entry-school_012_the_control_papers_simple_control_of_the_non-existent_but_very_powerful_lpaper"
+  },
+  {
+    "id": 230,
+    "title": "【LGame入门学堂011.控件篇】简单控件之解决添加控件后控件不显示的问题",
+    "date": "2012-05-09 08:57:00",
+    "categories": [
+      "LGame"
+    ],
+    "excerpt": "【LGame学堂011】简单控件之解决添加控件后控件不显示的问题 关键字：LGame 入门 控件 - 各位，不好意思，之前忘了说一个很重要的问题，也许有些朋友已经遇到这个问题了。那就是，明明创建了控件，也调用了add函数，控件也已经设为可见了，但控件就是不显示。 1.我们是怎么创建控件的呢？当然是在...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "lgame_entry-school_011_controls_articles_simple_controls_solve_the_problem_of_control_is_not_displayed_to_add_controls"
+  },
+  {
+    "id": 229,
+    "title": "【LGame入门学堂010.控件篇】简单控件之LSelect",
+    "date": "2012-05-08 09:25:00",
+    "categories": [
+      "LGame"
+    ],
+    "excerpt": "这章我们来看看LSelect吧~ 1.这个控件可以理解为单选按钮吧，我也只是刚接触喇，所以也只是了解了表层。 使用倒是挺简单的，来看代码吧： LSelect select = new LSelect(0, 200, 150, 220); select.setMessage(&quot;你觉得LGam...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "lgame_entry-school_010_controls_the_articles_simple_controls_lselect"
+  },
+  {
+    "id": 228,
+    "title": "【LGame入门学堂009.控件篇】简单控件之LPicture",
+    "date": "2012-05-08 09:22:00",
+    "categories": [
+      "LGame"
+    ],
+    "excerpt": "【LGame学堂009】简单控件之LPicture 关键字：LGame 入门 控件 LPicture 今天要介绍的LPicture很简单的~ 来吧，直接上代码： LPicture picture = new LPicture(0, 0, 100, 100); picture.loadImage(“a...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "lgame_entry-school_009_controls_the_articles_simple_controls_lpicture"
+  },
+  {
+    "id": 62,
+    "title": "【LGame入门学堂】LGame入门之路系列(更新到016章)",
+    "date": "2012-05-08 09:19:00",
+    "categories": [
+      "LGame"
+    ],
+    "excerpt": "做Android游戏开发也有半年了，实际上我接触Android也是半年... 一个没有任何游戏开发的经验的毕业生，就这样屁颠屁颠地走上了游戏开发之路。 我也是最近2个月才开始知道，原来游戏开发有游戏引擎的~！ 发现Android游戏开发也是有引擎的，而且还不少~ 可惜大部分都是英文...虽然我的英文...",
+    "commentCount": 3,
+    "isTop": false,
+    "format": "md",
+    "postName": "lgame_entry_school_lgame_entry_road_to_series_updated_to_016"
+  },
+  {
+    "id": 227,
+    "title": "【LGame入门学堂008.控件篇】简单控件之LButton",
+    "date": "2012-05-07 13:42:00",
+    "categories": [
+      "LGame"
+    ],
+    "excerpt": "【LGame学堂008】简单控件之LButton 关键字：LGame 入门 控件 LButton 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7530117 - 注：以下内容是昨晚写的，不是...",
+    "commentCount": 7,
+    "isTop": false,
+    "format": "md",
+    "postName": "entry_lgame_school_008_controls_articles_simple_controls_lbutton"
+  },
+  {
+    "id": 226,
+    "title": "【LGame入门学堂007.控件篇】简单控件之Desktop",
+    "date": "2012-05-07 08:37:00",
+    "categories": [
+      "LGame"
+    ],
+    "excerpt": "【LGame学堂007】简单控件之Desktop 从这章开始，我们来玩玩几个简单的控件~不过，我想先装装大牛，给大家讲讲LGame是如何管理控件的~ 先声明哈，我没有深入地看代码，所以真的是简单地解释一下而已（好吧，我的废话真的很多的，希望不会引起大家的愤怒...）。 我们试想一下，控件其实是什么？...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "the_lgame_entry_school_007_controls_simple_controls_desktop"
+  },
+  {
+    "id": 225,
+    "title": "【LGame入门学堂006.精灵传说】我是定时器",
+    "date": "2012-05-04 12:27:00",
+    "categories": [
+      "LGame"
+    ],
+    "excerpt": "【LG006.精灵传说】我是定时器 关键字：LGame 入门 定时器 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7530117 本章来聊聊精灵传说之我是定时器~ 木头惯例，先上图： 实现的...",
+    "commentCount": 4,
+    "isTop": false,
+    "format": "md",
+    "postName": "lgame_entry_school_legends_i_timer_006_wizard"
+  },
+  {
+    "id": 224,
+    "title": "【LGame入门学堂005.精灵传说】简单的精灵",
+    "date": "2012-05-03 08:55:00",
+    "categories": [
+      "LGame"
+    ],
+    "excerpt": "【LGame学堂】简单的精灵 关键字：LGame 入门 精灵 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7530117 效果图： 精灵，按照个人的理解，就是游戏中的生物，生物嘛，当然是要能...",
+    "commentCount": 13,
+    "isTop": false,
+    "format": "md",
+    "postName": "005_wizard_lgame_entry_school_legend_simple_wizard"
+  },
+  {
+    "id": 223,
+    "title": "【LGame入门学堂004.资源传说】 加载资源的方式",
+    "date": "2012-05-03 08:51:00",
+    "categories": [
+      "LGame"
+    ],
+    "excerpt": "【LG004.资源传说】加载资源的方式 关键字：LGame 入门 环境 资源 加载 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7530117 效果图： 其实很简单，直接看代码： priva...",
+    "commentCount": 4,
+    "isTop": false,
+    "format": "md",
+    "postName": "entry_lgame_school_004_legend_load_resources"
+  },
+  {
+    "id": 222,
+    "title": "【LGame入门学堂003.第三章】 HelloWorld之绘制文本",
+    "date": "2012-05-03 08:48:00",
+    "categories": [
+      "LGame"
+    ],
+    "excerpt": "【LG003.第三章】HelloWorld之绘制文本 关键字：LGame 入门 环境 文本 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7530117 最终效果： 这个很简单的，看Activ...",
+    "commentCount": 27,
+    "isTop": false,
+    "format": "md",
+    "postName": "lgame_entry-school_003_draw_the_text_of_chapter_iii_helloworld"
+  },
+  {
+    "id": 221,
+    "title": "【LGame入门学堂002.第一章】HelloWorld之搭建环境",
+    "date": "2012-05-03 08:45:00",
+    "categories": [
+      "LGame"
+    ],
+    "excerpt": "【LG002.第一章】HelloWorld之环境搭建 关键字：LGame 入门 环境搭建 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7530117 1. 引擎使用的版本LAE1.1 2. ...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "lgame_entry_school_002_chapter_helloworld_build_environment"
+  },
+  {
+    "id": 220,
+    "title": "【LGame入门学堂001.初章】 LGame是谁？",
+    "date": "2012-05-03 08:39:00",
+    "categories": [
+      "LGame"
+    ],
+    "excerpt": "[LG001.初章] LGame是谁？ 这个问题，当然就百度一下了，大家一起来先认识LGame吧~ LGame 是一款国人开发的Java游戏引擎，有Android及PC(J2SE)两个开发版本。其底 层绘图器LGrpaphics封装有J2SE以及J2ME提供的全部Graphics API（PC版采用...",
+    "commentCount": 4,
+    "isTop": false,
+    "format": "md",
+    "postName": "the_lgame_entry-school_001_beginning_of_chapter_lgame_who"
+  },
+  {
+    "id": 219,
+    "title": "用一个线程模拟多个线程，减少线程数量~",
+    "date": "2012-04-20 12:31:00",
+    "categories": [
+      "Android"
+    ],
+    "excerpt": "游戏开发中，免不了有很多定时任务、动画效果。 这些不是在一次的流程中就能执行完毕的。 正常情况下，我会想到用线程，但是，这么多定时任务，这么多动画效果，哪能这么多线程呢？~ 于是，笨木头有笨方法~ 自己模拟一下多线程就好了嘛~不就间隔一段时间执行一个函数么，简单~ 来，看看： public clas...",
+    "commentCount": 8,
+    "isTop": false,
+    "format": "md",
+    "postName": "simulate_multiple_threads_with_a_thread_and_reduce_the_number_of_threads_to"
+  },
+  {
+    "id": 7,
+    "title": "慎用枚举型的ordinal()方法~",
+    "date": "2012-04-16 19:10:00",
+    "categories": [
+      "Android"
+    ],
+    "excerpt": "版权声明：这是看了Java Effective这本书的某个关于枚举的章节之后有感而发~不是原创~ 先来一个枚举： public enum EnumArmyLvlType { CMD0, en_armu_lvl_type_divine, /* 1.神将 */ en_armu_lvl_type_outs...",
+    "commentCount": 0,
+    "isTop": false,
+    "format": "md",
+    "postName": "caution_enumeration_type_ordinal__method_to"
+  },
+  {
+    "id": 218,
+    "title": "[笨木头“创业”路]No.4 历练",
+    "date": "2012-03-11 22:43:00",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "任务——敲代码——赶进度——联调——加班——成长——循环",
+    "commentCount": 5,
+    "isTop": false,
+    "format": "md",
+    "postName": "the_stupid_wood_quotventurequot_road_no4_experience"
+  },
+  {
+    "id": 217,
+    "title": "[笨木头\"创业\"路]No.3 安卓",
+    "date": "2012-03-08 20:53:00",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "最近工作比较忙，应该说情况比较紧急，所以好几天没有写了。 我等会还要继续敲代码咯，我就长话短说吧，各位莫要介意哈。 安卓，英文名叫Android，它将伴随我很长一段时间。 给了3500块的违约金给实习的公司后，我便离去，来到现在的公司。 不介意我公开它的名字吧？ 它叫“创娱”，说实话，我觉得是蛮老土...",
+    "commentCount": 3,
+    "isTop": false,
+    "format": "md",
+    "postName": "the_stupid_wood_ampquot_venture_ampquot_road_no3_andrews"
+  },
+  {
+    "id": 216,
+    "title": "[笨木头\"创业\"路]No.2 狠心",
+    "date": "2012-03-04 23:34:00",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "那时，我即将毕业，也已经和实习了一年的公司签订了三方协议，准备转正了。 我不懂得人情世故，所以，我愿意公开细节，我不知道是否妥当，反正，又不违法，嘿嘿~ 我实习了一年的公司是上海华腾，我在深圳福田区的平安大厦里的一个项目组里~ 有点属于是外包公司吧，不过不完全是，因为公司有自己的核心产品，去到客户那...",
+    "commentCount": 6,
+    "isTop": false,
+    "format": "md",
+    "postName": "stupid_wood_ampquot_entrepreneurial_ampquot_road_no2_heartless"
+  },
+  {
+    "id": 215,
+    "title": "【Android游戏开发-笨木头】抛弃自带输入框，自己实现~自由自在~！",
+    "date": "2012-03-04 23:01:00",
+    "categories": [
+      "Android"
+    ],
+    "excerpt": "我是一个很喜欢炫耀的人，我最近解决了一个问题，所以来炫耀了~嘿嘿~ 希望各位被我炫耀的同时，也把我学到的知识偷走，随便偷，不要钱哈~ 在看我的帖子之前，请确保你已经看过或者掌握了这个帖子（在没有输入焦点类控件上调用输入法）： http://www.android-fans.net/forum.php...",
+    "commentCount": 12,
+    "isTop": false,
+    "format": "md",
+    "postName": "android_game_development_-_the_stupid_wood_abandon_its_own_input_box_their_own_freedom__"
+  },
+  {
+    "id": 214,
+    "title": "[笨木头\"创业\"路]No.1 结束和启程",
+    "date": "2012-03-01 23:09:00",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "毕业答辩那天。 向各位敲代码的报告一声，我不是计算机专业的，我只是一个信管的学生。 没有过硬的技术，也没有良好的管理知识。 我选择了技术，彻底抛弃了管理。 即便如此，我也无法和专业的人相比。 是的呢，我直到大三才开始会做个简单的网站，到大四结束，我也没有做过什么出色的项目~ 在信管，我被谣传地很厉害...",
+    "commentCount": 2,
+    "isTop": false,
+    "format": "md",
+    "postName": "the_stupid_wood_ampquot_entrepreneurial_ampquot_road_no1_end_and_depart"
+  },
+  {
+    "id": 1,
+    "title": "[笨木头\"创业\"路]No.0 前言",
+    "date": "2012-02-29 21:48:00",
+    "categories": [
+      "创业路"
+    ],
+    "excerpt": "&quot;创业&quot;也有半年了, 还未成功, 今天突然心血来潮, 想将这一路, 都记录下来。 为什么创业两个字加双引号？~因为，我不完全算是创业，我只是跟着别人创业。 不管怎么说，我也是属于这个团队的。 但是，但是，别想着可以从这些文字里找到一些创业的心得咯~ 我只会写些心情，唠叨唠叨~嘿嘿...",
+    "commentCount": 3,
+    "isTop": false,
+    "format": "md",
+    "postName": "the_stupid_wood_ampquot_entrepreneurial_ampquot_road_no0_preface"
+  }
+]

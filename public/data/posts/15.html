@@ -1,0 +1,123 @@
+
+<p align="center"><strong><span style="font-size:24px">【地球人..学习cocos2d-x】学习实践之逐步变强的HelloWorld(下集)</span></strong></p>
+<p>&nbsp;</p>
+<p><span style="font-family:Calibri"><strong><span style="color:royalblue">笨木头花心贡献，啥？花心？不呢，是用心~<br />
+</span><br />
+</strong><span style="font-size:18px; color:red">转载请注明，原文地址</span></span><span style="font-size:18px; color:#ff0000">：</span><a href="http://blog.csdn.net/musicvs/article/details/8089125"><span style="font-size:18px">http://blog.csdn.net/musicvs/article/details/8089125</span></a></p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size:24px; background-color:#cccccc">正文：</span></strong></p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size:18px; color:#ff0000">上集传送门：</span></strong><a href="http://blog.csdn.net/musicvs/article/details/8086971"><span style="font-size:18px">http://blog.csdn.net/musicvs/article/details/8086971</span></a></p>
+<p><strong><span style="font-size:14px"></span></strong>&nbsp;</p>
+<p><strong><span style="font-size:14px">好，继续<span style="font-family:Times New Roman">…</span></span></strong></p>
+<p><span style="font-family:Times New Roman; font-size:14px">&nbsp;</span></p>
+<p><span style="font-size:14px">先修正上一篇文章的一个错误，在<span style="font-family:Times New Roman">cocos2d-x</span>的<span style="font-family:Times New Roman">2.x</span>版本之后，创建精灵的方式由<span style="font-family:Times New Roman">sprite***</span>改为<span style="font-family:Times New Roman">create***</span>（并且几乎其它所有类都有这样的改动，虽然让使用了<span style="font-family:Times New Roman">1.x</span>版本的朋友很无奈，但是这个<span style="font-family:Times New Roman">create</span>还是比<span style="font-family:Times New Roman">sprite**</span>什么的比较形象。</span></p>
+<p><span style="font-size:14px">于是，把上次的<strong><span style="font-family:Times New Roman">sprite</span></strong></span><span style="color:#020002">WithSpriteFrameName</span><span style="color:#020002">改为</span><strong><span style="color:#020002">create</span></strong><span style="color:#020002">WithSpriteFrameName</span></p>
+<p><span style="font-family:Times New Roman; font-size:14px">&nbsp;</span></p>
+<p><strong><span style="font-family:Times New Roman">1.&nbsp;&nbsp;&nbsp;&nbsp; </span>第三个<span style="font-family:Times New Roman">HelloWorld-</span>使用<span style="font-family:Times New Roman">CCSpriteBatchNode</span></strong></p>
+<p><span style="font-size:14px">这个如果把原理抛开的话，很简单：</span></p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top">
+<p align="left"><span style="color:green">/* </span><span style="color:green">加载图片资源到</span><span style="color:green">SpriteFrame</span><span style="color:green">缓存池</span><span style="color:green">*/</span></p>
+<p align="left"><span style="color:#020002">CCSpriteFrameCache</span>* <span style="color:#020002">
+cache</span> = <span style="color:#020002">CCSpriteFrameCache</span>::<span style="color:#020002">sharedSpriteFrameCache</span>();</p>
+<p align="left"><span style="color:#020002">cache</span>-&gt;<span style="color:#020002">addSpriteFramesWithFile</span>(<span style="color:#a31515">&quot;images.plist&quot;</span>,<span style="color:#a31515">&quot;images.png&quot;</span>);</p>
+<p align="left">&nbsp;</p>
+<p align="left"><span style="color:green">/* </span><span style="color:green">创建</span><span style="color:green">CCTexture2D</span><span style="color:green">对象</span><span style="color:green">*/</span></p>
+<p align="left"><span style="color:#020002">CCTexture2D</span>* <span style="color:#020002">
+texture</span> = <span style="color:#020002">CCTextureCache</span>::<span style="color:#020002">sharedTextureCache</span>()-&gt;<span style="color:#020002">textureForKey</span>(<span style="color:#a31515">&quot;images.png&quot;</span>);</p>
+<p align="left">&nbsp;</p>
+<p align="left"><span style="color:green">/* </span><span style="color:green">使用</span><span style="color:green">CCTexture2D</span><span style="color:green">对象创建</span><span style="color:green">BatchNode */</span></p>
+<p align="left"><span style="color:#020002">CCSpriteBatchNode</span>* <span style="color:#020002">
+batchNode</span> = <span style="color:#020002">CCSpriteBatchNode</span>::<span style="color:#020002">createWithTexture</span>(<span style="color:#020002">texture</span>);</p>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;<span style="color:green">/* </span><span style="color:green">添加</span><span style="color:green">BatchNode</span><span style="color:green">到场景</span><span style="color:green">*/</span></p>
+<p align="left"><span style="color:blue">this</span>-&gt;<span style="color:#020002">addChild</span>(<span style="color:#020002">batchNode</span>);</p>
+<p align="left">&nbsp;</p>
+<p align="left"><span style="color:#020002">CCSize</span> <span style="color:#020002">
+size</span> = <span style="color:#020002">CCDirector</span>::<span style="color:#020002">sharedDirector</span>()-&gt;<span style="color:#020002">getWinSize</span>();</p>
+<p align="left">&nbsp;</p>
+<p align="left"><span style="color:green">/* </span><span style="color:green">创建精灵</span><span style="color:green">*/</span></p>
+<p align="left"><span style="color:#020002">CCSprite</span>* <span style="color:#020002">
+sprite</span> = <span style="color:#020002">CCSprite</span>::<span style="color:#020002">createWithSpriteFrameName</span>(<span style="color:#a31515">&quot;p6.png&quot;</span>);</p>
+<p align="left"><span style="color:#020002">sprite</span>-&gt;<span style="color:#020002">setPosition</span>(<span style="color:#020002">ccp</span>(<span style="color:#020002">size</span>.<span style="color:#020002">width</span> / 2,<span style="color:#020002">size</span>.<span style="color:#020002">height</span>
+ / 2));</p>
+<p align="left">&nbsp;</p>
+<p align="left"><span style="color:green">/* </span><span style="color:green">把精灵添加到</span><span style="color:green">BatchNode */</span></p>
+<p><span style="color:#020002">batchNode</span>-&gt;<span style="color:#020002">addChild</span>(<span style="color:#020002">sprite</span>);</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size:14px">好像没有什么能解释的，我本身对</span><span style="color:#020002">CCSpriteBatchNode</span><span style="font-size:14px">的理解也十分不透彻。只是大概知道，把属于同一张大图片里的所有小图片都放到一个<span style="font-family:Times New Roman">BatchNode</span>对象里，然后给绘制的时候，只提交一次（好像是和<span style="font-family:Times New Roman">OPGL</span>的绘制原理有关的）。既然这是<span style="font-family:Times New Roman">HelloWorld</span>，就不详细研究了。</span></p>
+<p><span style="font-family:Times New Roman; font-size:14px">&nbsp;</span></p>
+<p><strong><span style="font-size:14px">只要留意一下步骤：</span></strong></p>
+<p><span style="font-size:14px">创建用<span style="font-family:Times New Roman">TexturePacker</span>打包图片</span></p>
+<p><span style="font-family:Times New Roman; font-size:14px">-&gt;</span>用图片创建<span style="font-family:Times New Roman">Texture2D</span>对象</p>
+<p><span style="font-family:Times New Roman; font-size:14px">-&gt;</span>用<span style="font-family:Times New Roman">Texture2D</span>对象创建<span style="font-family:Times New Roman">SpriteBatchNode</span>对象并添加到场景</p>
+<p><span style="font-family:Times New Roman; font-size:14px">-&gt;</span>然后创建精灵的时候把精灵添加到<span style="font-family:Times New Roman">SpriteBatchNode</span>里而不是添加到场景里。</p>
+<p><span style="font-family:Times New Roman; font-size:14px">&nbsp;</span></p>
+<p><span style="font-size:14px">运行效果是一样的：</span></p>
+<p></p>
+<p><span style="font-family:Times New Roman; font-size:14px">&nbsp;</span></p>
+<p><strong><span style="font-family:Times New Roman">2.&nbsp;&nbsp;&nbsp;&nbsp; </span>第四个<span style="font-family:Times New Roman">HelloWorld-</span>加入关闭按钮</strong></p>
+<p><span style="font-size:14px">正常情况下，加入关闭按钮是比较简单的：</span></p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top">
+<p align="left"><span style="color:#020002">CCMenuItemImage</span> *<span style="color:#020002">pCloseItem</span> =<span style="color:#020002">CCMenuItemImage</span>::<span style="color:#020002">create</span>(</p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#a31515">&quot;CloseNormal.png&quot;</span>,</p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#a31515">&quot;CloseSelected.png&quot;</span>,</p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span style="color:blue">this</span>,</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#020002">menu_selector</span>(<span style="color:#020002">HelloWorld</span>::<span style="color:#020002">menuCloseCallback</span>));</p>
+<p>menu-&gt;addChild(<span style="color:#020002">pCloseItem);</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size:14px">就不解释了。</span></p>
+<p><span style="font-size:14px">现在的问题是，我们已经把图片都打包在一张大图里了，根本就没有单独的<span style="font-family:Times New Roman">CloseNormal.png</span>和<span style="font-family:Times New Roman">CloseSelected.png</span>。那怎么办？最简单的办法就是没有办法。</span></p>
+<p><span style="font-family:Times New Roman; font-size:14px">&nbsp;</span></p>
+<p><strong><span style="font-size:14px">噗，开玩笑的，看看代码：</span></strong></p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top">
+<p align="left"><span style="color:green">/* </span><span style="color:green">加入关闭按钮</span><span style="color:green">-</span><span style="color:green">使用图片菜单来实现</span><span style="color:green">*/</span></p>
+<p align="left"><span style="color:#020002">CCMenuItemImage</span>* <span style="color:#020002">
+closeItemImg</span> = <span style="color:#020002">CCMenuItemImage</span>::<span style="color:#020002">create</span>();</p>
+<p align="left">&nbsp;</p>
+<p align="left"><span style="color:green">/* </span><span style="color:green">初始化，先不设置图片</span><span style="color:green">*/</span></p>
+<p align="left"><span style="color:#020002">closeItemImg</span>-&gt;<span style="color:#020002">initWithTarget</span>(</p>
+<p align="left"><span style="color:blue">this</span>, <span style="color:#020002">
+menu_selector</span>(<span style="color:#020002">BatchNodeSceneWithCloseBtn</span>::<span style="color:#020002">menuCloseCallback</span>));</p>
+<p align="left">&nbsp;</p>
+<p align="left"><span style="color:green">/* </span><span style="color:green">设置正常图片</span><span style="color:green">-</span><span style="color:green">使用</span><span style="color:green">SpriteFrame</span><span style="color:green">对象</span><span style="color:green">*/</span></p>
+<p align="left"><span style="color:#020002">closeItemImg</span>-&gt;<span style="color:#020002">setNormalSpriteFrame</span>(<span style="color:#020002">cache</span>-&gt;<span style="color:#020002">spriteFrameByName</span>(<span style="color:#a31515">&quot;CloseNormal.png&quot;</span>));</p>
+<p align="left">&nbsp;</p>
+<p align="left"><span style="color:green">/* </span><span style="color:green">设置点击状态图片</span><span style="color:green">-</span><span style="color:green">使用</span><span style="color:green">SpriteFrame</span><span style="color:green">对象</span><span style="color:green">*/</span>&nbsp;&nbsp;<span style="color:#020002">closeItemImg</span>-&gt;<span style="color:#020002">setSelectedSpriteFrame</span>(<span style="color:#020002">cache</span>-&gt;<span style="color:#020002">spriteFrameByName</span>(<span style="color:#a31515">&quot;CloseSelected.png&quot;</span>));</p>
+<p align="left">&nbsp;</p>
+<p align="left"><span style="color:#020002">CCMenu</span>* <span style="color:#020002">
+menu</span> = <span style="color:#020002">CCMenu</span>::<span style="color:#020002">create</span>(<span style="color:#020002">closeItemImg</span>,<span style="color:#020002">NULL</span>);</p>
+<p align="left"><span style="color:#020002">menu</span>-&gt;<span style="color:#020002">setPosition</span>(<span style="color:#020002">ccp</span>(<span style="color:#020002">size</span>.<span style="color:#020002">width</span> - 50, 50));</p>
+<p><span style="color:blue">this</span>-&gt;<span style="color:#020002">addChild</span>(<span style="color:#020002">menu</span>);</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size:14px">区别就是，</span><span style="color:#020002">initWithTarget</span><span style="color:#020002">、</span><span style="color:#020002">setNormalSpriteFrame</span><span style="color:#020002">、</span><span style="color:#020002">setSelectedSpriteFrame</span><span style="font-size:14px">这几个函数，主要是</span><span style="color:#020002">setNormalSpriteFrame</span><span style="font-size:14px">和</span><span style="color:#020002">setSelectedSpriteFrame</span><span style="font-size:14px">，<span style="font-family:Times New Roman">SpriteFrame</span>已经存在<span style="font-family:Times New Roman">SpriteFrameCache</span>里了，所以我们可以成功地设置按钮的图片。</span></p>
+<p></p>
+<p><span style="font-family:Times New Roman; font-size:14px">&nbsp;</span></p>
+<p><span style="font-family:Times New Roman; font-size:14px">&nbsp;</span></p>
+<p><span style="font-size:14px">好了，第一篇学习的实践<span style="font-family:Times New Roman">HelloWorld</span>已经结束了。</span></p>
+<p><span style="font-size:14px"></span>&nbsp;</p>
+<p><span style="font-size:14px">我的第二篇学习即将开始，看完之后再和大家分享心得，大家也可以一起去看看，这位大牛写的教程很不错：</span></p>
+<p><span style="font-family:Times New Roman; font-size:14px"><a href="http://cn.cocos2d-x.org/bbs/forum.php?mod=viewthread&amp;tid=805">http://cn.cocos2d-x.org/bbs/forum.php?mod=viewthread&amp;tid=805</a></span></p>
+<p><span style="font-family:Times New Roman; font-size:14px"></span>&nbsp;</p>
+<p><span style="font-family:Times New Roman; font-size:14px"></span>&nbsp;</p>
+<p><span style="font-family:Times New Roman; font-size:14px">.</span></p>
+<p><span style="font-family:Times New Roman; font-size:14px"></span>&nbsp;</p>
+<p><span style="font-family:Times New Roman; font-size:14px">.</span></p>

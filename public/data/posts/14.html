@@ -1,0 +1,186 @@
+<span style="font-family: Times New Roman; font-size: 14px;"> </span>
+
+<span style="font-family: Times New Roman; font-size: 14px;"> </span>
+
+<strong><span style="color: #3366ff;"><span style="font-size: 24px;"><span style="font-family: Times New Roman;">1.</span>       在<span style="font-family: Times New Roman;">HelloWorld</span>之前</span></span></strong>
+
+<span style="font-size: 14px;">因为我准备按照第一篇教程里教我的东西，一步步从简单到难写成多个<span style="font-family: Times New Roman;">Demo</span>，于是我又不想新建那么多项目，所以，是的<span style="font-family: Times New Roman;">~</span>我们需要一个菜单界面。</span>
+
+<span style="font-size: 14px;">要创建很难，很多步，别激动，慢慢来，噗：</span>
+<ol type="a">
+	<li><span style="font-size: 14px;">首先我们需要一个<span style="font-family: Times New Roman;">CCMenu</span>对象，它是一个菜单对象，当然菜单是可以包含子菜单的。</span></li>
+	<li><span style="font-size: 14px;">然后我们需要子菜单，在<span style="font-family: Times New Roman;">cocos2d-x</span>里子菜单就是<span style="font-family: Times New Roman;">CCMenuItem</span>，但是<span style="font-family: Times New Roman;">Item</span>的类别有很多，在这里，我选择文字标签<span style="font-family: Times New Roman;">Item</span>：</span><span style="color: #020002;">CCMenuItemLabel</span></li>
+	<li><span style="font-family: Times New Roman; font-size: 14px;">CCMenu</span>需要一个<span style="font-family: Times New Roman;">CCMenuItemLabel</span>，同样<span style="font-family: Times New Roman;">CCMenuItemLabel</span>它只是一个<span style="font-family: Times New Roman;">Item</span>，而它又要作为一个标签<span style="font-family: Times New Roman;">Item</span>，所以它需要一个标签对象：<span style="color: #020002;">CCLabelTTF</span></li>
+	<li><span style="color: #020002;">于是，整个步骤就是，一个</span><span style="color: #020002;">CCLabelTTF</span><span style="color: #020002;">对象添加到一个</span><span style="color: #020002;">CCMenuItemLabel</span><span style="color: #020002;">对象，然后</span><span style="color: #020002;">CCMenuItemLabel</span><span style="color: #020002;">对象再添加到</span><span style="color: #020002;">CCMenu</span><span style="color: #020002;">里。</span></li>
+</ol>
+<span style="color: #020002;"> </span>
+
+<span style="font-size: 14px;">好了，废话多了，看代码：</span>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top">
+<p align="left"><span style="color: #339966;">/* </span><span style="color: #339966;">创建一个</span><span style="color: #339966;">Label</span><span style="color: #339966;">对象</span><span style="color: #339966;"> */</span></p>
+<p align="left"><span style="color: #020002;">CCLabelTTF</span>* <span style="color: #020002;">
+helloWorldLab1</span> = <span style="color: #020002;">CCLabelTTF</span>::<span style="color: #020002;">create</span>(<span style="color: #a31515;">"HelloWorld1"</span>,
+<span style="color: #a31515;">"Arial"</span>, 35);</p>
+<p align="left"></p>
+<p align="left"><span style="color: #339966;">/* </span><span style="color: #339966;">创建一个</span><span style="color: #339966;">CCMenuItemLabel</span><span style="color: #339966;">对象，需要</span><span style="color: #339966;">Label</span><span style="color: #339966;">对象作为参数</span><span style="color: #339966;">
+*/</span></p>
+<p align="left"><span style="color: #020002;">CCMenuItemLabel</span>* <span style="color: #020002;">
+helloWorldItem1</span> = <span style="color: #020002;">CCMenuItemLabel</span>::<span style="color: #020002;">create</span>(</p>
+<p align="left">            <span style="color: #020002;">helloWorldLab1</span>,</p>
+<p align="left">            <span style="color: blue;">this</span>,</p>
+<p align="left">            <span style="color: #020002; background: yellow;">menu_selector</span>(<span style="color: #020002;">MenuScene</span>::<span style="color: #020002;">showHelloWorld1</span>));</p>
+<p align="left"></p>
+<p align="left"><span style="color: #339966;">/* </span><span style="color: #339966;">创建一个</span><span style="color: #339966;">CCMenu</span><span style="color: #339966;">对象，需要</span><span style="color: #339966;">Item</span><span style="color: #339966;">对象作为参数</span><span style="color: #339966;">
+*/</span></p>
+<p align="left"><span style="color: #020002;">CCMenu</span>* <span style="color: #020002;">
+menu</span> = <span style="color: #020002;">CCMenu</span>::<span style="color: #020002;">create</span>(<span style="color: #020002;">helloWorldItem1</span>,
+<span style="color: #020002;">NULL</span>);</p>
+<p align="left"></p>
+<p align="left"><span style="color: #339966;">/* </span><span style="color: #339966;">最后将</span><span style="color: #339966;">CCMenu</span><span style="color: #339966;">菜单添加到场景中</span><span style="color: #339966;"> */</span></p>
+<span style="color: blue;">this</span>-&gt;<span style="color: #020002;">addChild</span>(<span style="color: #020002;">menu</span>);</td>
+</tr>
+</tbody>
+</table>
+<span style="font-family: Times New Roman; font-size: 14px;"> </span>
+
+<span style="color: #020002; background: yellow;">menu_selector</span><span style="font-size: 14px;">，没有人想好奇一下这个是什么吗？虽然它的内在原理我现在还没懂，但是我知道它相当于一个回调功能。当菜单的<span style="font-family: Times New Roman;">Item</span>对象被点击之后，会调用</span>
+
+<span style="color: #020002;">showHelloWorld1</span><span style="color: #020002;">函数。也就是说，我们可以在这里设置点击菜单项之后要做的事情。</span>
+
+<span style="color: #020002;"> </span>
+
+<strong><span style="font-size: 24px; color: #3366ff;">2.    第一个HelloWorld</span></strong>
+
+<span style="color: #020002;">现在来一个最简单的吧：</span>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top">
+<p align="left"><span style="color: #020002;">CCSprite</span>* <span style="color: #020002;">
+backgroundSprite</span> = <span style="color: #020002;">CCSprite</span>::<span style="color: #020002;">create</span>(<span style="color: #a31515;">"HelloWorld.png"</span>);</p>
+<span style="color: blue;">this</span>-&gt;<span style="color: #020002;">addChild</span>(<span style="color: #020002;">backgroundSprite</span>);</td>
+</tr>
+</tbody>
+</table>
+<span style="font-size: 14px;">就这样，最普通的创建一个精灵的方式。</span>
+
+<span style="font-family: Times New Roman; font-size: 14px;"> </span>
+
+<span style="font-size: 14px;"><span style="background: #d9d9d9;">友情提示：如果对</span><span style="background: #d9d9d9;"><span style="font-family: Times New Roman;">C++</span></span><span style="background: #d9d9d9;">语法也不熟悉的朋友（比如我，噗），最好自己一点点写，重新写一个场景类，包括它的头文件，</span><span style="background: #d9d9d9;"><span style="font-family: Times New Roman;">cpp</span></span><span style="background: #d9d9d9;">文件。</span></span>
+
+<span style="font-family: Times New Roman; font-size: 14px;"> </span>
+
+<strong><span style="font-size: 24px;"><span style="color: #3366ff;"><span style="font-family: Times New Roman;">3.</span>       第二个<span style="font-family: Times New Roman;">-</span>使用<span style="font-family: Times New Roman;">TexturePacker</span>打包后的图片创建精灵</span></span></strong>
+
+<span style="font-size: 14px;">关于<span style="font-family: Times New Roman;">TexturePacker</span>的使用我就不说了，大牛的教程里讲得很详细了。另外一提，<span style="font-family: Times New Roman;">TexturePacker</span>并不是万能的，千万不要过度依赖，本人亲测，如果用<span style="font-family: Times New Roman;">TexturePacker</span>打包的图片有过多空白冗余的地方，将会适得其反地使得图片更加占用内存（和打包之前相比）。所以，打包的时候一定要用心，尽量减少空白的地方。</span>
+
+<span style="font-family: Times New Roman; font-size: 14px;"> </span>
+
+<span style="font-size: 14px;">嗯，然后，为了添加第二个<span style="font-family: Times New Roman;">Demo</span>，我需要在菜单里加入第二个<span style="font-family: Times New Roman;">Item</span>对象，于是，看看：</span>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top">
+<p align="left"><span style="color: green;">/* </span><span style="color: green;">获取屏幕大小</span><span style="color: green;">*/</span></p>
+<p align="left"><span style="color: #020002;">CCSize</span> <span style="color: #020002;">
+size</span> = <span style="color: #020002;">CCDirector</span>::<span style="color: #020002;">sharedDirector</span>()-&gt;<span style="color: #020002;">getWinSize</span>();</p>
+<p align="left"><span style="color: #020002;">CCLabelTTF</span>* <span style="color: #020002;">
+itemLab</span> = <span style="color: #020002;">NULL</span>;</p>
+<p align="left"></p>
+<p align="left"><span style="color: green;">/* Demo1-</span><span style="color: green;">最简单的方式创建一个精灵</span><span style="color: green;">*/</span></p>
+<p align="left"><span style="color: #020002;">itemLab</span> = <span style="color: #020002;">
+CCLabelTTF</span>::<span style="color: #020002;">create</span>(<span style="color: #a31515;">"HelloWorld1"</span>,
+<span style="color: #020002;">“</span><span style="color: #a31515;">Arial</span><span style="color: #020002;">”</span>,
+<span style="color: #020002;">30</span>);</p>
+<p align="left"><span style="color: #020002;">CCMenuItemLabel</span>* <span style="color: #020002;">
+helloWorldItem1</span> = <span style="color: #020002;">CCMenuItemLabel</span>::<span style="color: #020002;">create</span>(</p>
+<p align="left">       <span style="color: #020002;">itemLab</span>,</p>
+<p align="left">       <span style="color: blue;">this</span>,</p>
+<p align="left">       <span style="color: #020002;">menu_selector</span>(<span style="color: #020002;">MenuScene</span>::<span style="color: #020002;">showHelloWorld1</span>));</p>
+<p align="left"></p>
+<p align="left"><span style="color: green;">/* Demo2-</span><span style="color: green;">使用</span><span style="color: green;">TexturePacker</span><span style="color: green;">打包后的图片创建一个精灵</span><span style="color: green;">*/</span></p>
+<p align="left"><span style="color: #020002;">itemLab</span> = <span style="color: #020002;">
+CCLabelTTF</span>::<span style="color: #020002;">create</span>(<span style="color: #a31515;">"HelloWorld2"</span>,
+<span style="color: #020002;">“</span><span style="color: #a31515;">Arial</span><span style="color: #020002;">”</span>,
+<span style="color: #020002;">30</span>);</p>
+<p align="left"><span style="color: #020002;">CCMenuItemLabel</span> * <span style="color: #020002;">
+helloWorldItem2</span> = <span style="color: #020002;">CCMenuItemLabel</span>::<span style="color: #020002;">create</span>(</p>
+<p align="left"><span style="color: #020002;">itemLab</span>,</p>
+<p align="left">        <span style="color: blue;">this</span>,</p>
+<p align="left">        <span style="color: #020002;">menu_selector</span>(<span style="color: #020002;">MenuScene</span>::<span style="color: #020002;">showHelloWorld2</span>));</p>
+<p align="left"></p>
+<p align="left"><span style="color: green;">/* </span><span style="color: green;">创建菜单</span><span style="color: green;">*/</span></p>
+<p align="left"><span style="color: #020002;">CCMenu</span>* <span style="color: #020002;">
+menu</span> = <span style="color: #020002;">CCMenu</span>::<span style="color: #020002;">create</span>();</p>
+<p align="left"><span style="color: #020002;">menu</span>-&gt;<span style="color: #020002;">setPosition</span>(<span style="color: #020002;">ccp</span>(<span style="color: #020002;">size</span>.<span style="color: #020002;">width</span> / 2,
+<span style="color: #020002;">size</span>.<span style="color: #020002;">height</span> / 2));</p>
+<p align="left"></p>
+<p align="left"><span style="color: green;">/* </span><span style="color: green;">添加所有</span><span style="color: green;">Item</span><span style="color: green;">到菜单中</span><span style="color: green;">*/</span></p>
+<p align="left"><strong><span style="color: red;">menu-&gt;addChild(helloWorldItem1);</span></strong></p>
+<p align="left"><strong><span style="color: red;">menu-&gt;addChild(helloWorldItem2);</span></strong></p>
+<p align="left"></p>
+<p align="left"><span style="color: green;">/* </span><span style="color: green;">自动按垂直方向排列子</span><span style="color: green;">Item */</span></p>
+<p align="left"><strong><span style="color: red;">menu-&gt;alignItemsVertically();
+</span></strong></p>
+<p align="left"></p>
+<span style="color: blue;">this</span>-&gt;<span style="color: #020002;">addChild</span>(<span style="color: #020002;">menu</span>);</td>
+</tr>
+</tbody>
+</table>
+<span style="font-size: 14px;">前面的创建<span style="font-family: Times New Roman;">Item</span>就不说了，我想说说红色加粗的部分，向菜单添加<span style="font-family: Times New Roman;">Item</span>对象和向场景添加精灵的方式是一样的，用<span style="font-family: Times New Roman;">addChild</span>就可以了，很方便。</span>
+
+<span style="font-size: 14px;">然后，刚开始我发现直接这样<span style="font-family: Times New Roman;">add</span>进入的<span style="font-family: Times New Roman;">Item</span>全都挤在一起了，于是我首先想到用<span style="font-family: Times New Roman;">setPosition</span></span>
+
+<span style="font-size: 14px;">，当然，结果是成功的。可是，后来我想，<span style="font-family: Times New Roman;">cocos2d-x</span>这么强大，应该有自动排列才对的，于是我找了一下<span style="font-family: Times New Roman;">CCMenu</span>的函数，发现了这个</span><strong><span style="color: red;">alignItemsVertically()</span></strong><span style="font-size: 14px;">，让子<span style="font-family: Times New Roman;">Item</span>按垂直方向自动排队<span style="font-family: Times New Roman;">~</span>很好用，噗。</span>
+
+<span style="font-family: Times New Roman; font-size: 14px;"> </span>
+
+<span style="font-size: 14px;">然后进入正题，先打包好图片，得到两个文件：<span style="font-family: Times New Roman;">images.plist</span>、<span style="font-family: Times New Roman;">images.png</span>。我比较懒，直接从大牛的教程里下载的<span style="font-family: Times New Roman;">…</span>然后看代码：</span>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top">
+<p align="left"><span style="color: green;">/* </span><span style="color: green;">将图片加载到缓存池中</span><span style="color: green;">*/</span></p>
+<p align="left"><span style="color: #020002;">CCSpriteFrameCache</span>* <span style="color: #020002;">
+cache</span> = <span style="color: #020002;">CCSpriteFrameCache</span>::<span style="color: #020002;">sharedSpriteFrameCache</span>();</p>
+<p align="left"><span style="color: #020002;">cache</span>-&gt;<span style="color: #020002;">addSpriteFramesWithFile</span>(<span style="color: #a31515;">"images.plist"</span>,
+<span style="color: #a31515;">"images.png"</span>);</p>
+<p align="left"></p>
+<p align="left"><span style="color: #020002;">CCSize</span> <span style="color: #020002;">
+size</span> = <span style="color: #020002;">CCDirector</span>::<span style="color: #020002;">sharedDirector</span>()-&gt;<span style="color: #020002;">getWinSize</span>();</p>
+<p align="left"></p>
+<p align="left"><span style="color: green;">/* </span><span style="color: green;">使用</span><span style="color: green;">TexturePacker</span><span style="color: green;">打包图片后创建精灵的方式</span><span style="color: green;">*/</span></p>
+<p align="left"><span style="color: #020002;">CCSprite</span>* <span style="color: #020002;">
+people</span> = <span style="color: #020002;">CCSprite</span>::<span style="color: #020002;">spriteWithSpriteFrameName</span>(<span style="color: #a31515;">"p6.png"</span>);</p>
+<p align="left"><span style="color: #020002;">people</span>-&gt;<span style="color: #020002;">setPosition</span>(<span style="color: #020002;">ccp</span>(<span style="color: #020002;">size</span>.<span style="color: #020002;">width</span> / 2,
+<span style="color: #020002;">size</span>.<span style="color: #020002;">height</span> / 2));</p>
+<p align="left"></p>
+<span style="color: blue;">this</span>-&gt;<span style="color: #020002;">addChild</span>(<span style="color: #020002;">people</span>);</td>
+</tr>
+</tbody>
+</table>
+<span style="font-size: 14px;">好了，你懂了，不说了。</span>
+
+<span style="font-size: 14px;">噗，开玩笑的。</span><span style="color: #020002;">CCSpriteFrameCache</span><span style="color: #020002;">是缓存池，存放所有</span><span style="color: #020002;">CCSpriteFrame</span><span style="color: #020002;">对象的地方，用</span><span style="color: #020002;">addSpriteFramesWithFile</span><span style="color: #020002;">方法把打包好的图片解析成</span><span style="color: #020002;">CCSpriteFrame</span><span style="color: #020002;">对象，然后放到缓存池里。</span>
+
+<span style="color: #020002;">于是，创建精灵的时候就直接用图片打包前各自的名字就可以了，比如下图中的箭头所指的那个图片（</span><span style="color: #339966;">由于怕你们看不到它，所以我稍微多用了</span><span style="color: #339966;">2</span><span style="color: #339966;">个箭头，是</span><span style="color: #339966;">2</span><span style="color: #339966;">个么？应该是的</span><span style="color: #339966;">=
+=</span><span style="color: #020002;">）：</span>
+
+<img class="alignnone" src="/images/uploads/csdn_musicvs/other_site/img_my_1350556445_3299.webp" alt="创建精灵的时候就直接用图片打包前各自的名字就可以了" width="590" height="243" />
+
+&nbsp;
+<p align="left"><span style="font-size: 14px;">它在打包前有自己的文件名的，叫做<span style="font-family: Times New Roman;">”p6.png”</span>，于是，我想用这个小人图片创建一个精灵，就这样：</span></p>
+<p align="left"><span style="color: #020002;">CCSprite</span>* <span style="color: #020002;">
+people</span> = <span style="color: #020002;">CCSprite</span>::<span style="color: #020002;">spriteWithSpriteFrameName</span>(<span style="color: #a31515;">"p6.png"</span>);</p>
+<span style="font-family: Times New Roman; font-size: 14px;"> <img class="alignnone" src="/images/uploads/csdn_musicvs/other_site/img_my_1350556449_4205.webp" alt="小人图片创建一个精灵" width="594" height="430" /></span>
+
+<span style="font-family: Times New Roman; font-size: 14px;"> </span>
+
+<span style="font-size: 14px;">好了，这就是第二个<span style="font-family: Times New Roman;">HelloWorld</span>了。</span>
+
+<span style="font-family: Times New Roman; font-size: 14px;"> </span>
+
+<strong><span style="font-size: 14px;">待续<span style="font-family: Times New Roman;">…</span></span></strong>

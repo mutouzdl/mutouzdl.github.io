@@ -1,0 +1,102 @@
+/* 桌面端：左侧边栏 + 右侧内容区 */
+.blog-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* 侧边栏 */
+.blog-sidebar {
+    width: 260px;
+    flex-shrink: 0;
+    background-color: #333;
+    color: #ccc;
+    padding: 20px;
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.blog-sidebar a {
+    color: #ccc;
+}
+
+.blog-sidebar a:hover {
+    color: #fff;
+}
+
+/* 内容区 */
+.blog-content {
+    flex: 1;
+    padding: 20px 40px;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+/* 汉堡菜单按钮 - 桌面端隐藏 */
+.mobile-menu-btn {
+    display: none;
+}
+
+/* 遮罩层 - 桌面端隐藏 */
+.sidebar-overlay {
+    display: none;
+}
+
+/* 移动端 */
+@media (max-width: 768px) {
+    .blog-container {
+        flex-direction: column;
+    }
+
+    /* 侧边栏默认隐藏，从左侧滑入 */
+    .blog-sidebar {
+        position: fixed;
+        left: -280px;
+        top: 0;
+        width: 260px;
+        height: 100vh;
+        z-index: 1000;
+        transition: left 0.3s ease;
+        padding-top: 50px;
+    }
+
+    .blog-sidebar.open {
+        left: 0;
+    }
+
+    /* 汉堡菜单按钮 */
+    .mobile-menu-btn {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1001;
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: #333;
+        color: #fff;
+        font-size: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    /* 遮罩层 */
+    .sidebar-overlay {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 999;
+    }
+
+    .blog-content {
+        padding: 60px 15px 15px;
+        min-height: auto;
+    }
+}

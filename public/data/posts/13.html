@@ -1,0 +1,286 @@
+
+<p>&nbsp;</p>
+<p align="center"><span style="font-size:32px"><span style="color:#6633ff"><strong><span style="font-family:Times New Roman">Cocos2D-x</span>之<span style="font-family:Times New Roman">HelloWorld</span>倒底怎么玩？</strong></span></span></p>
+<p><span style="font-family:Times New Roman; font-size:14px">&nbsp;</span></p>
+<p><span style="font-family:Calibri"><strong><span style="color:royalblue">笨木头花心贡献，啥？花心？不呢，是用心~<br />
+</span><br />
+</strong><span style="font-size:18px; color:red">转载请注明，原文地址</span></span><span style="font-size:18px; color:#ff0000">：</span><span style="font-size:14px"><a href="http://blog.csdn.net/musicvs/article/details/8071832">http://blog.csdn.net/musicvs/article/details/8071832</a></span>&nbsp;</p>
+<p><strong><span style="font-size:24px; background-color:#cccccc">正文：</span></strong></p>
+<p></p>
+<p><span style="font-size:14px">看了教程，还是要自己写写<span style="font-family:Times New Roman">HelloWorld</span>才能记住，于是在写<span style="font-family:Times New Roman">HelloWorld</span>之前，还是要看看别人的<span style="font-family:Times New Roman">HelloWorld</span>才行<span style="font-family:Times New Roman">~</span></span></p>
+<p><span style="font-family:Times New Roman; font-size:14px">&nbsp;</span></p>
+<p><span style="font-size:14px">（以下<span style="font-family:Times New Roman">CS-X</span>均为<span style="font-family:Times New Roman">Cocos2D-X</span>的缩写）</span></p>
+<p><span style="font-family:Times New Roman; font-size:14px">&nbsp;</span></p>
+<p><strong><span style="font-size:24px"><span style="font-family:Times New Roman">1.</span>导演类</span></strong></p>
+<p><span style="font-size:14px">用<span style="font-family:Times New Roman">VS</span>新建一个<span style="font-family:Times New Roman">CS-X</span>工程，然后自己帮我们生成一个<span style="font-family:Times New Roman">HelloWorld</span>工程，然后看看<span style="font-family:Times New Roman">AppGelegate.app</span>文件，里面有这个函数：</span></p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top">
+<p align="left"><span style="color:blue">bool</span> <span style="color:#010001">
+AppDelegate</span>::<span style="color:#010001">applicationDidFinishLaunching</span>()</p>
+<p align="left">{</p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:green">// initialize director</span></p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:#010001">CCDirector</span> *<span style="color:#010001">pDirector</span> =<span style="color:#010001">CCDirector</span>::<span style="color:#010001">sharedDirector</span>();</p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:#010001">pDirector</span>-&gt;<span style="color:#010001">setOpenGLView</span>(<span style="color:#010001">CCEGLView</span>::<span style="color:#010001">sharedOpenGLView</span>());</p>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:green">// enable High Resource Mode(2x, such as iphone4) and maintains low resource on other devices.</span></p>
+<p align="left"><span style="color:green">//&nbsp;&nbsp;&nbsp;&nbsp; </span>pDirector-&gt;enableRetinaDisplay(true);</p>
+<p align="left"><span style="color:green">&nbsp;</span></p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:green">// turn on display FPS</span></p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:#010001">pDirector</span>-&gt;<span style="color:#010001">setDisplayStats</span>(<span style="color:blue">true</span>);</p>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:green">// set FPS. the default value is 1.0/60 if you don't call this</span></p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:#010001">pDirector</span>-&gt;<span style="color:#010001">setAnimationInterval</span>(1.0 / 60);</p>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:green">// create a scene. it's an autorelease object</span></p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:#010001">CCScene</span> *<span style="color:#010001">pScene</span> =<span style="color:#010001">HelloWorld</span>::<span style="color:#010001">scene</span>();</p>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:green">// run</span></p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:#010001">pDirector</span>-&gt;<span style="color:#010001">runWithScene</span>(<span style="color:#010001">pScene</span>);</p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span> <span style="color:blue">
+true</span>;</p>
+<p>}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size:14px">因为我还是新手，只能从表面上来理解。</span></p>
+<p><span style="font-size:14px"></span>&nbsp;</p>
+<p><span style="font-size:18px; color:#010001">CCDirector</span><span style="color:#010001">类，是导演类，在</span><span style="color:#010001">CS-X</span><span style="color:#010001">的里，构建一个游戏，就是构建一个世界（其实我觉得所有的程序都是在构建世界</span><span style="color:#010001">~</span><span style="color:#010001">噗），这个世界由导演类去指导演绎，于是，在打开游戏的第一步时，导演告诉程序：</span></p>
+<p align="left"><span style="color:#010001">pDirector</span>-&gt;<span style="color:#010001">setDisplayStats</span>(<span style="color:blue">true</span>); &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#339966">//</span><span style="color:#339966">要显示</span><span style="color:#339966">FPS</span><span style="color:#339966">数&#20540;，方便我查看游戏效率</span></p>
+<p align="left"><span style="color:#010001">pDirector</span>-&gt;<span style="color:#010001">setAnimationInterval</span>(1.0 / 60);&nbsp;&nbsp;&nbsp;<span style="color:#339966">//</span><span style="color:#339966">游戏每秒播放多少帧（这里是</span>60帧）</p>
+<p><span style="color:#010001">pDirector</span>-&gt;<span style="color:#010001">runWithScene</span>(<span style="color:#010001">pScene</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#339966">//</span><span style="color:#339966">进入游戏，首先要显示哪个场景</span></p>
+<p><span style="color:#339966">&nbsp;</span></p>
+<p><span style="color:#010001">于是代码都很简单，主要是要留意，一个类继承了</span><span style="color:#010001">CCScene</span><span style="color:#010001">就可以作为场景使用，然后用导演类的</span><span style="color:#010001">runWithScene</span><span style="color:#010001">方法运行游戏的第一个场景，但是以后切换场景就要用</span><span style="color:#010001">replaceScene</span><span style="color:#010001">方法了。</span></p>
+<p><span style="color:#010001">&nbsp;</span></p>
+<p><span style="font-size:24px"><strong><span style="color:#010001">2. </span><span style="color:#010001">自定义场景</span></strong></span></p>
+<p><span style="color:#010001">于是现在来看看自定义的场景类，先看看</span><span style="color:#010001">HelloWorldScene.h</span><span style="color:#010001">头文件，很短，看着舒服</span><span style="color:#010001">~</span></p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top">
+<p align="left"><span style="color:blue">class</span> <span style="color:#020002">
+HelloWorld</span> : <span style="color:blue">public</span> <span style="color:#020002">
+cocos2d</span>::<span style="color:#020002">CCLayer</span></p>
+<p align="left">{</p>
+<p align="left"><span style="color:blue">public</span>:</p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:blue">virtual</span> <span style="color:blue">
+bool</span> <span style="color:#020002">init</span>();&nbsp; </p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:blue">static</span> <span style="color:#020002">
+cocos2d</span>::<span style="color:#020002">CCScene</span>* <span style="color:#020002">
+scene</span>();</p>
+<p align="left"><span style="color:green">&nbsp;</span></p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:blue">void</span> <span style="color:#020002">
+menuCloseCallback</span>(<span style="color:#020002">CCObject</span>* <span style="color:#020002">
+pSender</span>);</p>
+<p align="left"><span style="color:green">&nbsp;</span></p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:#020002">CREATE_FUNC</span>(<span style="color:#020002">HelloWorld</span>);</p>
+<p align="left">};</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="color:#020002">menuCloseCallback</span><span style="color:#020002">函数我觉得可以暂时不理它，算了，还是忍不住要理一下。它是一个回调函数，没了，仅此而已，就是</span><span style="color:#020002">Android</span><span style="color:#020002">的</span><span style="color:#020002">OnClickListener</span><span style="color:#020002">里面的</span><span style="color:#020002">onClick</span><span style="color:#020002">函数一样，但是又有点不一样，糟糕，我不解释了，乱了，这不是重点</span><span style="color:#020002">~</span><span style="color:#020002">！</span></p>
+<p><span style="color:#020002">&nbsp;</span></p>
+<p><span style="font-size:18px; color:#020002"><strong>scene</strong></span><span style="color:#020002"><strong><span style="font-size:18px">函数</span></strong>是不可缺的，它是</span><span style="color:#020002">CCLayer</span><span style="color:#020002">的类，</span><span style="color:#020002">HelloWorld</span><span style="color:#020002">里要重写这个函数的。那</span><span style="color:#020002">scene</span><span style="color:#020002">函数在哪个地方会用到？还记得之前那段代码吗？新建一个场景类的时候是这样的：</span></p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top">
+<p align="left"><span style="color:green">// create a scene. it's an autorelease object</span></p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:#020002">CCScene</span> *<span style="color:#020002">pScene</span> =<span style="color:#020002">HelloWorld</span>::<span style="color:#020002">scene</span>();</p>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:green">// run</span></p>
+<p>&nbsp;&nbsp;&nbsp; <span style="color:#020002">pDirector</span>-&gt;<span style="color:#020002">runWithScene</span>(<span style="color:#020002">pScene</span>);</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size:14px">好了，就是这样的。</span></p>
+<p><span style="font-family:Times New Roman; font-size:14px">&nbsp;</span></p>
+<p><span style="font-size:14px"><strong><span style="font-size:18px">再</span></strong>来看看</span><span style="color:#020002">CREATE_FUNC</span>(<span style="color:#020002">HelloWorld</span>);这个我纠结了很久，<span style="color:#020002">CREATE_FUNC</span><span style="color:#020002">是一个宏（应该是的，我对</span><span style="color:#020002">C&#43;&#43;</span><span style="color:#020002">只停留在初级语法）：</span></p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top">
+<p align="left"><span style="color:blue">#define</span> <span style="color:#020002">
+CREATE_FUNC</span>(<span style="color:#020002">__TYPE__</span>) </p>
+<p align="left"><span style="color:blue">static</span> <span style="color:#020002">
+__TYPE__</span>* <span style="color:#020002">create</span>() </p>
+<p align="left">{ </p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:#020002">__TYPE__</span> *<span style="color:#020002">pRet</span> =<span style="color:blue">new</span><span style="color:#020002">__TYPE__</span>(); </p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:blue">if</span> (<span style="color:#020002">pRet</span> &amp;&amp;<span style="color:#020002">pRet</span>-&gt;<span style="color:#020002">init</span>()) </p>
+<p align="left">&nbsp;&nbsp;&nbsp; { </p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#020002">pRet</span>-&gt;<span style="color:#020002">autorelease</span>(); </p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span> <span style="color:#020002">
+pRet</span>; </p>
+<p align="left">&nbsp;&nbsp;&nbsp; } </p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:blue">else</span> </p>
+<p align="left">&nbsp;&nbsp;&nbsp; { </p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">delete</span> <span style="color:#020002">
+pRet</span>; </p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#020002">pRet</span> = <span style="color:#020002">
+NULL</span>; </p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span> <span style="color:#020002">
+NULL</span>; </p>
+<p align="left">&nbsp;&nbsp;&nbsp; } </p>
+<p>}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="color:#020002">CREATE_FUNC</span><span style="color:#020002">实际上就是</span><span style="color:#020002">create</span><span style="color:#020002">函数，准确的说，是重写了</span><span style="color:#020002">CCLayer</span><span style="color:#020002">里的</span><span style="color:#020002">create</span><span style="color:#020002">函数，看看</span><span style="color:#020002">CCLayer</span><span style="color:#020002">的</span><span style="color:#020002">create</span><span style="color:#020002">函数：</span></p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top">
+<p align="left"><span style="color:#020002">CCLayer</span> *<span style="color:#020002">CCLayer</span>::<span style="color:#020002">create</span>()</p>
+<p align="left">{</p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:#020002">CCLayer</span> *<span style="color:#020002">pRet</span> =<span style="color:blue">new</span><span style="color:#020002">CCLayer</span>();</p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:blue">if</span> (<span style="color:#020002">pRet</span> &amp;&amp;<span style="color:#020002">pRet</span>-&gt;<span style="color:#020002">init</span>())</p>
+<p align="left">&nbsp;&nbsp;&nbsp; {</p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#020002">pRet</span>-&gt;<span style="color:#020002">autorelease</span>();</p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span> <span style="color:#020002">
+pRet</span>;</p>
+<p align="left">&nbsp;&nbsp;&nbsp; }</p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:blue">else</span></p>
+<p align="left">&nbsp;&nbsp;&nbsp; {</p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#020002">CC_SAFE_DELETE</span>(<span style="color:#020002">pRet</span>);</p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span> <span style="color:#020002">
+NULL</span>;</p>
+<p align="left">&nbsp;&nbsp;&nbsp; }</p>
+<p>}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size:14px">是的，</span><span style="color:#020002">CREATE_FUNC</span><span style="color:#020002">的作用只不过是把</span><span style="color:#020002">create</span><span style="color:#020002">的返回&#20540;改成继承了</span><span style="color:#020002">CCLayer</span><span style="color:#020002">的实际子类（有点晕，仔细逻辑一下</span><span style="color:#020002">~</span><span style="color:#020002">）</span></p>
+<p><span style="color:#020002">&nbsp;</span></p>
+<p><span style="color:#020002">好了，我假设我们已经懂了</span><span style="color:#020002">CREATE_FUNC</span><span style="color:#020002">的作用了，不</span><span style="color:#020002">~</span><span style="color:#020002">！还没呢</span><span style="color:#020002">~</span><span style="color:#020002">！看看</span></p>
+<p><strong><span style="color:#020002"><span style="font-size:18px">H</span>elloWorldScene.cpp</span><span style="color:#020002">里是怎么重写</span><span style="color:#020002">scene</span><span style="color:#020002">函数的：</span></strong></p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top">
+<p align="left"><span style="color:#020002">CCScene</span>* <span style="color:#020002">
+HelloWorld</span>::<span style="color:#020002">scene</span>()</p>
+<p align="left">{</p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:#020002">CCScene</span> * <span style="color:#020002">
+scene</span> = <span style="color:#020002">NULL</span>;</p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:blue">do</span> </p>
+<p align="left">&nbsp;&nbsp;&nbsp; {</p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:green">// 'scene' is an autorelease object</span></p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#020002">scene</span> = <span style="color:#020002">
+CCScene</span>::<span style="color:#020002">create</span>();</p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#020002">CC_BREAK_IF</span>(! <span style="color:#020002">
+scene</span>);</p>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:green">// 'layer' is an autorelease object</span></p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#020002">HelloWorld</span> *<span style="color:#020002">layer</span> =<span style="color:#020002">HelloWorld</span>::<span style="color:#020002">create</span>();</p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#020002">CC_BREAK_IF</span>(! <span style="color:#020002">
+layer</span>);</p>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:green">// add layer as a child to scene</span></p>
+<p align="left">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#020002">scene</span>-&gt;<span style="color:#020002">addChild</span>(<span style="color:#020002">layer</span>);</p>
+<p align="left">&nbsp;&nbsp;&nbsp; } <span style="color:blue">while</span> (0);</p>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:green">// return the scene</span></p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span> <span style="color:#020002">
+scene</span>;</p>
+<p>}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-family:Times New Roman; font-size:14px">&nbsp;</span></p>
+<p><span style="font-size:14px">于是我们发现了，虽然<span style="font-family:Times New Roman">HelloWorld</span>自称是场景类，但是导演要的并不是它<span style="font-family:Times New Roman">~</span>！导演还是要了一个真正的<span style="font-family:Times New Roman">CCScene</span>类，不信你看：</span></p>
+<p><span style="color:#020002">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scene</span> = <span style="color:#020002">
+CCScene</span>::<span style="color:#020002">create</span>();</p>
+<p>这里创建了一个真正的CCScene类。</p>
+<p>&nbsp;</p>
+<p>还不够，再看：</p>
+<p>&nbsp;&nbsp;&nbsp; <span style="color:#020002">HelloWorld</span> *<span style="color:#020002">layer</span> =<span style="color:#020002">HelloWorld</span>::<span style="color:#020002">create</span>();</p>
+<p>&nbsp;&nbsp;&nbsp; <span style="color:#020002">scene</span>-&gt;<span style="color:#020002">addChild</span>(<span style="color:#020002">layer</span>);</p>
+<p>HelloWorld只是作为一个layer（一个层），它被添加到刚刚创建的那个CCScene类了。好吧，现实很残酷，尽管HelloWorld继承了场景类，可它依旧不是一个真正的场景~！</p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size:18px">好</span>，紧接着，不要放松，还记得刚刚create函数里有这几句吗？</strong></p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top">
+<p align="left"><span style="color:blue">if</span> (<span style="color:#020002">pRet</span> &amp;&amp;<span style="color:#020002">pRet</span>-&gt;<span style="color:#020002">init</span>())</p>
+<p align="left">&nbsp;&nbsp;&nbsp; {</p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#020002">pRet</span>-&gt;<span style="color:#020002">autorelease</span>();</p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span> <span style="color:#020002">
+pRet</span>;</p>
+<p align="left">&nbsp;&nbsp;&nbsp; }</p>
+<p><span style="font-family:Times New Roman; font-size:14px">&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-family:Times New Roman; font-size:14px">OK</span>，我知道大家还记得的，于是刚刚那两句又还记得吗？</p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top">
+<p><span style="color:#020002">HelloWorld</span> *<span style="color:#020002">layer</span> =<span style="color:#020002">HelloWorld</span>::<span style="color:#020002">create</span>();</p>
+<p><span style="color:#020002">scene</span>-&gt;<span style="color:#020002">addChild</span>(<span style="color:#020002">layer</span>);</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-family:Times New Roman; font-size:14px">&nbsp;</span></p>
+<p><span style="font-size:14px">是的，也就是说，场景类的<span style="font-family:Times New Roman">init</span>函数是一定会被调用的。</span></p>
+<p><span style="font-size:14px">于是，这就表示，继承了<span style="font-family:Times New Roman">CCScene</span>的类，必须要有这三个家伙：</span></p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top">
+<p align="left"><span style="color:blue">public</span>:</p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:blue">virtual</span> <span style="color:blue">
+bool</span> <span style="color:#020002">init</span>();&nbsp; </p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:blue">static</span> <span style="color:#020002">
+cocos2d</span>::<span style="color:#020002">CCScene</span>* <span style="color:#020002">
+scene</span>();</p>
+<p align="left">&nbsp;&nbsp;&nbsp; <span style="color:#020002">CREATE_FUNC</span>(<span style="color:#020002">HelloWorld</span>);</p>
+<p>};</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-family:Times New Roman; font-size:14px">&nbsp;</span></p>
+<p><strong><span style="font-size:24px"><span style="font-family:Times New Roman">3.</span>最后的最后，当然是总结</span></strong></p>
+<p><span style="font-size:14px">很混乱，我自己也很混乱，原来我的表达能力（噗，我自己也无法原谅自己啊<span style="font-family:Times New Roman">= =</span>），所以要总结一下。</span></p>
+<p><span style="font-family:Times New Roman; font-size:14px">1). HelloWorld</span>工程主要就是教我们创建一个场景类</p>
+<p><span style="font-family:Times New Roman; font-size:14px">2). AppDelegate.cpp</span>里会创建第一个显示的场景类，此时用的方法是<span style="color:#020002">runWithScene</span></p>
+<p><span style="color:#020002">3).</span><span style="color:#020002">要新建一个场景类，就一定要有以下三个函数：</span></p>
+<p align="left"><span style="color:blue">virtual</span> <span style="color:blue">
+bool</span> <span style="color:#020002">init</span>();&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#339966">
+// </span><span style="color:#339966">初始化，可以在这里创建精灵</span></p>
+<p align="left">&nbsp;&nbsp;&nbsp; </p>
+<p align="left"><span style="color:blue">static</span> <span style="color:#020002">
+cocos2d</span>::<span style="color:#020002">CCScene</span>* <span style="color:#020002">
+scene</span>();&nbsp; <span style="color:#339966">// </span><span style="color:#339966">在这里要自己新建一个</span><span style="color:#339966">CCScene</span><span style="color:#339966">类，然后把我们自定义的场景类作为一个</span><span style="color:#339966">CCLayer</span><span style="color:#339966">添加到这个</span><span style="color:#339966">CCScene</span><span style="color:#339966">类中</span></p>
+<p align="left">&nbsp;&nbsp;&nbsp; </p>
+<p align="left"><span style="color:#020002">CREATE_FUNC</span>(<span style="color:#020002">HelloWorld</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#339966">//</span><span style="color:#339966">相当于重写</span><span style="color:#339966">create</span><span style="color:#339966">函数，让</span><span style="color:#339966">create</span><span style="color:#339966">函数返回子类对象。</span></p>
+<p><span style="font-family:Times New Roman; font-size:14px">4. </span>然后，就是这样了。</p>
+<p><span style="font-family:Times New Roman; font-size:14px">&nbsp;</span></p>
+<p><span style="font-size:14px">好了，以上就是我从<span style="font-family:Times New Roman">HelloWorld</span>工程能够发现的东西了，肯定会有不少错误的思想，但是现在的我还无法修正。所以，仅供参考，嘿嘿<span style="font-family:Times New Roman">~</span></span></p>
+<p><span style="font-family:Times New Roman; font-size:14px"></span>&nbsp;</p>
+<p><span style="font-family:Times New Roman; font-size:14px"></span>&nbsp;</p>
+<p><span style="font-family:Times New Roman; font-size:24px; color:#ff0000; background-color:#cccccc"><strong>2012.10.29修正：</strong></span></p>
+<p><span style="font-family:Times New Roman; font-size:14px">发现一个问题，会误导大家，文中说“继承了CCScene的类就可以作为场景类”，这是不对，一个场景类应该是继承了CCLayer，然后这个场景类有一个scene函数，这个函数会新建一个CCScene对象，然后返回。特此说明。</span></p>
+<p><span style="font-family:Times New Roman; font-size:14px"></span>&nbsp;</p>
+<p><span style="font-family:Times New Roman; font-size:14px"></span>&nbsp;</p>
+<p><strong><span style="font-family:Microsoft YaHei; font-size:24px; color:#6633ff">请允许我做个广告。</span></strong></p>
+<p><strong><span style="font-size:18px; background-color:#cccccc">AndroidFans论坛，我经常在这活动，欢迎来交流：笨木头邀请您访问Android 开发论坛：<br />
+</span></strong><a href="http://www.android-fans.net/?fromuid=35"><span style="font-size:18px">http://www.android-fans.net/?fromuid=35</span></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>.</p>
+<p>&nbsp;</p>
+<p>.</p>
+<p>&nbsp;</p>
+<p>.</p>

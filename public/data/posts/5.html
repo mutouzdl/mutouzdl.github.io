@@ -1,0 +1,158 @@
+
+<table id="pid13191" cellspacing="0" summary="pid13191" cellpadding="0">
+<tbody>
+<tr>
+<td class="plc">
+<div class="pct">
+<div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td id="postmessage_13191" class="t_f"><span style="color:#000000"><span style="font-family:宋体"></span></span>
+<p align="center"><strong><span style="font-size:32px"><span style="color:royalblue">代码混淆与反射的冲突</span></span></strong></p>
+<br />
+<br />
+<strong><span style="font-size:24px">反</span></strong>编译Android的代码，大部分人都知道了，防反编译的方法也大部分都知道了（尽管它不一定一直有效，但起码像我这种水平的人，没办法看到混淆之后的Java代码， 最可恶的是没有注释= =）。<br />
+<br />
+最近才发现，我的代码在很久之后设置了混淆，也在很久之前不知道什么时候不小心把代码混淆给弄没了（好吧，你可以去反编译我的项目了，我不介意，因为代码很烂，实在是烂）。<br />
+<br />
+于是，这两个又在搞混淆代码了，混淆代码的方法很简单：<br />
+<strong><span style="font-size:32px">1</span></strong>.在项目下新建一个文件，命名为“<strong><span style="color:seagreen">proguard.cfg</span></strong>”，正常情况下包括以下内容：<br />
+<table class="t_table " cellspacing="0">
+<tbody>
+<tr>
+<td width="568">
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-optimizationpasses 5</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-dontusemixedcaseclassnames</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-dontskipnonpubliclibraryclasses</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-dontpreverify</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-verbose</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-keep public class * extends android.app.Activity</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-keep public class * extends android.app.Application</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-keep public class * extends android.app.Service</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-keep public class * extends android.content.BroadcastReceiver</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-keep public class * extends android.content.ContentProvider</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-keep public class * extends android.app.backup.BackupAgentHelper</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-keep public class * extends android.preference.Preference</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-keep public class com.android.vending.licensing.ILicensingService</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-keepclasseswithmembernames class * {</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">&nbsp; &nbsp; native &lt;methods&gt;;</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">}</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-keepclasseswithmembers class * {</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">&nbsp; &nbsp; public &lt;init&gt;(android.content.Context, android.util.AttributeSet);</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">}</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-keepclasseswithmembers class * {</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">&nbsp; &nbsp; public &lt;init&gt;(android.content.Context, android.util.AttributeSet, int);</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">}</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-keepclassmembers enum * {</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">&nbsp; &nbsp; public static **[] values();</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">&nbsp; &nbsp; public static ** valueOf(java.lang.String);</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">}</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-keep class * implements android.os.Parcelable {</span></span></p>
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">&nbsp;&nbsp;public static final android.os.Parcelable$Creator *;</span></span></p>
+<span style="font-size:9pt"><span style="color:royalblue">}</span></span></td>
+</tr>
+</tbody>
+</table>
+<br />
+<br />
+<span style="font-size:24px"><strong><span style="font-size:32px">2</span>.</strong></span><span style="font-size:14px">然</span>后编辑项目下的“project.properties”文件，在最后加上一句：<strong>proguard.config=proguard.cfg</strong><br />
+<br />
+OK，大功告成，记住了，只有打包的时候代码才会混淆，直接运行项目然后去bin目录下找的那个apk包是不会混淆的。<br />
+<br />
+<br />
+<strong><span style="font-size:24px">这</span></strong>么简单的事情，当然就不会特意来这分享了~<br />
+<span style="color:red"><strong>我想说说我遇到的问题，那就是，当代码混淆遇上Java反射时，一堆麻烦来了。</strong></span><br />
+<br />
+<br />
+<strong><span style="font-size:32px"><span style="color:#9932cc">==============别睡着了啊，真正的问题来了============</span></span></strong><br />
+<br />
+是的，我们会发现，Java的反射再也找不到它想找的类，或者方法，或者属性了。<br />
+是的，因为代码混淆的原因，原本的类名、方法名、属性名都改变了，而反射它还是按照原来的名字去反射，结果只能射出一个程序崩溃。<br />
+<br />
+<strong><span style="font-size:24px">解</span></strong>决的方法当然有~<br />
+那就是，让和反射有关的那些代码或者类，不进行混淆，那就不会有上述的问题了~！<br />
+<br />
+<strong><span style="font-size:24px">再</span></strong>看看proguard.cfg文件，里面那么多代码，不可能没有用的，来，先随便整一句看看：<br />
+<br />
+<table class="t_table " cellspacing="0">
+<tbody>
+<tr>
+<td width="568">
+<p align="left"><span style="font-size:9pt"><span style="color:royalblue">-keep public class * extends android.app.Activity</span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+<br />
+<strong><span style="font-size:24px">很</span></strong>简单的，这句话的意思是，保留所有继承<span style="font-size:9pt">Activity</span><span style="font-size:9pt">的类，不进行混淆。来，马上举一反三：</span><br />
+<table class="t_table " cellspacing="0">
+<tbody>
+<tr>
+<td width="568"><span style="color:royalblue">-keep public class com.mutou.test.HelloWorld</span></td>
+</tr>
+</tbody>
+</table>
+<br />
+<span style="font-size:24px"><strong>这</strong></span>句更加简单了，保留HelloWorld，不进行混淆。<br />
+<br />
+<span style="color:red">注意了，所有的类必须指出完整的包路径（废话了，这个文件里又没有import语句，当然要完整路径了，不然它哪知道那个类在哪儿~）。</span><br />
+<br />
+不进行混淆的意思就是，当我们的android项目的代码被反编译工具反编译出来之后，代码看起来不会像天书一样，不会所有变量名、方法名都变成a、b、c、d什么的。<br />
+<br />
+<strong><span style="font-size:24px">又</span></strong>注意了，有一个比较纠结的地方，一定要小心，通过上面两种方式防止混淆的代码，并不代表，反编译之后和源码一模一样，它的类名什么的都和源码一样，但是变量名、方法名就不一定了，它也有可能是abcd什么的。这个我也不知道为嘛。总之，小心就是了。<br />
+<br />
+也正因为如此，在有反射的代码里（呐，别问我什么叫做反射啊，我只是要用的时候百度了一下，现在已经忘了具体用法了），不能通过以上两种方式来防止代码混淆。<br />
+<br />
+<br />
+<br />
+<strong><span style="font-size:32px"><span style="color:darkorchid">==============真正的主题在不华丽的分割线下面============</span></span></strong><br />
+<span style="color:red"><strong><span style="font-size:32px">那</span></strong>，没有办法了吗？</span><br />
+<span style="color:red">有啊~木了个头的，没有办法我就不来发帖了~~</span><br />
+<br />
+嘻嘻，看看：<br />
+<table class="t_table " cellspacing="0">
+<tbody>
+<tr>
+<td width="568"><span style="color:royalblue">-keepclasseswithmembernames class com.kogame.god.thing.creature.**</span><br />
+<span style="color:royalblue">{</span><br />
+<span style="color:royalblue">*;</span><br />
+<span style="color:royalblue">}</span></td>
+</tr>
+</tbody>
+</table>
+<br />
+<strong><span style="font-size:24px">糟</span></strong>糕~这个有点复杂，别着急~<br />
+先看看这个名字：keepclasseswithmembernames 顾名思义，就是保留类以及它的成员的名字。<br />
+那花括号里面那个”*;”又是什么东西呢？它代表类里的所有成员（包括变量、方法）的名字都不会被混淆，都保留原汁原味的样子。<br />
+<br />
+<span style="color:red">于是，整段代码的意思就是，保留所有继承creature类的代码以及它的变量和方法，不进行混淆。</span><br />
+<br />
+好喇~~<br />
+谢谢观赏。<br />
+<br />
+<span style="color:darkorchid">如果没有听懂的，请移步（更简单明了详细而不复杂的文章）：</span><br />
+<a href="http://www.apkbus.com/android-57338-1-1.html" target="_blank">http://www.apkbus.com/android-57338-1-1.html</a><br />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="comment_13191" class="cm"></div>
+<div id="post_rate_div_13191"></div>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="plc plm">
+<div id="p_btn" class="mtw mbm cl">
+<div class="tshare cl"></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>

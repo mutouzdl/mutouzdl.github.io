@@ -1,0 +1,2626 @@
+[
+  {
+    "id": 2926,
+    "title": "[BlazorGameWithoutCanvas]0.前言：基于Blazor开发游戏，并且不使用Canvas",
+    "content": "我这个系列的文章会有点奇怪，因为这是一个特别小众的需求基于Blazor、但不使用Canvas来开发游戏。 1. 废话环节（可以不看） 其实我们公司不是游戏游戏，但确实有一块功能需要用类似游戏的表现形式，但都是一些比较简单的游戏，类似黑魂、血源、只狼啊什么的，不是！其实就是一些小游戏，像抢答题、拼接树形结构的数据之类的。 原本我们是用Unity3D来做的，毕竟公司里就我一个会写游戏，只能按照我的技术栈走了。 确实我也开发好了，游戏也能玩玩了，但毕竟我们是做管理系统的，始终绕不开Web这玩意。在推产品的过程中，客户自然会问：你们这玩意，可以在手机上运行吗？ 开玩笑，当然可以，只不过，人家要的是在浏览器上运行，当初Unity的WebGL版本体验也不太行，很多手机浏览器都跑不起来。至于后来的Tiny Project，我刚开始是很期待的，然后我期待了1个月、半年、1年、2年，啊，正式版仍然遥遥无期。 而我，作为公司里的万金油，并不能经常去写游戏的功能，慢慢的，我对Unity3D也越来越生疏了。 是的，我放弃了，我等不来Tiny Project，我也没精力去研究它。 于是，我给老板提议，游戏这块要",
+    "categories": [],
+    "date": "2021-12-28 08:58:29"
+  },
+  {
+    "id": 1856,
+    "title": "《Cocos2d-x3.x游戏开发之旅》已出版~！(附源码下载地址)",
+    "content": "其实书早就印好了，只是因为遇上国庆，物流不发图书，只能等国庆之后才能陆续上架各大网店了~预计下周就能看到了。 由于之前2.0版本一书的光盘损坏的概率不够小，所以这次就不提供随书光盘了，而是采取官网下载的方式。 书里可能提示得不够清楚，这里给各位读者提示一下，源码下载地址：http://www.phei.com.cn/module/zygl/zxzyindex.jsp 找到我这本书的两个文件，下载就可以了~ 另外，我自己也传了一些资料到云盘，都是些旧版本的东西，现在不好找到(2017.05.11更新)： 书籍项目：http://pan.baidu.com/s/1bRUWlK NDK R9B ：http://pan.baidu.com/s/1i5hVILn cocostudio1.2.0：http://pan.baidu.com/s/1pLF92JL Cocos2d-x3.0：http://pan.baidu.com/s/1hsPrhGw Android-SDK离线包：http://pan.baidu.com/s/1o7MMOrS 最后，感谢各位喜欢这本书的读者，所谓酒逢知己千杯少，知音难",
+    "categories": [
+      "Cocos2d-x"
+    ],
+    "date": "2014-10-08 18:29:07"
+  },
+  {
+    "id": 2933,
+    "title": "[笨木头“创2”路]No.10 没有奇迹，仍抱希望",
+    "content": "又快过去1年了，没想到吧，公司还没倒闭，哈哈哈。 1.依旧不急不慢 其实，这公司能坚持这么多年，也全靠老板的耐心，他是一直认为公司有希望发展起来的。 反正最近也和之前一样，偶尔有个项目，公司勉强还活着。老板其实也有压力，有时候长时间没项目，财务吃紧的时候（我们没有财务人员，发工资得我来操作，所以状况我都清楚），老板还是挺不开心的。 财务稍微好点的时候，就老想着给我们加工资，烦死了（多来点！） 2.想不到标题了 写这篇文章之前，我以为我又要叨叨一大串的。可是，突然之间我就不知道要写什么了。 总而言之，我们公司再一次证明了，没有奇迹会突然发生，得靠我们自己。 虽然公司这么多年一直都没什么起伏，但既然老板仍然抱有希望，那我也会继续坚持下去。 我和我老婆也早就决定了，等这家公司倒闭，我就退休。反正我觉得深圳这地方，除了工资，不可能找到同等条件的公司了。 不倒闭就更好，我也希望老板能成功。 3.喵（一种植物生物），突然想吐槽 我不知道我吐槽过没，不行，我要再吐槽一次。 就是好几年前，我亲戚（有人投资他，管一家创业公司有几年了）跟说我，要不要去他那上班。 我当时一脸帅气，不对，是一脸懵逼。 啥？我",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2023-07-08 18:56:35"
+  },
+  {
+    "id": 2932,
+    "title": "[笨木头“创2”路]No.9 会哭的孩子有奶喝？",
+    "content": "好久没更新这个系列了，我们公司还活着呢，是不是很神奇，我们办公室的房东都以为我们是什么政府部门了，因为疫情期间我们都是远程办公，房租缺没断过，一直养着办公室。 公司要说有没有好转，确实有，但也不是什么大转变。不过，在这个疫情时代，其实也不奢望有什么大发展了。 1.我摊牌了 我太累了，我要干的事情太多了，我想专注于技术. 于是，我和老板说，能不能把我的股份收回一大部分，然后再用股份招一个核心成员，我就只做开发的工作。 当然，我顺便抱怨了一下工资太低。如果只是做开发的话，其实我不在意这个工资，但是，我要做太多杂事了，所以我有点受不了了，有时候自己想着想着，就会有点压抑。 我抱怨工资低，是希望老板能同意我这个降低股份的提议，然后去招个人，并不是想涨工资，我主要是想更多专注于技术的工作。 我以为，老板会同意的，没想到... 2.涨工资？ 可能老板理解错了我的重点，他竟然说给我加工资，还给那位流氓股同事也加工资，加的幅度其实还算挺高的（原本工资不高就是了）。 然后，老板也同意招人，但不招核心成员，只招一个类似助理的人，帮我分担一些类似演示产品、项目部署后交接的简单工作。 说实话，我有点惊讶，我确",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2022-09-02 17:23:23"
+  },
+  {
+    "id": 2931,
+    "title": "[BlazorGameWithoutCanvas]3. 解决坐标系的问题",
+    "content": "还有一个比较重要的问题没有解决，那就是，渲染的时候，坐标怎么办？如何去更新GameObject的坐标，毕竟渲染都靠Html元素，Html元素可没有什么现成的坐标系可以用。 1.Relative和Absolute组合 类似游戏里的坐标系，我们要怎么实现？毕竟html元素基本上是靠margin、float、table、fixed这些来布局的。 这个问题一开始我也有点困扰，但最终我找到了一个目前来说还算不错的解决方案。 我们先给GameWorld组件套一层div，并且这个div的position是relative的： div class=\"bgDiv\" style=\"position: relative;\" GameWorld @ref=\"@_gameWorld\" / /div 然后，我们所有的游戏对象渲染组件都把position设为absolute，这样话，我们的游戏对象的坐标就通过left、top来设置（分别对应x、y坐标），并且这些对象的坐标都是相对于上一级的元素进行绝对布局的。 最后，GameWorld里渲染游戏对象的时候，不区分上下级，也就是说：所有游戏对象渲染时都是平铺，都是同一",
+    "categories": [],
+    "date": "2021-12-28 09:11:51"
+  },
+  {
+    "id": 2930,
+    "title": "[BlazorGameWithoutCanvas]2.游戏对象和组件渲染",
+    "content": "其实最关键的就是游戏的逻辑变化怎么样反映到组件上，毕竟我们现在要靠组件来渲染游戏对象。 比如渲染一个精灵，那实际上就是用一个img元素来实现，然后通过变换坐标来移动。 我们要解决的就是，怎么样可以让组件只负责渲染，而坐标之类的数据独立运作。 1.游戏对象 所有与Blazor组件无关的代码，我都放在AntDesignGameFramework项目里，其中，游戏对象是参考了Unity3D，大致的结构如下： Object - GameObject - Component - Transform - 各种游戏对象的组件 结构很简单。 Object：是基础类，里面有一个UID，用来做唯一标记。 GameObject：就是我们的游戏对象，游戏对象包含各种组件（Component） Component：组件，实现游戏对象的各种属性或逻辑，像血量条这些UI也通过组件附加到游戏对象上。 Transform：记录游戏对象的坐标、大小等属性，同时还记录游戏对象的所有子对象，是最重要的一个组件。 当然，这些不是重点，这部分的封装还比较初级，仅供演示。 重点是，这些GameObject怎么渲染出来？ 2.游戏对",
+    "categories": [],
+    "date": "2021-12-28 09:07:55"
+  },
+  {
+    "id": 2927,
+    "title": "[BlazorGameWithoutCanvas]1. 游戏循环",
+    "content": "为了实现游戏对象的各种变换逻辑，我们需要一个循环，然后在每一次循环里改变游戏对象的属性，以此来产生变化。 这个功能其实很简单，直接看一下代码： public class GameLoop { private bool _isRunning = false; public event Action Logic; public async void Start() { if (_isRunning) { return; } _isRunning = true; while (_isRunning || _timeCounter 0) { await OnLogic(); } } public void Stop() { _isRunning = false; } private async Task OnLogic() { await Logic.Invoke(); } } 我假设看这个系列文章的读者有一定的游戏开发经验，所以我就不过多解释代码了。 GameLoop其实就是开了一个while循环，然后通过回调事件来执行游戏逻辑。 我们只需要创建一个Blazor的组件，在组件里监听这个回调事",
+    "categories": [],
+    "date": "2021-12-28 09:03:00"
+  },
+  {
+    "id": 2925,
+    "title": "[笨木头“创2”路]No.9 当爱扯皮的人遇上我",
+    "content": "又好久没更新这个系列了，说实话，公司跟上次发文章比起来，没有什么变化。 这次我就是太爽了，忍不住要来得瑟一下。 这次是遇上爱扯皮的客户了，一个简单的会员管理系统+动态官网，做了1年了，还没结束。 故事有点长，我慢慢解释。 1.前提 客户A的领导是很好沟通的，但这个客户A不好沟通，就是什么都说【我不懂】、【我不知道】那种，需求非常难确定。 刚开始ta丢了一个网站给我，说要照着这网站的模样做。 我们很快就做了一个样式出来，给ta看，ta不满意，又说什么【我不是要完全跟那个网站一样，我就是巴拉巴拉巴拉】，反正就是说了一堆废话。 后来我给了很多个模板ta选择，ta选了，我们也做出来了，ta又不满意了，但就是什么都不懂，但又什么都不满意的那种。 后来我又找了很多很简洁大方的模板给ta选，ta又说什么他们的官网不要这种简洁，首页要多放一些内容，反正就这官网样式就扯了很久。 后来ta还花了几千块让第三方的设计团队设计了一个版面，我们当然很开心了，他们满意最重要。 我们按照设计的样式改好了之后，没错，ta又不满意了。ta又开始扯了，说什么【以为设计的版面只是一个主题，最终官网不是这个样子的】，大概意思",
+    "categories": [],
+    "date": "2021-07-14 19:43:47"
+  },
+  {
+    "id": 2923,
+    "title": "博客正式改用Blazor开发",
+    "content": "Blazor 最近我都在关注微软的新前端框架Blazor，不了解的朋友没关系，总结一句话就是，它能用C#做Web开发（不限于Web）。 而我早就因为自己的前端水平太差，受不了目前的前端开发体验。 所以，当Blazor出来的时候，我就很希望，未来公司里的前端这块，可以改成用Blazor开发。 当然，因为我们公司的项目是一套代码不断迭代升级的，想更换为Blazor，除了工作量以外，还有一个很严重的问题：Blazor的生态不成熟。 也正因为目前Blazor周边生态不够强大，很多功能实现不了，我就一直处于观望状态。 逃离WordPress 刚好，最近WordPress提示我，我的PHP版本太低，无法更新WordPress到最新版本。 我对PHP可以说是接近完全不懂的状态...。 每次想改一下博客，就非常绝望，一方面又想快点改出自己想要的效果，另一方面又不想学习PHP。 所以，刚好，我就想着，要不，用Blazor来自己写一个博客吧。 Blazor版博客诞生 说干就干，肝了2个星期左右的业余时间，做了个初版的博客。 各位现在看到的，就是用Blazor写的新博客，样式我是照着原来的稍微调了调。 功能",
+    "categories": [],
+    "date": "2021-04-24 16:17:03"
+  },
+  {
+    "id": 2910,
+    "title": "[笨木头“创2”路]No.8 心如死灰",
+    "content": "距离上一篇记录，已经两年多了，不知道的人还以为我们公司倒闭了，可惜还没有。 我到希望是真的倒了，因为我的心太累了。 1.没有起色的起色 公司有些小项目已经谈成，也是勉强活着那种。最近都是很多项目在谈，看似都很有希望，但就是下不来那种。 经过这么多年，我的内心也是变得越来越平静，已经没有什么期待了。 2.不善于交流 项目谈成后，就需要由我和客户沟通，我最不擅长的就是沟通。 遇到那种今天提出需求下个星期就想上线的客户，我会直接说不行，就差把“有病”给骂出来了。 遇到那种只会提出“我想要简洁一点的”、“我想要高大上一点”要求的客户时，我会让他写份详细需求给我。 有时候我也会对客户很不耐烦，因为我实在是忍不住。 每次需要处理这些事情的时候，我就会特别累，我只想好好写代码。 3.好几次想离职 其实最近这几年，我萌生过很多次离职的想法。 我再也不想在各种不同的技术之间来回横跳了，我想在某个领域专研下去，毕竟我已经毕业快10年了，我仍然记得我高三毕业时的梦想——当一名优秀的程序员。 我再也不想在技术、管理、和客户沟通之间来回切换了。 管理，没什么好管的了，人就那么少。 沟通，更是我最讨厌的事情。 搞",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2021-03-01 08:07:55"
+  },
+  {
+    "id": 2885,
+    "title": "【守护裙子01】 16岁少女变成男孩后被暴揍一顿",
+    "content": "https://www.bilibili.com/video/BV1Di4y1M7HL/ 事情是这样的，随着年龄的增长，我的精力是越来越不够了，加上女儿2岁多了，经常会缠着我，要我跟她玩。 大家是知道的，我扛不住美人计，于是我就乖乖地陪女儿玩去了。 然而，我始终不想放弃我的独立游戏梦（其实只是想写写剧情），于是，我想到了这种方式。 没错，把我游戏的剧情做成视频的形式，这样我就不需要考虑UI、Bug、兼容性、数值、关卡等等费时费力的事情了。 我可以只关注剧情和吐槽。 我吧，想要做一件事情的时候，就会义无反顾地去做，于是，我开始了制作短视频的路程。 也许最终的结果会和当初走上独立游戏开发的道路一样——以失败告终。 但是，不去做的话，我可能会后悔。 这是我的第一个视频，来自以前我做的一款游戏的剧情。 刚开始还是有点不知道该怎么做，只能慢慢地学习优化了。 感兴趣的欢迎关注我的B站：https://space.bilibili.com/112863274",
+    "categories": [
+      "自制视频-守护裙子"
+    ],
+    "date": "2020-08-29 15:31:30"
+  },
+  {
+    "id": 2843,
+    "title": "[Unity ECS入门]13.结束",
+    "content": "关于Unity的ECS，可能大家还有很多疑惑，是的，我也是。 但是，通过这12篇教程，大家多多少少对ECS是有了解的，在这个基础上，大家再去看官方手册，就会轻松很多。 当然，就这12篇教程所学到的东西，是完完全全不能用于实战的。 但是，没办法，我必须停止更新教程，因为，我自己还没有真正用ECS实战过，我也还有很多疑惑。 未来，如果有机会的话，再和大家分享进阶的教程。 这里稍微总结一下ECS的思维。 1.纯（Pure） 要记住，ECS就是角色分明，组件就是组件，实体就是实体，不要混用。 组件就是存储一些字段；实体就是包含了很多组件，代表了一种实际存在的对象；系统就是负责处理各种逻辑。 2.并行 其实，ECS很多复杂的东西都是因为需要利用多线程导致的。 如果你不喜欢处理那么多复杂的事情，那么，最简单的使用方式就是j继承ComponentSystem： 这样的话，逻辑都在主线程里，非常简单。 但，如果想要享受ECS带来的性能提升，那就不得不考虑并行的问题。 比如，最需要记住的就是，对实体的新增、删除，对组件的新增、删除，都需要利用EntityCommandBuffer来延迟执行。 这也是我们",
+    "categories": [
+      "ECS入门"
+    ],
+    "date": "2019-12-05 14:33:53"
+  },
+  {
+    "id": 2837,
+    "title": "[Unity ECS入门]12.EntityQuery",
+    "content": "在ECS中，查询实体数据是非常重要的，也是我们不断在做的事情，之前有简单地提到了EntityQuery，这次我们来详细地解释。 首先，EntityQuery相当于是保存筛选条件的对象，然后从所有的实体中筛选满足条件的数据。EntityQuery提供了多种筛选数据的方式，接下来，先回忆之前提到过的最简单的使用方式。 1.组件 我们来创建三个组件： public struct ComponentA : IComponentData { } public struct ComponentB : IComponentData { } public struct ComponentC : IComponentData { } 这三个组件没有任何字段，很简单。 至于创建实体的代码，我就不展示了。 2.系统 接下来看看最简单的EntityQuery的使用方式，下面是System代码： using Unity.Entities; using Unity.Jobs; public class System_EntityQuery : JobComponentSystem { private Entity",
+    "categories": [
+      "ECS入门"
+    ],
+    "date": "2019-12-05 14:32:22"
+  },
+  {
+    "id": 2840,
+    "title": "[Unity ECS 入门]11.更多组件类型",
+    "content": "我们已经知道，继承了IComponentData的结构体是组件，而实际上，为了解决特定问题，ECS还提供了更多不同类型的组件。 我会简单地给大家介绍其他类型的组件，但是不做深入的讲解，因为在实际开发中可能需要根据不同的情况考虑使用哪种组件，而我还没实际使用ECS开发过，所以不想做过多的介绍，怕误导大家。 1.ISharedComponentData（共享组件） 想象一下，当我们创建一波同类型的怪物的时候，它们是不是拥有相同的材质？ 并且，正常情况下，怪物的材质是不会发生变化的，比如史莱姆，它会一直是史莱姆的样子。 于是，我们所有的史莱姆也许可以共用一个材质对象，哪怕创建了1000个史莱姆，它们也只需要产生一个材质对象，节省了内存。 通过SharedComponentData（共享组件）就可以实现以上的想法。 我们都知道，继承了IComponentData就是组件： public struct SomeOtherComponent : IComponentData{} 而现在，继承了ISharedComponentData就是共享组件： public struct MeshSharedC",
+    "categories": [
+      "ECS入门"
+    ],
+    "date": "2019-12-05 14:31:44"
+  },
+  {
+    "id": 2834,
+    "title": "[Unity ECS入门]10.筛选实体数据的方式5——IJobForEachWithEntity",
+    "content": "经过前面九篇教程，想必大家对ECS已经有了初步的了解，也已经能够用ECS这种模式写点简单的游戏了。 比如，做一个不断旋转的物体。 又比如，做两个不断旋转的物体。 又再比如，做1000个不断旋转的物体。 按照这种思路，我们已经会做无数个游戏了。（旁白：像开水一样，滚！） 你看，旁白又激动了，我不过是开个玩笑而已。 实际上，这次我要给大家写一个更有意思的游戏——让一个物体在3秒后消失！（旁白：这不叫游戏！） 1.IJobForEachWithEntity和IJobForEach 为了实现这个功能，我们顺便就引出了另外一种筛选实体的方式——IJobForEachWithEntity。 我们之前已经介绍过IJobForEach了（[Unity ECS 入门]4.筛选实体数据的方式3——IJobForEach），这次的IJobForEachWithEntity和之前的差不多，只是有一个小区别。 IJobForEach只能筛选出实体的组件，即，只能对组件进行读写操作。 IJobForEachWithEntity不仅能筛选出组件，还能筛选出实体，即，可以对组件和实体进行操作。 由于我们这次的例子是要",
+    "categories": [
+      "ECS入门"
+    ],
+    "date": "2019-12-05 14:30:12"
+  },
+  {
+    "id": 2829,
+    "title": "[Unity ECS入门]9.如何回到主线程搞事情——EntityCommandBufferSystem",
+    "content": "接下来，我要给大家介绍一个很重要的东西——EntityCommandBufferSystem。 1.不能在Job中执行的操作 我们已经知道，JobComponentSystem配合各种Job（IJobForEach、IJobChunk等），可以方便地实现并行（多线程、多核）执行逻辑。 既然涉及到多线程，就会有一个麻烦的事情——某个线程做了破坏结构的操作，其他线程会受到影响。 这是什么意思呢？ 比如，某个Job给实体删除了一个组件，会发生什么事情？ 我们的实体都是按块（Chunk）存储的，一个块里的所有实体必定拥有相同数量和类型的组件，一旦某个实体的组件数量或类型改变了，它就不属于当前的块，它会被移到其他块里。 所以，回到刚刚的问题，某个Job给实体删除了一个组件，那么，这个实体就会被移到另一个块里。 那么，另外一个并行Job呢？这个并行的Job还不知道实体被移到另一个块了，也不知道这个实体被删除了某个组件，所以这个并行的Job会做出一些不太正确的操作。（操作了即将不存在的组件、操作了错误的块里的实体） 为了解决这种冲突，ECS规定，以下行为都不能在Job中处理： 创建实体（Create",
+    "categories": [
+      "ECS入门"
+    ],
+    "date": "2019-12-05 14:29:34"
+  },
+  {
+    "id": 2823,
+    "title": "[Unity ECS入门]8.System执行顺序",
+    "content": "------------ 以下是废话 唔，可能我这个教程的目录看起来有点糟糕，偶尔讲一下筛选数据，偶尔又讲一下概念，偶尔又讲一下创建实体的方式。 这不，现在突然又跳到什么System执行顺序了。 其实是这样的，我在写这些教程之前，对ECS也是一窍不通的。 我更多的是按照官方示例走下去，在走的过程中，会发现很多不懂的点。 所以，我的教程顺序看起来会非常乱，但其实，这更符合一个完全不懂ECS的人的学习进程。 按照我的教程顺序，你会发现自己学到的都是刚好需要、刚好不懂的，前一篇学过的刚好就用在下一篇。 这样大家学起来可能会轻松一点，教程顺序虽然很乱，但大家的心千万不要乱。 ECS要做的事情就是——写组件、创建实体、写系统处理逻辑，只不过在这过程中为了解决某些特定的问题，我们需要引入各种用法和概念。 现在最重要的是入门，入门之后就可以抱着官方手册自己浪了。 好了，我们继续吧。 ------------ 废话结束 1.逻辑的先后顺序 我们已经知道，System的OnUpdate函数会在每一帧自动被调用。 唔，实际上，更准确的，应该分两种情况： ComponentSystem的OnUpdate：每",
+    "categories": [
+      "ECS入门"
+    ],
+    "date": "2019-12-05 14:28:10"
+  },
+  {
+    "id": 2815,
+    "title": "[Unity ECS 入门]7.创建实体的方式——通过Prefab",
+    "content": "大家会不会很疑惑，创建实体都需要将场景里的GameObject进行转换，太麻烦了吧？ 正常情况下我们都是从prefab（预制体）实例化游戏对象的，这种在场景里转换实体的方式总感觉哪里不对，是这样吗？ 没错，其实还有更方便的转换实体方式，一起来看看吧。 1.世界（World） 新的转换实体的代码其实很简单，但在这之前，我们需要先了解一些基础概念。 ECS中有一个很基本的东西——世界（World）。 整个游戏过程中可以有多个世界，而ECS会自动为我们创建一个默认世界（可以关闭自动创建，这里不做过多的介绍）。 默认创建的世界（World）包含了实体管理器（EntityManager）以及项目中所有可用的系统（System）。 这也就解释了为什么我们的System类会自动被执行，这因为它们被添加到了默认的世界中。至于怎么添加的，我们就先不管了（用了反射）。 2.实体管理器（EntityManager） 这个就很好理解了，EntityManager负责管理某个世界（World）下的所有实体，理论上来说我们可以直接从EntityManager获取到某个实体的组件。 3.我们所喜爱的实体创建方式 直",
+    "categories": [
+      "ECS入门"
+    ],
+    "date": "2019-12-05 14:27:19"
+  },
+  {
+    "id": 2812,
+    "title": "[Unity ECS 入门]6.筛选实体数据的方式4——IJobChunk",
+    "content": "经过前面的介绍，我们已经知道了JobComponentSystem和IJobForEach，也了解了C# Job System可以并行执行Job来提升性能。 我们知道，IJobForEach这种Job，只能一个个实体进行处理，这次要介绍的IJobChunk，是可以对某个块（Chunk）里的所有实体进行批量处理。 虽然结果是一样的（仍然是一个Cube在旋转），但代码却大不相同，一起来看看吧。 1.组件（Component） 接下来开始看代码吧，先创建一个组件类： using System; using Unity.Entities; [Serializable] public struct RotationSpeed_IJobChunk : IComponentData { public float RadiansPerSecond; } 这个组件仍然是带有一个字段，但是，大家注意一下，和之前的组件对比，这次的组件并没有使用GenerateAuthoringComponent特性，而是使用了Serializable特性。 因为这个Demo里，官方又给我们展示了另外一种相对而言更灵活的实体",
+    "categories": [
+      "ECS入门"
+    ],
+    "date": "2019-12-05 14:26:51"
+  },
+  {
+    "id": 2805,
+    "title": "[Unity ECS 入门]5.块（Chunk）和原型（Archetype）",
+    "content": "1.块（Chunk） 什么是块（Chunk），这是一个很重要的概念。 先来看看一张官方的图： 我们有三个实体： EntityA：包含了Translation、Rotation、LocalToWorld、Render四个组件。 EntityB：包含了Translation、Rotation、LocalToWorld、Render四个组件。 EntityC：包含了Translation、Rotation、LocalToWorld三个组件。 这些组件是什么意思大家不用管，但是，很明显的，EntityA和EntityB拥有的组件是一模一样的。 在ECS中，底层会把这些拥有相同组件的实体放在一起，也就是我们所说的内存块（Chunk）。 这涉及到一种\"反正我也听不懂\"的原理，把相同类型的数据连续存放在一块内存里，会提高提取数据的效率。 这个\"反正我也听不懂\"原理是什么呢？大家感兴趣的可以移步官方文档： https://docs.unity3d.com/Packages/com.unity.entities@0.3/manual/ecs_core.html 本系列是入门教程，不会有过多的原理解说。 ",
+    "categories": [
+      "ECS入门"
+    ],
+    "date": "2019-12-05 14:25:35"
+  },
+  {
+    "id": 2801,
+    "title": "[Unity ECS 入门]4.筛选实体数据的方式3——IJobForEach（已废弃）",
+    "content": "来自2020.04.28的说明： 网友提示，0.9.1版本下的Entities已经放弃使用 IJobForEach，木头本人当时学习的是0.3版本，所以，理论上来说，本文已作废。 上一篇我们介绍了JobComponentSystem的基础用法，其实还有更多的用法，这次来介绍一下IJobForEach。 同样是用于筛选实体数据，执行一些逻辑操作，但是IJobForEach比起单纯地使用Entities.ForEach，在大部分情况下会有更优秀的性能。 1.IJobForEach 我们还是用之前的代码，但是，System类又要做一些改动： using Unity.Collections; using Unity.Entities; using Unity.Jobs; using Unity.Mathematics; using Unity.Transforms; public class RotationSpeedSystem_ForEach : JobComponentSystem { struct RotationSpeedJob : IJobForEachRotation, Rota",
+    "categories": [
+      "ECS入门"
+    ],
+    "date": "2019-12-05 14:24:18"
+  },
+  {
+    "id": 2791,
+    "title": "[Unity ECS 入门]3.筛选实体数据的方式2——JobComponentSystem和ForEach",
+    "content": "上一篇我们解释了最简单的ECS示例，写ECS的基本思路就是创建组件、创建实体、编写系统处理逻辑。 我们已经知道，系统是继承了ComponentSystem的类，这是最简单的系统类。 实际上，ComponentSystem有很多的缺点，在实际开发过程中，我们一般会优先使用JobComponentSystem，这样才能最大地发挥ECS的性能。 1.JobComponentSystem 我们之前所使用的ComponentSystem和以前的MonoBehaviour是非常接近的，并且都是在主线程里执行。 ComponentSystem更多的是为了让我们最低成本地把旧项目迁移到ECS模式。 然而，ECS最大的特点之一就是充分利用CPU，这种单线程的使用方式，并不太好。 于是，我们有了JobComponentSystem，一句话概括：我们可以简单地用多线程执行游戏逻辑。 我们来看看代码，组件的代码没有变化，但是，System类需要做一些改动： using Unity.Collections; using Unity.Entities; using Unity.Jobs; using Unity.",
+    "categories": [
+      "ECS入门"
+    ],
+    "date": "2019-12-05 14:23:01"
+  },
+  {
+    "id": 2786,
+    "title": "[Unity ECS 入门]2.筛选实体数据的方式1——ComponentSystem和ForEach",
+    "content": "上一篇我们迅速地编写了一个超厉害的HelloWorld，然后大家什么都没学到。 对，我要的就是这个效果… 因为…这样很酷（旁白：GUN！） 这次，我们还是用上一篇的代码，然后给大家介绍最简单的概念。 1.组件（Component） 在介绍实体之前，我想先介绍组件。 我们对组件肯定不陌生，Transform就是我们最常见的Unity组件。 而ECS的组件和我们所理解的组件不一样，ECS的组件是纯组件，仅包含数据结构，不包含任何其他功能。 我们再来回忆一下组件的代码： RotationSpeed_ForEach继承了IComponentData接口，这是ECS的组件接口。 通过代码可以发现，这个类，实际上是一个结构体。它只包含属性，没有任何其他函数。这是和传统组件的区别，传统组件，如Transform，它有SetParent等函数，这是不太\"纯\"的组件。 ECS的组件就是单纯地只包含1个或多个字段（唔，0个也行）的结构体。 2.实体（Entity） 传统的Unity开发，实体的概念不太明确，大致可以理解为，一个GameObject就是一个实体，实体上面挂载了一堆MonoBehaviour的",
+    "categories": [
+      "ECS入门"
+    ],
+    "date": "2019-12-05 14:12:01"
+  },
+  {
+    "id": 2783,
+    "title": "[Unity ECS 入门]1.最简单的ECS程序",
+    "content": "官方的第一个Demo是ForEach，演示了最基础的ECS游戏（旁白：等等，你管这叫做游戏？） 这一篇，我们抛开所有的理论知识，先让大家把一个最简单的ECS游戏唔，程序，跑起来。 1.安装Entities包 首先，我们要安装Entities包和Hybrid Renderer包，这样才能支持ECS模式的开发。 打开Unity的Window-PackageManager菜单，搜一下Entities，记住，要把筛选条件改为All packages： 编写本系列教程时，我使用的Entities是0.3.0版本（预览版）。 安装完Entities后，接着安装Hybrid Renderer包，仍然是0.3.0。 注：在我写教程的时候，ECS相关的包只更新到0.2.0版本，后来更新到0.3.0版本，所以上面的截图版本号不准确。 2.概念（说好的抛开所有理论知识呢？） ECS是什么？上一篇说过了：实体（Entity）、组件（Component）、系统（System）。 官方Demo的第一个例子是制作一个旋转的正方体，简单地展示了ECS的基本模式。 3.组件（Component） 首先创建一个场景，然后",
+    "categories": [
+      "ECS入门"
+    ],
+    "date": "2019-12-05 14:11:15"
+  },
+  {
+    "id": 2772,
+    "title": "[Unity ECS 入门]0.前言-想不想学ECS？",
+    "content": "教程目录： [Unity ECS 入门]0.前言-想不想学ECS？ [Unity ECS 入门]1.最简单的ECS程序 [Unity ECS 入门]2.筛选实体数据的方式1——ComponentSystem和ForEach [Unity ECS 入门]3.筛选实体数据的方式2——JobComponentSystem和ForEach [Unity ECS 入门]4.筛选实体数据的方式3——IJobForEach [Unity ECS 入门]5.块（Chunk）和原型（Archetype） [Unity ECS 入门]6.筛选实体数据的方式4——IJobChunk [Unity ECS 入门]7.创建实体的方式——通过Prefab [Unity ECS入门]8.System执行顺序 [Unity ECS入门]9.如何回到主线程搞事情——EntityCommandBufferSystem [Unity ECS入门]10.筛选实体数据的方式5——IJobForEachWithEntity [Unity ECS 入门]11.更多组件类型 [Unity ECS入门]12.EntityQuery [",
+    "categories": [
+      "ECS入门"
+    ],
+    "date": "2019-12-05 14:10:26"
+  },
+  {
+    "id": 2708,
+    "title": "《炼裙者2第九感》测试版发布",
+    "content": "游戏使用了GameFramework框架开发，感觉用得挺顺手的，只遇到了大约380个坑（才怪啊，没有的事）。 不过，在此严重声明，游戏里的所有卡顿、效率低、内存泄漏，都与GameFramework框架无关，全都是木头本人的锅，请不要认为框架不好。（那个，E大，钱打我支付宝就好） 由于我没有申请版号，游戏加了内购，所以无法直接在TapTap的国区发布，只能发布为海外版。所以，大家可以到TapTap看到我的游戏（还可以评价什么的），但是可能无法下载：https://share.weiyun.com/5A8OEcj 但是，有但是的，我把安装包传到网盘了，大家也可以玩玩看：https://share.weiyun.com/5gOu8Qw 至于游戏简介的话... 本来游戏是写了一大段介绍的，由于作者手抖，都删掉了，于是…作者请来了一位非常出名的不知名记者进行了采访（假的啦！） 记者：请问，您是作者本人吗？ 作者代理人：不是的，我是作者代理人。 记者：为什么作者不来接受采访？ 作者代理人：因为作者害怕…那个，我的意思是，作者太忙了，没空来。 记者：好吧…请问，这款游戏是什么类型的？ 作者代理人：是",
+    "categories": [
+      "推广",
+      "Game Framework"
+    ],
+    "date": "2019-01-17 08:19:45"
+  },
+  {
+    "id": 2683,
+    "title": "[笨木头“创2”路]No.7 软弱的管理者",
+    "content": "又好久没有更新这个系列的文章，因为确实不知道写什么，我们公司也不像手游公司那样，什么事情都是风风火火，半年变一个样。相反，我们公司反而是那种比较悠然的，真正谈下来的项目也不多，但，就一句话吧，还活着。 这次我并不是想说公司的发展情况，而是，我今天对公司的财务做了有史以来最重的惩罚。 话虽这么说，可我基本都没有对谁做过什么特别严重的处罚，这次是最重的，但也并不是特别重。 1.特别想当一名“战士” 其实我根本就不适合当管理者，我在公司里80%的时间也是在做开发的任务，剩下的20%才是在做管理的事情。 即便如此，我还是觉得很累，不知道该怎么做。 对他们严格吧，又怕吓跑他们，毕竟公司没有什么吸引力，又给不起大价钱，人也少的可怜。 对他们宽松吧，又怕没规没矩，影响工作效率。 病假减免工资、轻微的弹性工作时间、不加班、每逢周五和节假日都提前下班......我尽我所能地去设定一些不用花钱的福利，因为公司就是缺钱，我只能想这些招数来留着人才。 然而，现实是，我越是看好的人才，越是会离开。 两次了，我特别器重的人，结果都离开了。 我一直都特别喜欢当一名“战士“，不用考虑策略，不用指挥，只管听一声号令，便",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2018-08-14 13:19:19"
+  },
+  {
+    "id": 2674,
+    "title": "GF_JustOneLevel更新，V1.0.2发布说明",
+    "content": "GF_JustOneLevel为笨木头开源的基于GameFramework框架的小游戏 GitHub地址：https://github.com/mutouzdl/GF_JustOneLevel V1.0.2发布说明 #修复Bug： #12 武斗家的攻击动作还没出现就造成了伤害 #11 偶然出现：所有怪物状态无法转换，所有子弹突然发出后不会移动了，而且泉水也失去效果 #优化： 加强恶魔泉的伤害效果 调整神射手的子弹速度 怪物的血量条调高了一点，主角的血量、魔法值显示在中间下面 调整怪物和英雄的属性配置 给每个英雄增加吸收能力配置（打败怪物后增加属性的方向不一样） 调整怪物出场时间 增加怪物击杀数量显示、增加英雄攻速显示 最低伤害改为1",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "date": "2018-07-20 07:33:26"
+  },
+  {
+    "id": 2671,
+    "title": "GF_JustOneLevel更新，V1.0.1版本发布说明",
+    "content": "GF_JustOneLevel为笨木头开源的基于GameFramework框架的小游戏 GitHub地址：https://github.com/mutouzdl/GF_JustOneLevel V1.0.1版本发布说明： 新增 增加英雄商店UI 增加神射手和武斗家两个英雄 增加白猫怪物、老虎怪物 激光射线子弹改为黄色效果 优化 主角技能按钮增加MP消耗值显示 怪物累计接受3次伤害后往后回弹的距离，增加边界的判断 增加AtkAnimTime字段，用于设置各个怪物的攻击动画时间，优化攻击和受伤动画的时机 调整按钮样式 英雄攻击时，取消判断是否有目标进入攻击范围（由子弹碰撞时判断是否产生攻击即可） 修复 #7 自动类型武器配置后没有生效 #6 技能按钮多于1个时，布局错乱 #5 英雄使用远程武器时，子弹高度不够，导致看不到子弹 #8 初次加载项目时，报了几个资源缺失的错误 玩家打败怪物后金币累加错误的Bug 当子弹速度为0时，在子弹出现0.5s后，自动销毁，避免子弹没有攻击到敌人而一直存在 英雄进入泉水范围后，如果有其它角色从泉水离开，则会导致泉水的特效隐藏",
+    "categories": [
+      "Game Framework"
+    ],
+    "date": "2018-07-16 08:06:15"
+  },
+  {
+    "id": 2667,
+    "title": "[GameFramework]杂记001-关于protected internal visual void OnInit()函数",
+    "content": "更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archives/2667 文章来源：笨木头与游戏开发 在GameFramework中，大家可能经常遇到一个错误（比如把我的代码放在Unity5.x里运行时），这个错误和类似protected internal visual void OnInit的函数重写有关。 刚好今天有位朋友问了我一个问题，所以我就专门再仔细看了看。 首先，internal代表只有同一个程序集下的代码可以访问，这个是前提，这个语法大家应该都知道。 问题就在于protected，protected代表子类可以访问。 于是，大家是不是就认为，protected internal只能在同一个程序集的子类里访问呢？ 不是的，不是的，并不是的！ 它代表的是以下两种情况： 1.在同一个程序集下，可以访问OnInit函数 2.在同一个程序集下，可以重写这个函数，但是必须这样写：protected internal override voi",
+    "categories": [
+      "Game Framework"
+    ],
+    "date": "2018-06-28 17:07:02"
+  },
+  {
+    "id": 2662,
+    "title": "GF_JustOneLevel食用指南002：主要功能",
+    "content": "虽然这是一个很简单的游戏，但，功能还是不少的，起码是一个能正常玩的游戏了。 本游戏包含以下功能： 1.场景切换 带Loading功能，目前Loading只是加载了一个LoadingUI，大家可以自行修改这个UI，不过，目前不支持进度条； 2.从配置文件读取并加载实体 GF自带，没什么好说的 3.状态机 使用的是框架的状态机功能，用于控制角色的站立、行走、攻击、受伤等状态，使用的是并发状态机（一个角色用多个状态机控制）、分层状态机（状态继承）。 这部分写得比较烂，因为目前状态很少（没有任何buff状态），运行起来还算正常。后续状态增加之后，我再努力优化这部分代码，也期待朋友们的Pull Request。 4.怪物生成器 游戏的核心功能之一，因为本游戏的怪物是随着时间的推移而出场的，所以写了一个生成器。 支持创建多个生成器，生成器参数通过配置文件（MonsterCreater.csv）进行配置：https://github.com/mutouzdl/GF_JustOneLevel/blob/master/Assets/GF_JustOneLevel/DataTables/MonsterCr",
+    "categories": [
+      "Game Framework"
+    ],
+    "date": "2018-06-27 17:09:35"
+  },
+  {
+    "id": 2660,
+    "title": "GF_JustOneLevel食用指南001：下载、运行",
+    "content": "1. 下载运行 本项目使用的是Unity3D 2018.1版本，所以大家最好也使用2018及以上版本，当然，2017也是支持的，至于5.x及以下版本，是不兼容的。 从github（https://github.com/mutouzdl/GF_JustOneLevel）克隆项目后，直接用Unity3D打开项目文件夹即可。 2.目录结构 本项目主要有以下几个目录： GF_JustOneLevel：存放本游戏的所有代码和资源 GameFramework：框架源码 UnityGameFramework：框架源码，至于和GameFramework的关系，GF是基础框架，UGF是专门针对Unity3D的一层框架。 Resources：这个Unity3D本身支持的目录，不多解释咯，使用了DOTween后自动生成了两个文件在里面 StreamingAssets：也是Unity3D支持的目录，主要存放assetabundle打包后的文件 初始场景是GF_JustOneLevel/Scenes/Launch，理论上直接运行这个场景就能正常打开游戏。",
+    "categories": [
+      "Game Framework"
+    ],
+    "date": "2018-06-27 17:08:40"
+  },
+  {
+    "id": 2655,
+    "title": "开源基于GameFramework的小游戏",
+    "content": "GF_JustOneLevel（只有一关） 基于Game Framework框架的小游戏——《只有一关》 没错，内容只有一关，游戏名字也叫做只有一关。 其实这是我学习Unity3D后做的第一个游戏，现在用GameFramework重制一次。不过，由于时间关系，元素少了一些（比如没有了宠物和商店功能）。 打个小广告，这是曾经发布《只有一关》的博客：http://www.benmutou.com/archives/1967 ，目前游戏已经被各种下架（版号原因，大家懂的）。 没想到距今已经三年了，而我的Unity3D水平依旧没有长进，十分对得起业余的称号。 版本 GameFramework版本：3.1.3 Unity3D版本：2018.1 主要玩法 玩法很简单，就是玩家在一块空地上，然后会有怪物不断产生，打死它们就可以了。 其中有三个魔力泉水，各有功效，需要合理利用，否则是无法生存下去的。 游戏并没有胜利机制，正常来说，怪物会越来越强，直到玩家无法战胜，但是目前这个版本我没有配那么多怪物，所以大家会打着打着就没怪物了（会有一个打不死的怪物出来清场——也就是把你强制干掉啦）。 玩家每杀死一只怪",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "date": "2018-06-27 07:40:15"
+  },
+  {
+    "id": 2643,
+    "title": "[GameFramework]Demo10-有限状态机的使用",
+    "content": "本文 Game Framework 版本：3.1.1 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archives/2643 文章来源：笨木头与游戏开发 最近有朋友需要Game Framework状态机的使用教程，所以我就简单说说状态机的用法吧。 本Demo只介绍Game Framework框架状态机的使用方式，至于什么是有限状态机，以及状态机的最佳使用方式，大家自行学习。 1.FsmState（有限状态机基类） 状态机包括角色的各个状态，只要让我们的状态类继承FsmState即可。 在继承FsmState的时候需要指定一个类型，这个类型就是状态的持有者。比如我们有一个英雄，英雄有行走和站立的状态，那么，这些状态的持有者就是这个英雄。 本Demo演示一个英雄的行走和站立状态切换，其中英雄是GameFramework中的Entity，如果大家还记得Demo6的话，我们创建实体的时候需要一个实体逻辑处理",
+    "categories": [
+      "Game Framework"
+    ],
+    "date": "2018-04-27 21:36:27"
+  },
+  {
+    "id": 2630,
+    "title": "[GameFramework]Demo8-NetWork网络连接、发送、接收数据",
+    "content": "本文 Game Framework 版本：3.1.1 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archives/2630 文章来源：笨木头与游戏开发 关于NetWork这一块，我折腾了两个多星期了，因为每天只有1个多小时的时候，思路很不连续，一度想放弃。 还好坚持下来了，其实NetWork这块的使用不难，只是我自己掉进坑里了。 没错，我要来和大家分享我的坑，以及演示NetWork从连接到发送数据，再到接收数据的处理。 1.大致流程 网络组件的使用大致使用流程如下： a.创建频道（NetworkChannel） b.绑定频道辅助器（NetworkChannelHelper） c.注册频道的消息监听类（PacketHandler），即服务端发送某类消息过来时，客户端有对应的类进行接收处理 d.频道连接服务端 e.使用频道辅助器（NetworkChannelHelper）序列化消息对象，通过频道发送消",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "date": "2018-04-18 17:36:30"
+  },
+  {
+    "id": 2615,
+    "title": "[GameFramework]Demo9-AssetBundle打包的一些坑",
+    "content": "本文 Game Framework 版本：3.1.1 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archives/2615 文章来源：笨木头与游戏开发 关于AssetBundle的用法，官方已经有两篇文档了，我当然不会重复写的。 但是，对于AssetBundle新手来说，官方那两篇文档还少了几个细节，这几个细节可能会导致新手无法打包成功，所以我在这里以补充的角度和大家讲解一下AssetBundle（针对GF框架）的注意事项。 （另外，Demo8还没完成，因为有朋友问到了打包的问题，所以先研究这块了） 1.为什么打包后，场景加载不了 大家别笑，有位朋友问我，为什么打包成windows平台后，加载场景都失败了。 然后我觉得很奇怪，怎么会呢，后来我试了试… 啪啪啪，脸疼。 确实加载不了场景呢，呵呵。 原因很简单，在GameFramework框架中，所有的东西都是资源，包括场景。 所以，想要在打包后成功加",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "date": "2018-04-06 21:35:17"
+  },
+  {
+    "id": 2603,
+    "title": "[GameFramework]Demo7-发起Web请求",
+    "content": "本文 Game Framework 版本：3.1.1 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archives/2603 文章来源：笨木头与游戏开发 虽然官方目前还没有写WebRequest组件的文档，但是，这个组件的API相对比较简单，我也简单地演示其中一个吧。 API列表 WebRequest组件用于发起短链接的请求，包括Get、Post，以上几个不同的AddWebRequest函数是用于在发生数据的时候附上post数据、Form表单数据，这个看参数名就知道了。至于userData，当然是自定义的数据，在请求成功或失败时可以获取这个自定义数据。 一个简单的Get请求 新建一个场景（Demo7_Launch）和一个初始流程（Demo7_ProcedureLaunch），流程代码如下： using GameFramework; using GameFramework.Event; using G",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "date": "2018-03-27 07:57:03"
+  },
+  {
+    "id": 2597,
+    "title": "[GameFramework]Demo-StarForce无封装简陋不完全版",
+    "content": "本文 Game Framework 版本：3.1.1 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archives/2597 文章来源：笨木头与游戏开发 由于GameFramework的官方Demo（StarForce）封装的比较多，不利于入门学习（但作为代码风格和编程思路的学习是非常好的），所以，我打算用尽量少（能不能用就不用）的封装来重新实现一遍StarForce的基础功能，希望能帮到初学框架的你。 在学习此Demo之前，强烈建议先看完Demo1至Demo6。 本Demo源码：https://github.com/mutouzdl/gameframework_demo.git 下载源码后，用Unity3D打开工程，进入DemoStarForce目录，即为本Demo的项目。 本Demo没有对应的教程，仅作学习参考用，以下为注意事项： DemoSF_GameEntry脚本要挂载到GameFramew",
+    "categories": [
+      "其它",
+      "Unity3D",
+      "Game Framework"
+    ],
+    "date": "2018-03-26 17:11:37"
+  },
+  {
+    "id": 2592,
+    "title": "《炼裙者》、《进化》临时下载地址",
+    "content": "各位《炼裙者》和《进化》的玩家，由于TapTap整改，暂时无法在TapTap直接下载游戏，大家可以通过以下任意一个地址下载： 炼裙者-百度网盘：https://pan.baidu.com/s/1OEho4AjVjQ9WfW2S2y-XRQ 炼裙者-腾讯微云：https://share.weiyun.com/57KhDWy 进化-百度网盘：https://pan.baidu.com/s/1L84xd5Vgo3LX6QWKFWl_LA 进化-腾讯微云：https://share.weiyun.com/5OpQnVA 也可以加入 木头玩家官方群 ，到群文件里下载，群号： 330125546",
+    "categories": [
+      "推广"
+    ],
+    "date": "2018-03-18 12:06:20"
+  },
+  {
+    "id": 2587,
+    "title": "[GameFramework]Demo6-创建实体",
+    "content": "本文 Game Framework 版本：3.1.1 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archives/2587 文章来源：笨木头与游戏开发 实体是游戏里最重要的对象之一，本篇我们一起来看看怎么创建实体。 1.创建初始场景和实体预制体（Prefab） 初始场景的创建就不多说，一个Demo6场景加上一个Demo6_ProcedureLaunch.cs流程脚本，并设置好初始流程，具体参考Demo1。 创建实体时，是从预制体创建的，所以我们需要建一个预制体，随便建，比如我建了一个很复杂的预制体——一个Cube。 我们把预制体命名为CubeEntity吧。 最终的目录结构是这样的： 2.实体逻辑处理类 一个实体预制体仅仅只是用来展现的，要让实体拥有生命，还需要一个负责处理逻辑的脚本。 新建一个脚本，命名为Demo6_HeroLogic.cs： using GameFramework; using",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "date": "2018-03-16 17:20:28"
+  },
+  {
+    "id": 2579,
+    "title": "[GameFramework]Demo5-加载配置文件",
+    "content": "本文 Game Framework 版本：3.1.1 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archives/2579 文章来源：笨木头与游戏开发 加载配置文件也算是这个框架的基础，很多事情都依赖于配置文件（比如加载实体也是先读取配置文件，然后再创建对象的），本Demo将和大家一起了解GameFramework是如何加载配置文件的。 关于加载配置文件，官网也是有文档的，大家可以选择看文档：http://gameframework.cn/archives/category/module/buildin/datatable 本文只做简单的补充说明，和要注意的地方。 1.配置文件格式 官方默认的配置文件格式是\"制表符分隔\"文本，即用tab作为分隔符的文件。 比如我们新建一个Hero.txt配置文件，如下格式（使用Excel编辑）： 带有#号的行为注释行，不带#号的为正式数据。 2.导出配置文件 在框",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "date": "2018-03-15 17:10:55"
+  },
+  {
+    "id": 2571,
+    "title": "[GameFramework]Demo4-内置事件订阅",
+    "content": "本文 Game Framework 版本：3.0.9 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archives/2571 文章来源：笨木头与游戏开发 这一篇我们来看看怎么订阅内置的一些事件，这些事件有很多很多，比如打开UI成功事件…以及……对，我们一起来看看吧。（旁白：你倒是多举几个例子啊！） 1.创建项目、初始场景、菜单场景 对于这些基础操作，大家参考之前的Demo就好了，这里不多说。 最终我们需要一个初始场景、一个菜单场景，菜单场景里随便加载一个菜单（使用框架的方式），如果大家不指定怎么做的话，请阅读《Demo3-加载UI》或者直接查看本Demo4源码。 2.订阅打开UI成功事件 还记得我们是在哪个地方打开UI的吗？（旁白：不记得） OK，记得就好，我们的UI是在菜单流程里打开的，因为我们打开的是菜单UI。 为了在UI成功打开的时候做一些羞羞的事情，我们需要用到事件订阅，现在，打开Demo4",
+    "categories": [
+      "Game Framework",
+      "Unity3D"
+    ],
+    "date": "2018-03-09 17:44:56"
+  },
+  {
+    "id": 2564,
+    "title": "[GameFramework]Demo3-加载UI",
+    "content": "本文 Game Framework 版本：3.0.9 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archives/2564 文章来源：笨木头与游戏开发 对于Demo2，可能写的有点乱，因为我没想到切换流程和场景是要涉及到多个知识点的，我的错。 这次我们简单一点，来演示一下如何用Game Framework框架加载UI，不涉及其他操作。 1.创建基础项目 请确保你已经阅读过Demo1和Demo2，或者你已经知道如何创建Game Framework空项目，以及切换流程的方式。 我们需要新建一个Demo3项目，并且把初始场景和菜单场景给创建好，文件列表如下： Demo3：初始场景 Demo3_Menu：菜单场景 Demo3_ProcedureLaunch.cs：初始流程脚本 Demo3_ProcedureMenu.cs：菜单流程脚本 至于初始场景要把Game Framework的基础组件预制体拖到场景里",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "date": "2018-03-07 17:17:30"
+  },
+  {
+    "id": 2548,
+    "title": "[GameFramework]Demo2-切换流程和场景",
+    "content": "本文 Game Framework 版本：3.0.9 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archives/2548 文章来源：笨木头与游戏开发 来自2018.11.20的补充：切换场景时，需要提供完整路径，之前是我疏忽了，误导了大家。 来自2018.12.18的补充：切换场景时，除了需要提供完整路径外，还需要提供后缀名。 这个Demo是为了和大家展示Game Framework切换场景的方式，但是切换场景又涉及到切换流程，所以就一起介绍了。 1.创建初始场景（Demo2） 这个Demo需要三个场景：初始场景（永久存在，不卸载）、菜单场景、游戏场景。 我们先来创建初始场景，创建一个项目，新建一个场景，命名为Demo2，然后创建一个Demo2_ProcedureLaunch.cs脚本： 脚本内如如下： using System.Collections; using System.Collect",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "date": "2018-03-06 07:48:29"
+  },
+  {
+    "id": 2535,
+    "title": "[GameFramework]Demo1-如何创建一个GameFramework项目",
+    "content": "本文 Game Framework 版本：3.0.9 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archives/2535 文章来源：笨木头与游戏开发 为了弥补官方文档的严重缺失，同时也希望Game Framework这个框架能稍微流行开来（不管它优不优秀，代码是绝对值得学习的），木头我就自愿帮框架作者写一些基础的Demo教程吧。 噢，天呐，我真伟大（注意，这不是一篇翻译的文章！） 这一篇，我们先从创建一个GameFramework项目开始。 1.下载GameFramework Package 首先要到框架的官网下载资源包：http://gameframework.cn/download 资源包里包含了GameFramework框架的Dll（源码可以到github获取）、UnityGameFramework源码、空项目示例。 目前最新的源码是3.1.0，但是，最新的资源包是3.0.9，木头很懒的，",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "date": "2018-03-02 17:45:53"
+  },
+  {
+    "id": 2521,
+    "title": "[Game Framework之StarForce解读]05.玩家飞机逻辑处理类",
+    "content": "本文 Game Framework 版本：3.1.0 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archives/2521 文章来源：笨木头与游戏开发 通过上一篇的研究，我们已经了解到玩家飞机和怪物是怎么加载出来的（根据配置id读取配置文件，创建实体）。 我们来回忆一下，玩家飞机是怎么创建的：GameEntry.Entity.ShowMyAircraft 现在，为了知道玩家飞机的逻辑是在哪里处理，我跟进了ShowMyAircraft函数，又发现了框架作者的秘密。 1.GameEntry.Entity来源 ShowMyAircraft函数是通过GameEntry.Entity调用的，那我们自然要先知道这里的Entity是什么东西。 如果大家还记得最开始的文章的话，应该对GameEntry不陌生——它是游戏初始化入口。 在GameEntry的InitBuiltinComponents函数里，对Enit",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "date": "2018-02-27 17:15:57"
+  },
+  {
+    "id": 2507,
+    "title": "[Game Framework之StarForce解读]04.游戏场景",
+    "content": "本文 Game Framework 版本：3.1.0 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archives/2507 文章来源：笨木头与游戏开发 上一篇我们聊得不是很愉快，我觉得我们不是很适合…个屁啊！都说些什么呢。 上一篇我们只是发现了框架的作者是怎么让游戏进入到游戏主场景的，真正重要的是游戏主场景里都做了些什么事情，这一篇，我们就来瞎猜ProcedureMain里都做了些什么吧。（旁白：果然从一开始就是骗人的啊，一直都瞎猜的啊！） 1.OnInit ProcedureMain也是一个流程，自然也就按照流程的生命周期来研究它了，首先是OnInit，这个就算瞎猜都知道，它是在OnEnter之前执行的，我非常肯定…. 后来我还是研究了一下，发现，OnInit确实是在OnEnter之前调用的，而且是非常前，在流程初始化时就调用（此时还没切换到Main流程）。如果没看错的话，是这么个逻辑，以后再深",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "date": "2018-02-27 07:42:27"
+  },
+  {
+    "id": 2495,
+    "title": "[Game Framework之StarForce解读]03.流程示例——ProcedureMenu",
+    "content": "本文 Game Framework 版本：3.1.0 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archives/2495 文章来源：笨木头与游戏开发 这篇我们通过ProcedureMenu这个流程，大致了解Game Framework这个框架的基本玩耍方式。 1.生命周期 ProcedureMenu重写了以下三个函数： 很明显，这是一个基础流程所具备的三个生命周期，进入、每帧更新、离开。 我们一个个来看吧。 2.OnEnter protected override void OnEnter(ProcedureOwner procedureOwner) { base.OnEnter(procedureOwner); GameEntry.Event.Subscribe(OpenUIFormSuccessEventArgs.EventId, OnOpenUIFormSuccess); m_StartG",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "date": "2018-02-07 17:10:36"
+  },
+  {
+    "id": 2486,
+    "title": "[Game Framework之StarForce解读]02.游戏入口",
+    "content": "本文 Game Framework 版本：3.1.0 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archives/2486 文章来源：笨木头与游戏开发 1.入口 游戏的入口很容易找，我才找了半天就找到了，就在这： GameEntry很简单，只在Start的时候执行了两个初始化函数： /// summary /// 游戏入口。 /// /summary public partial class GameEntry : MonoBehaviour { private void Start() { InitBuiltinComponents(); InitCustomComponents(); } } InitBuiltinComponents：初始化框架自带的基础组件； InitCustomComponents：初始化我们自己的组件。 （另外一提，GameEntry类拆分为三个文件了，别以为只有上面那",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "date": "2018-02-06 17:07:24"
+  },
+  {
+    "id": 2473,
+    "title": "[Game Framework之StarForce解读]01.StarForce下载运行",
+    "content": "本文 Game Framework 版本：3.1.0 本文 Unity3D 版本：2017.3 更多GF教程和实例：https://github.com/mutouzdl/gameframework_demo.git 转载请注明，原文地址：http://www.benmutou.com/archives/2473 文章来源：笨木头与游戏开发 最近木头打算研究一个很厉害的Unity3D框架——Game Framework。 虽然我还没有开始研究，但是，感觉起来是非常厉害的，所以我想研究一下。 由于作者非常忙，导致框架的文档奇缺，想要研究这个框架，只能一步步看源码。 作者写了一个Demo项目——StarForce，依旧是没有文档说明，所以我打算一边研究这个Demo，一边分享教程。 那么，我们从下载和运行开始吧！ 首先下载StarForce工程：https://github.com/EllanJiang/StarForce 下载完之后，用Unity打开工程文件夹，然后运行…你一定会发现一堆编译报错，是的，这是作者故意的（逃）（来自2019年的补充说明：UnityGameFramework是子",
+    "categories": [
+      "Unity3D",
+      "Game Framework"
+    ],
+    "date": "2018-02-06 07:32:45"
+  },
+  {
+    "id": 2443,
+    "title": "Unity3D Entitas 入门篇03 总结",
+    "content": "转载请注明，原文地址：http://www.benmutou.com/archives/2443 文章来源：笨木头与游戏开发 如果大家看完HelloWorld之后，还是一脸懵逼，那也算正常。 1. Entitas的主要思路 如果你熟悉ECS的话，可以很容易就理解这个框架，不熟悉也没关系，我们一起来熟悉。 Entitas的思路比较明确——谁发生了改变，我就对谁感兴趣。 比如角色的血量，如果它没有变化，那么，System是不会对其进行操作的（当然，你想操作也行）。只有血量发生了变化，它才会被关注。 当然了，像监测血量变化这种事情，我们用消息订阅就能完成，只不过Entitas把这件事情做到了极致。 而且，通过GetTrigger和Filter这两个函数，我们可以轻松地定位我们所需要的那些实体，确实很神奇，也很方便。 2.大实体 其实，Entitas的这种模式，会把一个实体变得很大，按照我目前所理解的情况来看（入门阶段），实体的种类是非常少的。 比如框架默认就只设定了两种实体——GameEntity和InputEntity——游戏实体和输入实体。 而实体的进一步划分，比如英雄、怪物、子弹等，都",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2017-09-02 12:06:37"
+  },
+  {
+    "id": 2431,
+    "title": "Unity3D Entitas 入门篇02 当然是HelloWorld",
+    "content": "转载请注明，原文地址：http://www.benmutou.com/archives/2431 文章来源：笨木头与游戏开发 要说学习新的东西，有什么能比得上一个HelloWorld呢？ 一个HelloWorld还学不会，那就来两个。 1. Entity（实体）、Component（组件）、System（系统）间的关系 如果你觉得想尽快看到HelloWorld，那就直接从第2步开始，然后再回来看这一步吧。 这里简单介绍ECS三者之间的关系。 Entity，即实体，显然，它是一个实质的带有功能的对象，但它又不仅限于角色、怪物这些实体。 因为，在Entitas中，就连鼠标点击产生的事件也作为实体。 组件就是一些零散的功能点，如：坐标、武器、攻击力等。 实体就是这些组件的载体，把部分组件组合起来。 比如，我有以下的组件：图片、攻击力、武器。 这些是零散的东西，总得有个角色把它们组合起来吧？所以，这个角色就是实体。 而组件是千奇百怪的，比如：坐标。 在产生点击事件的时候，得有个实体把坐标给组合起来，那么，就有个“点击事件实体”的东西了。 至于System（系统），可以理解为Controller",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2017-09-01 20:54:45"
+  },
+  {
+    "id": 2421,
+    "title": "Unity3D Entitas 入门篇01 介绍和安装",
+    "content": "转载请注明，原文地址：http://www.benmutou.com/archives/2421 文章来源：笨木头与游戏开发 大家都知道，木头一直都没有在大的游戏公司待过，没见识也没经历过优秀的项目。最近想研究一些开源的Unity3D框架，开拓一下自己的思维。 优先入坑的是Entitas框架，本系列教程基于0.42.3版本。 1. Entitas是什么？ GitHub地址：https://github.com/sschmid/Entitas-CSharp Entitas是一个Unity3D的框架，核心思想是ECS（Entity Component System，实体-组件-系统），官网的宣传语是：Entitas is a super fast Entity Component System (ECS) Framework specifically made for C# and Unity。 它说它是一个超级快的ECS框架，支持C#和Unity。 据说这是2015年发布的框架，但是很明显，在国内没有流行起来，起码比起Unity3D的知名度，这个框架可以说是“没人认识”。 最近木头想学习",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2017-09-01 20:28:40"
+  },
+  {
+    "id": 2410,
+    "title": "iTween和DOTween的选择",
+    "content": "转载请注明，原文地址：http://www.benmutou.com/archives/2410 文章来源：笨木头与游戏开发 在游戏开发里，补间动画是不可少的，像简单的向前移动、上下重复飘动、按照预设路径移动等。这些功能要是都自己写的话，游戏得开发到何年何月，所以我们必须要用现成的工具。 1.iTween 我们最常听到的应该就是iTween了吧，反正我到网上一搜，最先看到的就是它。 它确实很好用，官方文档很详细，很整洁，功能也挺全的。 然而，这是在我发现DOTween之前的事情。 2.DOTween 就在前天，我偶然发现了DOTween（以前叫做HoTween），怎么说呢，那真的是相逢见晚（旁白：是恨晚！恨晚！）。 DOTween的官方文档咋一看，感觉年代十分久远，没有iTween那么高大上。 但是，硬着头皮看了之后，我如获至宝。 举个例子吧， iTween要移动某个物体，需要这么做： iTween.MoveTo(gameObj, new Vector(2, 3, 2), 0.4f); 而DOTween要移动某个物体，只需要这么做： gameObject.transform.DOMov",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2017-08-05 11:03:43"
+  },
+  {
+    "id": 2407,
+    "title": "Unity3D第二款游戏《进化》低调发布",
+    "content": "1. 初衷 《进化》这款游戏，实际上是一年多以前开始做的，那时候只是突然有个想法——一个飞行射击游戏，吃了道具会进化，吃错了就进化成恶心的路线。 后来因为公司的事多，虽然不用加班，但也没精力做这个游戏，一直搁置了。 2.有始有终 在Unity3D上，我烂尾的游戏也不是没有，在进化之前还有一款放置类的，刚开始做没多久，就放弃了。原因是UI太挫，没心思做了。 《进化》某种程度上也是这个原因，后来找到了还能入眼的UI和人物（可商用），就重新捡起来了。 3.发布平台 重新捡起这款游戏的原因还有一个，那就是TapTap。 它是一个神奇的手游平台，虽然游戏放上去下载量不多（不推广的情况下），但是下载过的人都会认真玩游戏，然后评价。 我就是喜欢这种平台，少人玩没关系，有反馈就让人很开心。 4.成绩 《进化》这款游戏，怎么说呢，毕竟只是第二款，Unity3D方面的代码还积累地不够多。本游戏不盈利，无广告、无内购。 本来不敢告诉大家的，不过，还是鼓起勇气了。 地址: https://www.taptap.com/app/55779 （在TapTap搜“进化”也能找到） 这款游戏在发布的那几天，在新游排行",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2017-08-04 07:43:31"
+  },
+  {
+    "id": 2403,
+    "title": "同时提高工作效率与缓解颈椎的良方",
+    "content": "作为一名天天对着电脑写代码的开发者，脖子酸只是小事，颈椎难受才是大事。 很不幸，木头的颈椎也不怎么好（对，就是很多年前被某个CEO逼的连续7天超负荷工作后留下的病），只要在电脑面前坐着超过1小时就会不舒服，要是一整天都坐着，那完了，颈椎会很不舒服，就连肚子都会晕。最严重那段日子，是天天都不舒服，必须敷着热水袋。 1. 脖子的重要性 作为一个追求效率的开发者，我怎么能允许自己的脖子不舒服呢？（旁白：等等，逻辑在哪？） 你们想啊，脖子不舒服，就会心情不好，心情不好就没法集中精神，没法集中精神就没法高效率地干活，没法高效率地干活，这国内的IT界就少了一名精英了啊（旁白：我呸！） 2. 三个显示器 提高工作效率的其中一个最粗暴的方式，就是提升硬件条件，固态硬盘、内存什么的就不说了。木头想说的是——显示器。 对，开发者至少要两个显示器，一个写代码，一个看文档或者看运行效果。不要跟我说什么虚拟桌面，切来切去的，太浪费时间了。 对于我来说，两个显示器已经完全不够用了，我得要三个。 三个显示器是能提高工作效率，可这和脖子有什么关系呢？ 3. 显示器摆放阵法 要缓解脖子的不舒服，得把显示器按照正确的阵法",
+    "categories": [
+      "其它"
+    ],
+    "date": "2017-07-28 20:43:33"
+  },
+  {
+    "id": 2394,
+    "title": "《守护裙子》小说化",
+    "content": "游戏小说化 大家经常听到的是小说被做成游戏，我这正好相反，我把自己游戏的剧情写成小说了。 如果大家对我比较熟悉的话，应该也知道，我比较善于写剧情+战斗类型的游戏，这是因为我喜欢写剧情。 曾经的想法终于行动了 至于小说，几年前就想写了，但是没有勇气，这一直是我的一个遗憾。 我很想体验一下写小说的感觉，现在，我正在这么做了。 小说《守护裙子》更新中！ 我以《守护裙子》的剧情为大纲，开始把它们写成小说，所有主角、配角均来自游戏里的剧情，主线也和游戏剧情一致，然后在细节上添油加醋。 感觉 写小说的感觉...很难，但也很有意思。 小时候，我姑丈帮我“算命”，结果是说我太爱幻想，要多注意回到现实。 现在想想，我还真是一个爱幻想的人，把自己的幻想写出来，也是一种享受。 如果你也喜欢我这游戏的剧情，不妨支持一下我的小说吧：好吧，支持你一下下",
+    "categories": [
+      "其它"
+    ],
+    "date": "2017-07-03 19:43:37"
+  },
+  {
+    "id": 2388,
+    "title": "一位Cocos2d-x和Unity3D双修者谈谈它们的区别",
+    "content": "木头玩了几年的Cocos2d-x，从2.0beta版本直到3.2，后来便转去玩Unity3D了，断断续续玩了2年多。 有不少朋友问过我，Cocos2d-x和Unity3D怎么选？有什么区别？ 今天我就来吹吹这方面的水吧。 1. 哪个容易入门？ 要说入门，大部分人会觉得Unity3D简单很多，其实不是的，Cocos2d-x入门比Unity3D简单。 木头可不是在这吹水，Unity3D要拖拉出一个简单“玩具”倒是很容易。但是当你以为自己入门了的时候，你会发现，每当你想实现某个功能的时候，阻力都很大，你会非常迷茫。 对，官网有文档，但如果你看过了那个文档，就应该知道，多的不知道从何看起。 这就是Unity3D奇怪的地方，它让你误以为开发游戏很简单，实际上不是的。 Unity3D是一整套的工具，你需要学习的东西非常非常多。 反之，Cocos2d-x入门的难度不在于它本身，而是在于C++，C++不好入门，资质不好的开发者学起来那是一个折磨。所以，排除C++之后，Cocos2d-x的入门其实很简单，你想要什么功能，看官方Demo，把代码拷过来即可。 Cocos2d-x只是一个引擎，你要学的东西并不",
+    "categories": [
+      "其它"
+    ],
+    "date": "2017-06-21 18:55:29"
+  },
+  {
+    "id": 2367,
+    "title": "[Unity3D·CSV篇]目录",
+    "content": "木头之前分享了一份缓存、读取CSV文件的代码（http://www.benmutou.com/archives/2300），一直想顺便写个教程。 但是最近太忙了，我好久好久之前就一直在写的一个Unity3D游戏也一直没写完，终于在这周末写完了。 于是我就一鼓作气，把这CSV的教程也写了。 教程目录： 1. [Unity3D·CSV篇]00.CSV是什么？ 2. [Unity3D·CSV篇]01.CSV新手级读取 3. [Unity3D·CSV篇]02.CSV高手级读取 4. [Unity3D·CSV篇]03.CSV初级缓存 5. [Unity3D·CSV篇]04.CSV高级缓存 本教程所有代码请下载：360云盘下载、百度网盘下载、CSDN下载",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2017-06-11 12:42:29"
+  },
+  {
+    "id": 2361,
+    "title": "[Unity3D·CSV篇]04.CSV高级缓存",
+    "content": "转载请注明，原文地址：http://www.benmutou.com/archives/2361文章来源：笨木头与游戏开发 1. 存放所有缓存的字典对象 新的缓存方式也不复杂，也是新建一个缓存类： [cce_cs] public class CsvDataCached_Higher { /// summary /// 存放所有CSV数据缓存 /// /summary public static DictionaryType, object csvDatas = new DictionaryType, object(); static CsvDataCached_Higher() { /* 读取并缓存CSV配置数据 */ csvDatas[typeof(CSVDemo)] = LoadCsvDataCSVDemo(Application.streamingAssetsPath + \"/CSVDemo.csv\"); } private static Dictionaryint, T_CsvData LoadCsvDataT_CsvData(string csvFilePath) { } p",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2017-06-11 12:29:33"
+  },
+  {
+    "id": 2352,
+    "title": "[Unity3D·CSV篇]03.CSV初级缓存",
+    "content": "转载请注明，原文地址：http://www.benmutou.com/archives/2352 文章来源：笨木头与游戏开发 既然数据对象都有了，要缓存起来，真是太简单了，新建一个专门缓存CSV文件对象的类： [cce_cs] public class CsvDataCached_Newer { /// summary /// CSVDemo.csv文件缓存对象 /// /summary public static Dictionaryint, CSVDemo csvDemoDatas = null; static CsvDataCached_Newer() { /* 缓存CSV文件对象 */ csvDemoDatas = LoadCsvDataCSVDemo(Application.streamingAssetsPath + \"/CSVDemo.csv\"); } /// summary /// 读取CSV文件数据（利用反射） /// /summary /// typeparam name=\"CsvData\"CSV数据对象的类型/typeparam /// param name=\"cs",
+    "categories": [
+      "其它"
+    ],
+    "date": "2017-06-11 12:26:12"
+  },
+  {
+    "id": 2346,
+    "title": "[Unity3D·CSV篇]02.CSV高手级读取",
+    "content": "转载请注明，原文地址：http://www.benmutou.com/archives/2346文章来源：笨木头与游戏开发 在上一篇中，保存CSV文件每一行的数据为CSVDemo对象时，总是要用if条件判断当前是哪个字段，然后再给对象赋值。 这样太烦人了，要是在开发的过程中不断地有新的想法，不断地新增修改字段，那真是改死人了。 甚至完全失去了改动的兴趣，于是游戏的创意就大打折扣，后果十分严重，嗯嗯。（旁白：说了这么多，接下来就要宣传你的“产品”了吧？） 不过，大家不用怕，有木头在，木头有个好招，大家看招吧。 1. 临时的字典结构 为了以后更方便，我们在搭建代码的时候，通常都会麻烦一点，但是，一劳永逸的事情，我是不会抗拒的。 为了实现我们的目的，我们需要先用一个字典结构把CSV文件保存起来，如下代码： [cce_cs] /// summary /// 读取CSV文件 /// 结果保存到字典集合，以ID作为Key值，对应每一行的数据，每一行的数据也用字典集合保存。 /// /summary /// param name=\"filePath\"/param /// returns/return",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2017-06-11 11:20:10"
+  },
+  {
+    "id": 2337,
+    "title": "[Unity3D·CSV篇]01.CSV新手级读取",
+    "content": "转载请注明，原文地址：http://www.benmutou.com/archives/2337文章来源：笨木头与游戏开发 CSV文件的读取是非常简单的，本篇木头就给CSV新手简单又详细地吹吹水，阿不是，详细地聊聊如何读取CSV文件。 1. 创建CSV文件 首先，用Ron's Editor创建一个新的CSV文件，不要问我怎么创建，这个常识大家应该有。 或者用记事本新建一个文本文件，然后把后缀改为.CSV，不改也行，这个不影响。 然后点击【文件】-【另存为】，编码选择UTF-8。（Ron's Editor不需要这么做） 然后给CSV文件随便输点内容，比如： 文件内容是这样的： ID,Name 1,笨木头与游戏开发 2,www.benmutou.com 3,转载请注明出处 你也可以直接下载木头的CSV文件： CSVDemo 最后将CSV文件放到Unity项目的Assets\\StreamingAssets目录下，千万记住，这一步不能忘记，否则无法读取文件。 2. 读取文件，保存成一行行的字符串 我的读取方式是， 把文件按行读取，然后再解析每一行的内容，最终以行为单位，保存CSV文件。 先来解",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2017-06-11 11:08:59"
+  },
+  {
+    "id": 2325,
+    "title": "[Unity3D·CSV篇]00.CSV是什么？",
+    "content": "转载请注明，原文地址：http://www.benmutou.com/archives/2325 文章来源：笨木头与游戏开发 如果你们有看过木头的其他教程的话，应该会发现，木头大部分时间都在用CSV格式的文件作为游戏的配置文件（旁白：是不是太久没写教程了，连语句都这么不通顺）。 1. CSV是什么？ CSV是一种格式非常简单的文件，它使用逗号来分隔不同的数据内容，详情自己百度（旁白：我就是从百度点进来的好吗！） 在游戏开发里，CSV经常用于静态的数据配置，比如关卡数据配置文件、怪物数据配置文件、装备数据配置文件，比如： 如果大家用记事本打开CSV文件的话，它是长这样的： ID,Name,ModelID,HP,Atk,Def ID,名字,模型贴图ID,血量,攻击,防御 1,绿豆腐,10,200,0,1 1001,绿野人,12,200,0,1 2001,死神,20,200,0,1 是的，每一个独立的数据都是用英文逗号分隔开的，也因此，大家不要在数据里使用英文逗号，否则会导致解析错误。 2. CSV有什么优势？ CSV相比JSON、XML等有什么优势呢？ 其实优势很明显，对于在玩游戏的过程中",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2017-06-11 11:03:08"
+  },
+  {
+    "id": 2313,
+    "title": "关于《守护裙子OL》近期无法连接服务器的说明",
+    "content": "1.失去连接的几周 各位守护裙子OL的玩家，最近几周如果你们还在关注这款游戏的话，可能已经发现，游戏再也登不上了。 这是因为服务器硬件升级了，导致IP也发生变化。曾经太年轻的我以为IP写死没关系，于是，我就没法随时改变IP，导致大家都连不上游戏。 2.无能为力 听不懂没关系，总之就是，之前游戏连不上了。 而这又是一个非常久的游戏，它早已失去了控制。 这是我一个人写的手机网游，而现在90%的应用商店都不允许个人发布网游，我也没有精力去折腾这款已经不盈利的游戏。 3.最后的挣扎 但最近每天都有10个左右的玩家下载我的游戏，打开游戏的玩家也有20多个，我对这部分玩家感到很愧疚。 因此，我趁着周末有时间，把游戏的环境再搭起来了(过程非常痛苦)。 然后打包了一个可以连上服务器的版本，并且去掉了所有广告。 4.登录游戏的办法 由于我没法在应用商店发布，游戏也没有在线更新的功能，我只能发布到GooglePlay，以及上传到百度网盘。 并在我的博客里发表声明，以便那些希望登录游戏的玩家不至于毫无办法。 网盘地址：https://pan.baidu.com/s/1bDmoDg 5.作者近况 也许守护裙子",
+    "categories": [
+      "其它"
+    ],
+    "date": "2017-05-07 16:09:24"
+  },
+  {
+    "id": 2300,
+    "title": "用于Unity上的CSV文件读取工具，一句代码缓存、提取",
+    "content": "用于Unity上的CSV文件读取工具，兼具缓存、提取功能。 ♦功能说明 1.支持读取并缓存CSV文件，支持PC端和Android端，不支持iOS 2.只需创建与CSV文件结构对应的类即可，细节无需关心，工具类会自动帮你读取并缓存数据 3.随时读取已缓存的CSV文件对象，也可单独读取CSV文件的某一ID对应的数据 4.不支持“聊天内容”等内容丰富的数据，即，CSV文件中的数据不能包含英文逗号、换行符等特殊字符 ♦代码说明 核心的代码就四个，如果大家不想下载Demo工程的话，直接下载下面四个代码，放到你的Unity项目中即可: 1.FileLoader （在Assets/Scripts/CSVLoader/目录） 用于读取文件的工具类，支持PC和Android平台，不支持iOS（木头本人不喜欢玩iOS，所以没去研究） 2.ReflectUtil （在Assets/Scripts/CSVLoader/目录） 反射辅助工具 3.CsvLoader （在Assets/Scripts/CSVLoader/目录） 核心类，用于读取CSV文件 4.CsvDataCached （在Assets/Scri",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2017-05-03 20:14:11"
+  },
+  {
+    "id": 2295,
+    "title": "[笨木头“创2”路]No.6 接近分裂的全栈技术\"总监\"",
+    "content": "又好久没更新这个系列的文章了，最近特别特别多事情，以至于，我似乎快要崩溃了。 创业公司一人身兼多职是家常便饭，然而我似乎已经到了疯狂的地步了，这次我就来吹吹水吧，聊聊我这个弱不禁风的伪技术总监的全栈之路，噢不，是“全栈之路”（必须加双引号）。 1. 技术“总监”？ 大家别误会，我才不是什么技术总监，这只是老板给我的名号，我们公司就那么几个人，单手可数。 不管如何，我的职责就是开发产品、管理公司、控制进度，以及，解决所有丢给我的难题。 也因此，我开始了“全栈之路”。 2.我已忘了我的身份 如果别人问我是做什么工作的，我真的很难问答，也许我只能敷衍地回答一句：算是做网站的吧。 如果稍微尊重一点对方的话，那就是：算是做网站的吧，管理系统之类的。 可实际上，我做的事情如下： ASP.NET前后台开发 已上线的网站维护 数据库维护、优化等 服务器维护 Unity游戏开发 游戏服务端开发 简陋的桌面客户端（WinForm）开发 是的，这就是为什么我回答不了我是做什么的。 每一件事情，分开来让我做，我都能应付，可是，最近这些事情总是喜欢一起来。 在这么多角色里转换，我已经有点蒙了——我出门的时候把老",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2017-04-26 20:06:12"
+  },
+  {
+    "id": 2291,
+    "title": "提高开发者战斗力的护眼模式",
+    "content": "木头是一个高度近视眼，同时还有一点点干眼症状，电脑屏幕必须调很暗，否则根本没法工作。 不过，这些都已成为过去了，因为我有了无所不在的护眼模式。 1.Windows10的新功能——夜灯 只要进入windows设置，然后进入系统设置，找到显示设置（特么的，还挺啰嗦的），里面就有一个夜灯功能。 点击夜灯设置，启用夜灯，自己调喜欢的色调就可以了。 夜灯就是防蓝光，通俗一点，就是把电脑屏幕变成屎黄色。 不要去问防蓝光是不是真的了，木头告诉你，是真的，调了防蓝光模式之后，我的眼睛可以轻松工作到下班。 如果没有防蓝光，我的眼睛会一直难受到下班。 注意，夜灯功能应该是比较新的版本才有的，所以，不要抗拒更新windows，不要当愤青了，保持新版本吧。 Win10是真的比Win7好用了。 2.非Win10用户的福音——护眼卫士 其实我一直用的防蓝光都不是Win10，夜灯功能我是今天才发现的， 在这之前我用的都是一款叫做护眼卫士的软件（只有电脑版），http://www.eyesguards.com/ 功能一样的，就是防蓝光，我已推荐给公司所有人用了。 3.手机党也要护眼——护眼模式 其实我在很久之前，仅仅",
+    "categories": [
+      "其它"
+    ],
+    "date": "2017-04-22 12:49:16"
+  },
+  {
+    "id": 2281,
+    "title": "博客服务器将于2017-04-01 16:37:21进行升级迁移",
+    "content": "木头的博客会在【2017-04-01 16:37:21】开始进行升级迁移咯，到时候会暂时无法访问。 服务器商预计需要15分钟，但是我需要重新做一些配置，估计1至2天内无法访问，十分抱歉。",
+    "categories": [
+      "其它"
+    ],
+    "date": "2017-03-30 13:49:25"
+  },
+  {
+    "id": 2244,
+    "title": "【Unity3D杂记】关于iTween的oncomplete函数无法执行的问题",
+    "content": "笨木头花心贡献，啥？花心？不，是用心。 转载请注明，原文地址：http://www.benmutou.com/archives/2244 文章来源：笨木头与游戏开发 1. 问题 iTween是很方便的一个动画工具，用起来也非常顺手，最近偶然遇到一个问题——oncomplete指定的函数没有被执行。 oncomplete属性可以指定动画结束时回调某个函数，为什么我的函数没有被回调呢（小姑娘：因为你帅行了吧，快点进入正题！） 2. 原因 后来才发现，oncomplete事件默认是调用目标对象的函数，所以，如果目标对象没有对应的函数，就无法被调用。 什么意思呢，如： [cce_cs] ... iTween.MoveBy(leftUI.gameObject, iTween.Hash( \"x\", -4.6f, \"oncomplete\", \"LeftUIMoveEnd\", ) ); ... public void LeftUIMoveEnd() { isLeftUIMoving = false; } [/cce_cs] 在当前对象的某个函数里执行iTween的MoveBy函数，移动的目标对象是le",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2016-12-15 08:31:08"
+  },
+  {
+    "id": 2241,
+    "title": "【Unity3D杂记】发布到WebGL中使用WWW读取csv文件总是失败",
+    "content": "废话： 最近老板要我做一个培训游戏，由于我们公司主要是做网站的，自然是要做网页版的游戏了。 如果让我用网页端的技术来开发游戏，实在是有心无力，于是我提议用我最熟悉的技术来做，毫无疑问，只能选择Unity3D了。 在Unity3D的新版本中（我使用的是5.4.2），已经不支持生成WebPlayer了，只能生成WebGL版本。 （小姑娘：废话还真多） 1.问题描述 为了减小服务器的压力，我打算把游戏所需的静态数据（即不会发生改变的死数据）保存到CSV文件里，关于这个，大家有兴趣的话，我下次再聊聊（直接在公众号里发消息给我吧，我会看到的）。 在WebGL中读取文件只能用WWW了，可是折腾了好久，就是读不到任何数据。 2.解决方法 突然灵机一戳（小姑娘：是灵机一动！），我想到了，没错，CSV文件必须是Utf-8格式，否则是加载不出来的。 有可能是文件里包含了中文导致的（没有去验证）。 3.保存Utf-8格式的方法 先用记事本打开CSV文件，然后另存为，下方有一个文件格式的下拉选项，选择Utf-8，保存即可： 4.唠叨一下 Unity3D发布WebGL真是太慢了！",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2016-12-08 08:32:49"
+  },
+  {
+    "id": 2239,
+    "title": "木头要开公众号了！",
+    "content": "我很久很久没写教程了，虽然有很多借口，但是，最终的原因还是懒。 于是，我想，要不开个公众号吧，激励一下自己，希望能坚持写教程。 不定期更新咯，目前只更新了2篇，希望能继续坚持，也希望能找回以前写教程的感觉。",
+    "categories": [
+      "推广"
+    ],
+    "date": "2016-12-06 09:26:31"
+  },
+  {
+    "id": 2235,
+    "title": "一个坎：算法",
+    "content": "一直以来最纠结的就是我算法的能力，实在是不敢说出口。 最近竟然想补补数学，然后补补算法。 我竟然，我竟然从初中数学开始补起。 还别说，好多名词都忘了。。。 所以，祝我好运。",
+    "categories": [
+      "其它"
+    ],
+    "date": "2016-10-12 15:08:03"
+  },
+  {
+    "id": 2210,
+    "title": "[笨木头“创2”路]No.5 起色",
+    "content": "好久好久好久没有写文章了，之前住的地方没有弄上网，主要是想专心做事情。 毕竟有得上网就特别容易走神。 但最近晚上也没做什么事情了，身体不好了，一身酸，所以晚上都是做做热身运动。 而且天气冷，早早就钻被窝里了，哈哈哈。 有朋友发邮件问我为什么不更新这个系列的文章了，以上就是原因了。 年纪大了，写篇文章都会脖子酸。 1.近况 别担心，虽然很久没更新了，但是我们公司并没有发生什么坏事。 相反的，公司正在往好的方面发展。 有些项目已经准备要上线了，还有一些项目也谈得差不多了，机会也越来越多了。 2.挑战 虽然公司往好的方向发展了，但是，这才是我要担心的地方。 第一是项目上线经验，我们这个团队都没有在这个领域里经历过上线运营的过程，期间会发生什么状况，不好预料。 我只能用以前的其他领域的经验来预估各种状况，难免会有很多意外。 第二是人手不足，最近事情越来越多，人手明显不足了，但又还没到撑不住的情况。 有个致命的问题，有好几个项目，会在很接近的时间里陆续上线。 换句话说，我们要么很闲，要么很忙，有点淡季和旺季的味道。 第三是没有人才，虽然“流氓股”已经走上正途，但是真正成长起来还需要时间。 而且，",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2016-02-25 21:40:36"
+  },
+  {
+    "id": 2196,
+    "title": "【笨木头Unity】入门之旅010（完结）：Demo之四处找死（五）_UI",
+    "content": "UI是游戏里必不可少的元素，在Unity里添加UI是比较轻松的事情，但要玩好它，可就不那么轻松了。 没关系，先入门。 笨木头花心贡献，啥？花心？不，是用心。 转载请注明，原文地址：http://www.benmutou.com/archives/2196 文章来源：笨木头与游戏开发 1.创建UI 很早之前也介绍过怎么创建UI，这里简单再回顾一下。 在Hierarchy窗口中点击右键，依次选择【UI】-【Text】。 我们会看到窗口中，多了一个Canvas和Text： 2.让UI跟随物体移动 由于我们要创建的UI是属于BugPlayer的，所以，首先要把整个Canvas拖动到BugPlayer身上： 此时的Canvas虽然是在BugPlayer之下，但是...它的心是不属于BugPlayer的，它是属于摄像机的。 要想Canvas随着物体移动，很简单，修改Canvas属性，如下图： 将Canvas的Render Mode属性改为【World Space】，很好，这样UI就能跟着物体移动了（具体原理不解释）。 此时的Canvas十分庞大，也许是我们的场景太小了。 没关系，我们修改Canva",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2015-11-15 11:17:16"
+  },
+  {
+    "id": 2176,
+    "title": "【笨木头Unity】入门之旅009：Demo之四处找死（四）_在代码里操作物体",
+    "content": "有没有发现越往后写，旁白出现的次数越少？ 是的，最近公司出了点小问题，思绪就变得沉重了一些，思绪一沉重，我的精神分裂就很难发作。 不唠叨了，这次我们来试试在代码里操作物体吧，很简单很简单的。 笨木头花心贡献，啥？花心？不，是用心。 转载请注明，原文地址：http://www.benmutou.com/archives/2176 文章来源：笨木头与游戏开发 1.找遍全世界，只为了发现你——FindGameObjectWithTag 还记得很早之前我们介绍的Tag吗？我知道你们肯定不记得的。 先给我们的BugPlayer设置一个Tag吧，如下操作： OK，Tag只是物体身上的一个属性，我们可以利用这个属性做自己想做的事情。（小若：嘿嘿嘿，真的吗？） 别做怪怪的事情就好了．．． Unity本身封装了一些针对Tag的操作，是的，包括在全世界中搜索某个Tag的物体。 打开脚本文件SomethingGGD，在OnTriggerEnter函数里加上两句代码： void OnTriggerEnter(Collider other) { Debug.Log(\"OnTriggerEnter\"); Game",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2015-11-15 11:04:29"
+  },
+  {
+    "id": 2157,
+    "title": "【笨木头Unity】入门之旅008：Demo之四处找死（三）_触发器",
+    "content": "好了，游戏开始进入奇怪的阶段了，接下来我们要在场景里放上地雷，终结这个帅气的BugPlayer吧。 笨木头花心贡献，啥？花心？不，是用心。 转载请注明，原文地址：http://www.benmutou.com/archives/2157 文章来源：笨木头与游戏开发 1.Sphere物体 除了Cube（立方体）之外，我们还可以创建很多种形状的物体。 这里我们需要做一个地雷，地雷是有一个杀伤范围的，或者叫做触发范围，也就是说，特么的判断你是否踩到我了。 通常范围的判断都是用圆形的，而在3D的世界里，就是一个立体的圆形。 所以，我们需要创建一个球体——Sphere。 和创建Cube的方式一毛一样：【Hierarchy】-【3D Object】-【Sphere】 如图： 但是有一个小细节，我们要在Terrain上面点击右键来创建这个物体，这样物体就创建到地形下面了。 还记得当时创建Cube时的情况吗？它会跑到世界的某个角落，很难找，所以我们要把它创建到Terrian的角落。 2.移动球体到BugPlayer的附近 OK，把球体移动到合适的位置，离BugPlayer近一些。 大家看我的操作，移动",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2015-11-12 08:18:44"
+  },
+  {
+    "id": 2131,
+    "title": "【笨木头Unity】入门之旅007：Demo之四处找死（二）_主角移动和旋转",
+    "content": "上一篇我们仅仅是创建了场景和主角，暂时不具备任何玩法。 这次，我们来看看怎么让主角移动起来。 笨木头花心贡献，啥？花心？不，是用心。 转载请注明，原文地址：http://www.benmutou.com/archives/2131 文章来源：笨木头与游戏开发 1.Update，又是Update 似乎游戏开发里总是无法离开Update，我现在的工作不是游戏开发，没法使用Update，导致我非常不习惯。 Update是什么？我们把游戏想象成一个大的while循环，每一次循环都会调用一次Update函数。 而我们就可以在Update函数里做一些乱七八糟的事情。 比如，每一次Update就让角色的x坐标+1，于是，很多次Update的调用连起来之后，角色就在移动了。 总而言之，Update是我们经常会用到了，很重要的东西，这里不多解释了。 2.别急，先给BugPlayer上色 因为BugPlayer现在是白色，不方便演示，我们就先来给它上色吧。 在【Project】创建右键，依次点击【Create】-【Material】，命名为PlayerMaterial。 这样就创建了一个材质，接着修改材质",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2015-11-07 11:02:27"
+  },
+  {
+    "id": 2110,
+    "title": "【笨木头Unity】入门之旅006：Demo之四处找死（一）_场景和主角",
+    "content": "终于把一些基本的东西介绍完了，我不想再介绍无聊的菜单和快捷键了，这些东西大家自己在折腾的过程中慢慢熟悉就好。 有什么不懂的就问度娘，不喜欢度娘的，可以找谷歌。 这次，我们来开始一个很简单的Demo，我突然想到一个游戏，又或者只能叫做Demo。 一个人物，可以四处走动，地图上有很多暗雷，踩到之后会随机产生一些效果（比如加血、掉血、增加防御、小若失去吐槽能力等等）。 人物身上当然得有一些UI，这些UI会跟随着人物一起走动。 虽然是个小Demo，但，入门所需的各种操作应该都涉及到了，包括：人物走动（不含动画）、触发器、UI、代码里创建和修改物体。 好，我们开始吧。（小若：等等，失去吐槽能力又是什么鬼？） 笨木头花心贡献，啥？花心？不，是用心。 转载请注明，原文地址：http://www.benmutou.com/archives/2110 文章来源：笨木头与游戏开发 1.场景，摄像机定位 先创建一个项目，我命名为【Unity_benmutou_006】，你们随意。 然后创建一个场景：【Hierarchy】-【右键】-【3D Object】-【Terrain】 地形大小设置为【200X200】",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2015-11-05 12:52:15"
+  },
+  {
+    "id": 2094,
+    "title": "[笨木头Unity3D]杂记003·Unity在Android中读取文件",
+    "content": "这周被一个问题给折腾了几个晚上，那就是在Android中读取文件，这本是一件很简单的事情，可想象总是美好的。 笨木头花心贡献，啥？花心？不，是用心。 转载请注明，原文地址：http://www.benmutou.com/archives/2094 文章来源：笨木头与游戏开发 1.在电脑上读取文件 首先要解决的当然是在电脑上读取文件了，这个并不难，网上一堆资料。 比如： [cce_cs] public static string LoadFile(string filePath) { string url = Application.streamingAssetsPath + \"/\" + filePath; return File.ReadAllText(url); } [/cce_cs] 文件必须放在Assets\\StreamingAssets目录下（可以有子目录），否则移植到其他设备后，会无法读取文件的。 这个目录下的文件是只能读不能写的，我的目的也仅仅是读取文件。 Application.streamingAssetsPath会自动根据不同的平台返回该平台下对应的正确路径（Asse",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2015-11-02 07:48:34"
+  },
+  {
+    "id": 2089,
+    "title": "【笨木头Unity】入门之旅005:正常人都要掌握的操作",
+    "content": "各位，对不起，我一直都很想快点进入代码的教程，但是不知道为什么，老是在编辑器这边徘徊。 这不，本篇又要介绍编辑器了，唉。（小若：好可怜...个屁吖，还不是你自己要介绍的！） 笨木头花心贡献，啥？花心？不，是用心。 转载请注明，原文地址：http://www.benmutou.com/archives/2089 文章来源：笨木头与游戏开发 1.技能快捷键 呐，我们玩Dota的人呢，是绝对不能忘记一件事情的——那就是技能快捷键。 比如我们玩【阿木·辛格·娄】这个英雄，它的技能快捷键就是：QWERT。 记住这几个快捷键，拿一血就容易多了。（小若：好的，好的，我准备好了，那我负责中路？） 好的，那我负责上路..啊个屁啊！我们是在写教程好吗？（小若：又抢我台词..） OK，新建一个Unity项目，然后新建一个立方体Cube，别告诉我你忘了怎么建，我才不管你了... 选中新建的Cube，如上图，我们会看到Cube中间有三个箭头。 这三个箭头是用来移动物体的，分别对应三维坐标X、Y、Z。 至于谁是X谁是Y（Z：等等，那我呢？为什么要忽略我？），可以看看右上角的小图标： 初学者很容易被三维坐标搞得晕头",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2015-10-28 07:39:43"
+  },
+  {
+    "id": 2063,
+    "title": "【笨木头Unity】入门之旅004：地形初初初级介绍",
+    "content": "我突然有点不知所措，Unity的教程果然很难写，我有点不知道该从哪个话题开始写起。 我想，从地形开始写起？这个用的比较多，嗯，就它吧。（小若：不知道为什么，我总感觉好像很随便的样子） 笨木头花心贡献，啥？花心？不，是用心。 转载请注明，原文地址：http://www.benmutou.com/archives/2063 文章来源：笨木头与游戏开发 为什么标题是【初初初级介绍】？（小若：我知道，你口吃） 因为我个人对地形也不是很熟悉，仅仅是能使用一些基本功能，所以，我也只能给大家介绍基本功能。 对于Unity编辑器方面的操作，还是视频教程比较合适，无奈我的口才很差，做视频教程完全不行。 大家可以自行去找视频教程，这个挺多的。 我也收回一开始我说的那句【对Unity的现有教程有点失望】的话，因为我是半年多以前找的教程，而现在我发现，Unity的教程也越来越优秀了。 我的教程会更偏向于代码，因为对菜单的介绍实在是太麻烦了。 （小若：噢，原来是太麻烦了，那也不能怪你了...啊个屁啊！只是因为太麻烦所以就不介绍吗？这样真的可以吗？） 1.创建空白地形 依旧是在【Hierarchy】的空白处点击右",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2015-10-23 22:26:59"
+  },
+  {
+    "id": 2057,
+    "title": "【笨木头Unity】入门之旅003：HelloWorld",
+    "content": "有人跟我说：你特么的都写了3篇了，什么实际的东西都没有。（小若：特么的根本就没人评论你的教程！） 这么说就不对了，教程只是配菜，吐槽才是主菜，你们觉得呢。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/2057 文章来源：笨木头与游戏开发 1. Cube版HelloWorld 说了这么多，先来个HelloWorld解解馋吧。 在【Hierarchy】窗口，这个英文的意思呢就是...我们接着来看下一步。（小若：翻译吖，你倒是翻译吖！哼） 在窗口的空白处单击右键，依次选择【3D Object】-【Cube】。 你会发现在场景中间多了一个正方体，而且你会很兴奋地发现，原来Unity创建物体这么简单。 原来Unity制作游戏这么简单，然后你就会很兴奋地自己去尝试创建很多物体，然后运行游戏。 最后，你会发现，你什么都做不了。 OK，回归正途（小若：是回归主题！） 创建Cube（正方体）之后，如图所示： 然后，点击播放按钮，哪个是播放按钮？你觉得哪个像，你就点哪个，如果你找不到，那就滚粗好吗（小若：好想揍你，怎么办",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2015-10-21 07:44:46"
+  },
+  {
+    "id": 2044,
+    "title": "【笨木头Unity】入门之旅002：不谈对象，咱们谈组件",
+    "content": "今天有人问了一个一直以来都让我很纠结的问题：木头为什么长得这么帅？（小若：不就是一个瞎子随便问了个问题嘛，至于吗？） 这，大家以后别问我这个问题了，我真的不知道怎么回答，我尝试过很多变丑的方法，但是都失败了。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/2044 文章来源：笨木头与游戏开发 1.还在谈对象？我们这里流行组件 一定有人告诉过你，在面向对象的世界里，一切都是对象。 现在，你要进入Unity的世界了，在这里，不谈对象，因为，一切都是组件。 咳咳，正规点（小若：是正经不是正规！），什么是组件？ 其实组件也是对象，只不过是封装过的对象，一个人类可以由头、脚、手、身躯、尾巴、翅膀组成。（小若：你才有尾巴，你全家都有尾巴...） 人类本身这个类是空的，它包含了其他部分的组件，从而组合成了一个完整的人类，拥有人类正常的功能，如行走、飞行、漂移等。 我们打开Unity编辑器，打开你新建的一个测试项目，默认是有一个【Main Camera】物体的，单击它，会看到右边有一堆属性。 不要怕，如图： 箭头所指的",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2015-10-21 07:40:04"
+  },
+  {
+    "id": 2035,
+    "title": "【笨木头Unity】入门之旅001：学游泳的第一步是下水",
+    "content": "这次的教程更像是我个人的学习记录，所以不一定是从零开始，更多的是，从另一个引擎转战到Unity的教程。 学游泳的第一步，不用说了，必定要下水。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/2035 文章来源：笨木头与游戏开发 1.Unity安装什么的乱七八糟 首先自己想办法找到Unity官网，然后下载安装，这里有个小提示，官方默认下载的是一个下载器，并不是完整安装包。 如果你想下载完整安装包，请点击下载页面的【其他下载】，如下图： 这里可以分别下载你需要的东西，我下载的是除了32位编辑器以外的所有东西。 很明显，我这个教程用的版本是5.2，Unity的兼容性还算不错，应该只要是5.x版本，我这教程都能适用。吧。（小若：最后那个字就不要单独占一句话好吗） Unity并没有什么特别的安装需求，一般的开发者的电脑完全能一键安装，立刻完美运行。 这里特别说明一下，千万不要尝试去找什么中文语言包，原版的最好，就像粤语电影，非得给我翻译成普通话，我会很痛苦。 当初学Cocos2d-x也有这种感觉，明明是中国人的引",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2015-10-17 23:19:27"
+  },
+  {
+    "id": 2032,
+    "title": "【笨木头Unity】入门之旅000：前言（含教程目录导航）",
+    "content": "木头我最近心血来潮，想重拾当年写教程的热血状态，包括旁白小若也一并复活。 1.木头正式宣布转战Unity3D 其实研究Unity3D有一段时间了，只是业余研究，断断续续的，所以基础还是很弱的。 为什么这里要说正式宣布转战Unity3D呢？ 因为Cocos引擎让我彻底失望了，仅仅是因为一件事情——Cocos商店的侵权行为，具体可以看我微博：点这里 简单总结就是：Cocos商店的电子书版块，大部分都是盗版的电子书，包括我出版的《Cocos2d-x游戏开发之旅》。 本来这对我来说，是一件小事，我甚至可以闭一只眼睛。 可是，不管是我在微博里提出这件事，还是发送邮件给Cocos商店，结果都只有一个：Cocos商店方面选择无视。 如果说，Cocos引擎是一个不起眼的小引擎，我无话可说，国内大环境如此，早已习惯，比如CSDN的下载频道。 可，Cocos引擎是我的良师益友，我感觉被好朋友在后面捅了一刀，狠狠的，而且最终连一个解释都不给我。 所以，我想，我是真的不会再回到Cocos引擎了，这样的一个团队，我不知道他们继续走下去会变成什么样。 虽然我也不知道Unity的团队是什么德行，但，我不抱期望，也就",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2015-10-17 22:44:04"
+  },
+  {
+    "id": 2029,
+    "title": "[笨木头“创2”路]No.4 即将度过的磨合期",
+    "content": "又很久没写文字了，既然这个系列的文章还能继续更新，就代表公司还活着，直到，停止更新的那一天。 公司发展方面我就不多说了，这个系列仅仅是作为我个人的吐槽。 1.我成功改变一个人了 说实话，这个小标题让我感慨万千，那位【流氓股】终于有一些发自内心的改变了。 我曾经教过他很多很多，关于代码风格、代码设计、工作方式等等，他基本上是左耳进右耳出，机械式地执行我的要求摆了。 在我把一本设计模式的书借给他看之后，他终于，说了一句让我很欣慰的话：“我看了几天这本书之后，突然发现你以前说的那些话都很有道理”。 一个在试用期期间就让我多次想放弃的平庸开发者，终于是，做出了一些思想上的改变，开始往优秀开发者的行列靠近了一步。 虽然，仅仅只是第一步，但，我看到了希望，我仍然愿意帮他成为优秀的开发者，而不是那些随便就能抓一把的码农。 我从不调侃自己为码农，因为，我根本就看不起码农，别恨我，我就是看不起。 2.即将度过磨合期 经过这么长时间的相处和共事，团队里的各位也已经开始熟络起来，渐渐地度过磨合期。 我也渐渐地把我精神分裂的另一面展示在他们面前，让团队保持欢乐和活力。 我也知道，磨合期过后还有更多的麻烦等着我",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2015-10-17 18:13:53"
+  },
+  {
+    "id": 2017,
+    "title": "[笨木头“创2”路]No.3 风波与潜力挖掘",
+    "content": "从这篇文章开始，这个系列的标题由[笨木头管理者之路]改为[笨木头“创2”路]。 这是因为我觉得之前的标题有点哗众取宠的感觉，“创2”意思是“创业路2”，因为这是我第二次加入到创业公司。 1.稳中求胜 我们公司的业务决定了我们无法像游戏开发那样很快就能看到结果。 我们必须耐得住性子，一步步前行。 也许这样更适合我，因为我最看不起的就是满腔热血的人，热血烧完了，他们就什么也不想干，太可怕了。 我最喜欢的就是有毅力的人，这样的人，让人很放心。 我团队有各种人（虽然我们就那么几个人），有耐心的、没上进心的、被动的，都有。 是的，我们团队并不太优秀，唯一能拿得出手的就只有我一个（很自大，但我在说实话）。 即便如此，我还是挺有信心的。 至于结果，只能一边努力，一边等待了。 2.风波 在差不多一个月前，团队里最让我放心、最让我充满期待的成员，突然神秘兮兮地到我跟前，说是有事情和我说。 哎，不会是要表白什么的吧，毕竟我这么优秀...才怪啊喂，我一看她的眼神、语气，就猜到了。 是的，她想离职。 这，应该要怪我，我对大家太严格，因为我不允许自己的团队里出现弱者。 她是我期望最高的一位开发者（我们一共就三个",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2015-08-27 20:07:56"
+  },
+  {
+    "id": 1997,
+    "title": "[笨木头“创2”路]No.2 我的强迫症",
+    "content": "不知不觉，我在老师的公司里也待了有半年了，说实话，我吓了一跳，时间过得真的好快。 而这半年来，我唯一感到彷徨的就是——我的游戏开发技术毫无进展，甚至在倒退。 1.守护爱好的结果 因为刚毕业就在游戏创业公司待了2年，受尽折磨、尝尽冷暖，同时因为真的爱上创作的滋味，我已对所有游戏公司失去了期待。 但不代表国内没有优秀的游戏公司，一定有一大堆，但我没有力气（以及能力）去尝试了。 我不封建，但我相信命运，上帝既然让我遇到糟糕的经历，一定同时也想让我学会某些东西。 我业余仍然在创作游戏，仍然是在创作只有极少数人才会认可的“无聊”游戏。 我很自私，因为我的游戏仅仅是为了取乐我自己，仅此而已。 至于玩家，是一群可以让我把自己的快乐分享出去的人。 结果就是，我的游戏开发技术毫无进展，也越来越跟不上时代。 2.公司情况 我不会在博客公开公司的详情，大家只要知道，这是一家公司就好了。 公司目前还算顺利，起码长久以来在谈的项目，已接下。 而我，也在努力学习如何管好团队，自我感觉真的挺糟糕的，毕竟我情商本来就不高。 我在努力，不仅仅是管理方面，我在尝试提高自己的见识，最近看书越来越多，并且已经爱上了看书。 至",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2015-06-18 21:33:14"
+  },
+  {
+    "id": 1985,
+    "title": "[笨木头Unity3D]杂记002·为什么有时候播放音乐(音效)会没有声音？",
+    "content": "1.问题描述 昨晚，我遇到的情况如下： 1.MainCamera里有Audio Source，并且在循环播放音乐 2.在其他的GameObject中也新增一个Audio Source，在某个时机播放音效 3.GameObject中播放音效没有反应（没声音） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1985 文章来源：笨木头与游戏开发 于是我猜测是MainCamera中的Audio Source有问题，把它禁用。 误打误撞，此时的GameObject播放音效还真有声音了。 但是，注意了，但是，在我寻找为什么MainCamera中的Audio Source禁用后会正常时。 突然间GameObject又没有声音了。 这回我放弃了，因为刚租了个新房子，不打算用宽带。 没网络的情况下，我的战斗力立即降为原有战力的40%。 所以，我睡觉去了。 2.再次尝试 今晚，我又尝试去解决这个问题。 尝试步骤如下： 1.新建一个场景 2.新建一个GameObject 3.在GameObject中加入Audio Sourc",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2015-06-03 07:41:24"
+  },
+  {
+    "id": 1983,
+    "title": "[笨木头Unity3D]杂记001·打包的APK 安装后无法切换场景的解决方案",
+    "content": "从Unity中打包生成APK，自己把APK拷到手机进行安装，或者双击apk进行安装，运行游戏，发现无法切换场景。 而直接在Unity中Build And Run却没有这个问题。（场景都勾选了） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1983 文章来源：笨木头与游戏开发 问题产生的原因不清楚，解决方案如下： 导出项目的package包，然后新建项目，导入package包，再次设置并打包APK，问题解决。",
+    "categories": [
+      "Unity3D"
+    ],
+    "date": "2015-06-03 07:35:48"
+  },
+  {
+    "id": 1967,
+    "title": "木头的第一款Unity3D手游《只有一关》低调发布",
+    "content": "（多图，手机流量党慎入） 1.开场白 额，没错，我一不小心就放弃了cocos，并不是因为它不好，只是我比较喜欢创作，而不是技术本身。 Unity3D的编辑器比较符合我的需求，所以我就转战U3D了，唉，反正我都成了业余独立游戏开发了，无所谓了... 2.开发周期及盈利？ 这款手游写了蛮久的，都是业余写的，好几个月了。 其实还没完工的，但最近很忙，我再不发布的话，还真不知道憋到什么时候，慢慢更新吧。 目前也没有下载量，原本只是作为练手之作，只是没想到越写越多想法，就干脆完善它了。 暂时不考虑盈利了，绿色无广告。毕竟现在是业余独立开发，少了一份急功近利的心态，可以更用心地创作游戏了。 难度很大，并且需要自己发掘攻略，想休闲不动脑的、手不抽的，最好别试。 3.资源来源 图片和音乐都是网上找的CC0协议资源，可商用，应该没有侵权吧（可能有少量资源是没注意到的，欢迎提醒）。 特别自豪的是，UI是我自己设计、自己制作的。（小若：本来就没多少UI好吗！） 音乐和音效也是我自己...从可商用的资源里找的。 附上游戏截图： 附上下载地址（基本上常见的应用市场都发布了）： 360助手、4399、安智、其他的",
+    "categories": [
+      "推广"
+    ],
+    "date": "2015-05-20 20:14:33"
+  },
+  {
+    "id": 1963,
+    "title": "[笨木头“创2”路]No.1 人才难求，只怪自己不是好伯乐。",
+    "content": "是的，我又陪创业去了，不过这回不是游戏公司，而且也不是出于我的本意。 世事难料，但我依旧很感恩，感谢上天给了那么多的好机遇给我，我很满足。 1.木头，你的独立游戏开发者之旅呢？ 我做了一年多的全职独立游戏开发者，最好的成绩是一天收入5、6百，最差的是一天收入40、50。 这一路走来各种坎坷，被坑过、被打击过，但，我唯一想表达的是——这是我过得最开心最有成就感的日子。 可现实越来越残酷，我能养活自己，但养不活一家人（虽然我还没成家），我想，我也任性够了。 于是，当我有这种想法的时候，机缘巧合之下，我的大学老师找到了我，让我加入他的公司。 一开始，我是希望以副业的形式，继续我的独立游戏事业...是的，一开始，我就是这么单纯的想法。 2.机会很多，我没有准备好，但，我接了 我本来只是想去当个小弟混日子的（毕竟这不是做游戏的公司，我没有经验）。 可是，我的希望”破灭“了，我最终成为了公司里的唯一支柱——我成为了团队负责人。 其中的缘由我就不多说了，可以粗暴地用一句话来描述：公司一直没成功，之前的团队成员心累了，都要离开了。 我从小到大，总是不缺机会，但我小时候总是没有准备好，很多机会来了，而我",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2015-05-01 18:27:57"
+  },
+  {
+    "id": 1959,
+    "title": "【1元开源计划】——Cocos2d-x3.2+Lua《三色地狱》源码",
+    "content": "之前做过一次【1元开源计划】，参与的朋友很多。 这次木头再拿一份游戏源码出来做【1元开源计划】，注意，这不是做慈善，是有目的的。 目的就是宣传我的淘宝店，所以，各取所需，我就不说一大堆冠冕堂皇的话了。 出售的游戏源码为Cocos2d-x3.2+lua编写的ARPG游戏——《三色地狱》，比之前的跑酷源码要复杂一些，希望大家不要盲目购买，确认自己需要才来购买。 下面是【1元开源计划】说明： 因为我之前淘宝店铺选错类目，所有商品都下架了，辛苦累积的评论也没了。 为了重新累积评论，本源码低价出售，本源码将按以下顺序设置价格： 1.价格1元，共10份，卖完即止（必须先付款、确认收货、评价之后才能拿到源码）。 2.价格10元，共10份，卖完即止（必须先付款、确认收货、评价之后才能拿到源码）。 3.价格50元，共10份，卖完即止（必须先付款、确认收货、评价之后才能拿到源码）。 4.恢复原价，260元，不限量（付款后即可发货，不需要先确认收货）。 因为这源码等级和之前的跑酷源码不同，我就不无限量地提供1元版本了（心会疼的），共10份，需要的朋友可以购买。 1元版本卖完后，接着就是10元版本、50元版本",
+    "categories": [
+      "其它"
+    ],
+    "date": "2015-04-14 20:04:06"
+  },
+  {
+    "id": 1952,
+    "title": "本周淘宝源码出售暂停（实属意外）",
+    "content": "虽然最近没有发布新的源码商品，但一直都有朋友跟我买源码。 近日我的淘宝店因为放错类目而被下架，好像是淘宝最近在做清退行动吧，重新上架遇到系统问题，现在需要等待反馈。 本周只好暂停出售源码了，各位（有意买源码的朋友）抱歉。 AD：木头淘宝店 benmutou.taobao.com （因为下架了，现在是看不到源码的，果然收藏下周再看啊混蛋~！）",
+    "categories": [
+      "其它"
+    ],
+    "date": "2015-04-01 20:57:17"
+  },
+  {
+    "id": 1948,
+    "title": "我是如何成为“大神”的",
+    "content": "好久没写教程了，确实是懒了，但也真的很忙碌。 最重要的是，写教程的牛人越来越多，我似乎也没什么能写的了，让年轻人去写吧。（小若：你老人家几岁？） 1.木头大神？ 这篇文章的标题很自大，其实相反，我是来澄清的。 我一开始写教程的时候，是什么都不懂的，是个超级菜鸟（可以翻翻我在CSDN前面的那些文章）。 但同时我又是个比较喜欢好玩事物的人，所以写教程的时候慢慢地就形成了某种奇葩的风格。 然后又很幸运地得到了一些朋友的赞赏。 再然后是写更多的教程..出第一本书...出第二本书（升级版），大家开始礼貌地喊我一声木头大神。 我从未承认过，只是，也从未阻止过。 网络就是这样，总是会出现一堆很牛的人，实际上，这些人在真实生活中也不过是普通人而已。 木头也一样，我觉得大家把我捧得太高了。 2.我只是一个写教程的人 我一直都这样说：我只是善于把自己学到的东西用有趣的文字表达出来，我技术本身不牛。 虽然我写教程的时候喜欢吹水，但这句话真是大实话。 当我出第一本书时，我纠结了几个月，为什么？ 因为当时我还刚跨入游戏开发行业不久，虽然也算是独立承担了客户端开发，也算是在开发一个不算小的手游。 但，我当时确实很",
+    "categories": [
+      "调皮一下"
+    ],
+    "date": "2015-03-14 23:18:38"
+  },
+  {
+    "id": 1941,
+    "title": "【笨木头C++】基与基础12：函数模板（下）",
+    "content": "最近突然想研究研究Unity3D了，于是我就开始去研究了，希望坑别太大，比Cocos2d-x少就好。 我也很久没有出新游戏了，因为我最近在写一个网站，有个点子，一直没敢跨出第一步，现在总算跨出了。 为什么用网站来实现？不知道，可能好玩吧... 咳咳，跑题了，上一篇简单介绍了C++的函数模板，说实话，我很少用（小若：呸~！你就从来没用过！） 今天来继续把函数模板更高级的用法介绍一下。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1941 文章来源：笨木头与游戏开发 1.我也能重载——函数模板的重载 既然是函数，当然就拥有重载的功能了。 有时候同一个函数模板，可能有不一样的参数，比如： [cce_cpp] template typename T void getDouble(T num) { std::cout (num * 2) \" \"; } template typename T void getDouble(T num1, T num2) { std::cout (num1 * num2) \" \";",
+    "categories": [
+      "其它"
+    ],
+    "date": "2015-01-07 21:16:14"
+  },
+  {
+    "id": 1938,
+    "title": "【笨木头C++】基与基础11：函数模板（上）",
+    "content": "距离上一篇已经过去1个多月了，感觉断更太久不是好事，所以我在百忙之中抽时间更一下（小若：说得好像我们在等着你写教程似的~！） 因为最近事多，还没脱离繁忙时期，所以就.. 内容少一些好了~ 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1938 文章来源：笨木头与游戏开发 1.函数重载 什么是函数模板呢？一听就是我们开发者偷懒用的东西了。 假设，我们要写一个函数，它有一个参数，传入参数，然后输出这个参数的两倍值，如下代码： [cce_cpp] void getDouble(int num) { std::cout (num * 2); } [/cce_cpp] 比如调用getDouble(10); 就会输出20。 这很简单，但，如果我要输入float类型呢？很简单，再写一个函数就可以了： [cce_cpp] void getDouble(int num) { std::cout (num * 2); } void getDouble(float num) { std::cout (num * 2); }",
+    "categories": [
+      "其它"
+    ],
+    "date": "2015-01-04 20:56:52"
+  },
+  {
+    "id": 1928,
+    "title": "【笨木头C++】基与基础10：又是函数之引用",
+    "content": "还记得之前说过，函数的参数用指针，可以避免拷贝产生额外的开销吗？ 这次要来介绍一个类似的参数，那就是引用参数。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1928 文章来源：笨木头与游戏开发 1.什么是引用？ 对于初学者来说，引用和取地址值操作可能会有点犯迷糊。 [cce_cpp] int num = 10; int *p = num; // 这是取地址操作 int yinyong = num; // 这是引用 [/cce_cpp] 引用可以理解为“别名”，粗俗地说，就是“外号”，代码中就是把yinyong这个变量作为num的外号。 以后yinyong就是num，num就是yinyong，给yinyong赋值，那么，num的值也会改变，因为它们是一样的。 这类似指针的*p。 2.用引用作为函数参数 引用的主要用途是作为函数的参数，至于原因，晚点再说，先看看怎么用： [cce_cpp] // 函数定义 void version1(string s) { } // 调用方式 string str = \"",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-11-18 21:10:53"
+  },
+  {
+    "id": 1923,
+    "title": "【笨木头C++】基与基础09：回调之函数指针",
+    "content": "在Java，要实现某个时间调用某段代码，是很简单的事情，那就是使用接口。 而在C++里，有一个比较高深的方式，那就是使用函数指针。 比如Cocos2d-x的定时器（schedule）、消息订阅（NotificationCenter）都使用了函数指针来完成回调的功能。 这也是为什么我们总是能把某个函数作为参数传进去，然后在某个时刻这个函数会被调用。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1923 文章来源：笨木头与游戏开发 1.函数的地址 要获取一个int变量的地址很简单，比如int num; 那么num的地址就是num。 而获取函数的地址更简单，函数的名字就是函数的地址，如下代码： [cce_cpp] void hello(); int _tmain(int argc, _TCHAR* argv[]) { auto p = hello; p(); return 0; } void hello() { cout \"helloworld\"; } [/cce_cpp] 我们定义了一个hello函数，然",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-11-12 20:40:16"
+  },
+  {
+    "id": 1921,
+    "title": "【笨木头C++】基与基础08：用函数玩玩指针",
+    "content": "最近事情比较多，其实并不忙，就是事情比较影响思绪，所以都没心思写文章了。 今天主要说说函数的一些基本情况吧，同时也解释一下新手最容易迷糊的——什么时候要用指针参数？ 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1921 文章来源：笨木头与游戏开发 1.函数原型和函数定义 大家都知道，C++定义函数之前，还需要声明函数原型，对于习惯Java等其他高级语言的朋友来说，真心觉得这很烦人。 如下代码： [ccen_cpp] // 声明函数原型 void startGame(int param); // 函数定义 void startGame(int param) { // 各种逻辑 } [/ccen_cpp] 函数原型主要是给编译器用的，在编译的时候会通过函数原型来检查函数返回值、参数数量、参数类型等。 总而言之，方便编译器，编译器爽了，我们才能更爽。 但实际中，函数原型也方便我们快速理解某个类的功能。 这些很简单，就不多唠叨了。 2.const限定符与指针 之前也有简单介绍过const，比如 const i",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-11-11 11:22:52"
+  },
+  {
+    "id": 1915,
+    "title": "【笨木头C++】基与基础07：基础语法小结",
+    "content": "这次又到了比较简单的内容了，介绍了一些基本的循环控制、关系表达式、逻辑控制等。 这里就简单抽一些稍微比较特别的内容来吹吹水，不，是来总结一下吧~ 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1915 文章来源：笨木头与游戏开发 1.i++和++i 不，我不是来解释i++和++i的区别的，只是书上提到一点，在使用for循环的时候，倒底i++和++i有没有区别呢？ 答案是：几乎没有，随便你用哪一个。 但是，要稍微注意一下两种方式的内部处理方式： i++：先复制一个i的副本，然后将i加1，最后返回i的副本。 ++i：将i加1，然后返回i。 这么一说，大家都知道谁的效率更高，但对于现在的编译器而言，是会自动优化的（但不知道是不是所有编译器都这样）。 然后，C++是允许自定义操作符的行为的，也就是说，我们可以为自己的类定义++操作，这时候，复制类的副本，消耗明显就不能忽略不计了。 这个，就不多说了。 2.逗号运算符 逗号运算符可以将多条语句放到一起，如： [cce_cpp] for (int i = 2, j ",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-11-06 21:21:35"
+  },
+  {
+    "id": 1913,
+    "title": "【笨木头C++】基与基础06：为什么创建类的时候要用new？",
+    "content": "今天是关于指针初步介绍的最后一篇，也是能让初学者明白为什么类是new出来的、为什么某些变量会莫名被释放，以及为什么木头会这么聪明。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1913 文章来源：笨木头与游戏开发 1.使用new创建动态结构体 还记得我们的结构体吧？之前说过，结构体也是可以通过new来创建存储空间的，返回的是一个指向结构体类型空间的指针。 如下代码： [cce_cpp] struct Man { int age; int IQ; }; Man* pMan = new Man; pMan-IQ = 251; cout pMan-IQ \" \"; cout (*pMan).IQ \" \"; [/cce_cpp] 定义一个结构体Man，然后使用new Man来动态创建内存空间，返回一个指针，这个指针指向一块用于存放Man类型的内存空间。 然后调用pMan-IQ给属性赋值，这里的“-”符号我们应该都很属性吧。 稍微说明一下，如果不是用new来创建的对象，那么，应该使用.符号来使用属性。 如果使用n",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-11-05 21:50:55"
+  },
+  {
+    "id": 1909,
+    "title": "【笨木头C++】基与基础05：new和delete",
+    "content": "对于以前没有接触过C++，然后初次接触Cocos2d-x的朋友来说，可能对于内存管理方面会比较生疏。 也经常会因为内存问题导致各种小Bug，我也曾经写过一篇retain和release倒底怎么玩？，用来驾驭Cocos2d-x的对象引用和释放也算是足够了。 但，难道大家就不想知道retain和release背后的秘密吗？（小若：不想。） 没错，今天木头来带大家走进科学，走进世界，一起来探讨C++的new和delete。（小若：没兴趣。） 好，既然大家都等不及了，那就开始吧~ 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1909 文章来源：笨木头与游戏开发 1.动态分配内存 我们都知道，像“int num = 10;”这样的语句，声明了一个num变量，这个变量是需要内存来放置（就像你的文档需要硬盘来放置）。 对于这样的普通变量，是在编译的时候就分配好内存的。 没错，就像你出生的时候就决定了是男是女了。（小若：这个比喻感觉一点关系都扯不上啊！而且，谁说出生就决定的？！） 通过声明指针变量可以指向这些预先被分",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-11-03 21:40:03"
+  },
+  {
+    "id": 1907,
+    "title": "【笨木头C++】基与基础04：你好，指针",
+    "content": "我已经把《C++ Primer》一书准备好了，如果这本《C++ Primer Plus》继续这么瞎闹的话，我就换主角~！ 没错，这书连if while都还没介绍呢，就开始把指针搬出来了，虽然只是简单介绍.. 这目录编排我也是醒了。 那么，按照书上的进度，今天来初步说说指针。 但，今天周五，你懂的，就随便水一下，因为我怕到周一又忘了。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1907 文章来源：笨木头与游戏开发 1.枚举 那么，枚举是什么呢？（小若：等等~！说好的指针呢？） 大部分高级语言里应该都有枚举了，所以也没什么好介绍的。 使用是这样的： [cce_cpp] // 定义 enum MonsterType { enMonster_nor, enMonster_hard, } // 声明一个枚举变量 MonsterType mType; // 使用 if(mType == enMonster_nor) { log(\"去死吧~！\"); } else if(type == enMonster_har",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-10-31 21:20:05"
+  },
+  {
+    "id": 1903,
+    "title": "【笨木头C++】基与基础03：数组与字符串..以及结构体..还有共用体",
+    "content": "今天的标题取得..好严肃的感觉。（小若：咳噗） 这章的内容虽然还是很详(lao)细(dao)，但已经开始有很多值得记录的内容了~ 那么，今天就来初次介绍数组与字符串...以及结构体..还有共用体..吧。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1903 文章来源：笨木头与游戏开发 1.数组 我记得大四实习的时候，请教同事：“什么是属主？”（其实是和数据库相关的东西） 然后同事惊讶地说道：“啊，你连数组都不知道..这，基础还是要好好补补...呐，数组的意思呢，是这样的...” 我听着听着就不对劲，“等等，这是数组...其实我是问这个属主...” 然后同事松了一口气，估计心里在想，“唉，吓死我，我以为来了个浑水摸鱼的实习生了”。 等等，我好像跑题了。 那么，数组这么简单，我是不可能给大家介绍的了。 随便说说它的声明和初始化吧，如下代码： [cce_cpp] // 1.普通人的声明和初始化 int nums[3] = {25, 65, 4}; // 2.只声明 int num[3]; // 这样数组里",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-10-29 21:50:53"
+  },
+  {
+    "id": 1900,
+    "title": "【笨木头C++】基与基础02：数据",
+    "content": "哎，木了个头的，这书太详细了~看得累人 前面部分太过基础了，很多语法方法的东西我也不重复记录了~ 今天才看看C++涉及到数据的一些基础点吧，我把书中稍微比较有营养的部分抽离出来 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1900 文章来源：笨木头与游戏开发 1.初始化 一般情况下，我们声明和初始化变量是这样的：int iNum = 10; 其实这是延续了C语言的语法，C++还有一种语法，是这样的：int iNum(10); 其实大部分人还是习惯用第一种吧（我也是），但如果哪天我们在别人的代码里看到第二种形式，不要被吓蒙了~ 2.宏定义 宏，用最粗俗，不，是最通俗的说法来解释，那就是——查找替换。 比如这样定义一个宏：#define NAME \"mutou\" 那么，以后我们就可以到处使用NAME这个宏，程序编译之后，其实会把所有的NAME都替换为\"mutou\"，这就是查找替换的概念了。 为什么要这么做呢？方便修改和维护吧，只要我们稍微把宏定义改改，比如改成这样：#define NAME \"神经病啊\"",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-10-28 21:10:16"
+  },
+  {
+    "id": 1897,
+    "title": "【笨木头C++】基与基础01：预览大杂烩",
+    "content": "我很郁闷，这本书果然讲得很详细，我在看第二章，看完要深呼吸，实在太详(lao)细(dao)了。 不过这很好，后面难一些的内容应该会不错~ 那么，这章只是作为预览的章节，我抽出一些稍微比较有营养的内容记录一下吧~ 注意：本系列教程不适合无任何编程语言基础的朋友，只是作为C++基础的一种补充。 教程内容基于《C++ Primer Plus》一书，适合初学者，熟手请直接忽略。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1897 文章来源：笨木头与游戏开发 1. 如果你不注释，那么，我会把你注释掉~！ C++的注释有2种， 第一种，单行注释，那就是：// 如下代码： [cce_cpp] // 呵呵 Test* t = new Test();; [/cce_cpp] //后面跟着的就是注释内容，属于单行注释 所谓的注释，就是与代码无关的内容，与编译器无关的内容，只是给我们自己或者其他人看的。 就像是说明书。 另外还有一种注释，那就是：/* */ 如下代码： [cce_cpp] /* 呵呵 你刚刚说什么来着？",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-10-24 22:11:49"
+  },
+  {
+    "id": 1892,
+    "title": "【笨木头C++】基与基础00：开篇",
+    "content": "1. Lua系列教程暂时告一段落 首先来解释一下，没错，木头的Lua基础补充教程已经结束喇。 全靠木头的偷懒，才能提前结束Lua基础系列教程。 Lua基础教程一共写了22篇，其实后面还有一些重要知识点，但是，写教程实在是太累了。 写复杂的教程，更累，所以我没有鼓起勇气去写后面的部分，只是自己草草看了一遍。 等实际中用到了并且遇到问题的时候，我再来和大家分享吧。 2.开启C++基础系列教程 那么，这次是开启C++基础教程。 木头的C++可是很水的，我除了大四实习是搞Unix C开发之外，其余时间都是做Java的，然后自从学习了Cocos2d-x引擎才开始接触C++。 虽然也有2年左右了，但我还没系统地把C++学习一边，所以很多时候都显得很无力。 所以，我买了本C++ Primer Plus，没错，是Plus，我把自己定位为完全的新手，然后来一边学习一边写这系列的教程。 3.千与千寻 是的，为什么标题要叫做“基与基础”呢？我也不知道，只是顺口，因为有部动画叫做千与千寻.. 当然，我希望大家不要理解为“基与激情”，那样会很尴尬的。（小若：所以说啊，为什么你要说出来！） 4.坚持多久？ 木头没",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-10-23 20:53:20"
+  },
+  {
+    "id": 1872,
+    "title": "Cocos Code IDE 生成runtime时报错(没有对应版本的VS)",
+    "content": "笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1872 文章来源：笨木头与游戏开发 1.生成runtime报错 目前Cocos Code IDE（Rc2版本）的runtime默认是VS2012版本，很不幸，我的电脑上没有VS2012。 所以每次生成runtime的时候，总是会报这个错误： '\"D:\\Delevop\\VisualStudio2012\\Common7\\IDE\\devenv\"' 不是内部或外部命令，也不是可运行的程序 原因也很简单，默认是VS2012，我没有，所以当然找不到了。 没关系，只需要改一个地方就可以了。 2.解决方法 打开项目的这个目录：yourgame\\frameworks untime-src\\proj.win32 yourgame为你的项目目录，然后找到yourgame.sln文件，文件名就是你的项目名。 用文本文件打开它（推荐UE、Note等文本编辑器），就找前面2行内容： Microsoft Visual Studio Solution File, Format Vers",
+    "categories": [
+      "Cocos Code IDE"
+    ],
+    "date": "2014-10-09 20:06:02"
+  },
+  {
+    "id": 1859,
+    "title": "【1元开源计划】Cocos2d-x3.2+Lua 游戏源码公开（已结束）",
+    "content": "1元开源计划（1￥ Open Source Plan） 来自未来的PS： 本次活动正式结束，大家不要继续下单了，截止目前为止已有接近100位朋友来获取源码，感谢大家的支持~！ ——2015.01.03 1.开场废话 没错，这就是我这次要“开源”的游戏，像我这种这么喜欢写教程、热爱分享的人，开源代码实在是太平常不过了~（旁白：吖，我呸！） 是的，所以，这次我打算有目的地进行开源，我自认为，这是世界上第一款“1元开源”游戏。（旁白：还要不要脸了...） 这款游戏使用Cocos2d-x3.2+Lua开发，玩法很简单，但绝不是什么demo，而是完整的游戏。 和免费版的《别救我》不是一个等级的，要是我拿一个demo来开源，估计会给大家表扬致死的吧，哦呵呵。 没错，我开源是有目的，为的是宣传我的淘宝店、赚好评、赚人气，并不是无私的奉献。 是理想与现实的结合，谢谢各位的理解。 如果不能理解的，请不要继续往下看哈，不然你会吐血\"生\"亡的。 2.游戏简介 这游戏明显是模仿别人的游戏的，只是作为练手的作品，部分资源来自网络。 虽然它看起来很简单，但我希望作为开发者的你，不要像一个玩家似的，用表面去评价一份",
+    "categories": [
+      "Cocos2d-x Lua",
+      "Cocos Code IDE"
+    ],
+    "date": "2014-10-09 15:41:41"
+  },
+  {
+    "id": 1844,
+    "title": "【Cocos2d-x Lua】出乎意料的性能短板——那个getPosition的binding(原来是bug！)",
+    "content": "这次要来说一个吹水的话题，关于性能方面，最近在用Cocos2d-x + Lua写一个小游戏，因为实在太简单，就完全没想过会有什么掉帧的情况。 结果一到手机上运行，在关卡场景里的帧率立刻降低了，大概只有16到30帧，这个帧率对这个游戏来说，实在是有点可怕。 找了一下原因，凶手是某个update函数，因为每帧都要调用，遍历200到400个对象，主要是做碰撞检测，就在这里帧率下降了一半。 优化也很简单，把当前不在屏幕范围的对象都忽略碰撞就好了。 可奇怪的是，帧数还是不够高，于是，我发现了一个小问题... 来自未来的PS： 今天收到偶尔e网事发来的贺电，才知道这不是lua binding的性能缺陷，而是Cocos Code IDE的bug~！ 我想了这么个奇葩的解决方案、还花了这么多时间写这篇文章，原来都是假的！只是一个Bug而已。 没关系，我已经醉了。 这个Bug会引起debug模式下效率问题，下个版本的Cocos Code IDE会解决。 以下的文章正文内容，大家就随意看看吧，关于lua binding的观点是错误的，就当娱乐吧~ By 木头 2014.09.29 10:53 1.那些Lu",
+    "categories": [
+      "Cocos Code IDE"
+    ],
+    "date": "2014-09-25 21:46:19"
+  },
+  {
+    "id": 1808,
+    "title": "【笨木头Lua专栏】基础补充22：弱引用table",
+    "content": "这次要介绍的内容比较少，就一个——弱引用table 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1808 文章来源：笨木头与游戏开发 1.无法超越人类智慧的智能——自动内存管理的缺陷 我们都知道，Lua是具备自动内存管理的，好吧，也许有些朋友不知道。 我们只管创建对象，无须删除对象（当然，对于不要的对象你需要设置一下nil值），Lua会自动删除那些被认为是垃圾的对象。 问题就出现在，什么对象才是垃圾对象，有些时候，我们很清楚某个对象是垃圾，但是，Lua却无法发现。 比如这样一个例子： [cce_lua] t = {}; -- 使用一个table作为t的key值 key1 = {name = \"key1\"}; t[key1] = 1; key1 = nil; -- 又使用一个table作为t的key值 key2 = {name = \"key2\"}; t[key2] = 1; key2 = nil; -- 强制进行一次垃圾收集 collectgarbage(); for key, value in pair",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-09-15 21:05:27"
+  },
+  {
+    "id": 1800,
+    "title": "【笨木头Lua专栏】基础补充21：面向对象——多重继承、私密性",
+    "content": "在Lua中的多重继承和私密性可能用得比较少，也可能只是我个人用得比较少。 本来想偷懒不写这文章的，因为我今天刚买了个漂移板，连起步都还没学会啊，想多学一会。 咳咳，本着坚持不懈、负责到底的态度，我还是决定随便写几句~（小若：随便写几句是几吨意思啊？！） 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1800 文章来源：笨木头与游戏开发 1.多重继承之在多个类中查找一个字段 我发现这些高(shen)智(jing)商(bing)人群真的很厉害，这种技巧都能想到，很佩服。 其实多重继承没什么特别的，除非两个将要被继承的类有相同的函数名和属性，否则，处理起来很简单。 无非就是在多个table中查找某个字段而已，不简单吗？Lua里的继承就是在别人的table里查找自己不存在的字段罢了。 那么，单继承与多重继承的差别也在这里，一个是只查找一个table，另一个是查找两个或以上的table。 我们就先来看看如何从2个或多个table中查找某个字段，如下代码： [cce_lua] function search(clas",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-09-11 20:57:34"
+  },
+  {
+    "id": 1791,
+    "title": "【笨木头Lua专栏】基础补充20：面向对象——类和继承",
+    "content": "终于来了，在Lua中的面向对象编程，相信目前学习Lua的大部分人都是为了开发手机网游吧。 而且基本都是奔着脚本语言的热更新特性去的，所以全脚本开发变得十分流行。 对于普及不太广的Lua（相对于C++、Java等主流语言），需要短时间上手开发游戏，对新手而言不算简单。 所以大家才更习惯于继续用面向对象思想去折腾Lua吧~ 好了，不唠叨了，我最不喜欢唠叨了。（小若：是是是，你一点都不唠叨，赶紧开讲！） 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1791 文章来源：笨木头与游戏开发 1.类的对象 至于如何创建一个类，大家已经很清楚了，就是一个table而已。 那么，要使用这个类去创建多个对象，又如何实现呢？ 使用元表和元方法即可。 如下代码： [cce_lua] TSprite = { x = 0, y = 0, } function TSprite:setPosition(x, y) self.x = x; self.y = y; end function TSprite:new() o = {} set",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-09-10 21:52:30"
+  },
+  {
+    "id": 1789,
+    "title": "【笨木头Lua专栏】基础补充19：调用函数时用点号还是用冒号",
+    "content": "本文是面向对象预热篇，讲解函数两种调用方式的区别，初学者比较容易被坑。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1789 文章来源：笨木头与游戏开发 1.初学者最易混乱Top1——调用函数时用点号还是用冒号？ 我们来看看下面的两句代码： [cce_lua] mSprite.setPosition(100, 20); mSprite:setPosition(100, 20); [/cce_lua] 对于初次接触Lua的朋友来说，这简直就是噩梦，为嘛函数的调用有两种形式，是让我们随便挑的意思吗？ 这两种形式是有区别的，区别很大，但只有一个。 不过，暂时不解释，后面再介绍。 2.最简单的类 我们先来看看简单的，来创建一个“类”试试，如下代码： [cce_lua] TSprite = { x = 0, y = 0, } function TSprite.setPosition(x, y) TSprite.x = x; TSprite.y = y; end TSprite.setPosition(1, 2);",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-09-10 20:53:15"
+  },
+  {
+    "id": 1786,
+    "title": "【笨木头Lua专栏】基础补充18：Lua的模块编写与module函数",
+    "content": "很快就要开始介绍Lua里的“面向对象”了，在此之前，我们先来了解一下Lua的模块。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1786 文章来源：笨木头与游戏开发 1.编写一个简单的模块 Lua的模块是什么东西呢？通常我们可以理解为是一个table，这个table里有一些变量、一些函数... 等等，这不就是我们所熟悉的类吗？ 没错，和类很像（实际上我说不出它们的区别）。 我们来看看一个简单的模块，新建一个文件，命名为game.lua，代码如下： [cce_lua] game = {} function game.play() print(\"那么，开始吧\"); end function game.quit() print(\"你走吧，我保证你不会出事的，呵，呵呵\"); end return game; [/cce_lua] 我们定义了一个table，并且给这个table加了两个字段，只不过这两个字段的值是函数而已。 至于如何使用模块，那就要用到我们之前介绍过的require了。 我们在main函数里这么使",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-09-09 21:16:49"
+  },
+  {
+    "id": 1781,
+    "title": "【笨木头Lua专栏】基础补充17：全局变量与非全局环境",
+    "content": "今天来聊两个话题——全局变量和非全局环境。 正如大家目前心里所感受到的，全局变量的内容很简单，而非全局环境的内容就稍微要锻炼一下脑细胞了。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1781 文章来源：笨木头与游戏开发 1.全局变量的原形 在Lua中，要声明全局变量很简单，那就是定义变量的时候，前面不要加上local。 这个神秘的全局变量，其实本质上也是一个table，它把我们创建的全局变量都保存到一个table里了。 而这个table的名字是：_G 我们来看看代码： [cce_lua] -- 定义一个全局变量 gName = \"哎哟，很挫哦\"; -- 用三种方式输出变量的值 print(gName); print(_G[\"gName\"]); print(_G.gName); [/cce_lua] 输出结果如下： [LUA-print] 哎哟，很挫哦 [LUA-print] 哎哟，很挫哦 [LUA-print] 哎哟，很挫哦 我们定义了一个全局变量gName，于是这个gName成为了_G的一个字段。 ",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-09-04 20:53:34"
+  },
+  {
+    "id": 1779,
+    "title": "【笨木头Lua专栏】基础补充16：__index和__newindex的沉默与合作",
+    "content": "因为不想在一篇文章里挤太多知识点，所以，有些小知识点就集合到这样的文章里吧~ 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1779 文章来源：笨木头与游戏开发 1.沉默技能——拒绝__index和__newindex效果 虽然__index和__newindex是很好用的功能，但是，有时候我们又希望很纯粹地去调用table或者给table赋值。 那，这时候怎么办？给table重新设置一个元表？不，这个做法很糟糕~ 于是，体贴的Lua又给我们提供了这样的调用方式，如下代码： [cce] local smartMan = { name = \"none\", } local t1 = { hehe = 123; }; local mt = { __index = smartMan, __newindex = function(t, k, v) print(\"别赋值！\"); end } setmetatable(t1, mt); print(rawget(t1, \"name\")); print(rawget(t1",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-09-03 21:20:43"
+  },
+  {
+    "id": 1777,
+    "title": "【笨木头Lua专栏】基础补充15：也许很强大的__newindex元方法",
+    "content": "好吧，我写文章的进度已经赶不上看书的进度了，简单的几段文字就够我唠叨一篇文章了。 今天继续来说说元方法，与__index有点相似的__newindex元方法。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1777 文章来源：笨木头与游戏开发 1.查询与更新 上一篇文章我们介绍了__index元方法，总结来说，__index元方法是用于处理调用table中不存在的字段。 注意，【调用】这个词，只是调用，而不是赋值。 如果，我们要对table中某个不存在的字段赋值呢？（小若：就，直接赋值啊！） 没错，我们直接就能赋值了，不会报错的。 问题是，如果我想监控这个操作呢？如果有人想对table不存在的字段进行赋值的时候，我想进行一些额外的处理呢？ 这时候就要用到__newindex。 大家要记住这句话：__index用于查询，__newindex用于更新。 等会不要混乱了， 初次接触的话，有可能会混乱。 2.看看普通的赋值情况 我们先来看看正常情况下的赋值，如代码： [cce] local smartMan = ",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-09-03 20:41:39"
+  },
+  {
+    "id": 1766,
+    "title": "【笨木头Lua专栏】基础补充14：强大的__index元方法",
+    "content": "今天要来介绍比较好玩的内容——__index元方法 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1766 文章来源：笨木头与游戏开发 1.我是备胎，记得回头看看 咳咳，相信每一位女生都拥有或者不知不觉中拥有了一些备胎，啊，当然，又或许是成为过别人的备胎。 没有备胎的人，就不是完整的人生。（小若：停！） 我们来想象一下，如果对一个table进行取值操作，但是table根本就没有这个值呢？ 比如： [cce] local t = { name = \"hehe\", } print(t.money); [/cce] 输出结果当然是：nil t只用于name这个字段，而我们却访问了它的money字段，自然是返回nil了。 但是，如果我们不希望这样呢？我们希望在访问不存在的字段时，进行一些自定义的操作呢？ 没问题，Lua满足了我们，那就是，__index元方法。 在使用加法操作时，会查找__add元方法，那么，在调用table不存在的字段时，会调用__index元方法，这是一样的规则。 我们来看看代码： [cce]",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-09-02 21:03:47"
+  },
+  {
+    "id": 1763,
+    "title": "《Cocos2d-x3.x游戏开发之旅》即将出版~！",
+    "content": "咳咳，我的新书《Cocos2d-x3.x游戏开发之旅》快要出版了，预计是9月中旬。 预计这种事，可不能保证啊，说不定9月1号就出版了呢？（小若：啊我呸，今天都9月2号了！） （于2014.09.05补充说明：更准确的出版日期确定了，下周开始印刷流程，预计9月底能出现在各大网店。除非出现意外情况。） 这本书其实不是全新的内容，但是，又确实是全新的内容。 本书基于原《Cocos2d-x游戏开发之旅》的结构，升级为3.0版本，知识内容大部分是原来的，只是换成了3.0。 但是其实又不是原来的，因为很多文字描述都改了，只是看起来一定会很熟悉。 我知道，现在流行3.2版本，但我书上的内容其实没有什么区别，3.2版本在API上并没有什么大的改动。 另外，书上添加了不少3.0的新特性，以及网络游戏的入门介绍。 我看了，小满的书似乎也出了第二版，看了目录，我了个噗，我自己都被吸引了。 不过，我继续庆幸，我的书在内容上依旧没有和其他的书冲突。 个人认为，我的书比较适合学生，其实就是比较适合初学者了。 这也是我的初衷——写出能让所有人都看懂的教程。 好了，其实说了这么多吧，我就是想给我的新书做做宣传而已。 ",
+    "categories": [
+      "Cocos2d-x"
+    ],
+    "date": "2014-09-02 20:17:40"
+  },
+  {
+    "id": 1760,
+    "title": "【笨木头Lua专栏】基础补充13：元方法的一些零散知识点",
+    "content": "本篇要介绍的东西比较零散，都是一些小知识点，所以就放在一起了。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1760 文章来源：笨木头与游戏开发 1.两个具有不同元表的值进行算术操作（比如加法） 之前举例的时候，两个table相加，这两个table都是具有相同的元表的，所以没有任何问题。 那么，如果两个table或者两个进行相加操作的值，具有不同的元表呢？ 对于这种情况，Lua是这样处理： a.如果第一个值有元表，就以这个元表为准 b.否则，如果第二个值有元表，就用第二个值的元表 c.如果两个值都没有元表，或者没有对于的元方法，那么，就会报错 2.关系类的元方法 除了加法减法这些算术类的操作之外，大于小于等这些关系类的操作也是有元方法的： __eq：等于 __lt：小于 __le：小于等于 如果对两个具备不同元表的值进行这些比较操作，就会报错，一定要注意，这和加减法的规则不一样。 其实想想也很有道理，元表都不一样了，怎么去判断大小呢？判断大小是要有规则的。 比如，在军队里，中尉的职位肯定是小于上校的职位",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-09-01 21:06:56"
+  },
+  {
+    "id": 1758,
+    "title": "【笨木头Lua专栏】基础补充12：元表（metatable）小例子之算术类元方法",
+    "content": "上一节对元表和元方法有了一个初步的认识，这篇就来举个最简单的例子吧，加深一下印象，也为后续内容做准备。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1758 文章来源：笨木头与游戏开发 1.元方法名 Lua其实已经规定好了各种算术操作符的元方法名字，如： __add：加法 __sub：减法 __mul：乘法 __div：除法 __unm：相反数 __mod：取模 __pow：乘幂 只要在自定义元表的时候，给这些元方法名赋予新的函数就可以实现自定义操作了。 2.例子 开始举例吧，我们新建一个自定义的元表（也就是一个table变量），用来定义一些操作： [cce] -- 创建一个元表 local mt = {}; mt.__add = function(s1, s2) local result = \"\"; if s1.sex == \"boy\" and s2.sex == \"girl\" then result = \"完美的家庭。\"; elseif s1.sex == \"girl\" and s2.sex == ",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-09-01 19:44:24"
+  },
+  {
+    "id": 1755,
+    "title": "【笨木头Lua专栏】基础补充11：元表(metatable)与元方法(metamethod)初探",
+    "content": "终于到了在实际中经常要用到的内容了——元表与元方法。 在第一次看见这两样东西的时候，可能会觉得它很深奥，但其实很好理解，虽然实际上它可能真的很深奥。（小若：停！滚粗。） 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1755 文章来源：笨木头与游戏开发 1.知道为什么1 + 1 = 2吗？ 为什么在Lua中，1+1会等于2呢？（小若：难道除了Lua，其他地方就不等于2了？） 为什么数字和数字相加是合法的，为什么table和table相加就会报错？大家有想过这些问题吗？ 没错，规则，这一切都只是规则而已，Lua规定了数字之间可以进行加减乘除，而table之间则不可以。 这是因为，在人类世界里，并没有table和table相加的概念。 而在Lua中，进行这些规则限定的秘密就在于元表和元方法。 2.元方法 元方法，听起来很深奥，其实它就是格子类型变量之间进行特殊操作的函数。 比如，数字的相加，它可能仅仅是一个函数。 比如：1+1 ，在底层里，它可能是这样的：add(1, 1)。而add函数就是用来计算两个数字",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-08-28 21:50:15"
+  },
+  {
+    "id": 1753,
+    "title": "【笨木头Lua专栏】基础补充10：loadfile、dofile、require初探",
+    "content": "本来今天不应该讨论这几个函数的，不过，为了凑字数..不，为了方便以后的文章，还是要谈谈这几个基础函数的~ 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1753 文章来源：笨木头与游戏开发 1.loadfile——只编译，不运行 loadfile故名思议，它只会加载文件，编译代码，不会运行文件里的代码。 比如，我们有一个hellofile.lua文件： print(\"hello\"); function hehe() print(\"hello\"); end 这个文件里有一句代码，和一个函数。试试用loadfile加载这个文件，如下代码： [cce] loadfile(\"hellofile.lua\"); print(\"end\"); [/cce] 输出结果如下： [LUA-print] end 如果说loadfile会执行文件里的代码的话，那么，应该会输出hello字符串的。 结果表明，它是不会执行代码的。 2.dofile——执行 很明显，dofile就是会执行代码的家伙了，如下代码： [cce] dofi",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-08-28 20:56:21"
+  },
+  {
+    "id": 1744,
+    "title": "【笨木头Lua专栏】基础补充09：使用table.concat连接大量字符串",
+    "content": "最近2天都没有写新的文章了，主要是最近的内容没有特别有意思的。 之前的协同程序也暂时没有感觉到特别适用的地方，今天在看数据结构的部分，也是没多大意思（不代表没用）。 但是突然发现了一个有意思的地方，那就是——连接大量字符串的时候，如何解决效率问题。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1744 文章来源：笨木头与游戏开发 1.预备知识，在Lua中获取系统时间 为了直观地看到效率的差别，我们要计算一下代码的执行时间，所以，先来看看如何计算吧： [cce] local startTime = os.clock(); for i = 1, 1990000000, 1 do end local endTime = os.clock(); local useTime = endTime - startTime; print(\"消耗时间：\" .. useTime .. \"s\"); [/cce] 输出结果如下： [LUA-print] 消耗时间：0.59699999999998s os.clock()可以获",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-08-27 21:21:08"
+  },
+  {
+    "id": 1736,
+    "title": "【笨木头Lua专栏】基础补充08：协同程序之resume-yield间的数据返回",
+    "content": "这次要介绍几个其实很简单，但是一定要小心的返回值规则。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1736 文章来源：笨木头与游戏开发 1.resume的参数 resume函数除了第一个参数是协同程序外，还能继续传其他参数，如下代码： [cce] local co = coroutine.create(function(name) print(name); end); coroutine.resume(co, \"resume param\"); [/cce] resume第二个参数为“resume parame”，这个参数将会传递给协同程序的函数。 输出结果如下： [LUA-print] resume param 这很简单，对吧，记住这个规则了，接下来不要混乱了。 2.resume函数的第二个返回值 还记得resume函数的两个返回值吗？一个代表协同程序是否正确执行，一个代表错误信息。 那，如果协同程序正确执行，错误信息这个返回值自然就是nil了。 然后，这里还有一个规则，那就是yield函数的参数可",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-08-22 21:05:47"
+  },
+  {
+    "id": 1733,
+    "title": "【笨木头Lua专栏】基础补充07：协同程序初探",
+    "content": "哎，周五晚上我都还这么努力看书，真是好孩子。（小若：不想吐槽了） 其实我都准备玩游戏看电影去的了，但是这书就摆在桌子上，而且正对着我，就想着，扫两眼吧。 结果一扫就不对劲了，因为这内容有点绕，有点小混乱，如果我现在不记录下来的话，下周一可能又要重新看一次了。 好吧，今天我们来聊聊协同程序。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1733 文章来源：笨木头与游戏开发 1.什么是协同程序（coroutine） 大家都知道线程吧？都知道多线程吧？协同程序就和这线程差不多，但是又有比较明显的区别。 多个协同程序在任意时刻只能执行一个，虽然线程在某种意义上也是这样，但这不是一样的概念。 换句话说，一个协同程序在运行的时候，其他协同程序是无法获得执行的机会的。 只有正在运行的协同程序主动挂起时，其他协同程序才有机会执行。 而线程呢？即使不主动休眠，也很有可能因为轮片时间到达而把执行机会让给其他线程。 2.创建协同程序 创建协同程序很简单，咋一看，其实和线程没差别~ 代码如下： [cce] local co ",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-08-22 20:36:14"
+  },
+  {
+    "id": 1728,
+    "title": "【笨木头Lua专栏】基础补充06：简单的错误处理",
+    "content": "昨天遇到另外一位独立游戏开发者，所以多聊了一会，然后...然后就没有看书了。（小若：借口！借口！） 今天来聊聊错误处理吧，不过毕竟这只是前面的章节，书上的内容似乎有点一笔带过的味道。 没关系，简单更好~ 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1728 文章来源：笨木头与游戏开发 1.红色警报——error 我们应该能经常看到类似以下的错误信息： [LUA-print] LUA ERROR: [string \"src/main.lua\"]:108: [string \"src/main.lua\"]:89: attempt to index global 'a' (a nil value) 这是在发生错误时给我们的提示，通常，这代表我们的代码不能继续正常执行下去了。 但你有知不知道，我们可以伪造这种错误，没错，主动调用error函数，就会出现这种信息。 如下代码： [cce] error(\"你的智商不多了，赶紧休息，恢复一下吧\");[/cce] 然后，运行，输出如下信息： [LUA-print] LU",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-08-21 20:48:35"
+  },
+  {
+    "id": 1721,
+    "title": "【笨木头Lua专栏】基础补充05：迭代器番外篇",
+    "content": "关于迭代器的内容， 还有一点点，不过已经无关紧要了，应该算是一种扩展吧，就一起来开开眼界好了~ 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1721 文章来源：笨木头与游戏开发 1.避免创建闭合函数 我们之前一直在说的迭代器，都是要创建闭合函数，但，大家有没有想过，有了恒定状态和控制变量之后，是不是就不需要闭合函数了？ 先来回顾一下之前的迭代器函数： [cce] function dieDaiQi(t) local i = 0; return function(s, var) i = i + 1; if i #t then return nil; end return i, t[i]; end, 10, 0 end [/cce] 这是最后一次介绍的dieDaiQi函数，此时已经拥有了恒定状态和控制变量了。 不觉得那个local i变量很碍事吗？（小若：不觉得） 只要把它去掉，那就不存在闭合函数了。 我们把dieDaiQi函数改成这样子： [cce] function dieDaiQi(t) retur",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-08-19 20:57:40"
+  },
+  {
+    "id": 1717,
+    "title": "【笨木头Lua专栏】基础补充04：for循环与迭代器的秘密",
+    "content": "上一篇我们介绍了，可以使用for循环来完成迭代器的调用，十分简洁。 那么，具体这for循环做了什么呢？我当然没有去看源码，我只是看书而已。 资料来源于《Lua程序设计》第二版，如果这本书的内容没有错的话，那么，本篇文章理论上也不会有错~ 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1717 文章来源：笨木头与游戏开发 1.返回两个值的迭代器 pairs是能遍历table的key和value的，而我们之前写的dieDaiQi函数只能返回value。 所以，我们要改改dieDaiQi函数，如下： [cce] function dieDaiQi(t) local i = 0; return function() i = i + 1; if i #t then return nil; end return i, t[i]; end end [/cce] 当然了，这不是一个安全的迭代器，我们假设table中没有nil值。 至于为什么要有一个if i #t的判断，待会会说到。 使用如下方式调用迭代器： [cce]",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-08-18 22:01:25"
+  },
+  {
+    "id": 1714,
+    "title": "【笨木头Lua专栏】基础补充04：迭代器初探",
+    "content": "今天学习的内容还蛮有意思的，让我兴奋了一下~ 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1714 文章来源：笨木头与游戏开发 1.迭代器 什么是迭代器？别傻了，我最讨厌的就是名词解释了，反正就是用来遍历集合的一种方式。 比如，我们最常用的pairs，如下代码： [cce] local t = {\"fdsd\", \"445\"}; for k, v in pairs(t) do print(\"k=\" .. k .. \", v=\" .. v); end [/cce] 这是一次遍历table的操作，然后打印出table的key值和value值。 输出结果如下： [LUA-print] k=1, v=fdsd [LUA-print] k=2, v=445 2.自己写一个迭代器 要想了解迭代器，那还是要自己写一个才行，迭代器没有什么神奇的地方，它很简单。如这样一个函数： [cce] function dieDaiQi(t) local i = 0; return function() i = i + 1; ret",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-08-18 21:18:51"
+  },
+  {
+    "id": 1710,
+    "title": "【笨木头Lua专栏】基础补充03：闭合函数、非全局函数与函数的尾调用",
+    "content": "上一篇我们简单地介绍了Lua的函数，这次，我们来点特别的，来介绍一下Lua的函数（小若：等等，我是不是错过了什么？） 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1710 文章来源：笨木头与游戏开发 1.闭合函数（closure） 理论上来说，Lua的所以函数都应该称之为闭合函数，但是，这种反人类的做法，我们还是抛弃吧~ 按书上的描述，一个闭合函数就是：一个函数加上该函数所需访问的所有”非局部的变量“。 理论什么的，很烦人，来看看一个函数： [cce] function count() local i = 0; return function() i = i + 1; return i; end end [/cce] 这个count函数会返回另外一个函数，重点是，这个返回的函数会使用count函数的局部变量。 先来运行，看看效果，使用如下方式调用： [cce] local func = count(); print(func()); print(func()); print(func()); [/cce",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-08-15 21:26:02"
+  },
+  {
+    "id": 1702,
+    "title": "【笨木头Lua专栏】基础补充02：函数的几个特别之处",
+    "content": "没想到距离上一篇基础补充已经过了1年多了，最近准备捡回Lua，把基础都补补，今天来聊聊Lua的函数吧~ 0.环境 我突然对Lua又大感兴趣的最主要原因是，Cocos Code IDE开始浮出水面了，它是Cocos2d-x官方出的一款专门针对Cocos2d-x+Lua或JS的IDE，试着用了，虽然不能说很完美，但，很值得期待。 所以，本文使用的Lua编辑器就选它了，大家就随意吧~ 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1702 文章来源：笨木头与游戏开发 1.扫盲——Lua的函数 Lua要创建和调用函数都十分简单，如代码： [cce] function mutou() print(\"这绝对不是广告：www.benmutou.com\"); end [/cce] 这就创建了一个函数了，调用函数也十分简单： [cce]mutou();[/cce] 然后运行，就能看到输出了，print也是一个函数，唉，不多唠叨了。 2.扫盲——函数的参数 刚刚的mutou函数，我们修改一下参数，如代码： [cce] fun",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2014-08-14 21:45:36"
+  },
+  {
+    "id": 1687,
+    "title": "流量提前用完了，博客被停了一天，抱歉",
+    "content": "这个月的网站流量暴涨，要么是被人盯上了，要么是被不知名爬虫爬走了我的流量~ 不管如何，我是不知道怎么应付了，反正空间是月付的，也快到期了。 于是我又买了一个月的新空间，搬过来了。 最近博客似乎总是出问题，真倒霉~",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-08-13 09:56:26"
+  },
+  {
+    "id": 1634,
+    "title": "Cocos2d-x Lua 读取Csv文件，更方便的使用数据",
+    "content": "我的书上或者是我曾经出售的源码里，都有Csv文件的影子。 也许是先入为主吧，我工作那会用的最久的配置文件就是Csv，所以我在很多游戏里都会情不自禁地优先选择它。 Csv文件，格式很简单，就是一行一条数据，字段之间用逗号分隔，策划也可以方便地使用Excel进行编辑。 Csv格式的文件，解析起来也很简单，所以自己动手写写很快~（小若：我就喜欢拿来主义，你怎么着） 最近在用Lua写游戏，对于技能、怪物等配置，我还是选择用Csv~ 不得不说，Lua等脚本语言，在某些方面是C++没法比的，这次我就用Csv来表达这种心情~ 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1634 文章来源：笨木头与游戏开发 一份Csv配置文件 我们来看看这样一份Csv文件，如图： ID,Name,Des,Model ID,名字,描述,图片模型 1,广告,www.benmutou.com,csv.png 2,否认,呵呵，广告什么的，我才不会加,good.png （小若：这是图吗？是哪里是图啊！） 当然，这样好像不够清晰，我们来这样看看：",
+    "categories": [
+      "Cocos2d-x Lua",
+      "Cocos Code IDE"
+    ],
+    "date": "2014-07-31 22:00:03"
+  },
+  {
+    "id": 1629,
+    "title": "Cocos Code IDE + Lua初次使用FastTiledMap的坑",
+    "content": "最近想玩玩Lua，又想玩玩Cocos Code IDE，更加想写一个即时战斗的、防守的、会动的、有迷雾的、要探索的（旁白：给我停！）跑地图游戏。 于是我就用Cocos Code IDE来写游戏了，挑战还真不少，不过，我喜欢~ 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1629 文章来源：笨木头与游戏开发 FastTiledMap 据说Cocos2d-x3.2版本有了一个很牛叉的新功能——FastTiledMap。 3.2版本的TiledMap会自动裁剪掉屏幕外的地图格子，减少渲染对象的数量，大大提升游戏的效率。 我以为默认的TMXTiledMap已经有这个功能，但发现不是的，官方加了个新TMXTiledMap类，这个类是cocos2d::experimental::TMXTiledMap。 在Lua里就是ccexp.TMXTiledMap。 直接使用会报错 问题来了，直接使用ccexp.TMXTiledMap:create(\"test.tmx\");是不行的，会报错，找不到ccexp这个东西。 经过各种",
+    "categories": [
+      "Cocos2d-x Lua",
+      "Cocos Code IDE"
+    ],
+    "date": "2014-07-29 21:24:23"
+  },
+  {
+    "id": 1624,
+    "title": "加载Cocostudio的UI之后，下方按钮无法点击的解决方法",
+    "content": "我印象中是写过这篇文章的，可能我记忆错乱了吧，今天刚好论坛有人提出来，就顺便做一下记录~ 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/1624 文章来源：笨木头与游戏开发 Cocostudio的UI从某个版本开始，默认会屏蔽下方的触摸事件，换句话说，当我们加载了某个UI之后，UI下面的东西（按钮、图片等等）都无法响应点击。 其实这没什么神奇的，只不过是UI默认有一个画布，画布也是一个控件，类似Layer，它也会监听触摸事件，并且是吞并模式的。 一旦UI获取到触摸事件，那么，其他人就没法获得触摸事件了。 有两种方式解决（都很简单完美）： 1. 在Cocostudio的UI编辑器里做手脚，设置顶层的Panel属性，把“交互”前面的勾去掉（推荐） 这个顶层Panel可能一般情况下大家都会视而不见，如图： 这就是UI默认的画布，选中它，然后在Panel的属性面板里找到“交互”属性，把前面的勾去掉，如图： 2. 在代码里处理，加载UI后，直接调用UI的setTouchEnabled(false);就可以了，这样U",
+    "categories": [
+      "Cocos2d-x3.0"
+    ],
+    "date": "2014-07-29 20:55:51"
+  },
+  {
+    "id": 1233,
+    "title": "这几天的留言暂时无法回复",
+    "content": "我的眼睛罢工了，这几天要闭幕休息，不能用电脑了，所以博客、qq和邮件都暂时无法回复。 PS：本编文章也是叫朋友代写的~",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-07-13 18:30:26"
+  },
+  {
+    "id": 1220,
+    "title": "免费可商用的图片资源推荐",
+    "content": "如果你是一个游戏开发者，并且只是觉得好玩而写游戏，不是为了迎合大众玩家而去写游戏的话，这篇文章介绍的一些网站会比较适合你。 笨木头花心贡献，哈？花心？不，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1220 文章来源：笨木头与游戏开发 1. opengameart.org 这是我推荐次数最多的一个网站，原因不是它有多好，只是因为我第一个找到的就是它。 这个网站里有很多资源，包括图片、3D材质、音乐、音效。 当然，不是全部都免费的，在进入资源详情页面之后，留意左边，有一个LICENSE协议标签。 如果是CC0协议，那就代表可以随意使用，我一般都是直接搜索，然后限定条件为CC0。 其他协议也并不是说不能使用，但是要按照协议来使用，比如某些协议要求你使用的时候注明图片来源。 这网站上面的资源，咋一看，很挫，但是，仔细找吧，你会发现它没有你第一印象那么差。 特别是音乐和音效，十分不错。 2.www.reinerstilesets.de 这个网站的资源不是CC0协议的，使用它的资源需要注明作者的名字，以下是作者的声明： All the gr",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-07-05 18:28:42"
+  },
+  {
+    "id": 1217,
+    "title": "今天说什么路由器问题，再次挂了半天",
+    "content": "我这是走的什么运...我等着明天继续有新的问题（才怪啊！再挂我就怒了啊~）",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-07-04 20:07:34"
+  },
+  {
+    "id": 1215,
+    "title": "昨天博客空间进行机柜迁移，所以“挂”了半天。",
+    "content": "昨天博客空间进行机柜迁移，所以“挂”了半天。 现在恢复了~",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-07-04 08:00:10"
+  },
+  {
+    "id": 1212,
+    "title": "提供给移动MM商城的版权验证《魔鬼数字》",
+    "content": "写了个小游戏，各种发布，今天收到MM商城的拒绝通知，原因是，我在游戏里写上了我的网名和博客地址（网名：笨木头），和我在MM商城的实名不一致，被认为是无版权~ 在这里声明一下，《魔鬼数字》是本人（笨木头）开发的，实名是钟迪龙。 哎呀，顺便宣传一下好了，我的新游戏，《魔鬼数字》，大部分主要的市场都上线了（360周五上）~ 比如安智市场：http://www.anzhi.com/soft_1689497.html",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-07-03 09:09:29"
+  },
+  {
+    "id": 1206,
+    "title": "被自己气死的低级错误，关于屏幕适配",
+    "content": "这又是一篇很水的文章~ 不过太坑自己了，不得不记录一下。 说起屏幕适配，很简单，就只是用默认提供的方案（Cocos2d-x3.0release版本）： [cce_cpp] bool AppDelegate::applicationDidFinishLaunching() { auto director = Director::getInstance(); auto glview = director-getOpenGLView(); if(!glview) { glview = GLView::create(\"TowerDefence\"); director-setOpenGLView(glview); /* 游戏设计大小 */ glview-setDesignResolutionSize(800, 480, ResolutionPolicy::SHOW_ALL); } /* 省略一些代码 */ return true; } [/cce_cpp] 看出问题了吗？可能一眼看过去是看不出什么问题了。 但是移植到Android的时候就出问题了，适配失效，和没适配的效果是一样的。 这折腾了我好",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "date": "2014-06-23 15:08:41"
+  },
+  {
+    "id": 1202,
+    "title": "Cocos2d-x 游戏发布攻防篇01:防止打包党的小技巧",
+    "content": "今天论坛里有朋友说让我写写关于游戏防止被反编译重新打包的心得，刚好今天我没有安排任务，就来吹吹水吧~ 其实这方面的心得我倒是没有多少，也没什么高深的心得，只不过我曾经有4、5个游戏被打包过而已（小若：赤裸裸地炫耀你的失败）。 虽然我这文章标题写着“攻防篇01”，但不代表就一定有“攻防篇02”，只是，随意取的。（小若：敢负责任一点吗？） 这里科普一下，什么叫做打包党。 打包党是一种职业，一种不光彩的职业，他们专门去下载别人的游戏安装包，反编译，然后加入自己的广告，最后重新打包上传到各个市场，从而谋取收益。 别小看他们，部分打包党过得比我们还要滋润。 什么？你心动了？你不会想去加入他们吧？ 当然，我不会阻止大家，我这篇文章是写给那些真正喜欢创造游戏的人的，至于喜欢投机取巧的人，随你的便，我不反对、不评价、不阻止~ OK，不管打包党是正当还是不正当，但，他们是我们这些游戏创作者的敌人，这是毋庸置疑了。 接下来，我就以我的经验说说防止打包党的一些小技巧吧，并且我是基于Android游戏来说的。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmut",
+    "categories": [
+      "Cocos2d-x"
+    ],
+    "date": "2014-06-21 15:43:19"
+  },
+  {
+    "id": 1200,
+    "title": "MySql使用字符串Select或Update无法区分大小写的解决方法",
+    "content": "今天守护裙子OL的玩家又找我说游戏数据被重置了（“又”？） 好吧，怎么老是这玩家的数据被重置呢？一看数据库，原来他的账户名有很多重复的： account actorID kirito 24935 Kirito 24936 KIRITO 24937 好吧，我错了，我以account作为主键了，而MySql默认对字符串没有大小写区分，所以在Select和Update等操作的时候这些字符相同仅仅大小写不同的数据都被波及了。 于是当新玩家以相同账号名（大小写不同）注册新账号之后，就会把老玩家的数据给改了。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1200 文章来源：笨木头与游戏开发 然后，废话就不多说了（你已经说了好多了好吧= =），要想account字段区分大小写，只要改改这个字段的属性就好了： alter table user change column account account varchar(16) BINARY; 绿色部分当然就是表名和字段名了，关键就是最后的那个BINARY了。 好了，",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-06-21 14:11:59"
+  },
+  {
+    "id": 1087,
+    "title": "博客空间折腾完毕",
+    "content": "最近一周断断续续地抽空在换博客空间。 之前的空间是**的空间（不透露名字啦，免得砸人招牌），价格还算公道，一直也算比较稳定（一年挂掉了5次左右吧）。 结果今年续费不到2个月，挂掉了3次，而且最后一次挂了3个小时以上（我睡醒才发现的，不知道醒之前挂了多久）。 挂了这么久的原因是，找不到客服，网站也没有在线提交工单的功能，网站上有两个QQ号，结果点击之后，都是链接到同一个Q的。QQ找不到人，发邮件吧，依旧没法及时回应。 最后剩下一个售前电话，好吧，售前就售前了，希望他管管售后的吧，结果打过去，通了。愕然发现，这售前电话和那个QQ客服是同一个人啊~！魂淡！估计邮件也是同一个人了。他们官网竟然还写着7X24X365小时售后支持，好坑。 还好，电话打完之后网站很快就恢复了。 好吧，这蛮可怕的，要不是我厚着脸皮打了售前电话，估计网站得挂一整天了。而且挂得也太频繁了，想着算了，亏就亏吧，换一个空间好了。 于是我想起了以前买的一个华夏空间，找代理买的，68一年，买来玩的（就是我论坛用的空间）。用了几个月，发现价格升到88一年，想着，续费吧，也还算稳定（一次都没挂过），就是速度慢了点。续费了2年，还送了",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-06-14 09:22:16"
+  },
+  {
+    "id": 1036,
+    "title": "T_T无法忍受了，博客准备换空间商，近期可能会出现无法访问的情况",
+    "content": "无法忍受了，博客空间才刚续费了一年，结果就这2个月就频繁出故障，没法继续待了。 找客服吧，结果今天他们有一个客服有事休假，然后我发现这空间商特么就这一个客服啊，今天早上博客挂了快3个小时了。 果断闪人了，换空间商。 所以，在这里特别提醒一下，最近博客可能会出现无法访问的情况，那是木头我在折腾博客搬家~",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-06-07 10:48:09"
+  },
+  {
+    "id": 1027,
+    "title": "Cocos2d-x3.0 加载Cocostudio的UI后，按钮无法点击的解决方法",
+    "content": "最近发现不少朋友都遇到这个问题，用Cocostudio的UI编辑器创建好UI后，在代码中加载UI，然后给按钮（Button）添加点击监听事件，发现无论如何都点击不了按钮，没有任何反应。 或者，往按钮的下面一些位置点击，却发现按钮被点击了，点击坐标的位置明显和按钮的位置有偏差。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/1027 文章来源：笨木头与游戏开发 如果你也遇到这样的问题，不妨进行一个简单的操作。 打开AppDelegate.cpp类，在AppDelegate::applicationDidFinishLaunching函数里，其中一段代码： [cce_cpp] auto director = Director::getInstance(); auto glview = director-getOpenGLView(); if(!glview) { glview = GLView::create(\"My Game\"); glview-setFrameSize(800,1280); direc",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "date": "2014-06-03 20:46:54"
+  },
+  {
+    "id": 1006,
+    "title": "Cocos2d-x Auto-batching 浅浅的\"深入分析\"",
+    "content": "近两天都在折腾Auto-batching这东西，比较曲折，总结一句话就是：爱折(腾)才会赢。 看了很久的文档，以及跟踪了很久的源码，对于Auto-batching这实现的流程总算是有点眉目了。 =========== 以下是回忆，是我对Auto-batching产生疑惑的过程，可以忽略不看========= 这得从昨天说起（小若：我们不是来听故事的！），我在更改之前SpriteBatchNode的教程，由于Cocos2d-x3.0新增了Auto-batching，于是就不得不把它也加进去。 这一加，不对劲，越写越发现自己对Auto-batching的理解有误，在我的脑海中，只要精灵是使用同一个纹理、没有更改blendFunc、没有更改shader，那么就满足Auto-batching，会自动将这些精灵加入到同一个渲染批次里，优化渲染速度。 可我才刚准备写一个例子，却发现，不对！没有自动批处理。我当时做了这样一个实验，代码如下： [cce_cpp] /* 创建很多很多个精灵 */ for(inti = 0; i 14100; i++) { Sprite* xiaoruo = Sprite",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "date": "2014-05-31 08:53:00"
+  },
+  {
+    "id": 995,
+    "title": "Ron's Editor（CSV编辑器）列ID自增的功能",
+    "content": "Ron's Editor是一款CSV格式文本编辑器，挺好用的（可惜还是没有Excel好用），由于Excel无法直接用Utf-8格式，每次保存都要转换格式，很麻烦。 在Cocos2d-x里使用中文又必须要Utf-8，不然会乱码，所以我选择了使用Ron's Editor。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/995 文章来源：笨木头与游戏开发 Excel里面有个很爽的功能，拉住某个单元格，往下拖，然后就会按照规则填充下面的单元格，比如数字会自增，或者按照规则递增（递减、乘除，诸如此类）。 Ron's Editor做不到，否则我会开心得不行。 因为要经常填写ID字段，没有自增功能很麻烦，今天研究了一下，发现还是有自增功能的，只是没有Excel那么方便。 一张截图就能把步骤给写清楚了，如图，一共6个步骤（点击图片查看大图）： 具体步骤如下： 1. 选中需要递增的数字 2.点击工具栏上面的工具小图标，打开Tool Box界面 3.选择坐标的Add下的Numbers 4.选择数字的开始（比如我是从1开始",
+    "categories": [
+      "其它"
+    ],
+    "date": "2014-05-19 16:04:35"
+  },
+  {
+    "id": 971,
+    "title": "Cocos2d-x3.0游戏实例《别救我》目录",
+    "content": "这个5.1假期还真不错，有个小惊喜，那就是，我某个游戏今天的下载量爆表了，突破历史最高点~！ 于是，我决定写一个新的游戏实例教程，以示庆祝~ 啊才怪啊~！这教程5.1之前就在写了，我还因此暂停了差不多一周的开发工作。我也不想的，因为我太久没写教程了，大大地低估了我的唠叨程度，越写越多，又不想半途而废，只能丢下开发工作把教程写完了。 当然喇，刚好我的开发任务到了休整期，所以没有受到影响~（邪恶） 这次写的是基于Cocos2d-x3.0正式版的物理休闲游戏，针对的人群依旧是初学者，好吧，太高深的教程我也没能力去写。 教程一共10篇，前前后后花费了我差不多一周的时间（不包括开发时间），部分原因是，我在修改我博客的主题（邪恶，笑） 好了，废话少说，我最讨厌就是唠唠叨叨的人了（脸红，奸笑）~ 这是一个，我也不知道叫做什么类型的游戏，玩法很简单，玩家控制角色，只能向左冲、向右冲、向下猛冲，不能向上。其它方向的移动只能通过碰撞怪物或者墙壁来进行。 游戏胜利条件就是，碰撞那些会扣生命值的怪物，然后角色生命值变为0就算胜利。 期间有很多阻碍，碰到不该碰的东西，就会加血。 所以，游戏的名字才会叫做：别！救",
+    "categories": [
+      "Cocos2d-x",
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x3.0"
+    ],
+    "date": "2014-05-02 21:51:31"
+  },
+  {
+    "id": 949,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第十篇——用Json配置各类型怪物数据",
+    "content": "现在我们有2种类型的怪物，而且创建的时候是写死在代码里的，这是要作死的节奏~ 所以，必须可配置，不然会累死人的。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/949 文章来源：笨木头与游戏开发 Json文件 什么是Json文件？说白了，它就是一个文本文档，只不过它的内容是按照一定的规则填写的。 于是，我们就可以按照那个规则去读取这份文档。 这，就是配置文件产生的缘由（才怪）。 （小若：才怪是什么意思啊喂！） 我不知道配置文件产生的历史，但它的原理就是这样的~ 关于Json的资料，百度很多，我坦白，我自己也没有深入地完整地使用过Json的所有东西。所以，大家感兴趣的，可以百度一下。 怪物类型配置文件 我们在这个游戏要用到的Json格式主要是数组(array)和对象(object)，来我们在项目的Resources目录下创建一个新文件，命名为：monsterConf.plist 然后随便用一个文本编辑器打开，输入以下内容： [ {\"id\":1, \"atk\":1, \"model\":\"item2.png\"}",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "date": "2014-05-02 21:09:28"
+  },
+  {
+    "id": 944,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第九篇——从tmx文件中加载关卡怪物",
+    "content": "上一篇我们已经制作好tg1.tmx文件了，现在就要使用它了。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/944 文章来源：笨木头与游戏开发 很抱歉，我们又要新建2个类了，我已经尽力少新建类了，毕竟是教程，类越多越容易混乱。 我们要新建一个Monster类，以及一个MonsterLayer类，专门添加Monster对象。 Monster类 来看看Monster.h文件： [cce_cpp] #ifndef Monster_H #define Monster_H #include \"cocos2d.h\" USING_NS_CC; class Monster : public Node { public: Monster(); ~Monster(); static Monster* create(int ID); bool init(int ID); /* 加入到当前场景的物理世界 */ void joinToWorld(Node* parent); CC_SYNTHESIZE(int, m_ID, I",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "date": "2014-05-02 21:05:45"
+  },
+  {
+    "id": 926,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第八篇——TiledMap实现关卡编辑器",
+    "content": "好吧，我真心完全搞不懂，我现在只不过是写了3个类而已，怎么就已经到第八篇了？我感觉我说话已经够简单明了毫不唠叨了，真是奇怪。（小若：我噗，噗噗！） 好吧，既然现在主角已经能出现并且进行操作了，那，也是时候让怪物出场了。 让怪物出现太简单了，不就是写一个Monster类，然后创建刚体，让它可以和主角碰撞，然后让主角扣血或者加血么？ 没错，确实就是这样的，但是，这不是重点，我想介绍的是，利用关卡编辑器来创建所有要出场的怪物，这才有意思~ 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/926 文章来源：笨木头与游戏开发 神奇的TiledMap 不知道大家有没有看过我那《跑跑跑》的游戏实例教程（好吧，好像传得蛮广的，但是有不少bug），《跑跑跑》里面也有介绍到TiledMap，应该说，它主要就是介绍TiledMap来制作地图的。 其实TiledMap顾名思义就是格子地图，它是地图编辑器，但实际上，它是关卡编辑器，因为地图某种意义上来说，就是关卡。 在写《别救我》的时候，我一直在纠结，是自己写关卡编辑器呢，还是",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "date": "2014-05-02 21:03:21"
+  },
+  {
+    "id": 920,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第七篇——物理世界的碰撞检测",
+    "content": "其实我也很惊讶...竟然写到第七篇了，我预计也就是四篇的内容，感觉很神奇，我也不会很唠叨什么吖（小若：32个喷！），怎么都到第七篇了。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/920 文章来源：笨木头与游戏开发 碰撞监听 首先，确保我们创建物理对象的时候，给对象设置了碰撞条件（如果你是一步步按着教程来写的代码，那就是设置好了）： [cce_cpp] body-setCategoryBitmask(1); // 0001 body-setCollisionBitmask(1); // 0001 body-setContactTestBitmask(1); // 0001 [/cce_cpp] 这样我们才能监听到它们的碰撞事件，至于原理，就不说了，以我的唠叨程度，不是一两篇内容能说完的。 然后，我们给TollgateScene添加一个函数声明： [cce_cpp] /* 碰撞检测 */ bool onContactBegin(PhysicsContact contact); [/cce_cpp] 这",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "date": "2014-05-02 20:51:17"
+  },
+  {
+    "id": 918,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第六篇——从代码中获取UI控件",
+    "content": "这篇的内容很简单，获取UI控件，然后使用它。 还记得我们在UI编辑器中给三个按钮分别命名了吧？ 现在要用上了。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/918 文章来源：笨木头与游戏开发 根据名字查找控件 首先给TollgateScene再include一些头文件，不然等会编译又报错了： [cce_cpp] #include \"editor-support/cocostudio/CCSGUIReader.h\" #include \"cocostudio/CocoStudio.h\" #include \"ui/CocosGUI.h\" using namespace cocos2d::ui; using namespace cocostudio; [/cce_cpp] 上面就是比较完整的使用UI所需要用到的头文件了。 然后，获取UI控件的方法如下，继续修改createOprUI函数： [cce_cpp] void TollgateScene::createOprUI() { auto UI = coco",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "date": "2014-05-02 20:48:02"
+  },
+  {
+    "id": 892,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第五篇——使用Cocostudio UI编辑器创建操作界面",
+    "content": "这一篇内容其实很简单，已经对Cocostudio比较熟悉的朋友就可以随便扫一下了~（小若：熟悉Cocostudio的人谁还有空看你的基础教程呢） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/892 文章来源：笨木头与游戏开发 下载Cocostudio 首先，去官网下载最新版的Cocostudio：http://www.cocos2d-x.org/download 我这篇教程使用的版本是V1.3.0.1，它同一个版本还有3个分支，大家随便选择一个分支吧： [caption id=\"attachment_893\" align=\"aligncenter\" width=\"236\"] Cocos2d-x3.0游戏实例之《别救我》第五篇-截图-Cocostudio[/caption] 那个，大家还是选择V1.3.0.1 + Cocos2D-X 3.0那个分支吧~原因？可能它比较顺眼吧~（小若：我噗） 好吧，从上到下，三个分支分别作用如下： 1. 纯Cocostudio工具集 2. 包含Cocos2d-x 2.2.",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "date": "2014-05-02 20:39:23"
+  },
+  {
+    "id": 872,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第四篇——乱入的主角",
+    "content": "好了，前面说了那么多废话，终于要进入正题了（等等，敢情前面你都是在耍我们么？） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/872 文章来源：笨木头与游戏开发 添加主角实在是太简单了，这个主角要拥有以下一些超能力： 1. 可爱的样子 2. 不会飞 3. 会往下掉 4. 撞墙会反弹 5. 可以左右移动 6. 必杀技是：放屁 （小若：不知道是不是幻觉，总感觉这些能力是个人就能拥有） （木头：哦呵呵，旁白，别傻了，就第一条你就无法拥有） 本篇教程要用到的图片到这里下载：http://download.csdn.net/detail/musicvs/7392931 让主角出现 上面说了这么多超能力，感觉很复杂，我们还是从简单做起吧，让主角先出现在场景里。 创建一个Player类，头文件如下： [cce_cpp] #ifndef Player_H #define Player_H #include \"cocos2d.h\" USING_NS_CC; class Player : public Node { pu",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "date": "2014-05-02 20:26:18"
+  },
+  {
+    "id": 823,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第三篇——循环滚动背景",
+    "content": "好，这篇我们来讲解无限循环滚动背景，这个知识已经被讲到烂了，我以前的文章也介绍过，所以就不那么详细地说明了。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/823 文章来源：笨木头与游戏开发 为什么是循环滚动背景？ 用循环滚动背景，其实是因为我想偷懒，因为这样我只需要准备一张图片就可以了。 我们最终要创建这样的背景，如图： [caption id=\"attachment_848\" align=\"aligncenter\" width=\"289\"] Cocos2d-x3.0游戏实例之《别救我》第三篇-滚动背景[/caption] 背景是在滚动的，大家有没有看到？（小若：看你妹，这是jpg，不是gif） 大家是不是很在意下面的那多出来的一条锯齿？它可不是坐标错位了，这是一个伏笔（还伏笔，你以为写小说啊！）。 本篇教程会用到的图片资源到这里下载：http://download.csdn.net/detail/musicvs/7392931 创建2张连续的背景图片 要实现循环滚动的背景，需要2张相同的图片实现，图",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "date": "2014-05-02 20:14:34"
+  },
+  {
+    "id": 804,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第二篇——创建物理世界",
+    "content": "这篇我要给大家介绍两个知识点： 1. 创建游戏物理世界 2. 没了（小若：我噗） 害怕了？不用担心，这太简单了~！ 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/804 文章来源：笨木头与游戏开发 3.0新亮点，史上最简单的物理引擎 在Cocos2d-x3.0里使用物理引擎，会很有快感，因为很多繁琐的东西它都帮我们封装好了。 那么，我要开始创建游戏的关卡场景了，大家跟紧了。 我们给关卡场景命名为TollgateScene，头文件如下： [cce_cpp] #ifndef TollgateScene_H #define TollgateScene_H #include \"cocos2d.h\" USING_NS_CC; class TollgateScene : public Layer { public: ~TollgateScene(); static Scene* scene(); CREATE_FUNC(TollgateScene); virtual bool init(); virtual voi",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "date": "2014-05-02 20:08:14"
+  },
+  {
+    "id": 797,
+    "title": "Cocos2d-x3.0游戏实例之《别救我》第一篇——前言",
+    "content": "我们能学到什么？ 这是一个很简单的游戏，但是用到的东西比较多（对新手而言），起码，对于一个实例来说，它涉及的确实有点多。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/797 文章来源：笨木头与游戏开发 通过这个游戏实例，可爱的你（小若：那不可爱的人呢？），可以学到以下知识点： 1. Cocos2d-x3.0物理引擎的简单使用 2. 读取Json文件作为怪物和物品配置 3. 利用Tiled地图实现可视化关卡编辑（很强大，我特别喜欢这个部分） 4. 使用Cocostudio快速创建UI 5. 吐槽 6. 利用前面五点知识制作一个简单的物理休闲游戏，缺一不可~ （小若：吐槽又是什么啊？别乱入一些奇怪的东西好吗？） 以上只是最主要的知识点，零散的知识点还很多很多： A. 无限循环滚动的背景 B. 没了。 （小若：你**（和谐）啊！） 唠叨一下 我很难描述这是一个什么游戏，特别是，当讲解到关卡编辑器的部分时，大家一定会和我一样的感觉——这可以是任何游戏。 如果大家想先看看这个游戏倒底是怎样的话，欢迎下载：htt",
+    "categories": [
+      "3.0游戏实例《别救我》",
+      "Cocos2d-x",
+      "Cocos2d-x3.0"
+    ],
+    "date": "2014-04-29 20:31:32"
+  },
+  {
+    "id": 784,
+    "title": "[笨木头“创业”路]No.12 独立游戏开发者！",
+    "content": "本文来自笨木头与游戏开发博客，原文地址：http://www.benmutou.com/archives/784 又好久没有写“创业”路的故事了，这段时间都比较忙，连教程都没写了，这次，就继续把“创业”路给写完吧。 以下内容，都是过去式。 就这样，我在这家公司工作了20天左右，因为当时开发的是手机卡牌网游客户端，对我来说，再熟练不过了，说白了就是写UI。真正遇到的难点很少，当然，难点都由技术总监接下了。 但我依旧从这公司的代码里学到不少东西，我简直就像海绵一样，想榨干所有的知识。 然而，我慢慢地发现，我心里有一种微妙的感觉，这种感觉在排斥我现在的生活。它好像在告诉我，不管我变得多牛，我永远都只能这样生活下去：赶进度、加班、重复地写代码。 看着我那牛叉的技术总监(在这里没有任何贬低的意思，我很尊敬他)，一个6、7年游戏开发经验的牛人，也摆脱不了天天加班的日子（即使可以赚到很多钱）。我发现，原来，我要的生活不是这样的。 我爱上写代码的原因是：它很神奇。 而这样每天重复地写功能，没法让我觉得神奇了。俗话说得好，当兴趣变成了工作，那就不再是兴趣了。 我就像是一个突然梦醒的人，心里面酝酿着一个想",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2014-03-24 22:16:07"
+  },
+  {
+    "id": 782,
+    "title": "[笨木头“创业”路]No.11 新旅程？",
+    "content": "本文来自笨木头与游戏开发博客，原文地址：http://www.benmutou.com/archives/782 又好久没有写“创业”路的故事了，这段时间都比较忙，连教程都没写了，这次，就继续把“创业”路给写完吧。 以下内容，都是过去式。 说起来，这家新公司和我之间算是一种缘分吧。 那时候离开了那个让我经历了各种心酸血泪的创业团队后，我给自己放了个大大的长假，在家当一个月的啃老族。 在这个长假结束前的一个多星期，我收到了一封邮件，来自一位HR，招聘Cocos2d-x手游开发。我纠结了挺久，想着继续享受假期，但又出于好奇和礼貌，我回复了邮件并大致说明了自己的一些经历和技能。然后，我收到了面试通知。 这是一家创业公司，但某种意义上来说，已经是成功了，人员已经扩展到30、40人左右。对比起自己以前参与的创业团队，真是各种羞愧，别人一年不到就成功了，我们耗了两年却越来越衰弱。 说到面试，我穿了那长袖白色浅竖纹寸衫和蓝色牛仔裤，曾经，这是我最喜欢在她面前穿的搭配。虽然我只是抱着去见识一下的心态来面试的，但我也很重视。 来到公司，有种小小的失落感，办公室不太大，比之前的公司稍微大一点点，但是紧凑很",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2014-03-24 22:11:22"
+  },
+  {
+    "id": 774,
+    "title": "《武魂王-轮回篇》总算是发布了~！",
+    "content": "这款游戏，我已经记不清是什么时候开始开发了，只是知道大概有3、4个月，过年期间暂停了10几天。 这款游戏，依旧是走《守护裙子OL》的路线（剧情为主的RPG网游），不过，做了很多改进，当然功能也多了很多。 剧情就更多了，预计是100章的剧情（守护裙子OL只有9章剧情）。 这也算是我的一次突破吧，虽说《守护裙子OL》也是我个人独立完成的一款网游，但很明显，它太过简单。 《武魂王-轮回篇》相对而言，就复杂一些，不管是剧情、数值还是功能。 不管如何，也许大家喜欢它，又或许讨厌它，它终究是我目前的极限了。 下载地址 下载地址1：360助手 下载地址2：木蚂蚁 下载地址3：GooglePlay 下载地址4：百度一下，武魂王 轮回篇 论坛专区(其实就是摆设而已)：http://bbs.benmutou.com/forum.php?mod=forumdisplayfid=44 官方Q群（和守护裙子同一个群）：330125546 截图 以下内容纯属个人唠叨： 服务端 在技术方面，也算是新尝试，服务端用的是FireFly，可惜当时资料太少，我只能用到最基础的功能（但是也够用了）。 FireFly号称分布式",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2014-02-24 20:15:03"
+  },
+  {
+    "id": 771,
+    "title": "认领 安智市场 的游戏",
+    "content": "经过一些波折，终于搞定安智市场的开发者审核了，但是提交不了我的游戏，貌似有人上传了。 想认领一下，不知道在这里发表一下声明有没有作用，总之，试试吧 游戏开始画面都有写着我的博客地址（www.benmutou.com），这个应该能做为证明吧，嘿嘿。",
+    "categories": [
+      "其它"
+    ],
+    "date": "2013-12-06 17:30:54"
+  },
+  {
+    "id": 757,
+    "title": "[笨木头 自由开发路]No.1 移动广告平台小点评",
+    "content": "我一个突然的决定，就走上了自由开发者的光明道路了。 算了算，也有5个月了，期间也不能说有各种心酸，各种折腾倒是有的。 在这里就不说其他的了，就想说说我用过的各个广告平台（移动，游戏，Android），分享一下使用心得，供后来者参考。 仅供参考，参考，知道吗，说错不能怪我~（各种预先推卸责任） 以下所有介绍仅限于Android平台。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/757 1.盒子平台 这是我第一个使用的广告平台，它有一个很大的特点，就是有CPM插屏广告（CPM就是按展示计费，展示一次你就有收入，一次是很少的，累积起来才多）。 到目前为止，它的CPM插屏是8元/千次。 一开始很好用，我的一个单机游戏（一直在上架，但是没有放广告），加了盒子插屏之后，刚放上去没几天，每天都能有10元的收入。这对我来说真的很不错了，再后来这游戏的收入就稳定在30每天（偶尔40）。 尝到甜头之后，我就又在另外2个游戏加入了它的插屏广告。 然后，40、50、60、70、90、100，我3个游戏总收入每天就这么一直涨，",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2013-11-27 21:18:06"
+  },
+  {
+    "id": 751,
+    "title": "发现的一款比较好用的CSV编辑器：Ron's Editor",
+    "content": "一直开发手游用的最多的配置文件还是CSV，主要是用习惯了，也就懒得换了。 而且这种逗号分隔符的形式，应该是最简洁的格式了吧（好吧，之一）。 编辑CSV文件最方便的其实还是Excel，一直用金山的Office来编辑，但是有个缺点，这样编辑完之后的CSV文件格式不是utf-8的。 我也不知道office能不能把格式默认改为utf-8（因为懒，所以就不去折腾了）。 今天突然奇想，找找看有没有专门的CSV编辑器，结果...还真有= = 大部分CSV编辑器对utf-8格式的支持好像都不太好（又或者我下载的版本有问题吧）， 最终找到了这个：http://www.ronsplace.eu/RonsPlace.aspx 名为【Ron's Editor - Ultimate CSV Editor】 对utf-8支持得很要，虽然编辑起来没有Excel强大，但是我终于不用每次编辑之后就拿个文件编码转换器去转换格式了（那很烦人的~！） 在这里记录一下，因为今天找了太多编辑器了，怕混乱了。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archi",
+    "categories": [
+      "Cocos2d-x"
+    ],
+    "date": "2013-11-25 15:56:24"
+  },
+  {
+    "id": 746,
+    "title": "[笨木头Cocos2dx045]让输入框在Android上全屏显示",
+    "content": "笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/746 正文： 1. 问题 关于Cocos2d-x在Android上的输入框，我忍了好久了，一直没去折腾它，觉得无关紧要。（小若：等等，你倒底想说什么？） 我想说的是，默认情况下，我们在Android上打开的输入框是这样的： （小若：很好啊，完美~） 才怪啊~！我本来也以为没什么，我以为正常人都会在输入完之后点击那个回车按钮。 结果，我的游戏玩家有很大一部分都会在输入完之后点击返回键~！返回键！于是他们就永远都输入不了内容了，于是我就这样失去了一个又一个用户了。 2.解决方案 没关系，我可是Android手游出身的，输入框什么的我可是折腾过的（各种炫耀~）。 要解决这个问题，很简单，Cocos2d-x移植到Android时，是有一堆Java文件的（org.cocos2dx.lib记得吧？），我们找到Cocos2dxEditBoxDialog.java文件，接下来，很重要的一步，千万不要做错了： 打、开、它~！ 嗯，然后就没什么重要的了，在181行，找到下面这",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-11-19 08:40:51"
+  },
+  {
+    "id": 742,
+    "title": "[笨木头Cocos2dx044]3.0alpha0版本移植Android后运行黑屏的解决方法",
+    "content": "最近在研究Cocos2d-x3.0alpha0版本，虽然还不是正式版，不过倒是蛮想玩一玩的。 试写了一些代码，感觉还可以，就是类名字什么的改动太大，要想复用以前的代码还真是有点纠结（好吧，也许可以批量改）。 OK，这次就不唠叨了，相信不少人都会遇到在Android上跑的时候会黑屏。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/742 正文： 百度了很久，在官方论坛也没有找到类似的情况。 查看打印日志，最后发现凶手的就是 nativeactivity.cpp的日志： engine_draw_frame : No display. 好，换了一下搜索的关键词，结果还是在官方论坛找到了，原文如下： http://www.cocos2d-x.org/forums/6/topics/33597?r=35749#message-35749 （小若：不想看英文！） 好吧，我也不想写英文，最终在上面的帖子里找到的有用的连接如下： https://gist.github.com/michaelcontento/66653",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-11-14 10:54:28"
+  },
+  {
+    "id": 739,
+    "title": "[笨木头“创业”路]No.10 结局和启程",
+    "content": "本文来自笨木头与游戏开发博客，原文地址：http://www.benmutou.com/archives/739 好久好久没有写关于这次“创业”经历的事情了，我之前说过，我有预感公司会在三个月内灭亡。没错了，事实确实如此，在我写完上一篇创业路的文章2个月后，公司正式解散了。 这是必然的，很早就能看出来的，只是大家都不愿承认这个事实罢了。 原因是什么？是技术实力不行？是经验不足？是遭到背叛？不呢，是错过了时机。又或者，都是。 而我，作为一个个体，我只能用自己的偏见去解释这件事情。我认为，一个团队的失败，究其原因，必定是领导者的失败。我们赋予你作为领导者的权力，不是因为你给得起我们那微薄的工资（甚至0工资），也不是因为要给你那虚无的荣誉感。我们给予你的是一种信任，也是一种要求，领导者是最累的，而不是最享受的。 我们的创始人，我们的CEO，做过各种错误的决定，出现过各种不负责的行为；我们的技术也出现过各种不按时完成功能，或者写出各种Bug的功能。我们相互之间都谅解了大家，而我也认为，我们总得给一个机会别人，让他得以成长。 可我一次又一次地看着你做了错误的决定，而你一次又一次地重复做相同的错误",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2013-11-14 09:00:25"
+  },
+  {
+    "id": 735,
+    "title": "[笨木头FireFly 03]完整的服务端和客户端通信",
+    "content": "#PS： 其实这篇文件是2013.10.12写完的，一直没发布，因为从那天起，我又跑回去折腾客户端的东西了（打算用Cocos2d-x3.0做下一个游戏），以及我的老游戏的维护和更新。总之各种借口（小若：不要这么直白好吧！你好歹也要说是‘原因’啊什么的，直接就说是‘借口’，是闹哪样！）。 然后现在客户端网络的基础模块写好，要通信了，于是我又回来折腾FireFly了，祝我好运吧= = 然后今天看了一下官方的《视频教程3》，刚好里面介绍的部分内容和我这篇文件有点关系，来个互补好了~顺便吐槽一下，官方视频教程的视频，没声音倒还是能接受的，可是...画质不是一般的模糊，我根本看不清，只能看文档和代码O_O! #PS 结束 这几天真是各种坏事接踪而来，先是我的游戏玩家下载广告的概率太大，被广告平台判断为作弊，被坑了2周的收入。于是我下定决心，不再以广告作为重点盈利手段了。游戏做得好，他们说我作弊，游戏做得不好，赚不到钱= = 专心做网游吧 然后是VS2012环境出了问题，导致一系列问题出现... 然后一直在调试FireFly的源码了解通信流程看得头晕（小若：这它喵的算哪门子的坏事啊？） O_O!总",
+    "categories": [
+      "其它"
+    ],
+    "date": "2013-11-07 16:01:56"
+  },
+  {
+    "id": 727,
+    "title": "[笨木头FireFly 02]入门篇_客户端发送请求，服务器处理请求",
+    "content": "好，经过上一篇不权威的讲解，大家已经能轻易地让客户端和服务端连接起来了。 但是，仅仅是连接了，可它们俩不说话不交流，那游戏就玩不起来了，玩不起来那我就赚不到钱..啊不是，玩不起来那玩家就不能开心了，钱是...啊不！玩家是最重要的嘛~不能让玩家不开心（小若：好好好，看出来了，钱是最重要的是吧） 好~！这次木头就和大家一起见证客户端和服务端的第一次交谈吧~！ 声明： 本教程基于FireFly1.2.2版本、Python2.7版本。 本教程面向Python和FireFly初学者中的初学者（比如我） 本教程由笨木头花心贡献，花心？不，是用心~！ 转载请注明原文地址：http://www.benmutou.com/archives/727 1. Pythone struct模块 Struct模块主要是用来对数据进行打包和解包的，和LiberateFactory不一样，LiberateFactory已经说了，是协议工厂，当然就主要是对协议进行封装和解析。而struct是对更底层的数据操作，是把数据打包成二进制的形式，然后在网络中传输。解包也一样，把二进制形式的数据解包成Pythone需要或者说比较",
+    "categories": [
+      "其它"
+    ],
+    "date": "2013-10-08 23:18:07"
+  },
+  {
+    "id": 718,
+    "title": "[笨木头FireFly01]入门篇1·最简单的服务端和客户端连接",
+    "content": "最近一直在写游戏，几乎没有来写教程了，打算放慢一下脚步，学学新东西。 那为嘛我要学FireFly呢？ 之前我自己写了一个网络游戏，服务端和客户端都自己写，虽然运行起来没什么大碍，但毕竟我对服务端没什么经验，自己写的服务端安全性和扩展性不太行，稳定性自然也不靠谱(即使它还没有出现问题)。 正好，最近FireFly这个开源的游戏服务器引擎出来了，虽然还不太完善，但是觉得还不错，起码我用是足够了~无奈，FireFly的文档和demo奇缺，虽然有几个大项目的demo，但对于初学Python和FireFly的我来说，我更需要的是文档以及小demo。 好吧，别人是免费贡献的，我不能要求太多，现在只好自己硬着头皮一点点研究了。 声明： 本教程基于FireFly1.2.2版本、Python2.7版本。 本教程面向Python和FireFly初学者中的初学者（比如我） 本教程由笨木头花心贡献，花心？不，是用心~！ 转载请注明原文地址：http://www.benmutou.com/archives/718 既然FireFly是游戏服务器引擎，那自然就是用来开发网游了，本教程的目的是使用它，不是解剖它，所",
+    "categories": [
+      "其它"
+    ],
+    "date": "2013-10-08 11:46:31"
+  },
+  {
+    "id": 710,
+    "title": "《萌·守护裙子2》吐槽第2季，噗",
+    "content": "本来《萌·守护裙子》是花了一周时间的小游戏，不打算更新啥的。 没想到，最近有不少朋友说期待续集，于是乎，我满足大家的要求，出了续集，嘿嘿。 下载地址1（木蚂蚁）：http://www.mumayi.com/android-384657.html 下载地址2（GooglePlay）：https://play.google.com/store/apps/details?id=mutou.game.fightgirl2 OK，上图。",
+    "categories": [
+      "其它"
+    ],
+    "date": "2013-08-19 20:02:59"
+  },
+  {
+    "id": 700,
+    "title": "《守护裙子OL》上线，\"神级\"吐槽RPG网游，哈哈",
+    "content": "这是我第一次自己动手写完整个手机网游，包括客户端、服务端代码编写，还有UI设计、剧情编写、关卡配置，以及云服务器租用和配置。虽然，素材不是我的。 各种心酸，不过没有一天感觉到累，这才是做游戏的感觉，把自己喜欢的东西写出来。 至于源码，先让游戏运行一段时间，再考虑出售吧，嘿嘿。 下载地址1（木蚂蚁）：http://www.mumayi.com/android-384792.html 下载地址2（腾讯）：http://android.myapp.com/android/appdetail.jsp?appid=10144696g_f=990935 下载地址3（GooglePlay）：https://play.google.com/store/apps/details?id=mutou.game.fightgirlol 好，不罗嗦，上图。",
+    "categories": [
+      "Cocos2d-x"
+    ],
+    "date": "2013-08-19 19:53:31"
+  },
+  {
+    "id": 692,
+    "title": "[笨木头Cocos2dx043]小玩半透明遮罩第01篇:添加半透明遮罩，屏蔽下层点击事件",
+    "content": "[笨木头Cocos2dx043]小玩半透明遮罩第01篇:添加半透明遮罩，屏蔽下层点击事件 呼呼，我现在是各种兴奋紧张恨，好久没有写教程了，不知道功力下降没（小若：不会的，不会下降的~已经最低了）。 今天我个人网游处女作内测了，欢迎关注：http://bbs.benmutou.com/forum.php?mod=viewthreadtid=1535 也正因为游戏内测，今天不会开发，所以心情比较舒畅，于是就来写教程了~ 这次我们来玩玩半透明遮罩吧，就是那种比如游戏中点了一个按钮，要等待服务器响应，然后就黑屏等待。O_O!不是黑屏，就是半透明的黑屏，盖在游戏最上层。 1. 新建项目 好，先新建一个HelloWorldScene项目，自动生成的HelloWorldScene场景不要删除，然后运行成功，这个过程太复杂了，我就不解释了，效果： 2. 添加透明层 先来实现第一步吧，随便加个透明层，随便取个名字，就叫做ShadeLayer吧，我查了字典的~ 头文件： [cce_cpp] #ifndef ShadeLayer_H #define ShadeLayer_H #include cocos2d",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-08-14 21:26:41"
+  },
+  {
+    "id": 673,
+    "title": "《萌·守护裙子》配套教程-3-场景管理器(收费)",
+    "content": "《萌·守护裙子》配套教程-3-场景管理器(收费) 版权信息： 《萌·守护裙子》代码和教程为笨木头原创作品，代码和教程都不免费提供，请勿转载。 尊重版权，等于尊重你自己，尊重劳动成果，拒绝当码农，从自身做起，嗷。 这次我们要来讲解一个既简单又使用的技巧——场景管理。 场景切换很简单，直接调用CCDirector的replaceScene函数就可以了，为什么非得多次一举弄个管理器？（小若：为了展示我们严密的逻辑思维！）嗯嗯...啊！个屁啊！ 1. 统一货币 古代帝王秦始皇为什么要统一货币？因为方便管理，为什么方便管理，这就说来话长了。话说，公元...（小若：停！你妹！我不听历史！） 言归正传，我们知道，切换场景的时候可以加入特效，而我习惯让这些特效统一，比如切换场景都是当前场景变暗，然后新场景再出现。利用场景管理器，就可以统一这些特效。 使用场景切换特效很简单，如下代码： 以上为本篇内容预览，如果你对本篇内容感兴趣，请移步淘宝链接，购买本篇文章（价格0~2￥）： http://item.taobao.com/item.htm?spm=686.1000925.1000774.6.OZJy5I",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-07-04 09:04:12"
+  },
+  {
+    "id": 669,
+    "title": "《萌·守护裙子》配套教程-2-全局参数简析(收费)",
+    "content": "《萌·守护裙子》配套教程-2-全局参数简析(收费) 版权信息： 《萌·守护裙子》代码和教程为笨木头原创作品，代码和教程都不免费提供，请勿转载。 尊重版权，等于尊重你自己，尊重劳动成果，拒绝当码农，从自身做起，嗷。 本节对各个模块做一个简单的解析，好让大家对代码结构有个初步了解。 全局参数里包含了游戏常量、宏定义、资源路径定义、玩家数据、游戏世界数据。 1. 游戏常量 我们程序界有一种数字，它被称之为魔鬼数字，魔鬼数字是由那些爱偷懒的程序员制造出来的。什么是魔鬼数字？就是你代码里突然跑出一个数字，这个数字很突兀，它实际上是有意义的，但是看起来却是毫无意义。 比如下面的代码： 以上为本篇内容预览，如果你对本篇内容感兴趣，请移步淘宝链接，购买本篇文章（价格0~2￥）： http://item.taobao.com/item.htm?spm=686.1000925.1000774.6.OZJy5Iid=21277379463",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-07-04 09:02:52"
+  },
+  {
+    "id": 667,
+    "title": "《萌·守护裙子》配套教程-1-程序结构简析(收费)",
+    "content": "《萌·守护裙子》配套教程-1-程序结构简析(收费) 版权信息： 《萌·守护裙子》代码和教程为笨木头原创作品，代码和教程都不免费提供，请勿转载。 尊重版权，等于尊重你自己，尊重劳动成果，拒绝当码农，从自身做起，嗷。 1. 前言 好了，这是木头的收费教程系列开篇之作，本系列教程默认读者已经有了Cocos2d-x的基础。还没有基础的朋友，网络上很多优秀的教程，木头的博客上也有不少教程：www.benmutou.com。 2. 程序结构 作为第一篇内容，木头先给大家介绍守护裙子的程序结构，如图： 以上为本篇内容预览，如果你对本篇内容感兴趣，请移步淘宝链接，购买本篇文章（价格0~2￥）： http://item.taobao.com/item.htm?spm=686.1000925.1000774.6.OZJy5Iid=21277379463",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-07-04 09:00:59"
+  },
+  {
+    "id": 657,
+    "title": "《萌·守护裙子》详细开发教程-前言",
+    "content": "《萌·守护裙子》详细开发教程-前言 嗷，木头的Cocos2d-x个人作品《萌·守护裙子》源码出售也差不多有一个月了，本来只是抱着玩玩的心态把源码放到淘宝去卖，所以随便定了个便宜的价格。没想到一个月的商品浏览量虽然只有300多（小若：噗，还不如你的一篇文章阅读量多），但是购买量却有8个，虽然很少，但是这个比率我还是蛮欣慰的。 这证明了一个问题，我们的开发者当中，还是有很多人懂得尊重劳动成果。当然，我不是想在这里表现我的伟大，我也喜欢开源，但同时我也喜欢用自己的知识赚钱，这不冲突。 虽然我的《萌·守护裙子》源码称不上是什么大神级作品，但是，我很用心去开发这个游戏，它的代码质量不会差。而且我有个坏习惯，那就是喜欢写注释，嗷~！ 鉴于此，我打算写一系列的教程，介绍《萌·守护裙子》的详细开发过程。这将耗费我大量的时间，我写一篇1千字左右的教程，从编写到排版到发布，要耗费我至少2个小时的时间。所以我不打算免费提供，最近在为成为自由开发者做准备，也许，这系列教程会成为我的开始。 再一次声明，本系列教程将推翻木头以往的教程理念，不再免费，不再开源。（小若：那我帮你吐槽，我也要收你费~嗷） 教程会按章节",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-07-01 09:39:50"
+  },
+  {
+    "id": 633,
+    "title": "Cocos2d-x小游戏《萌·守护裙子》完成第一版",
+    "content": "这游戏本来打算写完，然后拿着去面试的，结果提前找到工作了，所以部分设想的功能都没有做。 用Cocos2d-x做的，纯C++，比较初级，素材是扒的，嘿嘿。 名称：萌·守护裙子 类型：角色扮演+防守 上线平台：豌豆荚 下载地址（豌豆荚）：http://www.wandoujia.com/apps/mutou.game.fightgirl 下载地址（网盘）：http://www.bego.cc/file/22167048 源码出售（优惠中）：点击查看",
+    "categories": [
+      "其它"
+    ],
+    "date": "2013-06-05 21:05:15"
+  },
+  {
+    "id": 627,
+    "title": "【笨木头Lua专栏】基础补充01：巧说table的几种构造方式",
+    "content": "之前对于Lua的研究都是纸上谈兵，没有真正的项目练手，现在公司的项目基本上都是用Lua开发，是时候补充一下我那蹩脚的Lua知识了。 基础数据类型、表达式、循环结构什么的我就不说了，这么简单的东西说了也要被大家喷。 今天我想说说table的几种构造方式。 本文来自[笨木头与游戏开发]，笨木头花心奉献，花心？不呢，是用心。 转载请注明，原文地址：http://www.benmutou.com/archives/627 0.Lua调试工具——LuaEditor 首先，如果你是第一次接触Lua，请补充一下Lua的最基本之中的基础语法（小若：O O！），然后下载一个LuaEditor工具，用来查看Lua执行效果，当然也可以调试，本篇内容不解释这个工具。下载地址：http://www.bego.cc/file/22357242 当然，也可以百度一下。 1.什么是table？ table是Lua最复杂最强大的数据结构，Lua本身并不是面向对象语言，但是对面向对象中毒比较深的程序员，可以借助table\"完美\"地模拟面向对象编程。最简单地，我们可以把table理解为数组，最复杂的，我们可以把table理",
+    "categories": [
+      "Cocos2d-x Lua"
+    ],
+    "date": "2013-06-04 23:04:55"
+  },
+  {
+    "id": 596,
+    "title": "【笨木头Cocos2d-x 042】一个函供应多个菜单回调——UserObject自定义数据",
+    "content": "笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/596 正文： 1.Java的菜单点击事件实现方式 我是个Java中毒比较深的人，所以，一般菜单或按钮的点击事件我都是传一个匿名内部类进去，而且还能支持参数，类似这样： [cce_cpp]exitBtn1.setOnClickListener(new ExitEvent(0) ); exitBtn2.setOnClickListener(new ExitEvent(1) ); exitBtn3.setOnClickListener(new ExitEvent(2) ); Class ExitEvent { ExitEvent(int iCode) { } }[/cce_cpp] 我有三个按钮，分别对应不同的回调事件，但是我只需要使用同一个类去做处理。 2.一个简单的需求 所以，在Cocos2d-x里我也想类似这么用，假设我有这样一个需求：有五个菜单和一个标签，点击不同的菜单，标签就显示不同的内容。 效果如下图所示： 3.一般的做法 正常情况下，我们会这么做，",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-05-27 19:19:33"
+  },
+  {
+    "id": 573,
+    "title": "创业，你真的明白“优化”和“赶时间”的真正概念吗？",
+    "content": "本文来自笨木头与游戏开发博客，原文地址：http://www.benmutou.com/archives/573 在两年的创建经历中，我对“优化”和“赶时间”这两个词教训特别深刻。 1.赶时间，还是被时间赶？ 赶时间是指在正确的目标指引下，整个团队辛苦奋斗，把预定的工作任务尽快完成，这样才能不被快速发展的市场抛弃。 - 被时间赶是指因为市场发展迅速，只想着快点出产品而盲目地制定目标， 走一步算一步，但每天都必须加班，否则就认为是松懈。 这是一种自我陶醉的表现，用勤奋来掩盖自己的不作为。 2.优化，还是修改？ 不管是策划还是运营，甚至是开发，都常常会说一句话：功能要修改是很正常的事情，一个功能不可能永远都不修改的。 - 这句话本身是很正确的，但是却被能力不足的策划滥用。 因为策划的能力不足，他无法也懒于深思熟虑，因而草草起了案子，就要求开始开发。 当他发现自己策划的功能并不太好时，就会以优化为借口，修改功能。 因此，常常会发生原本计划一个月完成的任务，会不知不觉地延迟到2个月甚至更多。 优化，是对既有功能的良性修改，每一次优化都会让功能变得更加优秀，即使不能变优秀，也是以此为目的的修改。",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2013-05-15 10:10:37"
+  },
+  {
+    "id": 568,
+    "title": "博客推广之游戏推荐：《神女控》V1.4.1",
+    "content": "一款和《我叫MT》很像的游戏：《神女控》。 我是先玩的这款然后再玩《我叫MT》，发现玩不下去，看来这类游戏只能玩一次？ 这款游戏其实还不错，能让我坚持玩一周，这已经很久了，我通常一个游戏玩超过2天就算是比较吸引我的游戏了。 啊，话说，大掌门让我玩了2周~ 下载地址：http://www.bego.cc/file/19832816 因为不是国内的游戏，更新速度貌似更不上，这是差不多7天前测试过的版本，能玩。 但是如果游戏更新了，可能就要求你更新版本，但是我们是更新不了的。",
+    "categories": [
+      "推广"
+    ],
+    "date": "2013-05-09 17:19:22"
+  },
+  {
+    "id": 551,
+    "title": "[笨木头“创业”路]No.9 分裂状态",
+    "content": "本文来自笨木头与游戏开发博客，原文地址：http://www.benmutou.com/archives/551 最近不少人问我想不想合作（让我跳槽），其中有不少猎头，也有不少因为写教程而认识的朋友、前辈。 我全都婉拒了，不是不会心动，只是，我说过，我是一个不轻言放弃的人，即使，这个团队快要垮了，我也会坚持到垮为止。 在这个创业团队快两年了，意味着我做一个项目做了快两年了，而这项目却还没有真正推广过，只是小范围的内测和公测。 是的，我们的游戏确实功能不多，但真的是不多吗？ 不是的，起码有四分之一的功能被砍掉了，至少是2个月的开发量。 今天策划又我讨论修改一个功能，虽然是小修改，但是，很明显的就是，把这个功能又改回原来的模式。 我很生气，既然现在要改回原来的模式，当时是为什么要改成现在这个样子的？ 两年了，我几乎有70%的时间都处在“改”的状态。 就算我脾气再好，也真的要到极限了。 说实在的，我很累很累，是心累。 团队的心也开始分裂，每个人心里都有自己的想法。 是啊，两年了，可以说是什么都没有赚到，是个人都会累吧。 今天虫总（一位教会我“分享使人进步”的前辈）在论坛发了一个感谢帖，很煽情",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2013-04-26 22:18:36"
+  },
+  {
+    "id": 537,
+    "title": "博客推广之Cocos2d-x战争迷雾效果源码",
+    "content": "Cocos2d-x战争迷雾效果源码 教程地址： 战争迷雾效果 第1章_要探索，不要地图全开！ 战争迷雾效果 第2章_先把地图加进来 战争迷雾效果 第3章_准确地获取屏幕上的瓦片位置 战争迷雾效果 第4章_真正的迷雾来了！ 效果预览： 下载地址：http://download.csdn.net/detail/musicvs/5232131",
+    "categories": [
+      "推广"
+    ],
+    "date": "2013-04-16 12:43:58"
+  },
+  {
+    "id": 502,
+    "title": "战争迷雾效果 第05章 项目源码下载",
+    "content": "笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/502 正文： 关于战争迷雾效果的项目源码一直没有放出来，原因是...我找不到了~！ 我以为在我的笔记本电脑里，结果一看，是旧的代码，于是我以为在我公司电脑里... 结果早上过来一看，又是旧的~！ （小若：不知道为什么，听到这个消息我超级开心~！） 于是，我终于猜到了，是我家里的电脑里~！ 可是我家里的电脑没有显示器~！ （小若：嗷~~~活该~！） 于是今天早上我就自己再写了一次了，废话结束了。 下载地址1（网盘）：http://www.bego.cc/file/18962270 下载地址2（CSDN）：http://download.csdn.net/detail/musicvs/5232131 效果如下：",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-04-08 09:43:53"
+  },
+  {
+    "id": 485,
+    "title": "【笨木头Cocos2dx 041】战争迷雾效果 第4章_真正的迷雾来了！",
+    "content": "错过了前面章节？ 没关系，传送门在这： 战争迷雾效果 第1章_要探索，不要地图全开！ 战争迷雾效果 第2章_先把地图加进来 战争迷雾效果 第3章_准确地获取屏幕上的瓦片位置 经过这么多铺垫，我们要来正式编写实现迷雾效果的代码了。 （小若：快点开始写，别唠叨了！） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/485 正文： 1. 复习一下 还记得我们的理论基础吗？点击某个瓦片后，修改瓦片的某个顶点值，同时修改附近瓦片的顶点值： 1）当前瓦片右下角的顶点值设为4 2）当前瓦片右边的瓦片的左下角顶点值设为8 3）当前瓦片下方的瓦片的右上角顶点值设为1 4）当前瓦片右下方的瓦片的左上角顶点值设为2 （小若：好混乱！但是我看懂了） 我们先来实现第一步，修改当然点击的瓦片的顶点值。看以下代码： [cce_cpp] bool HelloWorld::ccTouchBegan( CCTouch *pTouch, CCEvent *pEvent ) { CCPoint tiledMapPos = getMapTiled",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-04-03 22:22:27"
+  },
+  {
+    "id": 482,
+    "title": "【笨木头Cocos2dx 040】战争迷雾效果 第3章_准确地获取屏幕上的瓦片位置",
+    "content": "错过了前面章节？ 没关系，传送门在这： 战争迷雾效果 第1章_要探索，不要地图全开！ 战争迷雾效果 第2章_先把地图加进来 本节我们还是要做一些铺垫，不过这很有意思，我们来试试点击屏幕，获取所点击的瓦片格子的位置。 （小若：听不懂啊！） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/482 正文： 1. 什么是瓦片的坐标 这么说吧，前一个小节我们创建了一张10x10的TMX地图，我们所说的瓦片格子的位置，就是指这100个格子里的位置，瓦片格子的位置用二维上的一个点来表示。 （小若：喂，还是不懂！） 最后，看下图，大家一定就懂了： 比如，左上角的瓦片格子的坐标就是(0, 0)。 （小若：噗！你早点放图片嘛） 2. 进入正题 好了，开始编码吧！ 我们要修改HelloWorldScene.cpp的ccTouchBegan函数： [cce_cpp] bool HelloWorld::ccTouchBegan( CCTouch *pTouch, CCEvent *pEvent )!--?xml:namespace",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-04-03 21:58:12"
+  },
+  {
+    "id": 468,
+    "title": "【笨木头Cocos2dx 039】战争迷雾效果 第2章_先把地图加进来",
+    "content": "错过了前面章节？ 没关系，传送门在这： 战争迷雾效果 第1章_要探索，不要地图全开！ 正文： 现在我们要加载一张TMX地图，这张地图有点复杂，大家打起精神。 （小若：吼！） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/468 1. 创建TMX地图 现在，打开我们的Tiled地图编辑器，新建一个地图：【新建】-【新建文件】，地图宽为10，地图高为10。 然后将瓦片图素拖动到图块区域，添加图块，宽高分别为128像素，边距和间距都为0： 然后，最重要的一步来了！选中第一个图素，涂满地图，效果如下： （小若：喂，什么意思？涂满地图了？为什么还是空白的！） 于是，我们完成了这张复杂的TMX地图了，好好保存起来吧！【文件】-【保存】。 （小若：你是不是故意忽略我的啊！） 啊，对了，图素图片如下： 图素在TMX格式地图中按从左到右，从上到下，从1开始编号，如下图所示： 由于图素1是全透明的，所以我们画出来的地图看起来是空白的，实际上全都填充了图素1的瓦片。 （小若：我就知道有问题！） OK，我把地图文件保存为“c",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-04-03 09:01:22"
+  },
+  {
+    "id": 455,
+    "title": "【笨木头Cocos2dx 038】战争迷雾效果 第1章_要探索，不要地图全开！",
+    "content": "这次我要介绍一个很好玩的东西——战争迷路。 （小若：喂！迷路？） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/455 其实这么解释不太好解释，我们举个例子。魔兽争霸相信大家都玩过，游戏开始时，地图上到处都是黑蒙蒙的一片，什么都看不到，我们必须一边走一边探路。 （小若：我知道了！不就是地图探索嘛！） 就是这样，我们来看看下图就更加清楚了（图片资源来自网络）： （小若：我说，你早点放图不就好了，为什么要解释这么多！） 我们即将用Cocos2d-x的CCTMXTiledMap来实现这个功能。 （小若：好棒！） 但是，在这之前，我们得先补点数学理论知识。 （小若：我讨厌数学！） 1. 版权问题 在这之前，我必须要声明，战争迷雾的制作原理参考了以下这篇文章： http://bbs.9ria.com/thread-157487-1-1.html 这篇文章写得很好，大家感兴趣的可以看看。本教程使用到的理论基础和素材均来自这篇文章，特此声明。同时，十分感谢网友的无私奉献。 2. 神奇的数学 我们来看看一张瓦片地图的",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-04-02 22:14:45"
+  },
+  {
+    "id": 380,
+    "title": "Cocos2d-x官方Demo中英文对照——TransitionsTest",
+    "content": "之前对官方Demo的例子有点混乱，实在是太多了，每次想看看Cocos2d-x是否支持某个功能，都要点一遍官方例子的程序。所以我就把目录索引出来，并加上中文翻译了。 当然了，这是蛮久之前整的，有些例子自己也还没有跑过，也许有翻译得不对的地方，仅供参考，以实际效果为准。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/380 CCTransitionJumpZoom 原场景缩小弹出，新场景放大弹入 CCTransitionProgressRadialCCW 逆时针切换 CCTransitionProgressRadialCW 顺时针切换 CCTransitionProgressHorizontal 水平向右切换 CCTransitionProgressVertical 垂直向下切换 CCTransitionProgressInOut 从里向外切换 CCTransitionProgressOutIn 从外向里切换 CCTransitionProgressCrossFade 原场景慢慢消失，新场景同时慢慢出现 ",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-04-01 14:12:28"
+  },
+  {
+    "id": 377,
+    "title": "Cocos2d-x官方Demo中英文对照——ActionsTest",
+    "content": "之前对官方Demo的例子有点混乱，实在是太多了，每次想看看Cocos2d-x是否支持某个功能，都要点一遍官方例子的程序。所以我就把目录索引出来，并加上中文翻译了。 当然了，这是蛮久之前整的，有些例子自己也还没有跑过，也许有翻译得不对的地方，仅供参考，以实际效果为准。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/377 1) Manual Transformation 设置透明度、颜色、旋转角度 2) MoveTo / MoveBy 移动到某个点后停止/移动指定距离 3) ScaleTo / ScaleBy 缩放至某个值 / 缩放指定值 4) RotateTo / RotateBy 旋转至某个值 / 旋转指定值 5) SkewTo / SkewBy 横切至某个值 / 横切指定值 6) Skew + Rotate + Scale 组合 7) JumpTo / JumpBy 弹跳至某个点 / 弹跳指定距离 8) CardinalSplineBy / CardinalSplineAt 沿着给定路径移动（基数",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-04-01 14:01:52"
+  },
+  {
+    "id": 190,
+    "title": "我从CSDN搬到这里了，这是木头的个人博客~",
+    "content": "经历一番折腾，总算把空间买回来，并且备案通过了，以后我就在这里安家了~希望大家继续支持，我依旧会努力写教程的~",
+    "categories": [
+      "调皮一下"
+    ],
+    "date": "2013-03-30 11:01:52"
+  },
+  {
+    "id": 61,
+    "title": "【木头Cocos2d-x 037】retain和release倒底怎么玩？",
+    "content": "retain和release倒底怎么玩？ 呼呼，好久没有发布教程了（小若：难得清静了，你为毛又出来吓人= =），其实最近木头我在准备出版书籍的事情。但是貌似不太顺利，果然我还是积累不够，写书的过程压力好大，感觉写不出有趣的文字出来（小若：嗷、、、）。果然还是在博客写自由一些？嘿嘿~ 最近以及最不是很近（小若：书里一定不能出现这些错误的语句，所以你才写不出来吧= =），不少朋友对retain的认识似乎有点模糊，今天我就和大家分享一下关于retain的知识吧~ 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8689345 正文： 1. 为什么会有retain？ C++和Java不一样，Java有一套很方便的垃圾回收机制，当我们不需要使用某个对象时，给它赋予null值即可。而C++new了一个对象之后，不使用的时候通常需要delete掉。 于是，Cocos2d-x就发明了一套内存管理机制（小若：发你妹纸。。。），其实红孩儿的博客很详细地解释了Cocos2d-x的内存管理机制，我没有能",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-03-18 22:15:00"
+  },
+  {
+    "id": 60,
+    "title": "你是否有游戏开发经验，学习Cocos2d-x多久？",
+    "content": "最近Cocos2d-x越来越活了，突发奇想，想做一个小调查，看看目前学习Cocos2d-x的人群分布情况。希望各位同行多多支持~！选择最符合你的选项即可，不必完全符合。 参与投票 ：http://vote.weibo.com/vid=2240358",
+    "categories": [
+      "调皮一下"
+    ],
+    "date": "2013-02-08 12:21:00"
+  },
+  {
+    "id": 59,
+    "title": "【木头Cocos2d-x 036】我不需要知道你有多少帧之动画创建辅助类",
+    "content": "我不需要知道你有多少帧之动画创建辅助类 今天心情不好，所以我可能会比平时唠叨。 （小若：你心情不好，那为毛要连累我们！） OK，今天不是写教程，只是想给大家分享一下简单的心得。想必大家都觉得Cocos2d-x要创建一个CCAnimation还是有点繁琐的，是的，通常我们都会创建一个辅助类，这样就可以说省去重复的工作了。 （小若：快点进入正题，我也没有心情吐槽。） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/8567220 正文： 比如，我们通常会看到这样的辅助类： [cce_cpp]CCAnimation* AnimationUtil::createAnimationWithSingleName( const char* singleName, int iFrameNum ) { CCSpriteFrameCache* spriteFrameCache = CCSpriteFrameCache::sharedSpriteFrameCache(); CCSpriteFrame* ",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-02-03 17:51:00"
+  },
+  {
+    "id": 58,
+    "title": "【木头Cocos2d-x 035】我是定时器(第04章)—停止update和触发器",
+    "content": "我是定时器(第04章)—停止update和触发器 有时候我们并不想不断地执行一个函数，我们只希望在20秒后执行一个函数，然后就不执行了。比如，我们用微波炉烤西红柿，3分钟之后要叮地响一下，但是只要响一下就好了，不要每隔3分钟都响，那太烦人了！ （小若：西红柿？！为毛是西红柿？微波炉啊，烤西红柿？！= =） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/58 正文： 1. 取消自定义update的调用 当我们想停止update调用的时候，可以这么做： [cce_cpp]void HelloWorld::MutUpdate( float fDelta ) { CCLOG(MutUpdate); this-unschedule(schedule_selector(HelloWorld::MutUpdate)); }[/cce_cpp] unschedule，顾名思义了，un一般是代表取消的意思。但是要注意一点，不管我们注册update函数的时候，用的是一个参数，还是两个参数，在取消的时候都是不需要传其他参数的",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-01-29 12:36:00"
+  },
+  {
+    "id": 57,
+    "title": "【木头Cocos2d-x 034】我是定时器(第03章)—真正的定时器之schedule",
+    "content": "我是定时器第03章—真正的定时器之schedule 上一节介绍的”定时器”实在是有点不定时，这次我给大家介绍一个很定时的定时器。 （小若：= =总觉得逻辑不对） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/57 正文： 1. 不调用update函数，调用自己的函数 其实原理是一样的，我们调用scheduleUpdate的时候，系统默认每帧去调用update函数，但如果我们想调用自己的函数呢？很简单，先给HelloWorldScene添加一个函数： [cce_cpp]private: /* 自定义的update函数 */ void MutUpdate(float fDelta);[/cce_cpp] 同样在函数里打日志： [cce_cpp]void HelloWorld::MutUpdate( float fDelta ) { CCLOG(MutUpdate); }[/cce_cpp] 然后我们要添加一句很暴力的代码： [cce_cpp]bool HelloWorld::init() { bool b",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-01-29 08:03:00"
+  },
+  {
+    "id": 56,
+    "title": "【木头Cocos2d-x 033】我是定时器第02章—HelloWorld之scheduleUpdate",
+    "content": "我是定时器第02章—HelloWorld之scheduleUpdate Cocos2d-x提供了不少定时功能，这次我们先来最简单的。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/56 正文： 1. scheduleUpdate 我们现在来新建一个Cocos2d-x的项目，然后把HelloWorldScene的init函数的多余代码删掉，然后我们敲一行代码： [cce_cpp]bool HelloWorld::init() { bool bRet = false; do { CC_BREAK_IF(! CCLayer::init()); this-scheduleUpdate(); bRet = true; } while (0); return bRet; }[/cce_cpp] 然后大家运行项目，有没有发现？神奇的事情发生了！ （小若：哪里？什么都没有！黑屏！） 别着急，还差一步（小若：你有妹妹吗？帮我问候一下？），我们要继承一个函数，在头文件里加入一句： [cce_cpp]class HelloW",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-01-28 21:46:00"
+  },
+  {
+    "id": 55,
+    "title": "【木头Cocos2d-x 032】我是定时器(第01章)—我爱单线程之schedule介绍",
+    "content": "我是定时器第01章—我爱单线程之schedule介绍 本来今天我应该要做其它事情的，但是和一位网友提起了schedule，我无法按捺心中对写教程的热血和冲动，所以我就决定要写关于schedule的使用心得了。 （小若：我噗，永远都是那么唠叨= =） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/55 正文： 1. 题外话 在这里要隆重介绍一位新朋友，她就是我们的旁白，她叫小若。事情是这样的，我想给我教程的旁白角色设定一个原型，我第一时间就想到了我的一位朋友，叫做丁小若。原因就是，她很适合吐槽这个角色，噗。 （小若：喂！我的形象！形象啊！） 我已经私底下问过她了，并且已经征得了她的同意，以后我的教程里可以任意地出现以她为原型的旁白角色。 好了，进入正题吧。 2. 定时器？ 假设有如下需求，大家第一时间会考虑怎么做：每隔1秒钟执行一次函数。 很简单，也许有朋友会想起Thread，是的，线程。 （小若：对，我就是这么想的，我比你还要先想出来！） 不过，这实在是太笨了。（小若：O O我刚刚是开玩笑！） Coco",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2013-01-28 21:43:00"
+  },
+  {
+    "id": 54,
+    "title": "【木头Cocos2d-x 031】Lua篇（第06章）：Lua调用C++的函数",
+    "content": "【木头Cocos2d-x 031】Lua篇（第06章）：Lua调用C++的函数 到这为止，大家对Lua和C++之间的通信应该有些熟悉了，今天我们来介绍最后一个操作。 （旁白：什么？最后一个？要结束了么？太好了~！） 上一章传送门：http://blog.csdn.net/musicvs/article/details/8451361 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8451369 正文： 1. Lua调用C++的函数 Lua要调用C++的函数还是蛮方便的，首先，我们来创建一个c++函数先： public: static int getNumber(int num); int HelloLua::getNumber( int num ) { CCLOG(\"getNumber num = %d\", num); return num + 1; } 类的什么的，我就忽略了，直接上函数。 （旁白：= =好懒！） 这是一个很简单的函数，给出一个值，返回一个+1后的值。 现在，",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0",
+      "Cocos2d-x Lua"
+    ],
+    "date": "2013-01-01 10:01:00"
+  },
+  {
+    "id": 53,
+    "title": "【木头Cocos2d-x 030】Lua篇（第05章）：C++调用Lua的函数",
+    "content": "【木头Cocos2d-x 030】Lua篇（第05章）：C调用Lua的函数 唉，今天心情有点糟糕，我就少说一些啰嗦的话了。 （旁白：太好了...） 上一章传送门：http://blog.csdn.net/musicvs/article/details/8445079 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/8451361 正文： 经过前面几章的介绍，相信大家对Lua的堆栈已经比较熟悉了，如果还不是很熟悉的朋友，建议多看几遍前面的教程，或者多敲几次代码。 那么，如果已经对Lua的堆栈比较熟悉，接下来的内容就很简单了。 今天我们来看看C如何调用Lua的函数，先看看现在Lua文件是什么样的： -- helloLua.lua文件 myName = beauty girl helloTable = {name = mutou, IQ = 125} function helloAdd(num1, num2) return (num1 + num2) end; 我们看到多了个helloA",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0",
+      "Cocos2d-x Lua"
+    ],
+    "date": "2012-12-31 13:17:00"
+  },
+  {
+    "id": 52,
+    "title": "【木头Cocos2d-x 029】Lua篇（第04章）：来点高难度的，获取Lua表结构数据",
+    "content": "【木头Cocos2d-x 029】Lua篇（第04章）：来点高难度的，获取Lua表结构数据 只是获取一个全局变量什么的太没意思了，今天我们来玩个高难度的——获取Lua表结构的数据。 （旁白：O O！我是不是该说点什么？） 上一章传送门：http://blog.csdn.net/musicvs/article/details/8445027 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/8445079 正文： 1. 什么是table table是Lua里最强大的数据类型，我们可以当成是数组，但是它又和数组有点不一样，建议大家看看Lua的语法教程，因为我对table也没有熟悉到可以给大家解释的程度。 （旁白：那你还写什么教程。。。） 2. 获取table变量 现在，我们给helloLua.lua文件添加一个table全局变量： -- helloLua.lua文件 myName = \"beauty girl\" helloTable = {name = \"mutou\", IQ = 125",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0",
+      "Cocos2d-x Lua"
+    ],
+    "date": "2012-12-30 09:09:00"
+  },
+  {
+    "id": 51,
+    "title": "【木头Cocos2d-x 028】Lua篇（第03章）：简单解析Lua的堆栈",
+    "content": "【木头Cocos2d-x】Lua篇（第03章）：简单解析Lua的堆栈 上一章传送门：http://blog.csdn.net/musicvs/article/details/8440919 经过上一章的讲解，相信大家也看到了，Lua的堆栈是很重要不可或缺的，就像我的旁白一样（旁白：他竟然赞我了。。。好羞涩~）。虽然看起来没什么用，但是少了又绝对不行。 （旁白：你妹纸的，你这算是赞人吗？） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/8445027 正文： 在这里我仅简单解释一下Lua堆栈的索引，因为我们在很多操作里都涉及到堆栈的索引，比如上一章中我们要从堆栈中取得一个字符串，就必须给出堆栈索引： /* 获取栈顶的值 */ const char* str = lua_tostring(pL, 1); 如果对堆栈索引不清晰的话，将会很纠结。 《游戏人工智能编程案例精粹》一书的200页，有一张图，很好地表达了Lua的堆栈索引是如何定义的，我照着画了一张： （旁白：好丑~！而且还打了一",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0",
+      "Cocos2d-x Lua"
+    ],
+    "date": "2012-12-29 08:39:00"
+  },
+  {
+    "id": 50,
+    "title": "【木头Cocos2d-x 027】Lua篇（第02章）：Demo讲解之Lua和C++牵手",
+    "content": "【木头Cocos2d-x 027】Lua篇（第02章）：Demo讲解之Lua和C牵手 上一章传送门：http://blog.csdn.net/musicvs/article/details/8440707 本章我们来学习一个小Demo，也就是上一章中的场景：C从Lua中获取一个全局变量的字符串。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/8440919 正文： 1. 引入头文件 我们来看看要在C中使用Lua，需要些什么东西 /* 文件名： HelloLua.h 描 述： Lua Demo 创建人： 笨木头 (CSDN博客：http://blog.csdn.net/musicvs) 创建日期： 2012.12.24 */ #ifndef __HELLO_LUA_H_ #define __HELLO_LUA_H_ #include cocos2d.h extern C { #include lua.h #include lualib.h #include lauxlib.h };",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0",
+      "Cocos2d-x Lua"
+    ],
+    "date": "2012-12-27 19:20:00"
+  },
+  {
+    "id": 49,
+    "title": "【木头Cocos2d-x 026】Lua篇（第01章）：让Lua和C++牵手",
+    "content": "【木头Cocos2d-x 026】Lua篇（第01章）：让Lua和C牵手 网上关于Lua的教程乎还没有泛滥，最近刚好学习在Cocos2d-x使用Lua，当然了，我是写教程狂，我会分享我的学习心得的~ （旁白：我噗~！每次你写东西我就要吐槽，你不累么= =） 这是第一课，先来让Lua和C认识一下，顺便让它们逛街吃饭牵小手什么的... （旁白：。。。吹，继续吹） 注：本系列教程部分内容参考《游戏人工智能编程 案例精粹》一书。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/8440707 正文： 1. Lua的堆栈和全局表 我们来简单解释一下Lua的堆栈和全局表，堆栈大家应该会比较熟悉，它主要是用来让C和Lua通信的，是的，它们并不认识对方，只能通过堆栈来沟通，就像写信一样。 （旁白：它们不会用微信吗？！微信~！不知道？） Lua的全局表又是什么呢？可以想象成是一个map哈希表结构，比如Lua有一个变量： name = “hello” 那么，全局表就存放了”name”和”hello”的",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0",
+      "Cocos2d-x Lua"
+    ],
+    "date": "2012-12-27 10:29:00"
+  },
+  {
+    "id": 48,
+    "title": "【从创业中谈团队效率之道】第02章-你定的规则,你要永远遵守(谈以身作则)",
+    "content": "【从创业中谈团队效率之道】第02章-你定的规则,你要永远遵守 ——谈以身作则 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8392878 正文： 1. 无规矩不成方圆 也许有人认为，创业团队，人少，目标清晰（不就是赚钱嘛，不就是把第一个项目熬出来嘛），不需要太多的条条框框把团队成员框死。 没错，可最基本的规则，必不可少。否则，大家可以试想一下，有人早上8点来上班，有人中午12点来上班。这样的极端情况，会不会影响团队的工作。当然会。 2. 模拟场景 团队负责人在发现团队太过懒散之后，决定要制定一些简单的规章制度，不遵守的将受到惩罚。然后他宣布了这些规则。刚开始很有成效，可1、2个星期之后，懒散的情况陆续出现，很快，团队又恢复原状。 而在团队成员刚开始破坏规则的时候，负责人只是口头责怪一下，没有做出实际惩罚行动,这很符合管理之道（适当的包容），可有些过度了。更严重的是，负责人自己也破坏了自己定的规则。当这种事情发生的时候，就代表了他光明正大地告诉团队：这规则，失效了。 再后来的几",
+    "categories": [
+      "其它"
+    ],
+    "date": "2012-12-25 19:52:00"
+  },
+  {
+    "id": 47,
+    "title": "【从创业中谈团队效率之道】第01章-放开你的手，团队会自己跑(谈权力集中的后果)",
+    "content": "【从创业中谈团队效率之道】第01章-放开你的手，团队会自己跑 ——谈权力集中的后果 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8392878 正文： 1. 聊聊权力 虽然我没有做过项目经理，但是我确确实实地遇到过不少项目经理。 今天，我想说说关于权力把控的一些想法。 2. 模拟场景 下面是一个模拟场景： 一位项目管理人A，他将一个他正在带的项目移交给另一位项目经理B。A习惯了权力集中，他根本就没有真心信任B，总是在B管理项目的过程中提意见，与其说是提意见，不如说是下指令。 结果是，B成为了A的代理类，B没有真正的权力，一切都必须传达给A。因为A认为B做的事情很差，根本就不如自己。 也许这么听起来，乎是B的工作能力太差了，其实不然，那是因为A把B的权力限死了，可以说B是没有任何管理项目的权力。 这个例子很好地说明了一个问题，那就是，你的权力应该怎么分配。一个喜欢彻底把权力集中，凡事都要经过自己手的人，我可以认定他是没有带过大团队的人。 3. 针对小团队分析这个场景 本文仅想针",
+    "categories": [
+      "其它"
+    ],
+    "date": "2012-12-24 08:10:00"
+  },
+  {
+    "id": 46,
+    "title": "【从创业中谈团队效率之道】第00章-前言",
+    "content": "【从创业中谈团队效率之道】第00章-前言 首先，这个标题起得有点大，我也知道，不过，我思考过了，这是最符合我这系列文章的标题。 其次，我不是大牛，我只工作了1年半，不过有一点我不谦虚，那就是，我的内心很成熟。 最后，虽然我工作经验不足，但我曾经在中型公司（1000人左右）实习过一年，非常规范的管理制度（规范得让人恼火），以及和别人一起创业了1年半，至今。所以，关于团队效率的问题，我还是有一些想法可以和大家分享的。 文章中也许会出现一些批评别人做事方式的文字，希望大家不要介意，毕竟这只是我的一面之词。也许若干年之后，我会对我写的这些文章感到可笑，但，它们确实我现在这个阶段的一些想法。 由于我是写代码的人（码农，噗），所以我有时候会把代码设计思想放到团队管理上去使用，毕竟，代码设计思想源于生活。 文字是美妙的，它实实在在地记录了我们的成长过程。 我做着理性的工作，却带着感性的心。 那么，开始吧。 第01章, 【从创业中谈团队效率之道】第01章-放开你的手，团队会自己跑——谈权力集中的后果: http://blog.csdn.net/musicvs/article/details/83928",
+    "categories": [
+      "其它"
+    ],
+    "date": "2012-12-24 08:09:00"
+  },
+  {
+    "id": 45,
+    "title": "老大让我加班, 我断然拒绝。",
+    "content": "我曾经是一个很听话的员工，老大让我干什么，我就干什么。1年多了，我渐渐地发现，顺从的人，只会被当做工具。 我不知道老大的朋友什么的会不会看到这篇文章，不过没关系，就算亲口对他说，我也能说出来，但不到迫不得已，我会沉默。 昨天，他跟我说：周末可能要加加班 我说：为什么？ 他：怕进度赶不上，你没有什么事吧？ 我：有点 他：什么事？ 我：我答应了要回家。 他：我晕 没有人能了解回家对我来说有多重要，即使我每周都可以回家。 说实话，我对这个团队，十分失望，一年多了，无论这个团队多么潦倒，多么落魄，我都在坚持着。 不是老大有多么大的魅力，而是，我做事就是这样，不到一败涂地，就不轻言放弃。 我由一个很听话的员工变成了现在很有主见、不轻易妥协的员工。 即使我知道这样的员工没有老板喜欢，可是，我喜欢。并且，这是这个团队打造出来的我。 我工作很认真，毫不谦虚，我可以在上班时间内用尽100%的精力去工作，上班时间我从不开QQ、开新闻，任何娱乐的事情都被我拒之门外。 我不认为我的工作态度会给这个团队丢脸。 可我拒绝加班，我已经在工作时间把所有精力花光了，我找不到能说服我加班的理由。 是的，我凭什么加班？ 就",
+    "categories": [
+      "其它"
+    ],
+    "date": "2012-12-21 08:43:00"
+  },
+  {
+    "id": 41,
+    "title": "【木头Cocos2d-x 023】状态机篇(第02章) --状态模式之我很胖但我很强!",
+    "content": "【Cocos2d-x 状态机篇】第02章--状态模式之我很胖但我很强! 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8348323 正文： 状态机的应用当然就少不了状态模式了，因为它们都有“状态”两个字。 （旁白：总感觉这句话十分不可靠= =） 本章我们来简单地介绍一下状态模式，并且利用状态模式优化我们的有限状态机的实现。 1. 什么是状态模式 说实话，我不知道，但我知道怎么使用... 用一句话来概括，也许是这样：同一件事情，让不同的人去做，每个人都会用自己的方式来做事，但，同一时间，只会让一个人在做这件事情。由老板来决定某一刻由谁来做事。 （旁白：又你可爱的妹纸的，这明明是两句话，两个句话有没有= =） 用程序来说，也许是这样：同一个动作，让不同的类去执行，每个类都有自己独特的处理方式，至于由哪个类来执行这个动作，要根据当前的状态来判断。并且，不同的类执行完动作之后，会切换状态。 （旁白：还是没听懂。。。） OK，我相信大家都明白了什么是状态模式了，接下来我们把第01章的例",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-12-20 12:57:00"
+  },
+  {
+    "id": 42,
+    "title": "【木头Cocos2d-x 024】状态机篇(第03章) --真正的状态机来了~!",
+    "content": "【Cocos2d-x 状态机篇】第03章--真正的状态机来了~! 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/8348353 正文： 前面两章介绍了一大堆东西，但乎一直没有看到状态机这个东东，第02章里面说的那些，看起来也就是普通的状态模式的应用，我们乎感觉不到状态机的存在啊~（虽然那确实是状态机的应用）。 （旁白：是的，是的~！我光顾着吐槽，都忘了这点了= =） 那么，现在，我们来创建一个状态机类，它不神秘，它仅仅是用来管理对象的状态相关的东西，让MutouT类得到解脱。 1. 创建MutouTFSM类 有限状态机简称FSM，我们现在来创建这样一个类： /* 文件名： MutouTFSM.h 描 述： 木头对象的状态机,用来管理状态 创建人： 笨木头 (CSDN博客：http://blog.csdn.net/musicvs) 创建日期： 2012.12.19 */ #ifndef __MUTOUT_FSM_H__ #define __MUTOUT_FSM_H__ #inclu",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-12-20 12:57:00"
+  },
+  {
+    "id": 43,
+    "title": "【木头Cocos2d-x 025】状态机篇(第04章) --事件驱动,你想象不到的强大",
+    "content": "【Cocos2d-x 状态机篇】第04章--事件驱动,你想象不到的强大 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8349314 正文： 到现在为止，我们已经有能力实现简单的有限状态机了，但是，大家有没有发现一个问题？ （旁白：貌我不止发现一个问题= =） 那就是，我们必须主动地在update函数里检测状态的变化，但是，并不是每时每刻对象的状态都会改变的。这种主动检测状态改变的方式，其实十分不妥当，这会造成CUP的压力比较大。 （旁白：是CPU吧？拜托~！） 那么，现在我要向大家介绍一种十分美妙的技术，这无论是在应用开发还是游戏开发里，都是十分有用的。那就是，事件驱动。 很幸运，在Cocos2d-x里，已经集成了实现事件驱动的功能了，那就是CCNotificationCenter类，我更喜欢称之为“消息派发”。我建议对这方面不熟悉的朋友，先百度一下“观察者模式”、“订阅者”等关键词，以及了解关于CCNotificationCenter的使用。 那么，现在，我们要把我们第02",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-12-20 12:57:00"
+  },
+  {
+    "id": 44,
+    "title": "【Cocos2d-x 状态机篇】第0章--木头学状态,一副自恋的姿态~",
+    "content": "【Cocos2d-x 状态机篇】第0章--木头学状态,一副自恋的姿态~ 最近在写一个小游戏，写着写着发现有很多游戏开发的知识我并不太了解，于是游戏写到10%就跑题了，然后现在正在跑题跑到有限状态机。 我喜欢分享，所以我就现学现卖了，分享一下我学习状态机的心得。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/8349349 正文： 文章列表： 【Cocos2d-x 状态机篇】第01章--花5分钟告诉你什么是有限状态机 【Cocos2d-x 状态机篇】第02章--状态模式之我很胖但我很强! 【Cocos2d-x 状态机篇】第03章--真正的状态机来了~! 【Cocos2d-x 状态机篇】第04章--事件驱动,你想象不到的强大 那么，顺便祝大家世界末日愉快~",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-12-20 12:57:00"
+  },
+  {
+    "id": 40,
+    "title": "【木头Cocos2d-x 022】状态机篇(第01章) --花5分钟告诉你什么是有限状态机",
+    "content": "【Cocos2d-x 状态机篇】第01章--花5分钟告诉你什么是有限状态机 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8348308 正文： 1. 简单认识 在游戏开发中，状态机几乎是必不可少的，关于状态机的专业解释，大家请百度一下。 简单地说，状态机就是控制游戏对象在不同的状态下应该做什么事情的一个机制（帅帅地提示一下，它很强大，强大到你无法想象~） （旁白：= =大家别信他，木头常常说谎） 2. 来写一个很好玩的游戏吧~ 比如，我们要写一个很厉害很好玩的游戏，这个游戏的设想是这样的： 游戏世界里有一个木头，这个木头很多兴趣爱好。比如，他一有空就会写代码，写累了他就会停下来，然后...敲代码，敲累之后，他就会...写代码。可有时候他会突发奇想地要写一篇教程，因为他刚刚学会了新知识迫不及待的要分享。 就是这样，一个兴趣爱好广泛的木头，每天都干着这些多姿多彩的事情。 （旁白：很多兴趣爱好？我怎么看来看去就看到写代码？ = =） 3. 开始进入正题 那么，这个木头有这么多种状态",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-12-20 12:56:00"
+  },
+  {
+    "id": 39,
+    "title": "【木头Cocos2d-x 021】一个堆和栈引起的分手事件",
+    "content": "【木头 cocos2d-x】一个堆和栈引起的分手事件 ——内存总是欺负我，于是我移情别恋爱上CCString了 我又来了，这次这篇文章依旧是献给和我一样被Java惯坏了，对C还不太熟悉的朋友~ 所以，熟悉C的朋友，请忽略我~ 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8267117 正文： 1. 一个堆和栈引起的分手事件 我有一个需求，那就是写一个函数，用来将int转换为字符串，于是，我很高兴地写了： const char* StringUtil::transIntToStr( int iValue ) { char chValue[8]; sprintf(chValue, %d, iValue); return chValue; } 太简单了，这有什么难的~ （旁白：我噗~！不难的话你也不会在这里说废话了~） 额，好吧，实际上我遇到问题了，这个函数的chValue只是一个临时变量，函数结束，这个变量的内存空间就会被释放。所以，我拿着这个函数的返回去做了不少事情，但是出现了",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-12-06 22:03:00"
+  },
+  {
+    "id": 38,
+    "title": "【木头Cocos2d-x 020】在调试项目时，跟踪并进入Cocos2d-x的源码",
+    "content": "【木头 cocos2d-x】在调试项目时，跟踪并进入Cocos2d-x的源码 其实这没有神奇的喇，但是对我来说好神奇，因为我对C开发十分不熟悉~ 所以，熟悉C的朋友可以忽略我~ 今天在调试我的小项目，想跟踪到源码去看看情况~结果我不知道怎么做~ 幸好，有个C大神同事在，原来好简单的~ 1. 找到3个文件 比如我今天想进入的源码是CCNotificationCenter.cpp，它在是cocos2d下的， 所以我们到Cocos2d-x的安装目录下的Debug.win32里找到3个文件： libcocos2d.dll libcocos2d.lib libcocos2d.pdb 然后拷到我们项目的Debug.win32里，就OK了~ （旁白：正常人的项目的Debug.win32里不可能没有libcocos2d.dll和libcocos2d.lib~！） 嗯？好像有人抢了我的台词= = 不管了~ 正常人的项目的Debug.win32里不可能没有libcocos2d.dll和libcocos2d.lib的，所以一般就拷libcocos2d.pdb文件就OK了~ 2. 然后？ 然后就尽情的调试吧~",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-12-06 21:32:00"
+  },
+  {
+    "id": 37,
+    "title": "【木头Cocos2d-x 019】控件篇(第03章)我要战斗之血量条",
+    "content": "【Cocos2d-x 控件篇003】我要战斗之血量条 这次我们再来介绍一个音量控制按钮~ （旁白：等，等等~你标题不是写着血量条吗？） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8261554 正文： 1. 又是一个音量控制按钮 先看看截图： 这个使用非常简单，和之前介绍的CCControlPotentiometer的用法几乎一样： CCControlSlider* slider = CCControlSlider::create(background.png, progress.png, sliderThumb.png); slider-setPosition(ccp(100, 200)); /* 设置滑动条的范围 */ slider-setMinimumValue(0); slider-setMaximumValue(5000); /* 直接设置滑动条的当前值 */ slider-setValue(3000); this-addChild(slider); 也是由三部分",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-12-05 17:39:00"
+  },
+  {
+    "id": 36,
+    "title": "【木头Cocos2d-x 018】面向接口编程01: 向她表白之实现函数回调",
+    "content": "【在Cocos2d-x中面向接口编程01】向她表白之实现函数回调 首先，我要郑重地声明一件事情：我现在很尿急，但是厕所有人~！ 嗯，然后，我本来是一名Java程序员，由于Cocos2d-x太吸引人，我就硬着头皮学，可是C++和Java那看似差不多，实际又确实差很多的纠结，让我变得...很尿急~！ （旁白：可以少说一些废话么？） 最近我在试着写一个小游戏，叫做《粒子格斗》。 （旁白：你已经说过了。。。） 然后，我自己写了一个消息派发的功能，因为当时我并不知道Cocos2d-x已经集成了这个功能。我写Java习惯了，所以我按照Java的思维习惯实现了这个消息派发。如果对消息派发不熟悉或者完全不懂的朋友，那个，还是百度一下会好一些~ （旁白：等等~！你不是应该介绍实现函数回调吗？） 哦，对，我应该介绍实现函数回调的，但是如果你和我一样，是Java出身的，并且Java功底也不是很深厚，对于掌握新语言不太迅速的话，那么，请继续往下看。 如果你对C++已经是比较熟悉了，那，可以忽略这篇文章。 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-12-05 17:27:00"
+  },
+  {
+    "id": 35,
+    "title": "【木头Cocos2d-x 017】控件篇(第02章)我不是DJ之圆形音量按钮",
+    "content": "【Cocos2d-x 控件篇002】我不是DJ之圆形音量按钮 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8249627 正文： 注：本文使用的Cocos2d-x基于2.0.4版本。 啰嗦一下 上回介绍了CCControlButton，我们已经知道，它可以随着按钮文字的大小进行随意缩放，也可以给它一个最小宽高值。但，我们难道就不可以让它的宽高固定，永远不变吗？ 当然可以，只要一个函数：setAdjustBackgroundImage(false) 话又说回来，它还有一个函数，可以让按钮按下时改变按钮文字的颜色： setTitleColorForState(ccWHITE, CCControlStateHighlighted) ccWHITE当然就是颜色了，CCControlStateHighlighted就是代表按钮被点击处于高亮状态时改变按钮文字的颜色为前面指定的颜色。 （旁白： 这和第一段话有关联吗？没关联你用个屁“话又说回来”啊~！还有，这和圆形音量按钮有半毛钱关系吗=",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-12-02 21:59:00"
+  },
+  {
+    "id": 34,
+    "title": "【木头Cocos2d-x 016】控件篇(第01章)  我最爱的九妹和按钮事件",
+    "content": "【Cocos2d-x 控件篇001】我最爱的九妹和按钮事件 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8242963 正文： 最近在尝试写一个小游戏，噢？你刚刚说什么？你说你想看看我的小游戏？好啊好啊，我很乐意，来，看看截图： 目前只有这个样子了，这个战斗模块的第一个版本，很简陋，我想完善一下控件界面。所以，我开始研究官方的控件Demo了~ 然后，和以前一样，不管如何，我还是要记录下我的学习心得~ 1. 九妹图片 相信做过Android开发的都很熟悉九妹这个词，其实她就是一种图片，一种支持拉伸的图片，由一张小图拉伸到一张大图，并且是，任意的~！ 这实在是太让人兴奋了，因为Cocos2d-x已经封装了这个功能了，来，迫不及待地要看看了： CCScale9Sprite* nineGirl = CCScale9Sprite::create(\"button.png\"); nineGirl-setContentSize(CCSize(200, 100)); nineGirl-setP",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-11-30 12:37:00"
+  },
+  {
+    "id": 33,
+    "title": "【木头Cocos2d-x 015】游戏实例-《跑跑跑》制作教程（第七篇）——添加能吃的物品以及胜利条件",
+    "content": "Cocos2d-x游戏实例-《跑跑跑》制作教程（第七篇）——添加能吃的物品以及胜利条件 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/33 正文： 注：本文使用到的资源请到这里下载：http://download.csdn.net/detail/musicvs/4769412 我们的游戏已经很像游戏了（像？敢情它真的不是一个游戏？），于是我们给主角加点吃的吧，老是这么跑，没有追求啊喂~ 1. 画点吃的物体 现在，我们又要打开我们的地图编辑器，把下面的星星作为可以吃的物品画到barrier地图层上： 看看我的画吧，依旧有大师风范~噗 2. 添加“另类”障碍物。 其实，吃的物品，也可以当成是障碍物，只不过这个障碍物和主角碰撞之后会消失，仅此而已。 于是，我们和之前描红格子的方式一样，不过，这次我们要描蓝色格子，选择图块上的蓝色格子，噢，抱歉，它是绿色的= =。右键，属性，我们给绿色格子添加一个属性，叫做“star”，属性值为true。 然后，我们把地图切换到meta层，在上面用绿色格子把我们的所有星星都覆盖",
+    "categories": [
+      "2.0游戏实例《跑跑跑》",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-11-20 12:45:00"
+  },
+  {
+    "id": 32,
+    "title": "【木头Cocos2d-x 014】游戏实例-《跑跑跑》制作教程（第六篇）——添加障碍物",
+    "content": "Cocos2d-x游戏实例-《跑跑跑》制作教程（第六篇）——添加障碍物 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/32 正文： 注：本文使用到的资源请到这里下载：http://download.csdn.net/detail/musicvs/4769412 哎呀，这游戏实在是太好玩太有意思了（啊，个屁啊~），不过，我们还是要继续优化的喇~ 这次我们就来为地图添加障碍物吧~很好玩的，一起来~ 1. 再次打开我们的Tiled Map Editor 我们还要打开level01.tmx文件，首先新建一个图层，命名为barrier，也就是我们的障碍层。 然后，我们要介绍一个新的素材，meta_tiles.png： 把objects.png和meta_tiles.png都加进图块里，宽高都是32像素。 2. 添加障碍物 好，现在，我们利用下面的素材在地图的barrier层上画几笔，增加一些障碍物。 下面是我画的，太好看了~（啊才怪！）： 3. 让障碍物真正成为障碍物！ 别以为它叫做障碍层那它就真的可以阻止主角的",
+    "categories": [
+      "2.0游戏实例《跑跑跑》",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-11-18 21:31:00"
+  },
+  {
+    "id": 31,
+    "title": "【木头Cocos2d-x 013】游戏实例-《跑跑跑》制作教程（第五篇）——主角上下移动",
+    "content": "Cocos2d-x游戏实例-《跑跑跑》制作教程（第五篇）——主角上下移动 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/31 正文： 注：本文使用到的资源请到这里下载：http://download.csdn.net/detail/musicvs/4769412 嗯，至此我们的《跑跑跑》游戏已经基本完成了…才怪啊喂~！ 来，主角不能只往前跑，我们得让他可以上下跑。 1. 制作新的移动控制器 我们要改变主角的移动行为，这很简单，因为聪明的我们早就料到了客户的需求是随时改变的（噗，那个客户说的是我么？），所以，我们使用了组合的方式。 现在是见证组合有多强大的时候了！我们只需要新建一个控制器，然后替换掉原来的SimpleMoveController，绑定到主角身上，就OK了~ 2. 三方移动控制器 这个新的移动控制器可以往前、往上、往下移动，所以我给它命名为三方控制器。英文名叫做SanFangController，噗，开玩笑的，还是叫做ThreeDirectionController吧~ 首先，我有个糟糕的事",
+    "categories": [
+      "2.0游戏实例《跑跑跑》",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-11-16 20:30:00"
+  },
+  {
+    "id": 30,
+    "title": "【木头Cocos2d-x 012】游戏实例-《跑跑跑》制作教程（第四篇）——地图卷动",
+    "content": "Cocos2d-x游戏实例-《跑跑跑》制作教程（第四篇）——地图卷动 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/30 正文： 注：本文使用到的资源请到这里下载：http://download.csdn.net/detail/musicvs/4769412 上一篇我们已经把我们跑的主题体现出来了，但是，主角跑没多久就离开地图了，也离开屏幕了，这不靠谱啊喂，我们得让地图也动起来（难道我做这么长的地图是摆设么~）。 1. 地图卷动规则 首先要定一个规则，地图怎么卷动？我们定义为这样，地图只会横向往左卷动，当主角超过屏幕中点的时候地图就开始卷动。最终的效果应该是这样的： 留意最左边，地图最左边已经有部分没有显示出来了，证明地图已经往左移动了一小段距离。 2. 触发卷动 我们在主角坐标改变的时候就判断是否需要移动地图，来，我们给Player类增加一个函数： [cce_cpp]void Player::setViewPointByPlayer() { if(mSprite == NULL) { return;",
+    "categories": [
+      "2.0游戏实例《跑跑跑》",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-11-16 12:57:00"
+  },
+  {
+    "id": 29,
+    "title": "【木头Cocos2d-x 011】游戏实例-《跑跑跑》制作教程（第三篇）——让主角跑",
+    "content": "Cocos2d-x游戏实例-《跑跑跑》制作教程（第三篇）——让主角跑 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/29 正文： 注：本文使用到的资源请到这里下载：http://download.csdn.net/detail/musicvs/4769412 终于进入我们的游戏的主题了——跑！ 来，我们开始让主角跑起来~ 1. 修改一下糟糕的代码 我们要给主角加一个动画，不断地播放跑步动作。我们来打开熟悉的TollgateScene.cpp文件，糟糕，我发现这个文件的init函数有点庞大了。 于是，我做了一个艰难的决定，把创建玩家精灵的工作移到Player类的init函数里： [cce_cpp]//Player.h文件 #ifndef __PLAYER_H__ #define __PLAYER_H__ #include Entity.h class Player : public Entity { public: bool initWithTiledMap(CCTMXTiledMap* map); st",
+    "categories": [
+      "2.0游戏实例《跑跑跑》",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-11-16 09:19:00"
+  },
+  {
+    "id": 28,
+    "title": "【木头Cocos2d-x 010】游戏实例-《跑跑跑》制作教程（第二篇）——加入主角",
+    "content": "Cocos2d-x游戏实例-《跑跑跑》制作教程（第二篇）——加入主角 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/28 正文： 注：本文使用到的资源请到这里下载：http://download.csdn.net/detail/musicvs/4769412 1. 实体父类 因为我觉得玩家和怪物会有一些共同的操作，所以我将玩家和怪物都定为一个实体，于是，我们需要一个实体类作为父类(实体文件夹下创建Entity.h和Entity.cpp文件)： [cce_cpp]//Entity.h文件 #ifndef __ENTITY_H__ #define __ENTITY_H__ #include \"cocos2d.h\" using namespace cocos2d; class Entity : public CCNode { public: void setSprite(CCSprite* mSprite); protected: CCSprite* mSprite; }; #endif/pre pre c",
+    "categories": [
+      "2.0游戏实例《跑跑跑》",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-11-15 20:58:00"
+  },
+  {
+    "id": 27,
+    "title": "【木头Cocos2d-x 009】游戏实例-《跑跑跑》制作教程(第一篇)——加载地图",
+    "content": "Cocos2d-x游戏实例-《跑跑跑》制作教程 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/27 正文： 首先，我是拜读了以下四篇文章之后，想练练手而萌发了要写这个系列的教程，大家如果不喜欢我的教程，可以看看以下四篇教程，同样会获益匪浅的： http://blog.csdn.net/fengyun1989/article/details/7526333 http://blog.csdn.net/fengyun1989/article/details/7529606 http://blog.csdn.net/fengyun1989/article/details/7534784 http://blog.csdn.net/fengyun1989/article/details/7537602 以上四篇是很好的一份教程，强烈推荐大家去看看。 我这系列的教程会稍微写得繁琐一些，因为我想写得维护性好一些。 来吧，开始~！ 本教程使用Cocos2d-x 2.0.4版本。 第一个版本的《跑跑跑》源码+资源下载地址：",
+    "categories": [
+      "2.0游戏实例《跑跑跑》",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-11-15 12:50:00"
+  },
+  {
+    "id": 26,
+    "title": "【木头Cocos2d-x 008】在Lua中使用自定义类——tolua++工具使用（下集）",
+    "content": "在Lua中使用自定义类——tolua++工具使用（下集） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8166655 正文： 上回说到，把LuaCocos2d.cpp文件拷到我们的lua工程里，然后，编译。 大功告成……啊才怪啊~！ 你会发现一大堆的编译错误，超过100个了，木了个头的。怎么回事，我只能认定是这个工具出问题了。 怎么办？没关系~我们在LuaCocos2d.cpp里搜索一下我们的SpriteFactory类吧，肯定有的，看看其中一段： [cce_cpp]/* method: sharedSpriteFactory of class SpriteFactory */ #ifndef TOLUA_DISABLE_tolua_Cocos2d_SpriteFactory_sharedSpriteFactory00 static int tolua_Cocos2d_SpriteFactory_sharedSpriteFactory00(lua_State* tolua_S",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0",
+      "Cocos2d-x Lua"
+    ],
+    "date": "2012-11-09 15:25:00"
+  },
+  {
+    "id": 25,
+    "title": "【木头Cocos2d-x 007】在Lua中使用自定义类——tolua++工具使用（上集）",
+    "content": "在Lua中使用自定义类——tolua++工具使用（上集） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://www.benmutou.com/archives/25 正文： 最近看了一下TestLua的例子，挺有意思的，使用Lua对网游开发来说，很实用。我目前这个项目没有使用Lua等脚本，已经吃尽苦头了，每次客户端更新就流失好多玩家。虽然我的项目没有用cocos2d-x开发，但是因为最近在研究它，所以就好奇一下lua和cocos2d-x的整合。 百度没有多少资料，最实在的一篇教程应该就是Himi那篇了（高手一只，不解释）。所以只能靠自己了。 怎么运行Lua例子，以及在cocos2d-x里使用Lua的简单规则，请看之前我写的那篇教程，以及更加详细的Himi的教程（http://www.himigame.com/iphone-cocos2dx/681.html）。 这里我主要是想分享一下如何在lua中使用自己的类，其实cocos2d-x已经提供工具，并且封装好了c++整合lua。 好，废话说多了，开始~！ 1. 只关注LuaCocos2d.cpp文件 假设看这",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0",
+      "Cocos2d-x Lua"
+    ],
+    "date": "2012-11-09 15:14:00"
+  },
+  {
+    "id": 24,
+    "title": "【木头Cocos2d-x 006】HelloLua简单分析",
+    "content": "HelloLua简单分析 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://www.benmutou.com/archives/24 正文： Lua脚本，以前我不知道它有多强大，但是当我做了1年的手机网游之后，起码我发现了，更新客户端是一件很恐怖的事情（会导致大量玩家的流失，以及有一个漫长并且惊心动魄的审核过程），太扯了。于是，如果可以只更新脚本，那就不需要玩家重新下载客户端了，直接在线更新，嗯嗯，虽然我发现了这个，但是还没有实现。噗，代码写烂了，不好改。 所以啊，我已经做好准备了，如果下次用cocos2d-x开发，lua不可少啊~！ 看看官方的例子吧，先来AppDelegate.cpp的applicationDidFinishLaunching函数： [cce_cpp]#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) CCString* pstrFileContent = CCString::createWithContentsOfFile(helloWorld.lua ); if (pstrFileConte",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0",
+      "Cocos2d-x Lua"
+    ],
+    "date": "2012-11-09 07:53:00"
+  },
+  {
+    "id": 23,
+    "title": "[笨木头“创业”路]No.8 成熟？",
+    "content": "经过一年的磨练，我乎改变了很多，遇到一些事，遇到一些人。 我变得暴躁，变得不那么容易被人欺负、占便宜。 后来，我乎又渐渐地体会到，保护自己，也许还要掌握好一个度。 过度地保护自己，结果就是什么都学不到。 有时候，坏事情降临到自己身上，未免不是一件好事，那是磨练自己的好机会。 慢慢地，我乎懂得了这个道理。 我开始学习控制自己的情绪，遇到没有道理的事情，我会尽量说服自己。 能帮助自己的成长的，我就吞口气，接受了。 最近团队乎有所好转？ 遇到了两个志同道合的人，加入了我们。 他们很强大，我喜欢和强大的人做同伴。 我对强大的定义不是指能力，而是指，拥有那颗追求变强的心以及执行变强的行动。 团队的命运还是继续着，是持续低谷？又或是有所转机？ 没有人会知道结局，未来很神奇。 哪怕我们打个喷嚏，也有可能改变未来。",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2012-11-08 08:36:00"
+  },
+  {
+    "id": 22,
+    "title": "[笨木头“创业”路]No.7 接近毁灭的状态",
+    "content": "原本我以为，没落，这个词已经够残忍了， 没有想到，我们的状况会继续恶化。 经过这么一年时间的阅历，我终于知道。 技术、金钱、市场，很重要。 但是，还有一个决定性的因素，少了它，创业必败！ 那就是，好的伙伴。 是的，我们必须拥有不离不弃的伙伴，这样才能面对无数的困难。 也许有人说，钱才是最重要的，我想说，有很多很多钱的话，那还叫创业？ 那叫开发新产品摆了。 遇人不济，一个懒惰，极其不讲信用的伙伴，竟然会是我们的团队一员。 而我们竟然忍受了他一年有多，这得有多大的信任才能做到？ 他不坏，但是，懒惰和失信，在创业团队里，是最致命的缺点。 我们失败的很大一部分原因，就是他造成的。 本来我以为，团队里有我这个实力这么脆弱的人在，已经够恶心了。 想不到还要遇到这样一个人，一个不知悔改，三番四次害我们的人。 我恨不得他走。 最终他为了个人利益走了。 拿走了他自己的代码，这无可厚非。 但他却连我的代码也偷走了。 摆了，我们都不认为他能做出些什么东西来。 就这样，我们剩下3个人了。 放弃？这个词从来就没有出现在我的脑海里。 连家人也开始不太支持我了。 但是，我就是这样，不到一败涂地，我真的没有勇气去放弃",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2012-11-06 09:38:00"
+  },
+  {
+    "id": 21,
+    "title": "[笨木头“创业”路]No.6 没落",
+    "content": "我是一个很专情的人。 大四我在同一个公司实习了一年，一年时间里，我们的项目组走的走，换的换。 最终，第一批人员，就剩下我一个。 好吧，难道我是项目组的克星？ 虽然最终我也走了。 而到了这个创业公司，从一开始的5、6个人，到后来的高峰期是10个人左右。 很热闹，但，乎我们团队并没有这个能力去消化这份力量。 后来，我们力量不足了，遇到困难了。 那时，走了几个人，到最后，又只剩下了5个人左右。 没落，我可以用这个词来形容我们。 有些话，我很想说，但是我怕大家会说我是时候诸葛亮。 但，这些都是实话。 从一开始来到这个团队，他们告诉我，几个月的时间就可以做出产品。 我不信，不认为这么轻易就能成功。 但是我自认为我刚出社会，没有经验，所以我告诉自己，是我想错了，他们才是对的。 很多很多时候，我在担心某些事情，但我总以我刚出社会为理由，告诉自己，我是错的。 可最终，我担心的事情都发生了。 我一直一直，我彻底信服老大们的能力。 在我里，他们很强，强得无法形容。 他们说的话一定是真的，也只有他们的预测才是准确的。 可事实却一次又一次地告诉我，他们预测的准确度，和我没有差别。 后来，我就告诉自己，没有人可",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2012-11-06 09:25:00"
+  },
+  {
+    "id": 20,
+    "title": "[笨木头“创业”路]No.5 凶残",
+    "content": "我曾经是一个只懂微笑，几乎没有脾气的人。 我对我们的项目充满希望，每天，闹钟响了，我很困，好想继续睡。 但是，突然想到，起来了可以写代码，我们的项目就可以更快出来，然后，我就很精神地爬起来了。 虽然我喜欢别人赞我聪明，也常常要我的朋友们赞我聪明。 但是我知道，我只是一个普通人，我很努力地写代码，因为我只懂写代码。 我很努力，全心全意地写代码。 可是，一个过度自觉，过度善良的人，却往往容易被人忽略。 是啊，不管别人做什么决定，你都会顺从，所以没有什么必要去问你的意见。 即使问，我只是随口问问。 我的代码被改了2、3次，而他们却总是告诉我，需求变动是正常的。 那有没有人可以告诉我，做了2、3个月的东西，全部推翻，再做2个月，再推翻。 并且，丝毫没有理会我的感受，说改就改，根本不需要我的看法。 这，是正常的吗？ 我不知道，我真的不知道。 我只知道我曾经为了你们所说的“正常”，而一天开发2、3个功能。 而这些功能，正常情况下，以我的水平，一个就需要耗去我最少1天半的时间。 要速度，当然就没有了质量。 于是，我写出了连我都厌恶的代码。 而那些代码，从那时起，到现在，都还影响着以后的维护和扩展。 ",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2012-11-06 08:51:00"
+  },
+  {
+    "id": 19,
+    "title": "地球人己阻止不了程序猿们学习cocos2d-x了-学习笔记04",
+    "content": "地球人己阻止不了程序猿们学习cocos2d-x了-学习笔记04 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8135705 正文： 教程地址：http://cn.cocos2d-x.org/bbs/forum.php?mod=viewthreadtid=979extra=page%3D1 这篇教程太可恶了，一下子塞了好多知识啊喂，我都还没有吸收完，说说我吸收的部分吧。 1. 每一帧都想做操作？ 有时候，我们需要在每一帧的时候都做一些操作，比如判断碰撞什么的，那么，CCNode就拥有这个功能。 只要是继承了CCNode的类都拥有update方法，update方法会在游戏的每一帧都调用一次，前提是，我们的类加入到了场景中，并且调用了这个方法：scheduleUpdate()。 这样，update方法就会每一帧都被调用，在里面尽情做操作吧。 #ifndef __SIMPLE_MOVE_CONTROLLER_H__ #define __SIMPLE_MOVE_CONTROLLER_H",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-11-01 10:49:00"
+  },
+  {
+    "id": 18,
+    "title": "地球人己阻止不了程序猿们学习cocos2d-x了-学习笔记03",
+    "content": "地球人己阻止不了程序猿们学习cocos2d-x了-学习笔记02 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址： http://blog.csdn.net/musicvs/article/details/8124244 正文： 原教程地址：http://cn.cocos2d-x.org/bbs/forum.php?mod=viewthreadtid=852extra=page%3D1 首先，我要恭喜一个人…那就是我了，噗。因为我终于成功在VMWare上安装了Mac系统并且把Xcode也安装好了，并且把Cocos2d-X也安装好了，并且也成功运行HelloWorld了~！ 好了，进入正题，教程的第三篇讲的都是在各个平台的屏幕适应问题，我看了作者的教程（而且不止一遍= =），可惜，作者的教程好像是基于1.x版本的，对于2.x版本来说，几乎无效了，但是我是在看了很多遍、照着写了很多代码、测了很多次、电脑死机好几回、百度百地网页都要烂掉了才发现的啊混蛋~噗，开玩笑，不过我真是弄了很久才发现。。。 原来，官方早就告诉我们一个最简单的屏幕适应方法了（是基于2.0.2版本新增的）： ",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-10-29 14:38:00"
+  },
+  {
+    "id": 17,
+    "title": "地球人己阻止不了程序猿们学习cocos2d-x了-学习笔记02",
+    "content": "地球人己阻止不了程序猿们学习cocos2d-x了-学习笔记02 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/8105611 正文： 第二篇的重点是：(内容重点: 动画, CCAnimation, CCAnimate, CCSpriteFrameCache)。 原教程地址：http://cn.cocos2d-x.org/bbs/forum.php?mod=viewthreadtid=805extra=page%3D1 1. 会动的精灵 第一篇教程教我们的是创建一个精灵，但是它不会动，现在终于可以创建会动的精灵了，看代码先： /* 加载图片帧*/ CCSpriteFrameCache* cache = CCSpriteFrameCache::sharedSpriteFrameCache(); cache-addSpriteFramesWithFile(images.plist, images.png); /* 创建一个精灵*/ CCSprite* girlSprite = CCSp",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-10-26 14:28:00"
+  },
+  {
+    "id": 16,
+    "title": "【木头Cocos2d-x 005】穷鬼之mac cocos2d-x环境搭建-成功！（VMWare + mac lion+xcode）",
+    "content": "穷之mac cocos2d-x环境搭建-成功！（VMWare mac lion） 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/8105611 正文： 学Cocos2D-X也有一小段时间了，虽然是断断续续的，但是HelloWorld什么的还是轻松能自己敲出来之余也大概知道一点点道道。Win程序移植到Android也实现了，现在是时候体验一下Win程序移植到IOS了。 于是，最艰难的一步就是开头了，是的，环境搭建。 像我这种持续几个月没有收入的人，哪里买得起Mac电脑，于是当然要用到我们强大的VMWare了，好了，你们准备好了吗？ 1. 下载工具： a. VMWare8.0以上版本，我用的9.0（自己找找哈，我是很久很久之前下载好的，忘了地址了） b. mac os x_lion.iso 苹果操作系统iso文件（自己找找哈，我是很久很久之前下载好的，忘了地址了，或者试试这个，刚找的：http://115.com/file/clj1iu8m#） c. HJMac.iso 下载：htt",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-10-24 10:18:00"
+  },
+  {
+    "id": 15,
+    "title": "【地球人..学习cocos2d-x】学习实践之逐步变强的HelloWorld(下集)",
+    "content": "【地球人..学习cocos2d-x】学习实践之逐步变强的HelloWorld(下集) 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/8089125 正文： 上集传送门：http://blog.csdn.net/musicvs/article/details/8086971 好，继续… 先修正上一篇文章的一个错误，在cocos2d-x的2.x版本之后，创建精灵的方式由sprite***改为create***（并且几乎其它所有类都有这样的改动，虽然让使用了1.x版本的朋友很无奈，但是这个create还是比sprite**什么的比较形象。 于是，把上次的spriteWithSpriteFrameName改为createWithSpriteFrameName 1. 第三个HelloWorld-使用CCSpriteBatchNode 这个如果把原理抛开的话，很简单： /* 加载图片资源到SpriteFrame缓存池*/ CCSpriteFrameCache* cache = CCSprit",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-10-19 11:43:00"
+  },
+  {
+    "id": 14,
+    "title": "【地球人..学习cocos2d-x】学习实践之逐步变强的HelloWorld(上集)",
+    "content": "1. 在HelloWorld之前 因为我准备按照第一篇教程里教我的东西，一步步从简单到难写成多个Demo，于是我又不想新建那么多项目，所以，是的~我们需要一个菜单界面。 要创建很难，很多步，别激动，慢慢来，噗： 首先我们需要一个CCMenu对象，它是一个菜单对象，当然菜单是可以包含子菜单的。 然后我们需要子菜单，在cocos2d-x里子菜单就是CCMenuItem，但是Item的类别有很多，在这里，我选择文字标签Item：CCMenuItemLabel CCMenu需要一个CCMenuItemLabel，同样CCMenuItemLabel它只是一个Item，而它又要作为一个标签Item，所以它需要一个标签对象：CCLabelTTF 于是，整个步骤就是，一个CCLabelTTF对象添加到一个CCMenuItemLabel对象，然后CCMenuItemLabel对象再添加到CCMenu里。 好了，废话多了，看代码： /* 创建一个Label对象 */ CCLabelTTF* helloWorldLab1 = CCLabelTTF::create(\"HelloWorld1\", \"Arial\"",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-10-18 18:29:00"
+  },
+  {
+    "id": 13,
+    "title": "【木头Cocos2d-x 004】HelloWorld倒底怎么玩？",
+    "content": "Cocos2D-x之HelloWorld倒底怎么玩？ 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/8071832 正文： 看了教程，还是要自己写写HelloWorld才能记住，于是在写HelloWorld之前，还是要看看别人的HelloWorld才行~ （以下CS-X均为Cocos2D-X的缩写） 1.导演类 用VS新建一个CS-X工程，然后自己帮我们生成一个HelloWorld工程，然后看看AppGelegate.app文件，里面有这个函数： bool AppDelegate::applicationDidFinishLaunching() { // initialize director CCDirector *pDirector =CCDirector::sharedDirector(); pDirector-setOpenGLView(CCEGLView::sharedOpenGLView()); // enable High Resource Mode(2x, suc",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-10-15 09:58:00"
+  },
+  {
+    "id": 12,
+    "title": "地球人己阻止不了程序猿们学习cocos2d-x了-学习笔记01",
+    "content": "地球人己阻止不了程序猿们学习cocos2d-x了是一个很不错的系列教程（其实我还没看完= =），但是我基础不好，作者基础太雄厚，他很多觉得简单的东西都没有解释，所以我看了又忘，忘了就...又看。 于是我还是决定要记录下来，方便忘记的时候查看。 地球人己阻止不了程序猿们学习cocos2d-x了 (第一篇) ——木头学习笔记 1. 关于单例类 Cocos2d-x（以后简称cs-x）有不少单例类，比如获取导演类： CCSize size = CCDirector::sharedDirector()-getWinSize(); 上面的语句是获取屏幕大小的对象，因为屏幕是受导演控制的，所以通过导演来获取屏幕大小。而获取导演的方式是sharedDirector，在cs-x中，通常都是通过shared***方法来获取某个类的单例。 2. 创建最简单的精灵 cs-x中要创建一个精灵，很简单（别人帮你封装好了，你当然简单，噗~） CCSprite* pSprite = CCSprite::spriteWithFile(Background.png); 顺便一提，spriteWithFile是静态方法。 ",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-10-10 09:14:00"
+  },
+  {
+    "id": 11,
+    "title": "游戏新版本上线，自己整了一组宣传图，抢美工饭碗了有没有~哈哈",
+    "content": "游戏新版本十一假日之前终于赶上脚步，上线了~ 好感动~ 上图~ 《群侠三国》战争策略类三国题材手机游戏，该游戏颠覆了手机游戏的模式，以三国题材为背景的大型横版RPG手机游戏，游戏采用了多种时下最先进的技术，极大的丰富游戏画面的表现力。游戏中带甲、百家、策士、方士四大职业，各具特色。同时拥有丰富的武将系统和布阵系统，可以根据每场战役的实际情况，排兵布阵，运筹帷幄。 游戏特色 1：纯正绿色游戏 为了留住所有玩家，游戏内部完全放弃传统游戏各种吸金烧钱玩法，商城不出售任何影响游戏平衡性的道具，不花一分钱也能得神器，畅快体验游戏乐趣。 2：新颖的玩法 （1）过关斩将根据级别差异开放不同的关卡，玩家需打败前一个关卡才能挑战下一关。 （2）排兵布阵根据实际情况，调整阵型，运筹帷幄。 3：庞大的天关系统 天关系统是本游戏的一大特色，游戏开放了多个大型天关副本，上百个大小BOSS等待玩家挑战。在不断的突破中获得强大的装备，为未来征讨四方打下坚实的基础。 下载地址（网盘，大小60M）：http://mobile.91.com/Soft/Android/com.kogame.emprise_91-4-2.0",
+    "categories": [
+      "Android"
+    ],
+    "date": "2012-09-29 18:38:00"
+  },
+  {
+    "id": 6,
+    "title": "【木头Cocos2d-x 003】Win7 64位系统搭建cocos2d-x环境并创建Android项目",
+    "content": "Win7 64位搭建cocos2d-x环境并创建Android项目 虽说在win7 32位和64位的环境搭建没有很大的区别，但是，在64位下还是会遇到一些小麻烦的。 先解决第一个疑问：软件、工具都要下载哪个版本？ 1. eclipse下载64位的（官网有） 2. Java下载64位的（官网） 3. Android SDK直接用32位的（没有区分32还是64） 4. Android NDK 直接用32位的（没有区分32还是64） 5. CygWin，这个我懒得去官网下载安装，直接用了一个百度一下找的（Cygwin Easy 2007.03.21 (ISO)），解压后，直接把cygwin目录剪切到C盘根目录了，这个大家可以不理我，自己搞定CygWin的安装 6. Cocos2d-x也是没有区分32位还是64位的，直接去官网下吧。 OK，把以上的东西都准备好，该安装的安装好~ 最后，来安装cocos2d-x。 1. 解压到任意目录 2. 运行cocos2d-x根目录下的build-win32.bat文件 3. 如果运行build-win32.bat报错，说找不到什么Release.win32",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-09-07 17:14:00"
+  },
+  {
+    "id": 5,
+    "title": "代码混淆与反射的冲突(小小解决方案)~！",
+    "content": "代码混淆与反射的冲突 反编译Android的代码，大部分人都知道了，防反编译的方法也大部分都知道了（尽管它不一定一直有效，但起码像我这种水平的人，没办法看到混淆之后的Java代码， 最可恶的是没有注释= =）。 最近才发现，我的代码在很久之后设置了混淆，也在很久之前不知道什么时候不小心把代码混淆给弄没了（好吧，你可以去反编译我的项目了，我不介意，因为代码很烂，实在是烂）。 于是，这两个又在搞混淆代码了，混淆代码的方法很简单： 1.在项目下新建一个文件，命名为“proguard.cfg”，正常情况下包括以下内容： -optimizationpasses 5 -dontusemixedcaseclassnames -dontskipnonpubliclibraryclasses -dontpreverify -verbose -optimizations !code/simplification/arithmetic,!field/*,!class/merging/* -keep public class * extends android.app.Activity -keep publi",
+    "categories": [
+      "Android"
+    ],
+    "date": "2012-09-05 23:10:00"
+  },
+  {
+    "id": 4,
+    "title": "【木头Cocos2d-x 002】win32项目移植到Android，终于成功~",
+    "content": "win32项目移植到Android的教程百度一下不少，或者看看这篇文章：http://blog.csdn.net/xiawei32/article/details/7526262 我只记录我遇到的阻碍，还有简单的步骤： 1.编写好cocos2d-x的win32项目 2.运行cocos2d-x安装目录下的create-android-project.bat，依次输入将要建立的Android包名、项目名、SDK版本等级 3.自动生成了Android项目，如下： 4.我主要的疑问就是，Classes目录有什么用？Resources目录下的资源要怎么弄到Android项目里？ 5.Resources目录下的资源复制到Android的assets目录即可 6.将Win32的Classes目录下的文件替换掉上面的Classes目录下的文件 7.在eclipse里新建Android项目，导入上面生成的Android项目，顺便新建Builder 8.修改上面的Classes目录下的.mk编译文件，基本就是修改一下C的类名，因为默认生成的类名是默认的（好吧，我逻辑乱了...） 9.上面的Classes目",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-08-16 21:12:00"
+  },
+  {
+    "id": 10,
+    "title": "我的处女作：Android网游 战四方新版本终于出来了~~",
+    "content": "哎吖吖~又是一个漫长的开发过程~ 还好还好，都熬过去了，我们的新版本终于出来了~ 嘻嘻，在自己的博客做个广告，不会被人骂吧？~ 经过前期公测阶段的反馈，游戏已进行重大改版，更新内容如下： 1.新增黑市商人，可获得各种马匹和披风。 2.新增武魂系统，武魂可用于购买稀有武将。 3.优化酒馆功能，新增部分稀有武将。 4.新增竞技场功能。 5.开放全部关卡，并优化关卡数据。 6.部分UI优化体验。 7.更多新功能，请在游戏中体验。 下载地址：http://mobile.91.com/Soft/Android/com.kogame.war4.html 附上老版本介绍链接：http://blog.csdn.net/musicvs/article/details/7698174",
+    "categories": [
+      "Android"
+    ],
+    "date": "2012-08-16 16:39:00"
+  },
+  {
+    "id": 9,
+    "title": "【木头Cocos2d-x 001】又是一个HelloWorld",
+    "content": "嘿嘿，时间关系，这次我就不啰嗦了~毕竟环境搭建的教程到处都是，我就不添乱，整理一下步骤，方便以后记忆。 测试Ndk是否安装成功，运行第一个jni例子： 1.新建项目，建立一个jni目录 2.建一个NdkClient类，用来声明C函数，并且通过该类调用C函数 3.用javah生成NdkClient类对应的C头文件 4.编写Android,mk编译文件 5.给项目新建一个builder，用来自动编译C函数，生成so文件 6.ok，详细的百度。 VS2008创建cocos2d-x项目： 1.安装cocos2d-x，百度一下 2.创建cocos2d-x的win32项目 3.运行一下，发现报错 4.复制cocos2d-x安装目录下的debug.win32目录下的所有.dll和.lib文件到新项目的debug.win32目录下 5.生成解决方案，这不不能少~ 6.运行，成功",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-08-15 20:24:00"
+  },
+  {
+    "id": 8,
+    "title": "几经挣扎，选择了Cocos2D-x",
+    "content": "我嘛，开发Android游戏一年了，一直没有用引擎，曾经很幼稚地以为，积累多了，自己写的东西也能变成引擎。 好吧，我慢慢地知道，原来游戏引擎是很深奥的东西~ 曾经挣扎过，毕竟我是学Java的，不想现在就开始横向发展去学C，所以一直没敢学cocos2d-x。 后来，经朋友点化，还是决定学。 毕竟，现在大家要的是跨平台，一个人开发，多个平台受益，谁会要我这个只懂Android游戏开发的半桶水呢？ 不过，我是自己偷偷学，不想给公司的人知道，因为我不想我的兴趣爱好变成了任务， 一旦被发现我在研究cocos2d-x，老大无形之中就会认为我每天都在研究，过些日子，他们就会默认我已经懂cocos2d-x。 我不想有这样的压力来削减我的兴趣~~~ 嘿嘿~~我就是这样子~~~喜欢自由~~~ 那么，cocos2d-x，我来了，你，还在那吗？",
+    "categories": [
+      "Cocos2d-x",
+      "Cocos2d-x2.0"
+    ],
+    "date": "2012-08-15 19:53:00"
+  },
+  {
+    "id": 236,
+    "title": "我的处女作：Android网游 战四方，嘻嘻~",
+    "content": "历经千辛万苦，我们的游戏终于出来了，虽然不能称得上是什么好作品，但是，能看着自己的游戏有人在玩，那种感觉真的很好。 是一款策略RPG的手机网游，是我从完全不懂Android就开始着手开发的第一款游戏，希望大家能给些意见。 我很独单，身边没有Android游戏开发的人能够讨论，只有在网上才能找到这些朋友了。 不管怎么样~游戏出来了，我好开心~ 下载地址：http://mobile.91.com/Soft/Android/com.kogame.war4.html",
+    "categories": [
+      "Android"
+    ],
+    "date": "2012-06-28 09:06:00"
+  },
+  {
+    "id": 235,
+    "title": "【LGame入门学堂016.结束入门】进阶仪式之onTouchEvent触发流程",
+    "content": "【LGame016.结束入门】进阶仪式之onTouchEvent触发流程 关键字：LGame 入门 控件onTouchEvent 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7579718 各位，谢谢你们愿意看我的文字，虽然LGame入门学堂的教程，每篇的阅读量平均不到200次，但是，我已经很欣慰了，我只是一个刚毕业9个月的小屁孩。感谢每一位看我文字的朋友，是你们给了我坚持的力量。 再此，我想宣布一个不幸的消息：LGame入门学堂要结束了。 这是最后一篇教程，LGame系列教程要暂停更新了。 原因只有一个：工作上遇到麻烦了，连生活费都没有了。 我的项目组会最后拼几周，老大说一周内发布第一个版本，不再修改了。 这是我最后一次相信老大，因为我的血汗代码已经被毁容了3、4次了，我没办法再容忍了。木头也要吃饭的。 如果我有幸度过这个难关，我将继续更新LGame系列教程，到时候就不是入门学堂咯，是LGame进阶修炼，我将会以讲解源码为主（当然，我能力有限，不会很深入的）。 好了，谢谢听我",
+    "categories": [
+      "LGame"
+    ],
+    "date": "2012-05-18 12:24:00"
+  },
+  {
+    "id": 234,
+    "title": "【LGame入门学堂015.控件篇】简单控件之《小人跑跑》游戏实例",
+    "content": "【LG015.控件篇】简单控件之《小人跑跑》游戏实例 关键字：LGame 入门 控件游戏实例 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7571069 - Hello~最近工作遇到一些麻烦，所以更新速度慢了~ 今天不学新东西了~和大家来玩玩实例好不好？~ - 今天给大家奉献一个简单的小游戏——《小人跑跑》。 - 本来这个实例要在几天前发布的，呵呵，开头也说了，遇到麻烦，吃饭都成问题了~ 大家见谅。 - 游戏很简单，规则如下： 1. 玩家和两个NPC赛跑，最快到达终点的就算赢，游戏结束 2. 玩家只需要不断地快速地点击一个按钮——跑。 - 废话少说那么一点点~上截图： 素、素材是丑了点，大家别介意哈，主要是对LGame的简单应用的复习。 - 代码很简单，我就不多解释了，我有很详细的注释的，详细到有点唠叨~ 里面用到的东西都是之前LGame入门学堂系列教程介绍的~没有任何新东西~ - 如果觉得代码咋一看有点乱，笨木头建议从以下函数开始看，那就很清晰了： @Override pub",
+    "categories": [
+      "LGame"
+    ],
+    "date": "2012-05-16 08:49:00"
+  },
+  {
+    "id": 233,
+    "title": "【LGame入门学堂014.控件篇】简单控件之LPanel VS LPaper？",
+    "content": "【LG014.控件篇】简单控件之LPanelVS LPaper？ 关键字：LGame 入门 控件 LPanel LPaper 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7570539 有点抱歉，最近工作上遇到不少麻烦，所以可能我的废话会稍微少一点点… 那是不可能的~嘿嘿~ - 不过，在这里真的要说声抱歉，因为之前关于Lpaper的介绍有点错误，其实Lpaper确实可以当做是Div来使用，但是Lpaper的功能也不少： 1. 可以将一个Animation（不懂的可以不管，就是一个动画）丢上去 2. 可以将一组图片丢上去播放 3. 可以拖动 4. 其它大家自己看它的函数哈，就十几、二十个吧，除去赋和取函数，就那几个了 - 而最近才发现，有一个控件更加地接近我所说的虚拟框，它就是Lpanel。 Lpanel的使用我就不说了，和一般的控件一样。 它的特点就是：没有特点。 - 是的，正因为它没有什么特别，所以，拿它来做Div是再适合不过了，毕竟Lpanel的功能少，属性也少，即使在代码",
+    "categories": [
+      "LGame"
+    ],
+    "date": "2012-05-15 21:59:00"
+  },
+  {
+    "id": 232,
+    "title": "【LGame入门学堂013.控件篇】简单控件之LMessage",
+    "content": "【LGame学堂013.控件篇】简单控件之LMessage 关键字：LGame 入门 控件 LMessage 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7559567 LMessage本来是挺容易使用的一个控件，可为什么我这么迟才介绍呢？ 糟糕，有点不好意思说了，因为有某个地方卡住我了，研究一番才解决了~ 好啦，开始分享~ - LMessage就是文本框，RGB游戏最常见的那种，而且还可以逐字打印呢~ 文本框嘛，当然可以有个框啦，可以是纯颜色的框，也可以是用一张图片做背景框，任君选择。噢~当然，你不喜欢框也可以不要~ - LMessage的创建和其它控件没有什么区别，直接上代码哈： @Override public void onLoad() { /* 创建一个宽高分别为120、180的消息框 */ msg = new LMessage(120, 180); /* 设置消息框的背景，也可以用图片做背景 */ msg.setBackground(LColor.cyan); /*",
+    "categories": [
+      "LGame"
+    ],
+    "date": "2012-05-12 08:56:00"
+  },
+  {
+    "id": 231,
+    "title": "【LGame入门学堂012.控件篇】简单控件之形同虚设却无比强大的LPaper",
+    "content": "【LG012.控件篇】简单控件之形同虚设却无比强大的LPaper 关键字：LGame 入门 控件 LPaper 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7552524 LPaper的使用极其简单，我就不多啰嗦了~ 好吧，还是啰嗦一下好了： LPaper paper = new LPaper(0, 0, 400, 400); 前面两个参数是坐标，后面两个参数是宽高。 - LPaper到底是什么呢？它就是一张什么都没有的纸，既然是纸，当然也可以设置背景颜色或者图片。 - 其实，我更喜欢称它为虚拟框。 为什么呢？相信大家都有做过或者了解过网页编程吧，Div熟悉吗？ 好吧，为了照顾没有接触过的朋友，简单说明一下。Div的作用就是把网页分区，比如很简单的一个布局： 总共3个区域，也就是3个Div，这样就可以对网页不同的区域分门别类地进行管理，十分方便。好啦，不多解释啦，毕竟这里是LGame入门学堂，不是网页编程入门哈~ - 木头我也自己写过简单的仿Div控件，现在已经在我的代码中大量",
+    "categories": [
+      "LGame"
+    ],
+    "date": "2012-05-10 08:57:00"
+  },
+  {
+    "id": 230,
+    "title": "【LGame入门学堂011.控件篇】简单控件之解决添加控件后控件不显示的问题",
+    "content": "【LGame学堂011】简单控件之解决添加控件后控件不显示的问题 关键字：LGame 入门 控件 - 各位，不好意思，之前忘了说一个很重要的问题，也许有些朋友已经遇到这个问题了。那就是，明明创建了控件，也调用了add函数，控件也已经设为可见了，但控件就是不显示。 1.我们是怎么创建控件的呢？当然是在构造器里咯： public class GameScreen extends Screen { public GameScreen() { createBtn(); } private void createBtn() { LButton btn = new LButton(assets/btn.png); add(btn); } } 好吧，这很糟糕，因为这个按钮永远都不会显示出来了。 2.其实，要解决这个问题，只需要一个步骤： 不要在构造器里添加控件，要在onLoad函数中添加控件。 @Override public void onLoad() { btn = new LButton(笨木头, 100, 100, 4, 4); add(btn); } 3.onLoad()函数是Screen",
+    "categories": [
+      "LGame"
+    ],
+    "date": "2012-05-09 08:57:00"
+  },
+  {
+    "id": 229,
+    "title": "【LGame入门学堂010.控件篇】简单控件之LSelect",
+    "content": "这章我们来看看LSelect吧~ 1.这个控件可以理解为单选按钮吧，我也只是刚接触喇，所以也只是了解了表层。 使用倒是挺简单的，来看代码吧： LSelect select = new LSelect(0, 200, 150, 220); select.setMessage(你觉得LGame好玩吗？, new String[] { 嗯, 嗯~, 嗯~！, 嗯~~~~~~~~~~~！, }); add(select); 哈哈，这是一个很霸道的选择题，不管怎么选都必须是赞扬吖~嘿嘿 看看运行效果怎么样： 糟糕~怎么标题没了？ 再来： LSelect select = new LSelect(0, 200, 250, 220); select.setMessage(你觉得LGame好玩吗？, new String[] { 嗯, 嗯~, 嗯~！, 嗯~~~~~~~~~~~！, } ); add(select); 发现什么不一样了吗？ 是的，多了个250~~糟糕~我不是骂你呢~我是想解释一下LSelect的构造器： LSelect(int x, int y, int width, int heig",
+    "categories": [
+      "LGame"
+    ],
+    "date": "2012-05-08 09:25:00"
+  },
+  {
+    "id": 228,
+    "title": "【LGame入门学堂009.控件篇】简单控件之LPicture",
+    "content": "【LGame学堂009】简单控件之LPicture 关键字：LGame 入门 控件 LPicture 今天要介绍的LPicture很简单的~ 来吧，直接上代码： LPicture picture = new LPicture(0, 0, 100, 100); picture.loadImage(“assets/test.png”, false); add(picture); 相信不用我解释了。 另外，LPicture也有doClick函数。 哎吖，不多说喇。 原文第一次发布于Android-Fans论坛： http://www.android-fans.net/thread-1594-1-1.html -",
+    "categories": [
+      "LGame"
+    ],
+    "date": "2012-05-08 09:22:00"
+  },
+  {
+    "id": 62,
+    "title": "【LGame入门学堂】LGame入门之路系列(更新到016章)",
+    "content": "做Android游戏开发也有半年了，实际上我接触Android也是半年... 一个没有任何游戏开发的经验的毕业生，就这样屁颠屁颠地走上了游戏开发之路。 我也是最近2个月才开始知道，原来游戏开发有游戏引擎的~！ 发现Android游戏开发也是有引擎的，而且还不少~ 可惜大部分都是英文...虽然我的英文很厉害，26个字母全都认识~但是，毕竟团结就是力量，26个字母排起队来，还是很厉害的，我敌不过它们。 所以呢，我选择了LGame引擎作为我第一个接触的游戏引擎~ 但是呢，我这个人实在是懒得不行的，所以我要让大家来监督我，这样我才有动力~ 由于精力有限，我只能挤时间学习LGame，然后挤时间用心地写心得~ 希望也有朋友想学习LGame，也一起来写你的心得。 我会把所有关于LGame的学习心得放到这个帖子里，做索引。 那么，Fight~！ 说明一点： 本人也完全没有接触过LGame，所以我只能通过网络资料来学习，该系列教程会出现很多网络上的代码（或者是由网络上的代码修改而来），我会注明出处。 【LGame学堂】LGame入门之路 系列 - 【LG001.初章]】LGame是谁？ 【LG002.第",
+    "categories": [
+      "LGame"
+    ],
+    "date": "2012-05-08 09:19:00"
+  },
+  {
+    "id": 227,
+    "title": "【LGame入门学堂008.控件篇】简单控件之LButton",
+    "content": "【LGame学堂008】简单控件之LButton 关键字：LGame 入门 控件 LButton 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7530117 - 注：以下内容是昨晚写的，不是今天写的。 现在是深圳时间晚上22点43分，好吧，笨木头我是一个不合的程序员，23点开始我就可以上床睡大觉~所以，我这么努力地写心得，大觉多多支持~（耶~苦肉计得逞~） 好吧~本章来看看咱们游戏里必不可少的控件——按钮。 这是LGame里最简单的控件之一了，直接上代码呗： public class GameScreen extends Screen { @Override public void onLoad() { LButton btn = new LButton(assets/btn.png); btn.setLocation(100, 100); add(btn); } @Override public void alter(LTimerContext arg0) { } @Over",
+    "categories": [
+      "LGame"
+    ],
+    "date": "2012-05-07 13:42:00"
+  },
+  {
+    "id": 226,
+    "title": "【LGame入门学堂007.控件篇】简单控件之Desktop",
+    "content": "【LGame学堂007】简单控件之Desktop 从这章开始，我们来玩玩几个简单的控件~不过，我想先装装大牛，给大家讲讲LGame是如何管理控件的~ 先声明哈，我没有深入地看代码，所以真的是简单地解释一下而已（好吧，我的废话真的很多的，希望不会引起大家的愤怒...）。 我们试想一下，控件其实是什么？是对象咯~好吧，我废话了。控件要怎么在游戏里展示出来呢？当然少不了draw这个步骤~再试想一下，游戏里的控件数量不会只有1、2个吧？ 好了，几十上百个控件还是会有的，这么多的控件，不可能东一个西一个的吧~当然要统一管理了。于是，就有了它——Desktop 所有的控件都会丢进Desktop里面，由Desktop来统一调用各个控件的绘制函数，以便将控件绘制到手机屏幕中。还有一些触屏事件、点击事件等都是通过Desktop来传递给各个控件的。 其实可以从Desktop的名字很形象地想到，桌面？顶部桌面？是的~ Desktop就像一张桌面，上面摆满了各种控件。 好啦，小弟也只是理解了Desktop的皮毛而已，希望大牛出来指点~嘻嘻 哎吖，这章的内容有点少呢，不太像我唠叨的风~ 好吧，这次就饶了你们吧~",
+    "categories": [
+      "LGame"
+    ],
+    "date": "2012-05-07 08:37:00"
+  },
+  {
+    "id": 225,
+    "title": "【LGame入门学堂006.精灵传说】我是定时器",
+    "content": "【LG006.精灵传说】我是定时器 关键字：LGame 入门 定时器 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7530117 本章来聊聊精灵传说之我是定时器~ 木头惯例，先上图： 实现的效果就是一个精灵不断地在跑，不断地跑？你想累死她吗？~ 所以，当然要让她休息一下喇~于是... 她每隔2秒钟休息一次...太懒了点吧... 说了这么多，先上代码，再听我解释，主要要解释两样东西： 1. LGame的定时器，LTimer类 2. 钩子函数 代码里有一个LMessage控件，关于它的所有操作，请大家忽略，不要被影响了，它不是本文的研究对象，以后学到控件的时候再一起探讨~ 1.定时器。 创建定时器很简单： LTimer restTimer = new LTimer(2000); 这样就创建了一个每隔两秒执行一次的定时器。 有一点一定要注意，定时器什么时候开始启动？当然是由我们来控制喇。 这样启动： resTimer.start(); OK，很简单吧？ 啰嗦一下： 虽说LTimer是",
+    "categories": [
+      "LGame"
+    ],
+    "date": "2012-05-04 12:27:00"
+  },
+  {
+    "id": 224,
+    "title": "【LGame入门学堂005.精灵传说】简单的精灵",
+    "content": "【LGame学堂】简单的精灵 关键字：LGame 入门 精灵 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7530117 效果图： 精灵，按照个人的理解，就是游戏中的生物，生物嘛，当然是要能懂的。跑来跑去的主角是精灵，和主角打架的怪物也是精灵~还有好多好多精灵，好吧，精灵不神秘，它也不过是一个被封装的动画。 public class GameScreen extends Screen { private final String TAG = GameScreen; private LImage bgImg = null; /* 背景图片 */ private Sprite girlSprite = null; /* 精灵：一个弓手女孩 */ private Sprites sprMgr = null; /* 精灵管理器 */ public GameScreen() { /* 背景图片 */ bgImg = LImage.createImage(assets/bgImg.jpg)",
+    "categories": [
+      "LGame"
+    ],
+    "date": "2012-05-03 08:55:00"
+  },
+  {
+    "id": 223,
+    "title": "【LGame入门学堂004.资源传说】 加载资源的方式",
+    "content": "【LG004.资源传说】加载资源的方式 关键字：LGame 入门 环境 资源 加载 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7530117 效果图： 其实很简单，直接看代码： private LImage bgImg = null; /* 背景图片 */ private LImage tipImg = null; /* 文字图片 */ public GameScreen() { /* 加载资源方式1：加载Assets目录的资源，必须制定assets目录名称 */ bgImg = LImage.createImage(assets/bgImg.jpg); /* 加载资源方式2：加载res目录的资源，必须制定res目录名称，包括子目录 */ tipImg = LImage.createImage(res/drawable/tip.png); } LGame加载资源的方式当然也离不开Android的限制喇，也是两种： 1. 加载Assets目录的资源 2. 加载Res目录的资源 ",
+    "categories": [
+      "LGame"
+    ],
+    "date": "2012-05-03 08:51:00"
+  },
+  {
+    "id": 222,
+    "title": "【LGame入门学堂003.第三章】 HelloWorld之绘制文本",
+    "content": "【LG003.第三章】HelloWorld之绘制文本 关键字：LGame 入门 环境 文本 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7530117 最终效果： 这个很简单的，看Activity的代码： public class LGameStudyActivity extends LGameAndroid2DActivity { @Override public void onGamePaused() { } @Override public void onGameResumed() { } @Override public void onMain() { /* 设置游戏是否横屏 */ this.initialization(true); /* 给Activity赋予一个画面，有点类似于View */ this.setScreen(new ScreenExample()); /* 这个厉害了，指定游戏的帧速率，每秒30帧 */ this.setFPS(30); /* 是否显",
+    "categories": [
+      "LGame"
+    ],
+    "date": "2012-05-03 08:48:00"
+  },
+  {
+    "id": 221,
+    "title": "【LGame入门学堂002.第一章】HelloWorld之搭建环境",
+    "content": "【LG002.第一章】HelloWorld之环境搭建 关键字：LGame 入门 环境搭建 笨木头花心贡献，啥？花心？不呢，是用心~ 转载请注明，原文地址：http://blog.csdn.net/musicvs/article/details/7530117 1. 引擎使用的版本LAE1.1 2. Android SDK版本2.1 LAE官方解释： 2011-11-22 更正了两处小BUG 2011-11-20 LGame-0.3.2-Update： 1、LGame-0.3.2版延续0.3.1，使用OpenGL作为游戏渲染核心，早前的AWT与Canvas实现版本现已更名为LSE与LAE（延续0.3）。 2、LGame-0.3.2版极大扩展了LGame核心包功能，新增工具、特效、精灵、接口以数百计（具体细节正在完善文档中，此处不再详述）。 3、LGame-0.3.2版在核心包基础上，新增了STG开发模块，作为游戏框架的额外补充（目前默认支持（可以基本用脚本完成）的游戏类型已含STG、SRPG、AVG，预计0.3.3提供RTS支持）。 4、LGame-0.3.2版的C#(WP7)版已经构建",
+    "categories": [
+      "LGame"
+    ],
+    "date": "2012-05-03 08:45:00"
+  },
+  {
+    "id": 220,
+    "title": "【LGame入门学堂001.初章】 LGame是谁？",
+    "content": "[LG001.初章] LGame是谁？ 这个问题，当然就百度一下了，大家一起来先认识LGame吧~ LGame 是一款国人开发的Java游戏引擎，有Android及PC(J2SE)两个开发版本。其底 层绘图器LGrpaphics封装有J2SE以及J2ME提供的全部Graphics API（PC版采用Graphics2D封装，Android版采用Canvas模拟实现），所以能够将J2SE或J2ME开发经验直接套用其中，两版本 间主要代码能够相互移植。Android版内置有Admob接口，可以不必配置XML直接硬编码Admob广告信息。该引擎除了基本的音效、图形、物理、精灵等常用组件以外，也内置有Ioc、xml、http等常用Java组件的封装，代价是jar体积较为庞大，PC版 已突破1.2MB，Android版有所简化也在500KB左右。此外，该引擎还内置有按照1:1实现的J2ME精灵类及相关组件，可以将绝大多数 J2ME游戏平移到Android或PC版中。 同时也是是一个高通用性的游戏框架，作为支持Java桌面游戏以及网页游戏开发的全功能引擎，LGame无论对画面绘制、精灵碰撞、特效渲",
+    "categories": [
+      "LGame"
+    ],
+    "date": "2012-05-03 08:39:00"
+  },
+  {
+    "id": 219,
+    "title": "用一个线程模拟多个线程，减少线程数量~",
+    "content": "游戏开发中，免不了有很多定时任务、动画效果。 这些不是在一次的流程中就能执行完毕的。 正常情况下，我会想到用线程，但是，这么多定时任务，这么多动画效果，哪能这么多线程呢？~ 于是，笨木头有笨方法~ 自己模拟一下多线程就好了嘛~不就间隔一段时间执行一个函数么，简单~ 来，看看： public class GameEventThread extends Thread { private final String TAG = \"GameEventThread\"; private int SLEEP_TIME = 10; /* 注意咯，A_GameEvent是一个事件类，就是用来模拟子线程的 */private ArrayListA_GameEvent gameEventList = new ArrayListA_GameEvent(); private boolean isRun = true; public GameEventThread(String threadName) { super(threadName); } public GameEventThread(String thre",
+    "categories": [
+      "Android"
+    ],
+    "date": "2012-04-20 12:31:00"
+  },
+  {
+    "id": 7,
+    "title": "慎用枚举型的ordinal()方法~",
+    "content": "版权声明：这是看了Java Effective这本书的某个关于枚举的章节之后有感而发~不是原创~ 先来一个枚举： public enum EnumArmyLvlType { CMD0, en_armu_lvl_type_divine, /* 1.神将 */ en_armu_lvl_type_outstanding, /* 2.卓越 */ en_armu_lvl_type_elite, /* 3.精英 */ CMD4, CMD5, en_armu_lvl_type_normal, /* 6.普通 */ ; 这是一个简单枚举型，代表怪物的品质等级。 有时候呢，我们需要把数据传递出去，比如，从Android客户端发送数据给C服务端，我们不可能把枚举变量直接传出去吧？~这样太不可爱了~ 于是乎呢，聪明的我，正常情况下会这么做： int iArmyLvlType = EnumArmyLvlType.en_armu_lvl_type_outstanding.ordinal(); 这是没错吖，挺好的~可是，这样不安全~ 为什么呢？因为ordinal方法不是专门给我们用来做对应关系的吖，它仅仅是枚举变",
+    "categories": [
+      "Android"
+    ],
+    "date": "2012-04-16 19:10:00"
+  },
+  {
+    "id": 218,
+    "title": "[笨木头“创业”路]No.4 历练",
+    "content": "任务——敲代码——赶进度——联调——加班——成长——循环",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2012-03-11 22:43:00"
+  },
+  {
+    "id": 217,
+    "title": "[笨木头\"创业\"路]No.3 安卓",
+    "content": "最近工作比较忙，应该说情况比较紧急，所以好几天没有写了。 我等会还要继续敲代码咯，我就长话短说吧，各位莫要介意哈。 安卓，英文名叫Android，它将伴随我很长一段时间。 给了3500块的违约金给实习的公司后，我便离去，来到现在的公司。 不介意我公开它的名字吧？ 它叫“创娱”，说实话，我觉得是蛮老土的名字~嘿嘿 当然，我想给你买介绍一下我们公司的成员： 1. 我姐夫，担任运营老大（其实运营部就他一个人喇）兼任公司创始人之一 2. 刘某某（不能公开名字喇），CEO（公司由他管理）兼任公式创始人之一 3. 陈某某， 服务器开发人员（公司的核心力量） 4. 马某某， 策划之一（不算经验丰富但很热心） 5. 笨木头~（注意~注意~很聪明的家伙~），Android客户端开发人员（公司实力最弱，经验最匮乏的人） 我刚去到的时候，就只有这么多人喇~ 我什么都不懂，他们让我先学学Android。 我只是有一些Java基础，Android是没有接触过的~ 来公司前预习了好几天~ 然后在公司学习了两个星期... 然后，我就开始了客户端的开发任务... 大家很惊讶是不是？为什么一个创业的公司，要找我这样的一",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2012-03-08 20:53:00"
+  },
+  {
+    "id": 216,
+    "title": "[笨木头\"创业\"路]No.2 狠心",
+    "content": "那时，我即将毕业，也已经和实习了一年的公司签订了三方协议，准备转正了。 我不懂得人情世故，所以，我愿意公开细节，我不知道是否妥当，反正，又不违法，嘿嘿~ 我实习了一年的公司是上海华腾，我在深圳福田区的平安大厦里的一个项目组里~ 有点属于是外包公司吧，不过不完全是，因为公司有自己的核心产品，去到客户那，只是做二次开发~ 说实话，这也算是中型公司吧？1000多人了，所以很难有机会参与很多的开发。 我刚去到实习的时候，负责前端开发，做Java的，是公司里最不受重视的一块~ 不过我还是很开心，因为对我来说，二次开发也是开发，可以学到不少东西~嘿嘿 至于公司怎么样，我不评价了呢~反正我觉得同事们都好好~没有勾心斗角的事情~ 我就喜欢开发人员的这个特点，专心搞技术，从来不去想旁门左道的事情，很舒心~ 项目组换了很多人员，我是从项目开始就在的，最后在我离开之前，我是最后一个“元老”，但是能力最差的也是我~ 后来我参与了C语言的开发，但也是二次开发，很难学到东西~ 虽然是这么说，其实还是我个人的问题，公司的核心代码实在是...对我来说太多，太高深了，研究了好几个月，还只是停留在表层。 所以说吧，我是觉",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2012-03-04 23:34:00"
+  },
+  {
+    "id": 215,
+    "title": "【Android游戏开发-笨木头】抛弃自带输入框，自己实现~自由自在~！",
+    "content": "我是一个很喜欢炫耀的人，我最近解决了一个问题，所以来炫耀了~嘿嘿~ 希望各位被我炫耀的同时，也把我学到的知识偷走，随便偷，不要钱哈~ 在看我的帖子之前，请确保你已经看过或者掌握了这个帖子（在没有输入焦点类控件上调用输入法）： http://www.android-fans.net/forum.php?mod=viewthreadtid=38extra=page%3D1 是这位朋友发了这个帖子之后我才得以解决这个问题的~再次感谢他~ 好了，描述一下我的问题，游戏开发的过程中，很少甚至可以说是没有用到系统自带的控件~ 反正我是没有用到，不知道是不是我井底之蛙了，嘿嘿~ 按钮、标签、窗口、滑动窗口之类的控件，虽说实现得不是很好，但是起码还是能自己实现的。 唯独这个输入框，整晕我了，困扰了我好久~ 我不知道怎么弹出输入法，就算后来我知道了，我还是不知道怎么去获取输入法的输入。 不知道有没有人有着和我一样的困扰呢？~ 是不是发现我好多废话？~别着急，你还要忍受我的很多废话呢，嘻嘻~ 好喇，开始~ 先看截图，免得浮躁，嘻嘻： 整个例子的代码都在附件里，我的注释应该算蛮清晰的，嘿嘿，所以大家看代码就",
+    "categories": [
+      "Android"
+    ],
+    "date": "2012-03-04 23:01:00"
+  },
+  {
+    "id": 214,
+    "title": "[笨木头\"创业\"路]No.1 结束和启程",
+    "content": "毕业答辩那天。 向各位敲代码的报告一声，我不是计算机专业的，我只是一个信管的学生。 没有过硬的技术，也没有良好的管理知识。 我选择了技术，彻底抛弃了管理。 即便如此，我也无法和专业的人相比。 是的呢，我直到大三才开始会做个简单的网站，到大四结束，我也没有做过什么出色的项目~ 在信管，我被谣传地很厉害，一个无所不能的敲代码的家伙~ 就连老师也被我那认真的外表给欺骗了，很是信任我的能力~ 我当然开心~我非常的开心呢~嘿嘿 可是吖，记得，我大二的时候参加过ACM竞赛的，在校内拿了三等奖... 然后就，被刷下来了，省赛？我哪敢想。 当时我就见识到了正真的高手，那时，我可是大受打击的。 不过，我不是什么超级勤奋的家伙，我没有每天敲代码到凌晨~ 技术不到家，也是理所当然的活该。 我是不是跑题了? 我很喜欢给我的文字起标题，然后，围绕这个标题去跑题... 当然，我不是故意的。 嘿嘿~回到主题~~~ 毕业论文我可是努力的呢~嘿嘿，自己赞赞自己~ 不过，我真的花了很大的心思去做的。 在答辩的那天，在我站上讲台的时候，我有些许紧张。 但是我有一个缺点，如果一件事情，是我不懂的，那我就会非常胆小。 一旦这件",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2012-03-01 23:09:00"
+  },
+  {
+    "id": 1,
+    "title": "[笨木头\"创业\"路]No.0 前言",
+    "content": "创业也有半年了, 还未成功, 今天突然心血来潮, 想将这一路, 都记录下来。 为什么创业两个字加双引号？~因为，我不完全算是创业，我只是跟着别人创业。 不管怎么说，我也是属于这个团队的。 但是，但是，别想着可以从这些文字里找到一些创业的心得咯~ 我只会写些心情，唠叨唠叨~嘿嘿~ 我喜欢把文字按一系列分类，然后给它们一个目录~ 是的，这篇文字就算是前言~ 就好像是一本书~也许哪天，这些文字真的会成了一本书~ 一本开源的书，开源是什么意思呢？~不了解IT的人，也许不太清楚~ 最简单最表层的理解就是：免费。 最深刻最深邃的理解就是：我不知道~ 我的文字喜欢用“~”这个符号，喜欢各位敲代码的同行不要介意，我不是轻浮，我只是，喜欢调皮的文字~ 这系列的文字我会在csdn的博客写，然后，也要转到我的网易博客里~ 因为，不管网易博客里的人消失了多少，也总有那么几个人留下，愿意看我的文字，就算只是一扫而过也没关系。 首先，我想自我介绍一下，虽然只是妄想，但我还是希望有那么一天，会有好多敲代码的朋友看到我这些文字。 大家好，我叫迪龙，爸爸说，迪的意思是“驾驭”，迪龙，意思是想我拥有驾驭龙的勇气。 可惜，",
+    "categories": [
+      "创业路"
+    ],
+    "date": "2012-02-29 21:48:00"
+  }
+]
