@@ -12,9 +12,15 @@ dist
 dist-ssr
 *.local
 
+# Environment variables
+.env
+.env.*
+!.env.example
+
 # Project docs (private)
 /.docs
-/scripts
+/scripts/*
+!/scripts/update-comment-counts.js
 /.github/instructions
 
 # Editor directories and files
