@@ -2267,7 +2267,7 @@
             "Cocos2d-x2.0"
         ],
         "excerpt": "最近在研究Cocos2d-x3.0alpha0版本，虽然还不是正式版，不过倒是蛮想玩一玩的。 试写了一些代码，感觉还可以，就是类名字什么的改动太大，要想复用以前的代码还真是有点纠结（好吧，也许可以批量改）。 OK，这次就不唠叨了，相信不少人都会遇到在Android上跑的时候会黑屏。 笨木头花心贡献，...",
-        "commentCount": 7,
+        "commentCount": 8,
         "isTop": false,
         "format": "md",
         "postName": "%e7%ac%a8%e6%9c%a8%e5%a4%b4cocos2dx0443-0alpha0%e7%89%88%e6%9c%ac%e7%a7%bb%e6%a4%8dandroid%e5%90%8e%e8%bf%90%e8%a1%8c%e9%bb%91%e5%b1%8f%e7%9a%84%e8%a7%a3%e5%86%b3%e6%96%b9%e6%b3%95"
