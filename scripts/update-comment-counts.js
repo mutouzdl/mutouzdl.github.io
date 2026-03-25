@@ -6,7 +6,8 @@
  *   node scripts/update-comment-counts.js --dry-run
  */
 
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync, writeFileSync } from 'node:fs';
+import process from 'node:process';
 
 const REPO_OWNER = 'mutouzdl';
 const REPO_NAME = 'benmutoublog-comments';
@@ -132,17 +133,44 @@ async function fetchAllDiscussionCounts(token) {
             console.log(`  处理进度: ${i + 1}/${discussions.length}`);
         }
         const count = await fetchDiscussionCommentCount(disc.number, token);
-        countMap.set(disc.title, count);
+        const postId = extractPostId(disc.title);
+        const discussionKey = postId !== null ? `archives/${postId}` : null;
+
+        // 兼容旧迁移数据（/archives/123）和 giscus 自动创建数据（archives/123）
+        if (discussionKey) {
+            countMap.set(discussionKey, (countMap.get(discussionKey) || 0) + count);
+        }
     }
 
     return countMap;
 }
 
 /**
+ * 规范化 Discussion 标题或 pathname，统一为 archives/123 这种格式
+ */
+function normalizePathnameKey(value) {
+    if (!value) {
+        return null;
+    }
+
+    const trimmed = String(value).trim();
+    if (!trimmed) {
+        return null;
+    }
+
+    const withoutOrigin = trimmed.replace(/^https?:\/\/[^/]+/i, '');
+    const withoutQuery = withoutOrigin.split(/[?#]/)[0];
+    const normalized = withoutQuery.replace(/^\/+/, '').replace(/\/+$/, '');
+
+    return normalized || null;
+}
+
+/**
  * 从 pathname 提取文章 ID
  */
 function extractPostId(pathname) {
-    const match = pathname.match(/^\/archives\/(\d+)$/);
+    const normalized = normalizePathnameKey(pathname);
+    const match = normalized?.match(/^archives\/(\d+)$/);
     return match ? parseInt(match[1], 10) : null;
 }
 
@@ -160,7 +188,7 @@ async function main() {
     // 1. 获取 Discussions 评论数
     console.log('从 GitHub Discussions 获取评论数...');
     const countMap = await fetchAllDiscussionCounts(token);
-    console.log(`  获取到 ${countMap.size} 个 Discussion\n`);
+    console.log(`  获取到 ${countMap.size} 个文章路径的评论数映射\n`);
 
     // 2. 读取 posts-list.json
     const postsList = JSON.parse(readFileSync(POSTS_LIST_FILE, 'utf-8'));
@@ -169,7 +197,9 @@ async function main() {
     let updatedCount = 0;
     for (const post of postsList) {
         const pathname = `/archives/${post.id}`;
-        const newCount = countMap.get(pathname);
+        const postId = extractPostId(pathname);
+        const discussionKey = postId !== null ? `archives/${postId}` : null;
+        const newCount = discussionKey ? countMap.get(discussionKey) : undefined;
 
         if (newCount !== undefined && newCount !== post.commentCount) {
             if (dryRun) {
